@@ -91,3 +91,27 @@ Harness: `aem up --html-folder stardust/.work/preview` (port 3001), pages built 
   - AI-readability score
   - published-origin gate
   - eds-schema was emitted after block authoring, not before (recorded honestly).
+
+## DAM image package
+- `stardust/packages/admiral-xwalk-images-1.0.0.zip`, FileVault content package (group `admiral-xwalk`):
+  - 24 `dam:Asset` nodes under `/content/dam/admiral-xwalk/images`
+  - each node carries its original rendition plus dc:format, dam:size, dam:sha1 and tiff dimensions
+  - filter: that folder only
+- Map from local path to DAM path: `stardust/packages/dam-image-map.json`.
+- The staged pages (index, about-us, ski hub, nav) reference the DAM paths. They were applied after the handoff,
+  because the handoff script repoints image srcs to local files.
+- Install order: package → reprocess assets → upload content → publish assets with the pages.
+
+## Page templates
+- Each staged page's metadata carries the site-catalog template it instantiates:
+  - homepage → `product-landing`
+  - About Us → `hub-landing`
+  - Ski Festival Hub → `finder-intro`
+- These render as the body classes `product-landing` / `hub-landing` / `finder-intro`.
+- The page model (`models/_page.json`) gained two Universal Editor fields:
+  - **Template** (select)
+  - **Header variant** (`theme`, select)
+- The mobile quick-action bar is a per-page choice, NOT a template trait: live `/admiralrewards` shows it and
+  `/car-insurance/electric/tesla-insurance` (same template) doesn't. So it moved from `template: front-page` to
+  `theme: quick-actions` (homepage). The header block and the `--nav-height` reservation key on `body.quick-actions`.
+- Re-gated the homepage (local images mapped): 1.06% / 0.86%, height Δ0 — unchanged.
