@@ -1,0 +1,118 @@
+{
+  "definitions": [
+    {
+      "title": "Product Tiles",
+      "id": "product-tiles",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Product Tiles",
+              "filter": "product-tiles"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Product Tile",
+      "id": "product-tile",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Product Tile",
+              "model": "product-tile"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "product-tile",
+      "fields": [
+        {
+          "component": "select",
+          "name": "icon",
+          "label": "Icon",
+          "valueType": "string",
+          "value": "car-insurance",
+          "options": [
+            {
+              "name": "Car Insurance",
+              "value": "car-insurance"
+            },
+            {
+              "name": "Home Insurance",
+              "value": "home-insurance"
+            },
+            {
+              "name": "Pet Insurance",
+              "value": "pet-insurance"
+            },
+            {
+              "name": "Multicover Insurance",
+              "value": "multicover-insurance"
+            },
+            {
+              "name": "Multicar Insurance",
+              "value": "multicar-insurance"
+            },
+            {
+              "name": "Van Insurance",
+              "value": "van-insurance"
+            },
+            {
+              "name": "Travel Insurance",
+              "value": "travel-insurance"
+            },
+            {
+              "name": "Personal Loans",
+              "value": "personal-loans"
+            },
+            {
+              "name": "Learner Insurance",
+              "value": "learner-insurance"
+            },
+            {
+              "name": "Landlord Insurance",
+              "value": "landlord-insurance"
+            },
+            {
+              "name": "Temp Car Insurance",
+              "value": "temp-car-insurance"
+            },
+            {
+              "name": "Breakdown Cover",
+              "value": "breakdown-cover"
+            }
+          ]
+        },
+        {
+          "component": "aem-content",
+          "name": "link",
+          "label": "Link",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "linkText",
+          "label": "Label",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "product-tiles",
+      "components": [
+        "product-tile"
+      ]
+    }
+  ]
+}

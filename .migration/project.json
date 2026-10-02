@@ -1,0 +1,16 @@
+{
+  "sites": {
+    "admiral-xwalk": {
+      "previewOrg": "waringme",
+      "previewSite": "admiral-xwalk",
+      "contentHostUrl": "author-p147324-e2050468.adobeaemcloud.com",
+      "aemSitePath": "/content/admiral-xwalk",
+      "aemAssetsFolderPath": "/content/dam/admiral-xwalk",
+      "aemSiteName": "admiral-xwalk",
+      "aemSiteTitle": "admiral-xwalk"
+    }
+  },
+  "features": [
+    "site-planning"
+  ]
+}

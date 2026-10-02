@@ -33,6 +33,18 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Narrow text",
+              "value": "narrow"
+            },
+            {
+              "name": "Centred intro",
+              "value": "centered-intro"
+            },
+            {
+              "name": "Page intro",
+              "value": "intro"
             }
           ]
         }
@@ -48,7 +60,12 @@
         "button",
         "title",
         "hero",
+        "breadcrumbs",
+        "product-tiles",
+        "teaser",
         "cards",
+        "banner",
+        "testimonials",
         "columns",
         "fragment"
       ]

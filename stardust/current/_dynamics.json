@@ -1,0 +1,960 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-10-02T16:51:31.113Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://www.admiral.com/",
+   "https://www.admiral.com/about-us",
+   "https://www.admiral.com/travel-insurance/ski-festivals"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/": {
+   "url": "https://www.admiral.com/",
+   "status": 200,
+   "host": "www.admiral.com",
+   "title": "Car, MultiCar and MultiCover Insurance Quotes – Admiral",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [
+    {
+     "role": "dialog",
+     "heading": "",
+     "textLen": 527,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    }
+   ],
+   "dialogCount": 1,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    },
+    {
+     "tag": "iframe",
+     "src": "https://apps.euw2.pure.cloud/messenger/messenger.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    },
+    {
+     "tag": "iframe",
+     "src": "https://apps.euw2.pure.cloud/messenger/messenger-renderer.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html",
+     "title": null,
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://apps.euw2.pure.cloud/messenger/messenger.html",
+     "title": "Messenger Launcher",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://apps.euw2.pure.cloud/messenger/messenger-renderer.html",
+     "title": "Messenger",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [
+    "https://myaccount.admiral.com/login",
+    "https://myaccount.admiral.com/login",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/myaccount",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.fca.org.uk/register"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": [
+     "https://apps.apple.com/gb/app/admiral-insurance/id1461457136"
+    ]
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "_satellite",
+    "google_tag_manager",
+    "gtag",
+    "optimizely"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 31,
+   "inlineFetch": false,
+   "mainText": 5021,
+   "domAddedAfterLoad": 4,
+   "hosts": {
+    "www.admiral.com": 8,
+    "consent.trustarc.com": 12,
+    "cdn.optimizely.com": 1,
+    "use.typekit.net": 9,
+    "p.typekit.net": 1,
+    "assets.adobedtm.com": 1,
+    "www.googletagmanager.com": 4,
+    "mktgblobpubaccess1.blob.core.windows.net": 17,
+    "d34r8q7sht0t9k.cloudfront.net": 1,
+    "apps.euw2.pure.cloud": 25,
+    "js-agent.newrelic.com": 1,
+    "api-cdn.euw2.pure.cloud": 2,
+    "bam.eu01.nr-data.net": 4,
+    "ade.googlesyndication.com": 4,
+    "pagead2.googlesyndication.com": 3,
+    "www.google-analytics.com": 1
+   },
+   "thirdPartyHosts": [
+    "consent.trustarc.com",
+    "cdn.optimizely.com",
+    "use.typekit.net",
+    "p.typekit.net",
+    "assets.adobedtm.com",
+    "www.googletagmanager.com",
+    "mktgblobpubaccess1.blob.core.windows.net",
+    "d34r8q7sht0t9k.cloudfront.net",
+    "apps.euw2.pure.cloud",
+    "js-agent.newrelic.com",
+    "api-cdn.euw2.pure.cloud",
+    "bam.eu01.nr-data.net",
+    "ade.googlesyndication.com",
+    "pagead2.googlesyndication.com",
+    "www.google-analytics.com"
+   ],
+   "scripts": [
+    "https://consent.trustarc.com/v2/autoblock?cmId=ze6jmw",
+    "https://consent.trustarc.com/v2/autoblockasset/core.min.js?cmId=ze6jmw",
+    "https://cdn.optimizely.com/public/17941920996/s/admiral.js",
+    "https://assets.adobedtm.com/c73d0f135877/59e52de2360f/launch-b8f0d2738f96.min.js",
+    "https://consent.trustarc.com/v2/notice/ze6jmw",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-TDSB94B",
+    "https://www.admiral.com/sites/default/files/public/js/js_6ykTKetBd-RlhMvlbBH4tkD-5ItykN_cdpCZqUUQe5E.js?scope=footer&delta=0&language=en&theme=admiral_annie&include=eJxLTMnNLErMiU_My8tM1U_PyU9KzNHNKtZ",
+    "https://d34r8q7sht0t9k.cloudfront.net/tag.js",
+    "https://www.googletagmanager.com/gtag/js?id=DC-16229618&cx=c&gtm=4e69u2",
+    "https://apps.euw2.pure.cloud/genesys-bootstrap/genesys.min.js",
+    "https://www.googletagmanager.com/gtag/js?id=G-WRG2DPT4WN&cx=c&gtm=4e69u2",
+    "https://www.googletagmanager.com/gtag/js?id=DC-12615506",
+    "https://apps.euw2.pure.cloud/cxbus/cxbus.min.js",
+    "https://apps.euw2.pure.cloud/messenger/thirdpartyplugins.min.js",
+    "https://js-agent.newrelic.com/nr-spa-1.318.0.min.js",
+    "https://apps.euw2.pure.cloud/journey/messenger-plugins/offersHelper.min.js",
+    "https://apps.euw2.pure.cloud/messenger/messagingMiddleware.min.js",
+    "https://apps.euw2.pure.cloud/messenger/broadcast.min.js",
+    "https://apps.euw2.pure.cloud/messenger/defaultVendors.min.js",
+    "https://apps.euw2.pure.cloud/messenger/engage.min.js",
+    "https://apps.euw2.pure.cloud/messenger/main.min.js",
+    "https://apps.euw2.pure.cloud/messenger/messengerrenderer.min.js",
+    "https://apps.euw2.pure.cloud/messenger/muiVendor.min.js",
+    "https://apps.euw2.pure.cloud/messenger/i18n/vendors/date-en.min.js"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [
+    "GET consent.trustarc.com/v2/consentcategories/getnonemptyindexes",
+    "GET consent.trustarc.com/analytics",
+    "GET api-cdn.euw2.pure.cloud/webdeployments/v1/deployments/ab457f96-7037-40da-8f6c-988bdd8a7189/domains.json",
+    "POST bam.eu01.nr-data.net/1/NRJS-fdad80285c4bc1c6ed8",
+    "POST bam.eu01.nr-data.net/events/1/NRJS-fdad80285c4bc1c6ed8",
+    "POST bam.eu01.nr-data.net/jserrors/1/NRJS-fdad80285c4bc1c6ed8",
+    "GET api-cdn.euw2.pure.cloud/webdeployments/v1/deployments/ab457f96-7037-40da-8f6c-988bdd8a7189/config.json",
+    "POST pagead2.googlesyndication.com/ccm/collect",
+    "POST www.google-analytics.com/g/collect",
+    "GET apps.euw2.pure.cloud/messenger/i18n/en-us.json"
+   ],
+   "postBodies": [
+    {
+     "url": "https://bam.eu01.nr-data.net/1/NRJS-fdad80285c4bc1c6ed8?a=538748643&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=149&ck=0&s=0&ref=https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html&ptid=1c08",
+     "body": "{\"ja\":{\"nrAgentProvider\":\"index-cannula-cli\",\"webdriverDetected\":false}}"
+    },
+    {
+     "url": "https://bam.eu01.nr-data.net/events/1/NRJS-fdad80285c4bc1c6ed8?a=538748643&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=346&ck=0&s=0&ref=https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html&pt",
+     "body": "bel.6;e,'load,37,5;5,'pageUrl,'https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html;5,'net-etype,'4g;6,'net-dlink,9.8;5,'nrAgentProvider,'index-cannula-cli;8,'webdriverDetected"
+    },
+    {
+     "url": "https://bam.eu01.nr-data.net/jserrors/1/NRJS-fdad80285c4bc1c6ed8?a=538748643&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=347&ck=0&s=0&ref=https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html&",
+     "body": "{\"xhr\":[{\"params\":{\"method\":\"POST\",\"hostname\":\"bam.eu01.nr-data.net\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"bam.eu01.nr-data.net:443\",\"pathname\":\"/1/NRJS-fdad80285c4bc1c6ed8\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":72},\"rxSize\":{\"t\":198},\"duration\":{\"t\":191},\"cbTime\":{\"t\":0},\"time\":{\"t\":150}}}]}"
+    },
+    {
+     "url": "https://bam.eu01.nr-data.net/events/1/NRJS-fdad80285c4bc1c6ed8?a=538748643&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=348&ck=0&s=0&ref=https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html&pt",
+     "body": "bel.7;1,2,,37,,,'initialPageLoad,'https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html,,1,,,!!!!'b5642176-8af7-4c69-9f88-1d0f31c07d56,'1,!!;5,'nrAgentProvider,'index-cannula-cli;8,'webdriverDetected;b,!!!!1,,,,,,,5,1,!9,,,2q,,1"
+    },
+    {
+     "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=2&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.admiral.com&scrsrc=www.googletagmanager.com&rnd=1410141597.1790959893&navt=n&npa=1&ep.ads_da",
+     "body": ""
+    },
+    {
+     "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=12&frm=0&apvc=0&tid=DC-12615506&en=page_view&dl=https%3A%2F%2Fwww.admiral.com&scrsrc=www.googletagmanager.com&rnd=1410141597.1790959893&navt=n&npa",
+     "body": ""
+    },
+    {
+     "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=3&frm=0&apvc=0&tid=DC-16229618&en=page_view&dl=https%3A%2F%2Fwww.admiral.com&scrsrc=www.googletagmanager.com&rnd=1410141597.1790959893&navt=n&npa=",
+     "body": ""
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-WRG2DPT4WN&gtm=45je69u2v9113105751z89102176791za20gzb9102176791zd9102176791xf1&_p=1790959892184&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdi",
+     "body": ""
+    }
+   ],
+   "textAtLoad": 5021,
+   "mainEmptyAtLoad": false
+  },
+  "/about-us": {
+   "url": "https://www.admiral.com/about-us",
+   "status": 200,
+   "host": "www.admiral.com",
+   "title": "About Us - Admiral",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [
+    {
+     "role": "dialog",
+     "heading": "",
+     "textLen": 527,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    }
+   ],
+   "dialogCount": 1,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    },
+    {
+     "tag": "iframe",
+     "src": "https://apps.euw2.pure.cloud/messenger/messenger.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    },
+    {
+     "tag": "iframe",
+     "src": "https://apps.euw2.pure.cloud/messenger/messenger-renderer.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html",
+     "title": null,
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://apps.euw2.pure.cloud/messenger/messenger.html",
+     "title": "Messenger Launcher",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://apps.euw2.pure.cloud/messenger/messenger-renderer.html",
+     "title": "Messenger",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [
+    "https://myaccount.admiral.com/login",
+    "https://myaccount.admiral.com/login",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/myaccount",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.fca.org.uk/register"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "_satellite",
+    "google_tag_manager",
+    "gtag",
+    "optimizely"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 30,
+   "inlineFetch": false,
+   "mainText": 3935,
+   "domAddedAfterLoad": 2,
+   "hosts": {
+    "www.admiral.com": 5,
+    "consent.trustarc.com": 12,
+    "cdn.optimizely.com": 1,
+    "use.typekit.net": 9,
+    "p.typekit.net": 1,
+    "assets.adobedtm.com": 1,
+    "www.googletagmanager.com": 4,
+    "mktgblobpubaccess1.blob.core.windows.net": 12,
+    "d34r8q7sht0t9k.cloudfront.net": 1,
+    "apps.euw2.pure.cloud": 25,
+    "api-cdn.euw2.pure.cloud": 2,
+    "js-agent.newrelic.com": 1,
+    "bam.eu01.nr-data.net": 4,
+    "ade.googlesyndication.com": 2,
+    "pagead2.googlesyndication.com": 3,
+    "www.google-analytics.com": 1
+   },
+   "thirdPartyHosts": [
+    "consent.trustarc.com",
+    "cdn.optimizely.com",
+    "use.typekit.net",
+    "p.typekit.net",
+    "assets.adobedtm.com",
+    "www.googletagmanager.com",
+    "mktgblobpubaccess1.blob.core.windows.net",
+    "d34r8q7sht0t9k.cloudfront.net",
+    "apps.euw2.pure.cloud",
+    "api-cdn.euw2.pure.cloud",
+    "js-agent.newrelic.com",
+    "bam.eu01.nr-data.net",
+    "ade.googlesyndication.com",
+    "pagead2.googlesyndication.com",
+    "www.google-analytics.com"
+   ],
+   "scripts": [
+    "https://consent.trustarc.com/v2/autoblockasset/core.min.js?cmId=ze6jmw",
+    "https://consent.trustarc.com/v2/autoblock?cmId=ze6jmw",
+    "https://cdn.optimizely.com/public/17941920996/s/admiral.js",
+    "https://consent.trustarc.com/v2/notice/ze6jmw",
+    "https://assets.adobedtm.com/c73d0f135877/59e52de2360f/launch-b8f0d2738f96.min.js",
+    "https://www.admiral.com/sites/default/files/public/js/js_zTHJszm-3X_ww1fqDSqhPU74xB1nyUVNV5818aan5R4.js?scope=footer&delta=0&language=en&theme=admiral_annie&include=eJxLTMnNLErMiU_My8tM1U_PyU9KzNHNKgY",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-TDSB94B",
+    "https://d34r8q7sht0t9k.cloudfront.net/tag.js",
+    "https://apps.euw2.pure.cloud/genesys-bootstrap/genesys.min.js",
+    "https://www.googletagmanager.com/gtag/js?id=DC-16229618&cx=c&gtm=4e69u2h1",
+    "https://www.googletagmanager.com/gtag/js?id=G-WRG2DPT4WN&cx=c&gtm=4e69u2h1",
+    "https://www.googletagmanager.com/gtag/js?id=DC-12615506",
+    "https://apps.euw2.pure.cloud/cxbus/cxbus.min.js",
+    "https://apps.euw2.pure.cloud/journey/messenger-plugins/offersHelper.min.js",
+    "https://apps.euw2.pure.cloud/messenger/thirdpartyplugins.min.js",
+    "https://apps.euw2.pure.cloud/messenger/broadcast.min.js",
+    "https://apps.euw2.pure.cloud/messenger/messagingMiddleware.min.js",
+    "https://apps.euw2.pure.cloud/messenger/defaultVendors.min.js",
+    "https://apps.euw2.pure.cloud/messenger/engage.min.js",
+    "https://js-agent.newrelic.com/nr-spa-1.318.0.min.js",
+    "https://apps.euw2.pure.cloud/messenger/main.min.js",
+    "https://apps.euw2.pure.cloud/messenger/muiVendor.min.js",
+    "https://apps.euw2.pure.cloud/messenger/messengerrenderer.min.js",
+    "https://apps.euw2.pure.cloud/messenger/i18n/vendors/date-en.min.js"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [
+    "GET consent.trustarc.com/v2/consentcategories/getnonemptyindexes",
+    "GET consent.trustarc.com/analytics",
+    "GET api-cdn.euw2.pure.cloud/webdeployments/v1/deployments/ab457f96-7037-40da-8f6c-988bdd8a7189/domains.json",
+    "GET api-cdn.euw2.pure.cloud/webdeployments/v1/deployments/ab457f96-7037-40da-8f6c-988bdd8a7189/config.json",
+    "POST bam.eu01.nr-data.net/1/NRJS-fdad80285c4bc1c6ed8",
+    "POST pagead2.googlesyndication.com/ccm/collect",
+    "POST www.google-analytics.com/g/collect",
+    "GET apps.euw2.pure.cloud/messenger/i18n/en-us.json",
+    "POST bam.eu01.nr-data.net/events/1/NRJS-fdad80285c4bc1c6ed8",
+    "POST bam.eu01.nr-data.net/jserrors/1/NRJS-fdad80285c4bc1c6ed8"
+   ],
+   "postBodies": [
+    {
+     "url": "https://bam.eu01.nr-data.net/1/NRJS-fdad80285c4bc1c6ed8?a=538748643&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=311&ck=0&s=0&ref=https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html&ptid=1d87",
+     "body": "{\"ja\":{\"nrAgentProvider\":\"index-cannula-cli\",\"webdriverDetected\":false}}"
+    },
+    {
+     "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=12&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.admiral.com%2Fabout-us&scrsrc=www.googletagmanager.com&rnd=1617238908.1790959906&navt=n&npa",
+     "body": ""
+    },
+    {
+     "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=5&frm=0&apvc=0&tid=DC-12615506&en=page_view&dl=https%3A%2F%2Fwww.admiral.com%2Fabout-us&scrsrc=www.googletagmanager.com&rnd=1617238908.1790959906&",
+     "body": ""
+    },
+    {
+     "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=9&frm=0&apvc=0&tid=DC-16229618&en=page_view&dl=https%3A%2F%2Fwww.admiral.com%2Fabout-us&scrsrc=www.googletagmanager.com&rnd=1617238908.1790959906&",
+     "body": ""
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-WRG2DPT4WN&gtm=45je69u2h1v9113105751z89102176791za20gzb9102176791zd9102176791xf1&_p=1790959904308&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&g",
+     "body": ""
+    },
+    {
+     "url": "https://bam.eu01.nr-data.net/events/1/NRJS-fdad80285c4bc1c6ed8?a=538748643&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=764&ck=0&s=0&ref=https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html&pt",
+     "body": "bel.6;e,'load,55,5;5,'pageUrl,'https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html;5,'net-etype,'4g;6,'net-dlink,9.5;5,'nrAgentProvider,'index-cannula-cli;8,'webdriverDetected"
+    },
+    {
+     "url": "https://bam.eu01.nr-data.net/jserrors/1/NRJS-fdad80285c4bc1c6ed8?a=538748643&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=765&ck=0&s=0&ref=https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html&",
+     "body": "{\"xhr\":[{\"params\":{\"method\":\"POST\",\"hostname\":\"bam.eu01.nr-data.net\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"bam.eu01.nr-data.net:443\",\"pathname\":\"/1/NRJS-fdad80285c4bc1c6ed8\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":72},\"rxSize\":{\"t\":198},\"duration\":{\"t\":447},\"cbTime\":{\"t\":0},\"time\":{\"t\":312}}}]}"
+    },
+    {
+     "url": "https://bam.eu01.nr-data.net/events/1/NRJS-fdad80285c4bc1c6ed8?a=538748643&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=766&ck=0&s=0&ref=https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html&pt",
+     "body": "bel.7;1,2,,55,,,'initialPageLoad,'https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html,,1,,,!!!!'c48cd7af-5524-419c-bc36-2851a4631ea7,'1,!!;5,'nrAgentProvider,'index-cannula-cli;8,'webdriverDetected;b,!!!!1,,,,,,,6,1,!18,,,3o,1,1"
+    }
+   ],
+   "textAtLoad": 3450,
+   "mainEmptyAtLoad": false
+  },
+  "/travel-insurance/ski-festivals": {
+   "url": "https://www.admiral.com/travel-insurance/ski-festivals",
+   "status": 200,
+   "host": "www.admiral.com",
+   "title": "The ultimate ski festivals guide – Admiral",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [
+    {
+     "role": "dialog",
+     "heading": "",
+     "textLen": 527,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    }
+   ],
+   "dialogCount": 1,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    },
+    {
+     "tag": "iframe",
+     "src": "https://apps.euw2.pure.cloud/messenger/messenger.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    },
+    {
+     "tag": "iframe",
+     "src": "https://apps.euw2.pure.cloud/messenger/messenger-renderer.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html",
+     "title": null,
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://apps.euw2.pure.cloud/messenger/messenger.html",
+     "title": "Messenger Launcher",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://apps.euw2.pure.cloud/messenger/messenger-renderer.html",
+     "title": "Messenger",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [
+    "https://travelinsurance.admiral.com/auth/login",
+    "https://travelinsurance.admiral.com/auth/login",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/myaccount",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.fca.org.uk/register"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "drupalSettings": [
+     "path",
+     "pluralDelimiter",
+     "clientside_validation_jquery",
+     "ski_festival",
+     "user"
+    ],
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "_satellite",
+    "google_tag_manager",
+    "gtag",
+    "optimizely"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 30,
+   "inlineFetch": false,
+   "mainText": 4129,
+   "domAddedAfterLoad": 2,
+   "hosts": {
+    "www.admiral.com": 6,
+    "consent.trustarc.com": 12,
+    "cdn.optimizely.com": 1,
+    "mktgblobpubaccess1.blob.core.windows.net": 10,
+    "use.typekit.net": 9,
+    "p.typekit.net": 1,
+    "assets.adobedtm.com": 1,
+    "www.googletagmanager.com": 4,
+    "d34r8q7sht0t9k.cloudfront.net": 1,
+    "apps.euw2.pure.cloud": 25,
+    "api-cdn.euw2.pure.cloud": 2,
+    "js-agent.newrelic.com": 1,
+    "bam.eu01.nr-data.net": 4,
+    "pagead2.googlesyndication.com": 3,
+    "ade.googlesyndication.com": 2,
+    "www.google-analytics.com": 1
+   },
+   "thirdPartyHosts": [
+    "consent.trustarc.com",
+    "cdn.optimizely.com",
+    "mktgblobpubaccess1.blob.core.windows.net",
+    "use.typekit.net",
+    "p.typekit.net",
+    "assets.adobedtm.com",
+    "www.googletagmanager.com",
+    "d34r8q7sht0t9k.cloudfront.net",
+    "apps.euw2.pure.cloud",
+    "api-cdn.euw2.pure.cloud",
+    "js-agent.newrelic.com",
+    "bam.eu01.nr-data.net",
+    "pagead2.googlesyndication.com",
+    "ade.googlesyndication.com",
+    "www.google-analytics.com"
+   ],
+   "scripts": [
+    "https://consent.trustarc.com/v2/autoblock?cmId=ze6jmw",
+    "https://consent.trustarc.com/v2/autoblockasset/core.min.js?cmId=ze6jmw",
+    "https://cdn.optimizely.com/public/17941920996/s/admiral.js",
+    "https://consent.trustarc.com/v2/notice/ze6jmw",
+    "https://assets.adobedtm.com/c73d0f135877/59e52de2360f/launch-b8f0d2738f96.min.js",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-TDSB94B",
+    "https://www.admiral.com/sites/default/files/public/js/js_7Rmd6mcp9DseQB75G-s9ENn_1FneUQZOo10m6PG60-4.js?scope=footer&delta=0&language=en&theme=admiral_annie&include=eJxLTMnNLErMiU_My8tM1U_PyU9KzNHNKtY",
+    "https://d34r8q7sht0t9k.cloudfront.net/tag.js",
+    "https://www.googletagmanager.com/gtag/js?id=G-WRG2DPT4WN&cx=c&gtm=4e69u2",
+    "https://apps.euw2.pure.cloud/genesys-bootstrap/genesys.min.js",
+    "https://www.googletagmanager.com/gtag/js?id=DC-16229618&cx=c&gtm=4e69u2",
+    "https://www.googletagmanager.com/gtag/js?id=DC-12615506",
+    "https://apps.euw2.pure.cloud/cxbus/cxbus.min.js",
+    "https://apps.euw2.pure.cloud/journey/messenger-plugins/offersHelper.min.js",
+    "https://apps.euw2.pure.cloud/messenger/thirdpartyplugins.min.js",
+    "https://apps.euw2.pure.cloud/messenger/messagingMiddleware.min.js",
+    "https://apps.euw2.pure.cloud/messenger/broadcast.min.js",
+    "https://apps.euw2.pure.cloud/messenger/defaultVendors.min.js",
+    "https://apps.euw2.pure.cloud/messenger/engage.min.js",
+    "https://apps.euw2.pure.cloud/messenger/main.min.js",
+    "https://apps.euw2.pure.cloud/messenger/messengerrenderer.min.js",
+    "https://js-agent.newrelic.com/nr-spa-1.318.0.min.js",
+    "https://apps.euw2.pure.cloud/messenger/muiVendor.min.js",
+    "https://apps.euw2.pure.cloud/messenger/i18n/vendors/date-en.min.js"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [
+    "GET consent.trustarc.com/v2/consentcategories/getnonemptyindexes",
+    "GET consent.trustarc.com/analytics",
+    "GET api-cdn.euw2.pure.cloud/webdeployments/v1/deployments/ab457f96-7037-40da-8f6c-988bdd8a7189/domains.json",
+    "GET api-cdn.euw2.pure.cloud/webdeployments/v1/deployments/ab457f96-7037-40da-8f6c-988bdd8a7189/config.json",
+    "POST bam.eu01.nr-data.net/1/NRJS-fdad80285c4bc1c6ed8",
+    "POST pagead2.googlesyndication.com/ccm/collect",
+    "POST www.google-analytics.com/g/collect",
+    "POST bam.eu01.nr-data.net/events/1/NRJS-fdad80285c4bc1c6ed8",
+    "POST bam.eu01.nr-data.net/jserrors/1/NRJS-fdad80285c4bc1c6ed8",
+    "GET apps.euw2.pure.cloud/messenger/i18n/en-us.json"
+   ],
+   "postBodies": [
+    {
+     "url": "https://bam.eu01.nr-data.net/1/NRJS-fdad80285c4bc1c6ed8?a=538748643&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=181&ck=0&s=0&ref=https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html&ptid=7b79",
+     "body": "{\"ja\":{\"nrAgentProvider\":\"index-cannula-cli\",\"webdriverDetected\":false}}"
+    },
+    {
+     "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=4&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.admiral.com%2Ftravel-insurance%2Fski-festivals&scrsrc=www.googletagmanager.com&rnd=793729089",
+     "body": ""
+    },
+    {
+     "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=10&frm=0&apvc=0&tid=DC-12615506&en=page_view&dl=https%3A%2F%2Fwww.admiral.com%2Ftravel-insurance%2Fski-festivals&scrsrc=www.googletagmanager.com&r",
+     "body": ""
+    },
+    {
+     "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=19&frm=0&apvc=0&tid=DC-16229618&en=page_view&dl=https%3A%2F%2Fwww.admiral.com%2Ftravel-insurance%2Fski-festivals&scrsrc=www.googletagmanager.com&r",
+     "body": ""
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-WRG2DPT4WN&gtm=45je69u2v9113105751z89102176791za20gzb9102176791zd9102176791xf1&_p=1790959915956&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdi",
+     "body": ""
+    },
+    {
+     "url": "https://bam.eu01.nr-data.net/events/1/NRJS-fdad80285c4bc1c6ed8?a=538748643&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=576&ck=0&s=0&ref=https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html&pt",
+     "body": "bel.6;e,'load,3a,5;5,'pageUrl,'https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html;5,'net-etype,'4g;6,'net-dlink,9.4;5,'nrAgentProvider,'index-cannula-cli;8,'webdriverDetected"
+    },
+    {
+     "url": "https://bam.eu01.nr-data.net/jserrors/1/NRJS-fdad80285c4bc1c6ed8?a=538748643&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=578&ck=0&s=0&ref=https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html&",
+     "body": "{\"xhr\":[{\"params\":{\"method\":\"POST\",\"hostname\":\"bam.eu01.nr-data.net\",\"port\":\"443\",\"protocol\":\"https\",\"host\":\"bam.eu01.nr-data.net:443\",\"pathname\":\"/1/NRJS-fdad80285c4bc1c6ed8\",\"status\":200},\"metrics\":{\"count\":1,\"txSize\":{\"t\":72},\"rxSize\":{\"t\":198},\"duration\":{\"t\":390},\"cbTime\":{\"t\":0},\"time\":{\"t\":182}}}]}"
+    },
+    {
+     "url": "https://bam.eu01.nr-data.net/events/1/NRJS-fdad80285c4bc1c6ed8?a=538748643&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=579&ck=0&s=0&ref=https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html&pt",
+     "body": "bel.7;1,2,,3a,,,'initialPageLoad,'https://apps.euw2.pure.cloud/messenger/thirdparty-plugins.html,,1,,,!!!!'ddcc396b-bd35-4947-8d08-0c24b676a2fa,'1,!!;5,'nrAgentProvider,'index-cannula-cli;8,'webdriverDetected;b,!!!!1,,,,,,1,5,,!13,,,1z,,1"
+    }
+   ],
+   "textAtLoad": 4129,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-experimentation-a-b-personalisation",
+   "class": "A",
+   "feature": "experimentation: A/B / personalisation",
+   "role": "experimentation: A/B / personalisation",
+   "hint": "inspect",
+   "evidence": [
+    "cdn.optimizely.com"
+   ],
+   "pages": [
+    "/",
+    "/about-us",
+    "/travel-insurance/ski-festivals"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-api-cdn-euw2-pure-cloud",
+   "class": "A",
+   "feature": "unknown third-party host api-cdn.euw2.pure.cloud",
+   "hint": "inspect",
+   "evidence": [
+    "api-cdn.euw2.pure.cloud"
+   ],
+   "pages": [
+    "/",
+    "/about-us",
+    "/travel-insurance/ski-festivals"
+   ]
+  },
+  {
+   "id": "a-cms-app-settings-object-datalayer",
+   "class": "A",
+   "feature": "CMS / app settings object dataLayer",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/",
+    "/about-us",
+    "/travel-insurance/ski-festivals"
+   ]
+  },
+  {
+   "id": "a-cms-app-settings-object-drupalsettings",
+   "class": "A",
+   "feature": "CMS / app settings object drupalSettings",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/travel-insurance/ski-festivals"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-gb",
+   "class": "I18N",
+   "feature": "locale variants gb",
+   "hint": "locale",
+   "evidence": [
+    "https://apps.apple.com/gb/app/admiral-insurance/id1461457136"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-consent-trustarc-iab-cmp",
+   "class": "T",
+   "feature": "consent: TrustArc / IAB CMP",
+   "role": "consent: TrustArc / IAB CMP",
+   "hint": "tags",
+   "evidence": [
+    "consent.trustarc.com"
+   ],
+   "pages": [
+    "/",
+    "/about-us",
+    "/travel-insurance/ski-festivals"
+   ]
+  },
+  {
+   "id": "t-tag-manager-adobe-launch",
+   "class": "T",
+   "feature": "tag manager: Adobe Launch",
+   "role": "tag manager: Adobe Launch",
+   "hint": "tags",
+   "evidence": [
+    "assets.adobedtm.com"
+   ],
+   "pages": [
+    "/",
+    "/about-us",
+    "/travel-insurance/ski-festivals"
+   ]
+  },
+  {
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "feature": "tag manager: Google Tag Manager",
+   "role": "tag manager: Google Tag Manager",
+   "hint": "tags",
+   "evidence": [
+    "www.googletagmanager.com"
+   ],
+   "pages": [
+    "/",
+    "/about-us",
+    "/travel-insurance/ski-festivals"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-mktgblobpubaccess1-blob-core-wind",
+   "class": "T",
+   "feature": "unknown third-party host mktgblobpubaccess1.blob.core.windows.net",
+   "hint": "inspect",
+   "evidence": [
+    "mktgblobpubaccess1.blob.core.windows.net"
+   ],
+   "pages": [
+    "/",
+    "/about-us",
+    "/travel-insurance/ski-festivals"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-d34r8q7sht0t9k-cloudfront-net",
+   "class": "T",
+   "feature": "unknown third-party host d34r8q7sht0t9k.cloudfront.net",
+   "hint": "inspect",
+   "evidence": [
+    "d34r8q7sht0t9k.cloudfront.net"
+   ],
+   "pages": [
+    "/",
+    "/about-us",
+    "/travel-insurance/ski-festivals"
+   ]
+  },
+  {
+   "id": "t-chat-live-chat-widget",
+   "class": "T",
+   "feature": "chat: live chat widget",
+   "role": "chat: live chat widget",
+   "hint": "tags",
+   "evidence": [
+    "apps.euw2.pure.cloud"
+   ],
+   "pages": [
+    "/",
+    "/about-us",
+    "/travel-insurance/ski-festivals"
+   ]
+  },
+  {
+   "id": "t-rum-new-relic",
+   "class": "T",
+   "feature": "RUM: New Relic",
+   "role": "RUM: New Relic",
+   "hint": "tags",
+   "evidence": [
+    "js-agent.newrelic.com",
+    "bam.eu01.nr-data.net"
+   ],
+   "pages": [
+    "/",
+    "/about-us",
+    "/travel-insurance/ski-festivals"
+   ]
+  },
+  {
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "feature": "marketing: ad / retargeting pixel",
+   "role": "marketing: ad / retargeting pixel",
+   "hint": "tags",
+   "evidence": [
+    "ade.googlesyndication.com",
+    "pagead2.googlesyndication.com"
+   ],
+   "pages": [
+    "/",
+    "/about-us",
+    "/travel-insurance/ski-festivals"
+   ]
+  },
+  {
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "feature": "analytics: Google Analytics / Ads",
+   "role": "analytics: Google Analytics / Ads",
+   "hint": "tags",
+   "evidence": [
+    "www.google-analytics.com"
+   ],
+   "pages": [
+    "/",
+    "/about-us",
+    "/travel-insurance/ski-festivals"
+   ]
+  },
+  {
+   "id": "x-sign-in-account-links",
+   "class": "X",
+   "feature": "sign-in / account links",
+   "hint": "decided-out",
+   "evidence": [
+    "https://myaccount.admiral.com/login",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://travelinsurance.admiral.com/auth/login"
+   ],
+   "pages": [
+    "/",
+    "/about-us",
+    "/travel-insurance/ski-festivals"
+   ]
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 3,
+  "of": 3,
+  "endpoints": {
+   "GET consent.trustarc.com/v2/consentcategories/getnonemptyindexes": 3,
+   "GET consent.trustarc.com/analytics": 3,
+   "GET api-cdn.euw2.pure.cloud/webdeployments/v1/deployments/{uuid}/domains.json": 3,
+   "GET api-cdn.euw2.pure.cloud/webdeployments/v1/deployments/{uuid}/config.json": 3,
+   "GET consent.trustarc.com/consent/log": 3,
+   "POST ad.doubleclick.net/ccm/s/collect": 3,
+   "POST analytics.google.com/g/collect": 3,
+   "POST www.google.com/ccm/collect": 3,
+   "GET c.amazon-adsystem.com/aat/amzn.js": 3,
+   "GET ip.veritonicmetrics.com/": 3,
+   "GET pixels.spotify.com/v1/config/{hash}": 3,
+   "GET c.amazon-adsystem.com/aat/allowlist/allowlist.json": 3,
+   "POST atr.veritonicmetrics.com/": 3,
+   "GET aax-eu.amazon-adsystem.com/s/iu3": 3,
+   "POST logx.optimizely.com/v1/events": 3,
+   "POST c.contentsquare.net/pageview": 3,
+   "GET ara.paa-reporting-advertising.amazon/aat": 3,
+   "GET web.lon.infinity-tracking.com/v3/info": 3,
+   "GET c.contentsquare.net/dvar": 3,
+   "POST ad.doubleclick.net/activity;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us": 1,
+   "GET ad.doubleclick.net/activity;dc_pre=CIaSov3Vm5cDFadE9QUdtMsYuw;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us": 1,
+   "POST k-aeu1.contentsquare.net/v2/recording": 3,
+   "GET www.google.com/gmp/conversion/_dc_unique_id=2249769927660474362;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwd0F7xwZG7hovlv7iB5MTcBfRP9rEQHvMLZT;_dc_time=1790955722;dc_pre=CIaSov3Vm5cDFadE9QUdtMsYuw;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us": 1,
+   "GET apps.euw2.pure.cloud/messenger/i18n/en-us.json": 3,
+   "POST bam.eu01.nr-data.net/{n}/NRJS-fdad80285c4bc1c6ed8": 3,
+   "POST bam.eu01.nr-data.net/events/{n}/NRJS-fdad80285c4bc1c6ed8": 3,
+   "POST bam.eu01.nr-data.net/jserrors/{n}/NRJS-fdad80285c4bc1c6ed8": 3,
+   "GET nas.lon.infinity-tracking.com/allocate": 3,
+   "PUT web.lon.infinity-tracking.com/v1/meta": 3,
+   "POST web.lon.infinity-tracking.com/v1/web-event": 3,
+   "POST websdk.admiral.com/ee/v1/privacy/set-consent": 2,
+   "POST websdk.admiral.com/ee/va6/v1/interact": 2,
+   "POST pixels.spotify.com/v1/ingest": 2,
+   "POST ad.doubleclick.net/activity;src=12615506;type=allpages;cat=allpages;rcb=4;ord=3372435701904;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115616986~115938465~115938468~117776795~118131809~118897920~118897930~119860442~120213116~120385422~120469145~120469153~121280969;epver=2;dc_random=1790955721_H-DrY7d-DE3gJZN3qnhv5VDEBRStMrDf0A;~oref=https%3A%2F%2Fwww.admiral.com%2F": 1,
+   "GET ad.doubleclick.net/activity;dc_pre=CKfc0f3Vm5cDFVxV9QUdgtkBEQ;src=12615506;type=allpages;cat=allpages;rcb=4;ord=3372435701904;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115616986~115938465~115938468~117776795~118131809~118897920~118897930~119860442~120213116~120385422~120469145~120469153~121280969;epver=2;dc_random=1790955721_H-DrY7d-DE3gJZN3qnhv5VDEBRStMrDf0A;~oref=https%3A%2F%2Fwww.admiral.com%2F": 1,
+   "GET www.google.com/gmp/conversion/_dc_unique_id=6688692217012965987;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwZhc-9f83DvVfpnqZI4jvSBllnIeEy0Wp-85;_dc_time=1790955723;cid=CAQS4QEAQM4h3LTEu93rm_Wb9fdb5DoHSFgVhAIBIn5GpK4EDHuCKgX9jZ60rguyqkGID_bd6WqdHEyDNo18M1Ui8cZ8gGjk8NW6YuRf4S5p0qRfiDUSMHhhiRI_sWEfrviHcz9iQxIr08hACbzfwoRRk0e9VCmfmCbzwyc2sdiXMl3DxIwz_ZlTi87cMmyUIEFp8Y46wRgttWByxvaQ9iGR93dk6qYH3kzp2-R6knuelFN7A1vtJUZkWp8mdMVlbUeeS1Ltg_zjGribrnevqSioJv7OSGhhAMe69qkQbG6Mu7jRRxY;eps=AHas8cAaGPDMTN8BDL0sg8gAIyNc4tWu028u4gZO_uGNVlQ3bZieWH5O_XsT4nEoXiluBXMHZap_ciPILbA1or-aRKutG7KUUFoW29wsIE5FM5LJNQ;dc_pre=CKfc0f3Vm5cDFVxV9QUdgtkBEQ;src=12615506;type=allpages;cat=allpages;rcb=4;ord=3372435701904;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115616986~115938465~115938468~117776795~118131809~118897920~118897930~119860442~120213116~120385422~120469145~120469153~121280969;epver=2;dc_random=1790955721_H-DrY7d-DE3gJZN3qnhv5VDEBRStMrDf0A;~oref=https%3A%2F%2Fwww.admiral.com%2F": 1,
+   "POST ad.doubleclick.net/activity;src=16229618;type=remarket;cat=homepage;rcb=8;ord=7465351829263;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9238259995z89102176791za20gzb9102176791zd9102176791xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938469~117776795~118131809~118897920~118897930~119860442~120213116~120385423~120469145~120469153~121280969;epver=2;dc_random=1790955721_rRqKrjdk4vBGGI0MwprpEEaSF-1lCTPx3w;~oref=https%3A%2F%2Fwww.admiral.com%2F": 1,
+   "GET ad.doubleclick.net/activity;dc_pre=CNbu0f3Vm5cDFUJE9QUdisE7ng;src=16229618;type=remarket;cat=homepage;rcb=8;ord=7465351829263;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9238259995z89102176791za20gzb9102176791zd9102176791xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938469~117776795~118131809~118897920~118897930~119860442~120213116~120385423~120469145~120469153~121280969;epver=2;dc_random=1790955721_rRqKrjdk4vBGGI0MwprpEEaSF-1lCTPx3w;~oref=https%3A%2F%2Fwww.admiral.com%2F": 1,
+   "GET www.google.com/gmp/conversion/_dc_unique_id=8167283190993361749;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwWvc3dVwkW8yGAnl9Vir3QabQp66oJnCT7Va;_dc_time=1790955724;cid=CAQS4QEAQM4h3Jm_mASRXs6d00HUh9R6Kn4LZjUexm8N8tI-QDWiwNs1pw3_JxpUn8ZIZzUuSx-P-ofQVKQCrI9zSD834ow0x6CtJQsz4VKFjtdT5CAeq2AgK4NVPSYe9pLdHWiINUCetlD3CuMcmNzQ3OF5vu_oX1Um3waOi3z_EwGfC8nT7sqUHAwh3xpfPy1c6wVblApB3FFCVOiwBOeO1GqQn3LQ_xhe9VbRnna2G5KDwKUIoRcP8dAbKEADShcglB-7GU_eJkVW3iiR_buGfah57jabgoCLfjzK6g9wc11jE_8;eps=AHas8cBEIASJ4LUsMoqFpnrro-bckcUAwEykC1u8uzP2EE-a4LS5eTf_3aDJEIpmdReg1C6_QhddNiQyukyu7lNrOcPS4A7Lh_rQg9Ixzj_x6uPNtA;dc_pre=CNbu0f3Vm5cDFUJE9QUdisE7ng;src=16229618;type=remarket;cat=homepage;rcb=8;ord=7465351829263;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9238259995z89102176791za20gzb9102176791zd9102176791xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938469~117776795~118131809~118897920~118897930~119860442~120213116~120385423~120469145~120469153~121280969;epver=2;dc_random=1790955721_rRqKrjdk4vBGGI0MwprpEEaSF-1lCTPx3w;~oref=https%3A%2F%2Fwww.admiral.com%2F": 1,
+   "POST pagead2.googlesyndication.com/ccm/collect": 1,
+   "POST www.google-analytics.com/g/collect": 1,
+   "POST ad.doubleclick.net/activity;src=12615506;type=allpages;cat=allpages;rcb=18;ord=4263522930739;npa=0;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gcu=1;auiddc=361194286.1790955722;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121280971;epver=2;dc_random=1790955721_xulZ18wxudmsbvJcs8q_PudBInY9ebvrCA;~oref=https%3A%2F%2Fwww.admiral.com%2Ftravel-insurance%2Fski-festivals": 1,
+   "GET ad.doubleclick.net/activity;dc_pre=CICFxv3Vm5cDFXTbiwEd86kBUA;src=12615506;type=allpages;cat=allpages;rcb=18;ord=4263522930739;npa=0;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gcu=1;auiddc=361194286.1790955722;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121280971;epver=2;dc_random=1790955721_xulZ18wxudmsbvJcs8q_PudBInY9ebvrCA;~oref=https%3A%2F%2Fwww.admiral.com%2Ftravel-insurance%2Fski-festivals": 1,
+   "GET www.google.com/gmp/conversion/_dc_unique_id=13255360122616777537;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwfMfPk02VNVrW30EO1RIbFdypWjX1JxfSCGl;_dc_time=1790955723;cid=CAQS4QEAQM4h3G-rtsqzyY59vgN_hb2tkW2niuU08YHP8bGLmUEpIdDzCV63KhYJGvgy6gh8tSWNTaCSs4eA7hG5YnyHaaAb7s6ECYI9xiMfdQB4nGeRsZG7yQfmzHJp_jRpTI99Tw106vVTb2L9X1bgz9iobBPlKAnHpj6PZ1HAqyo38GmnZQovp4Y1Oga5vkyPQjhyWVANCmqrGsr29JRRg8QDFhIl56aC5tv7vz2WG9lPqrTvbQqB29VZCgmVPBqTKREplzXnUW2O0hQogokKAhyZWMudW6NvS6cmwNb_r22FamU;eps=AHas8cB4KU9tpL3PgjHh3MtbyJkcYxtM9gc_Gv62so428qePiP2eiQSICNl8JB3H9tO9xd5GJPzNeY4m6j1pcL1AFhtRkebfnPPiIAzyb4YzxxoNCA;dc_pre=CICFxv3Vm5cDFXTbiwEd86kBUA;src=12615506;type=allpages;cat=allpages;rcb=18;ord=4263522930739;npa=0;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gcu=1;auiddc=361194286.1790955722;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121280971;epver=2;dc_random=1790955721_xulZ18wxudmsbvJcs8q_PudBInY9ebvrCA;~oref=https%3A%2F%2Fwww.admiral.com%2Ftravel-insurance%2Fski-festivals": 1
+  },
+  "searchFormPages": 0,
+  "formPages": 0,
+  "triggerPages": {}
+ }
+}

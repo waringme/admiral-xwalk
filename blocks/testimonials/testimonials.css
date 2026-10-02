@@ -1,0 +1,182 @@
+/* testimonials — Admiral quote carousel. Values lifted from www.admiral.com (gated canon:
+   stardust/prototypes/css/home.css + motion.css). The live page puts an empty 50px (30px
+   mobile) spacer band above the carousel; it is folded into the section's top padding. */
+
+main .testimonials-container > .testimonials-wrapper {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  padding: 60px 10px 0;
+}
+
+.testimonials .testimonials-slider {
+  position: relative;
+  margin-top: 19px;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.testimonials .testimonials-slider::before,
+.testimonials .testimonials-slider::after {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+}
+
+.testimonials .testimonials-slider::before {
+  top: -16px;
+  left: 25px;
+  background-image: url('/icons/icon-testimonial-quote-open-dark.svg');
+}
+
+.testimonials .testimonials-slider::after {
+  top: 107px;
+  right: 27px;
+  background-image: url('/icons/icon-testimonial-quote-close-dark.svg');
+}
+
+.testimonials .slick-list {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* observed: transform transition 0.5s on arrow click (slick) */
+.testimonials .slick-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonials .slick-slide {
+  display: flex;
+  flex: 0 0 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 1px;
+}
+
+.testimonials .testimonial {
+  position: relative;
+  width: 100%;
+}
+
+.testimonials .callout p {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: #ee5615;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.testimonials .avatar {
+  position: relative;
+  width: 53px;
+  height: 53px;
+  margin: 23px auto 17px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #ff7911 url('/icons/testimonial-user.svg') no-repeat 50% 100% / 38.5px 42px;
+  box-shadow: #ff7911 0 0 0 1px;
+}
+
+.testimonials .avatar::before,
+.testimonials .avatar::after {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 105px;
+  height: 1px;
+  background-color: #ff7911;
+  content: '';
+}
+
+.testimonials .avatar::before { right: calc(100% + 15px); }
+.testimonials .avatar::after { left: calc(100% + 15px); }
+
+.testimonials .author :is(h2, h3, h4) {
+  margin-top: -10px;
+  padding-bottom: 14px;
+  font-size: 16.2px;
+  line-height: 24px;
+}
+
+.testimonials .slick-arrow {
+  position: absolute;
+  top: 61.3px;
+  z-index: 2;
+  width: 10.1875px;
+  height: 20.39px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: transparent no-repeat 50% 50% / 10.2px 20.4px;
+  cursor: pointer;
+}
+
+.testimonials .slick-prev {
+  left: -2px;
+  background-image: url('/icons/slick-arrow-prev.svg');
+}
+
+.testimonials .slick-next {
+  right: -2px;
+  background-image: url('/icons/slick-arrow-next.svg');
+}
+
+@media (width >= 768px) {
+  main .testimonials-container > .testimonials-wrapper { padding: 100px 30px 0; }
+
+  .testimonials .testimonials-slider { margin: 0 0 29px; }
+
+  .testimonials .testimonials-slider::before,
+  .testimonials .testimonials-slider::after {
+    width: 134px;
+    height: 135px;
+  }
+
+  .testimonials .testimonials-slider::before {
+    top: -29px;
+    left: 29px;
+  }
+
+  .testimonials .testimonials-slider::after {
+    top: 90px;
+    right: 27px;
+  }
+
+  .testimonials .testimonial { padding: 0 60px; }
+
+  .testimonials .callout p {
+    font-size: 25.2px;
+    line-height: 34px;
+  }
+
+  .testimonials .avatar {
+    width: 74px;
+    height: 74px;
+    margin: 25px auto 17px;
+    background-size: 53.3px 58.4px;
+  }
+
+  .testimonials .author :is(h2, h3, h4) {
+    margin-top: -4px;
+    padding-bottom: 11px;
+    font-size: 19.8px;
+    line-height: 28px;
+  }
+
+  .testimonials .slick-arrow {
+    top: 54.75px;
+    width: 12.6875px;
+    height: 25.5px;
+    background-size: 12.744px 25.488px;
+  }
+
+  .testimonials .slick-prev { left: -4px; }
+  .testimonials .slick-next { right: -4px; }
+}

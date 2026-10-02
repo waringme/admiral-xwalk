@@ -13,7 +13,12 @@
       "button",
       "title",
       "hero",
+      "breadcrumbs",
+      "product-tiles",
+      "teaser",
       "cards",
+      "banner",
+      "testimonials",
       "columns",
       "fragment"
     ]
@@ -37,6 +42,18 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "product-tiles",
+    "components": [
+      "product-tile"
+    ]
+  },
+  {
+    "id": "testimonials",
+    "components": [
+      "testimonial"
     ]
   }
 ]

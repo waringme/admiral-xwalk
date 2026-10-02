@@ -1,0 +1,27 @@
+/* Admiral replica — hub-landing archetype (About Us) modules. Values lifted from
+   www.admiral.com/about-us computed styles at 1440 and 360. */
+
+.hero-banner--about-us .hero-banner__image { background-image: url('../assets/img/about-us-mobile.jpg'); }
+
+@media (min-width: 768px) {
+  .hero-banner--about-us { background-image: url('../assets/img/about-us-desktop.jpg'); }
+  .hero-banner--about-us .hero-background { right: 20px; }
+}
+
+.intro .container { padding: 30px 10px 15px; }
+
+@media (min-width: 768px) {
+  .intro .container { max-width: 768px; padding: 50px 30px 20px; }
+}
+
+.hub-pods .container { padding-bottom: 60px; }
+
+@media (min-width: 768px) {
+  .hub-pods .container { padding-bottom: 120px; }
+}
+
+.pod--milestones .image { background-image: url('../assets/img/product-pods-milestones.jpg'); }
+.pod--our-brand .image { background-image: url('../assets/img/product-pods-our-brand.jpg'); }
+.pod--stay-home .image { background-image: url('../assets/img/product-pods-stay-home.jpg'); }
+.pod--community .image { background-image: url('../assets/img/product-pods-community.jpg'); }
+.pod--working-at-ad .image { background-image: url('../assets/img/product-pods-working-at-ad.jpg'); }

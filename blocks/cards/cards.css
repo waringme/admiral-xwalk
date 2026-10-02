@@ -1,27 +1,135 @@
-.cards > ul {
-  list-style: none;
+/* cards — Admiral pods. Values lifted from www.admiral.com (gated canon:
+   stardust/prototypes/css/canon.css + home.css + about-us.css). */
+
+main .cards-container > .cards-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 15px 10px 40px;
+}
+
+/* pods sharing a grid with the finder banner (ski hub) */
+main .cards-container > .teaser-wrapper + .cards-wrapper { padding: 0 10px 40px; }
+
+/* About Us hub pods follow default-content intro copy: no top pad, large bottom pad */
+main .cards-container > .cards-wrapper:has(.cards.mobile-image) { padding: 0 10px 60px; }
+
+.cards .grid { margin: -5px; }
+.cards .grid-cell { padding: 5px; }
+
+.cards .pod {
+  position: relative;
+  height: 100%;
+  max-width: 100%;
+  min-height: 58px;
+  padding: 15px 10px;
+  border: 1px solid var(--color-border-pod);
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.cards .pod .image {
+  display: none;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+}
+
+.cards.mobile-image .pod .image {
+  position: relative;
+  display: block;
+  height: 40.5vw;
+  min-height: 132px;
+  margin: -16px -11px 17px;
+}
+
+.cards .pod .image :is(picture, img) {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cards .pod .image img { object-fit: cover; }
+
+.cards .pod h3 { margin-top: 0; }
+
+.cards .more-link {
+  position: relative;
+  display: inline-block;
+  margin-top: -20px;
+}
+
+.cards .more-link p {
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  font-size: 14.4px;
+  line-height: 22px;
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+.cards .more-link a:any-link {
+  color: var(--color-link);
+  font-weight: 400;
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+.cards .more-link a::after {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2013%2013%22%3E%3Cpath%20d%3D%22M5.158%203.006L7.52%206.5l-2.363%203.505h1.369L8.889%206.5%206.527%203.006z%22%20fill%3D%22%230078ff%22%20%2F%3E%3Cpath%20d%3D%22M6.5%200a6.5%206.5%200%20100%2013%206.5%206.5%200%20000-13m0%201C9.533%201%2012%203.467%2012%206.5S9.533%2012%206.5%2012A5.506%205.506%200%20011%206.5C1%203.467%203.467%201%206.5%201%22%20fill%3D%22%230078ff%22%20%2F%3E%3C%2Fsvg%3E");
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
+  content: '';
 }
 
-.cards .cards-card-image {
-  line-height: 0;
+@media (width >= 768px) {
+  main .cards-container > .cards-wrapper {
+    width: var(--container);
+    padding: 20px 20px 60px;
+  }
+
+  main .cards-container > .teaser-wrapper + .cards-wrapper { padding: 0 20px 60px; }
+  main .cards-container > .cards-wrapper:has(.cards.mobile-image) { padding: 0 20px 120px; }
+
+  .cards .grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -7.5px;
+  }
+
+  .cards .grid-cell {
+    width: 33.3333%;
+    padding: 7.5px;
+  }
+
+  .cards .pod {
+    display: flex;
+    flex-direction: column;
+    min-height: 64px;
+    padding: 19px 14px 12px;
+  }
+
+  .cards .pod .image,
+  .cards.mobile-image .pod .image {
+    display: block;
+    height: 140px;
+    min-height: 100px;
+    margin: -20px -15px 24px;
+  }
+
+  .cards .pod h3 { margin-top: -4px; }
+
+  .cards .more-link {
+    top: -11px;
+    display: block;
+    margin-top: auto;
+    margin-right: auto;
+  }
+
+  .cards .more-link p {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
-.cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
+/* live arrow-circle vector, harvested verbatim from www.admiral.com */

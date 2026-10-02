@@ -1,0 +1,1303 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-02T15:42:09.143Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "about-us",
+  "url": "https://www.admiral.com/about-us",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-02T15:42:09.143Z",
+  "finalUrl": "https://www.admiral.com/about-us",
+  "title": "About Us - Admiral",
+  "description": "Admiral was the first insurer to offer MultiCar Insurance & is the home of MultiCover. Find out more about us, what we offer & how we reward our customers.",
+  "og": {
+    "title": "About Us - Admiral",
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "About Us"
+    },
+    {
+      "tag": "h3",
+      "text": "A brief history of Admiral"
+    },
+    {
+      "tag": "h3",
+      "text": "The Admiral brand"
+    },
+    {
+      "tag": "h3",
+      "text": "Admiral Stay at Home Refund"
+    },
+    {
+      "tag": "h3",
+      "text": "Community & sponsorship"
+    },
+    {
+      "tag": "h3",
+      "text": "Working for Admiral"
+    },
+    {
+      "tag": "h3",
+      "text": "Our awards"
+    },
+    {
+      "tag": "h2",
+      "text": "Explore our website"
+    }
+  ],
+  "body": [
+    "Contact us",
+    "Help and Support",
+    "My account",
+    "Claims",
+    "Multi Cover",
+    "Motor Motor Car Insurance Multi Car Insurance Van Insurance Black Box Insurance Electric Car Insurance Learner Driver Insurance Temporary Car Insurance Motoring Extras Car Finance Breakdown Cover Van insurance add-ons Car insurance add-ons Support Add a car to your policy Car Insurance FAQs Motor resource hub Admiral App The easy way to view and manage your insurance policy on the go. Find out more",
+    "Home Home Home Insurance Landlord Insurance Contents Insurance Buildings Insurance Multi Cover Insurance Renters Insurance Optional Extras Home Legal Expenses Home Emergency Cover Accidental Damage Personal Possessions Bicycle Cover High Risk Items Cover Landlord Emergency Cover Landlord Legal Expenses Support Home resource hub Landlord resource hub Add a home to your car insurance Home Insurance FAQs Extreme weather support Storm Hub Freeze Hub Admiral App Easily manage your cover, view your documents, and much more with the Admiral app. Find out more",
+    "Travel Travel Travel Insurance Single Trip Insurance Annual Travel Insurance Over 50s Travel Insurance Over 80s Travel Insurance Specialist Cover Winter Sports Insurance Cruise Insurance Gadget Travel Insurance Enhanced Trip Disruption Support Travel Insurance FAQs Travel resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Pet Pet Pet Insurance Multi Pet Insurance Dog Insurance Puppy Insurance Cat Insurance Kitten Insurance Lifetime Pet Insurance Time Limited Pet Insurance Pet breeds Cockapoo Pet Insurance Cocker Spaniel Pet Insurance Shih Tzu Pet Insurance Support Pet resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Money Money Personal Loans Car Loans Car Finance Hire Purchase Homeowner Loans More Finance Home Improvement Loans Debt Consolidation Loan Support Money FAQs Money worries How to improve your credit score A good credit score can help you get a better deal on a loan, mortgage and other types of finance. Find out more",
+    "Business",
+    "Homepage",
+    "About Us",
+    "Find out more about Admiral, what we do and what we stand for. The home of MultiCover Insurance and more.",
+    "Admiral is a UK-based company, set up in 1993 to specialise in car insurance.",
+    "We now offer a variety of products including MultiCover, MultiCar, home insurance, pet insurance, van insurance, landlord insurance, and travel insurance.",
+    "But that’s not all you need to know about us. Read on to find out more about Admiral, what we stand for and what our customers think of us.",
+    "Here are some of the stand-out moments since we started in 1993.",
+    "Find out a little more about what we stand for.",
+    "Here’s how we gave back to our customers during the Coronavirus lockdown.",
+    "Community is important to us and we’re involved with a host of different initiatives and events – both big and small.",
+    "From humble beginnings with 57 employees in Cardiff to over 11,000 staff in eight countries – what’s it like to work for Admiral?",
+    "We've come a long way, from start-up to delivering award-winning products and services.",
+    "Car Insurance",
+    "Multi-Car Insurance",
+    "Black Box Insurance",
+    "Temporary Car Insurance",
+    "Electric Car Insurance",
+    "Learner Driver Insurance",
+    "Home Insurance",
+    "Contents Insurance",
+    "Buildings Insurance",
+    "Landlord Insurance",
+    "Renters Insurance",
+    "Flood Insurance",
+    "Optional Cover",
+    "Contents Calculator",
+    "Other Products",
+    "MultiCover Products",
+    "Personal Loans",
+    "Van Insurance",
+    "Travel Insurance",
+    "Pet Insurance",
+    "Breakdown Cover",
+    "Homeowner Loans",
+    "Car Finance",
+    "Policy Details",
+    "Make a claim",
+    "View policy books",
+    "Complaint information",
+    "Legal information",
+    "Insurance glossary",
+    "Magazine",
+    "Magazine – meet the team",
+    "About Us",
+    "Community & Sponsorship",
+    "Customer offers",
+    "Refer a friend",
+    "Jobs",
+    "Admiral App",
+    "© 1993-2026 Admiral",
+    "Sitemap",
+    "Contact Us",
+    "Accessibility",
+    "Conditions of Use",
+    "Privacy & Security",
+    "Press Office",
+    "Cookie Preferences",
+    "Admiral is a trading name of EUI Limited. (Reg No: 02686904). EUI Limited is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 309378). These details can be confirmed by visiting the Financial Services Register. EUI Limited acts for, and on behalf of, other regulated insurance companies. Further details may be provided on request. Admiral Money, Admiral Loans, Admiral Car Finance, Admiral Homeowner Loans, Admiral Mortgages, Admiral One and Finble are all trading names of Admiral Financial Services Limited (AFSL). Admiral Financial Services Limited (Reg No: 10255225) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 771862). These details can be confirmed by visiting the Financial Services Register Veygo and Admiral Business are trading names of Able Insurance Services Limited. Able Insurance Services Limited (Reg No: 2890075) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 311649). These details can be confirmed by visiting the Financial Services Register Admiral Group plc is registered in England and Wales at Tŷ Admiral, David Street, Cardiff. CF10 2EH (Reg No:03849958)."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Contact us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Help and Support",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "My account",
+      "href": "https://myaccount.admiral.com/login?_its=eJwljk1uwyAUhO8yayzx_4AbdNFNL2AReFGRXCxh2k0Un71yspzRfPrmgb9WkSCJjCpaLuSjX6zVtERj8mKUdpFZVioaAsfMk5EwtnkqijI6R9qfW-711GuwJsS1tsFlrrJwkTefI-kaHLkog6biSybKzlqCQJ5ztNvvbHtHeqDuP7l1JEBg8J3H4PFO5Tv3zttHRXo5BI5RPvd6XXnr8Kq--H4BT4GjTb7mSgXtnv9ILkLa"
+    },
+    {
+      "label": "Claims",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "Multi Cover",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Motor",
+      "href": "#"
+    },
+    {
+      "label": "Home",
+      "href": "#"
+    },
+    {
+      "label": "Travel",
+      "href": "#"
+    },
+    {
+      "label": "Pet",
+      "href": "#"
+    },
+    {
+      "label": "Money",
+      "href": "#"
+    },
+    {
+      "label": "Business",
+      "href": "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav"
+    },
+    {
+      "label": "Homepage",
+      "href": "/"
+    },
+    {
+      "label": "About Us",
+      "href": "#"
+    },
+    {
+      "label": "car insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "MultiCover",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "MultiCar",
+      "href": "/multi-car-insurance"
+    },
+    {
+      "label": "home insurance",
+      "href": "/home-insurance"
+    },
+    {
+      "label": "pet insurance",
+      "href": "https://www.admiral.com/pet-insurance"
+    },
+    {
+      "label": "van insurance",
+      "href": "https://www.admiral.com/van-insurance"
+    },
+    {
+      "label": "landlord insurance",
+      "href": "https://www.admiral.com/home-insurance/landlord"
+    },
+    {
+      "label": "travel insurance",
+      "href": "/travel-insurance"
+    },
+    {
+      "label": "Our milestones",
+      "href": "/about-us/our-milestones"
+    },
+    {
+      "label": "Our brand",
+      "href": "/about-us/the-admiral-brand"
+    },
+    {
+      "label": "How we gave back",
+      "href": "/about-us/stay-at-home-refund"
+    },
+    {
+      "label": "Our community",
+      "href": "/community-and-sponsorship"
+    },
+    {
+      "label": "See for yourself",
+      "href": "/about-us/working-for-admiral"
+    },
+    {
+      "label": "See our awards",
+      "href": "/about-us/awards.php"
+    },
+    {
+      "label": "Car Insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "Multi-Car Insurance",
+      "href": "/multi-car-insurance"
+    },
+    {
+      "label": "Black Box Insurance",
+      "href": "/black-box-insurance"
+    },
+    {
+      "label": "Temporary Car Insurance",
+      "href": "/car-insurance/temporary-car-insurance"
+    },
+    {
+      "label": "Electric Car Insurance",
+      "href": "/car-insurance/electric"
+    },
+    {
+      "label": "Learner Driver Insurance",
+      "href": "/learner-driver-insurance"
+    },
+    {
+      "label": "Home Insurance",
+      "href": "/home-insurance"
+    },
+    {
+      "label": "Contents Insurance",
+      "href": "/home-insurance/contents-insurance.php"
+    },
+    {
+      "label": "Buildings Insurance",
+      "href": "/home-insurance/buildings-insurance.php"
+    },
+    {
+      "label": "Landlord Insurance",
+      "href": "/home-insurance/landlord"
+    },
+    {
+      "label": "Renters Insurance",
+      "href": "/home-insurance/renters-insurance.php"
+    },
+    {
+      "label": "Flood Insurance",
+      "href": "/home-insurance/flood"
+    },
+    {
+      "label": "Optional Cover",
+      "href": "/home-insurance/optional-cover"
+    },
+    {
+      "label": "Contents Calculator",
+      "href": "/home-insurance/contents-calculator"
+    },
+    {
+      "label": "MultiCover Products",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Personal Loans",
+      "href": "/loans/personal-loans"
+    },
+    {
+      "label": "Van Insurance",
+      "href": "/van-insurance"
+    },
+    {
+      "label": "Travel Insurance",
+      "href": "/travel-insurance"
+    },
+    {
+      "label": "Pet Insurance",
+      "href": "/pet-insurance"
+    },
+    {
+      "label": "Breakdown Cover",
+      "href": "/breakdown-cover"
+    },
+    {
+      "label": "Homeowner Loans",
+      "href": "/homeowner-loans"
+    },
+    {
+      "label": "Car Finance",
+      "href": "/loans/car-finance"
+    },
+    {
+      "label": "Policy Details",
+      "href": "/myaccount"
+    },
+    {
+      "label": "Make a claim",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "View policy books",
+      "href": "/existing-customers/policy-documents.php"
+    },
+    {
+      "label": "Complaint information",
+      "href": "/contact-us/complaint-information.php"
+    },
+    {
+      "label": "Legal information",
+      "href": "/existing-customers/legal-information.php"
+    },
+    {
+      "label": "Insurance glossary",
+      "href": "/insurance-glossary"
+    },
+    {
+      "label": "Magazine",
+      "href": "/magazine"
+    },
+    {
+      "label": "Magazine – meet the team",
+      "href": "/magazine/meet-the-team"
+    },
+    {
+      "label": "About Us",
+      "href": "/about-us"
+    },
+    {
+      "label": "Community & Sponsorship",
+      "href": "/community-and-sponsorship"
+    },
+    {
+      "label": "Customer offers",
+      "href": "/existing-customers/customer-discount.php"
+    },
+    {
+      "label": "Refer a friend",
+      "href": "https://www.admiral.com/refer-a-friend"
+    },
+    {
+      "label": "Jobs",
+      "href": "https://admiraljobs.co.uk/"
+    },
+    {
+      "label": "Admiral App",
+      "href": "/myaccount/admiral-app"
+    },
+    {
+      "label": "Sitemap",
+      "href": "/sitemap.php"
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Accessibility",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "Conditions of Use",
+      "href": "/insurance/your-policy/conditions-of-use.php"
+    },
+    {
+      "label": "Privacy & Security",
+      "href": "/your-privacy-and-security"
+    },
+    {
+      "label": "Press Office",
+      "href": "/press-office"
+    },
+    {
+      "label": "Cookie Preferences",
+      "href": "/cookie-policy"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    }
+  ],
+  "links": [
+    "https://www.admiral.com/contact-us",
+    "https://www.admiral.com/help-support-hub",
+    "https://myaccount.admiral.com/login?_its=eJwljk1uwyAUhO8yayzx_4AbdNFNL2AReFGRXCxh2k0Un71yspzRfPrmgb9WkSCJjCpaLuSjX6zVtERj8mKUdpFZVioaAsfMk5EwtnkqijI6R9qfW-711GuwJsS1tsFlrrJwkTefI-kaHLkog6biSybKzlqCQJ5ztNvvbHtHeqDuP7l1JEBg8J3H4PFO5Tv3zttHRXo5BI5RPvd6XXnr8Kq--H4BT4GjTb7mSgXtnv9ILkLa",
+    "https://www.admiral.com/existing-customers/make-a-claim.php",
+    "https://www.admiral.com/",
+    "https://www.admiral.com/about-us#",
+    "https://www.admiral.com/multicover-insurance",
+    "https://www.admiral.com/car-insurance",
+    "https://www.admiral.com/multi-car-insurance",
+    "https://www.admiral.com/van-insurance",
+    "https://www.admiral.com/black-box-insurance",
+    "https://www.admiral.com/car-insurance/electric",
+    "https://www.admiral.com/learner-driver-insurance",
+    "https://www.admiral.com/car-insurance/temporary-car-insurance",
+    "https://www.admiral.com/loans/car-finance",
+    "https://www.admiral.com/breakdown-cover",
+    "https://www.admiral.com/van-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/add-a-car-guide",
+    "https://www.admiral.com/car-insurance/FAQs",
+    "https://www.admiral.com/resources/motor-hub",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/home-insurance",
+    "https://www.admiral.com/home-insurance/landlord",
+    "https://www.admiral.com/home-insurance/contents-insurance.php",
+    "https://www.admiral.com/home-insurance/buildings-insurance.php",
+    "https://www.admiral.com/home-insurance/renters-insurance.php",
+    "https://www.admiral.com/home-insurance/optional-cover/family-legal-protection.php",
+    "https://www.admiral.com/home-insurance/optional-cover/home-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/accidental-damage.php",
+    "https://www.admiral.com/home-insurance/optional-cover/personal-possessions.php",
+    "https://www.admiral.com/home-insurance/optional-cover/bicycle-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/high-risk-items",
+    "https://www.admiral.com/home-insurance/landlord/landlord-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/landlord/landlord-legal-protection",
+    "https://www.admiral.com/home-insurance/home-resource-hub",
+    "https://www.admiral.com/resources/landlord-hub",
+    "https://www.admiral.com/add-a-home-guide",
+    "https://www.admiral.com/home-insurance/FAQs",
+    "https://www.admiral.com/weather/storm",
+    "https://www.admiral.com/weather/freeze",
+    "https://www.admiral.com/travel-insurance",
+    "https://www.admiral.com/travel-insurance/single-trip-insurance.php",
+    "https://www.admiral.com/travel-insurance/annual-travel-insurance.php",
+    "https://www.admiral.com/travel-insurance/over-50s-travel-insurance",
+    "https://www.admiral.com/travel-insurance/travel-insurance-over-80s",
+    "https://www.admiral.com/travel-insurance/winter-sports-insurance.php",
+    "https://www.admiral.com/travel-insurance/cruise-insurance.php",
+    "https://www.admiral.com/travel-insurance/gadget-insurance.php",
+    "https://www.admiral.com/travel-insurance/travel-disruption-insurance",
+    "https://www.admiral.com/travel-insurance/FAQs",
+    "https://www.admiral.com/resources/travel-hub",
+    "https://www.admiral.com/refer-a-friend",
+    "https://www.admiral.com/pet-insurance",
+    "https://www.admiral.com/pet-insurance/multi-pet-insurance",
+    "https://www.admiral.com/pet-insurance/dog-insurance",
+    "https://www.admiral.com/pet-insurance/puppy-insurance",
+    "https://www.admiral.com/pet-insurance/cat-insurance",
+    "https://www.admiral.com/pet-insurance/kitten-insurance",
+    "https://www.admiral.com/pet-insurance/lifetime-pet-insurance",
+    "https://www.admiral.com/pet-insurance/time-limited-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cockapoo-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cocker-spaniel-pet-insurance",
+    "https://www.admiral.com/pet-insurance/shih-tzu-pet-insurance",
+    "https://www.admiral.com/resources/pet-hub",
+    "https://www.admiral.com/loans/personal-loans",
+    "https://www.admiral.com/loans/car-finance/car-loans",
+    "https://www.admiral.com/loans/car-finance/hire-purchase",
+    "https://www.admiral.com/homeowner-loans",
+    "https://www.admiral.com/loans/personal-loans/home-improvements",
+    "https://www.admiral.com/loans/debt-consolidation-loan",
+    "https://money.admiral.com/help?_its=eJwljk1uwyAUhO8yayzx_4AbdNFNL2AReFGRXCxh2k0Un71yspzRfPrmgb9WkSCJjCpaLuSjX6zVtERj8mKUdpFZVioaAsfMk5EwtnkqijI6R9qfW-711GuwJsS1tsFlrrJwkTefI-kaHLkog6biSybKzlqCQJ5ztNvvbHtHeqDuP7l1JEBg8J3H4PFO5Tv3zttHRXo5BI5RPvd6XXnr8Kq--H4BT4GjTb7mSgXtnv9ILkLa",
+    "https://money.admiral.com/help/financial-support?_its=eJwljk1uwyAUhO8yayzx_4AbdNFNL2AReFGRXCxh2k0Un71yspzRfPrmgb9WkSCJjCpaLuSjX6zVtERj8mKUdpFZVioaAsfMk5EwtnkqijI6R9qfW-711GuwJsS1tsFlrrJwkTefI-kaHLkog6biSybKzlqCQJ5ztNvvbHtHeqDuP7l1JEBg8J3H4PFO5Tv3zttHRXo5BI5RPvd6XXnr8Kq--H4BT4GjTb7mSgXtnv9ILkLa",
+    "https://www.admiral.com/loans/improve-your-credit-score",
+    "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav",
+    "https://www.admiral.com/car-insurance/policy-upgrades/breakdown-cover/breakdown-assist.php",
+    "https://www.admiral.com/about-us/our-milestones",
+    "https://www.admiral.com/about-us/the-admiral-brand",
+    "https://www.admiral.com/about-us/stay-at-home-refund",
+    "https://www.admiral.com/community-and-sponsorship",
+    "https://www.admiral.com/about-us/working-for-admiral",
+    "https://www.admiral.com/about-us/awards.php",
+    "https://www.admiral.com/home-insurance/flood",
+    "https://www.admiral.com/home-insurance/optional-cover",
+    "https://www.admiral.com/home-insurance/contents-calculator",
+    "https://www.admiral.com/myaccount",
+    "https://www.admiral.com/existing-customers/policy-documents.php",
+    "https://www.admiral.com/contact-us/complaint-information.php",
+    "https://www.admiral.com/existing-customers/legal-information.php",
+    "https://www.admiral.com/insurance-glossary",
+    "https://www.admiral.com/magazine",
+    "https://www.admiral.com/magazine/meet-the-team",
+    "https://www.admiral.com/about-us",
+    "https://www.admiral.com/existing-customers/customer-discount.php",
+    "https://admiraljobs.co.uk/",
+    "https://twitter.com/admiralUK",
+    "https://www.youtube.com/user/AdmiralInsurance",
+    "https://www.facebook.com/admiralUK",
+    "https://www.admiral.com/sitemap.php",
+    "https://www.admiral.com/insurance/your-policy/conditions-of-use.php",
+    "https://www.admiral.com/your-privacy-and-security",
+    "https://www.admiral.com/press-office",
+    "https://www.admiral.com/cookie-policy",
+    "https://www.fca.org.uk/register"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/logos/admiral-logo.svg",
+        "alt": "Admiral Insurance logo",
+        "w": 300,
+        "h": 93
+      }
+    ],
+    "allImgCount": 1,
+    "cssBackgrounds": [
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/hero/background/about-us-desktop.jpg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/product-pods/product-pods-milestones.jpg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/product-pods/product-pods-our-brand.jpg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/product-pods/product-pods-stay-home.jpg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/product-pods/product-pods-community.jpg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/product-pods/product-pods-working-at-ad.jpg"
+    ],
+    "modals": [],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--animate-duration": "1s",
+    "--animate-delay": "1s",
+    "--animate-repeat": "1"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 8,
+    "mainTextLen": 31482,
+    "realImageCount": 1,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "consent.trustarc.com",
+        "path": "/v2/consentcategories/getnonemptyindexes",
+        "query": [
+          "category",
+          "cmId",
+          "fullURL",
+          "referer"
+        ],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://consent.trustarc.com/v2/consentcategories/getnonemptyindexes",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "consent.trustarc.com",
+        "path": "/analytics",
+        "query": [
+          "action",
+          "domain",
+          "implied",
+          "new",
+          "referer",
+          "session"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": 43,
+        "hits": 3,
+        "example": "https://consent.trustarc.com/analytics",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "api-cdn.euw2.pure.cloud",
+        "path": "/webdeployments/v1/deployments/{uuid}/domains.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 44,
+        "hits": 1,
+        "example": "https://api-cdn.euw2.pure.cloud/webdeployments/v1/deployments/ab457f96-7037-40da-8f6c-988bdd8a7189/domains.json",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "api-cdn.euw2.pure.cloud",
+        "path": "/webdeployments/v1/deployments/{uuid}/config.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://api-cdn.euw2.pure.cloud/webdeployments/v1/deployments/ab457f96-7037-40da-8f6c-988bdd8a7189/config.json",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "consent.trustarc.com",
+        "path": "/consent/log",
+        "query": [
+          "behavior",
+          "categories",
+          "cmid",
+          "level",
+          "session",
+          "uid",
+          "userType"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": 43,
+        "hits": 1,
+        "example": "https://consent.trustarc.com/consent/log",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "ad.doubleclick.net",
+        "path": "/ccm/s/collect",
+        "query": [
+          "auid",
+          "fmt",
+          "gtm"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 204,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://ad.doubleclick.net/ccm/s/collect",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "analytics.google.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_gaz",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "are",
+          "cid",
+          "cu",
+          "dl",
+          "dma",
+          "dt",
+          "en",
+          "ep.allowLinker",
+          "ep.cookieName",
+          "ep.customTask",
+          "ep.home_tier",
+          "ep.item_name",
+          "ep.level_of_cover",
+          "ep.use_amp_client_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "up.",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://analytics.google.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/ccm/collect",
+        "query": [
+          "_tu",
+          "apvc",
+          "auid",
+          "dl",
+          "dma",
+          "dt",
+          "en",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft",
+          "tid",
+          "tids"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://www.google.com/ccm/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "c.amazon-adsystem.com",
+        "path": "/aat/amzn.js",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://c.amazon-adsystem.com/aat/amzn.js",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "ip.veritonicmetrics.com",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 25,
+        "hits": 1,
+        "example": "https://ip.veritonicmetrics.com/",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "pixels.spotify.com",
+        "path": "/v1/config/{hash}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://pixels.spotify.com/v1/config/65b48e685f134788976f337dde4cf036",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "c.amazon-adsystem.com",
+        "path": "/aat/allowlist/allowlist.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 251,
+        "hits": 1,
+        "example": "https://c.amazon-adsystem.com/aat/allowlist/allowlist.json",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "atr.veritonicmetrics.com",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 13,
+        "hits": 2,
+        "example": "https://atr.veritonicmetrics.com/",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "aax-eu.amazon-adsystem.com",
+        "path": "/s/iu3",
+        "query": [
+          "event",
+          "eventSource",
+          "pid",
+          "ts",
+          "uuid"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 302,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://aax-eu.amazon-adsystem.com/s/iu3",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "logx.optimizely.com",
+        "path": "/v1/events",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://logx.optimizely.com/v1/events",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "c.contentsquare.net",
+        "path": "/pageview",
+        "query": [
+          "ct",
+          "dh",
+          "dr",
+          "dt",
+          "dw",
+          "ex",
+          "happid",
+          "hd",
+          "hsid",
+          "huu",
+          "la",
+          "pid",
+          "pn",
+          "pvt",
+          "sh",
+          "sn",
+          "sw",
+          "uc",
+          "url",
+          "uu",
+          "v",
+          "wh",
+          "ww"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 204,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://c.contentsquare.net/pageview",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "ara.paa-reporting-advertising.amazon",
+        "path": "/aat",
+        "query": [
+          "event",
+          "eventSource",
+          "pid",
+          "ts",
+          "uuid"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 2,
+        "hits": 1,
+        "example": "https://ara.paa-reporting-advertising.amazon/aat",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "web.lon.infinity-tracking.com",
+        "path": "/v3/info",
+        "query": [
+          "features",
+          "inf",
+          "pv",
+          "ua",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 3048,
+        "hits": 1,
+        "example": "https://web.lon.infinity-tracking.com/v3/info",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "c.contentsquare.net",
+        "path": "/dvar",
+        "query": [
+          "ct",
+          "dv",
+          "happid",
+          "hsid",
+          "huu",
+          "pid",
+          "pn",
+          "r",
+          "sn",
+          "uu",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 204,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://c.contentsquare.net/dvar",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "ad.doubleclick.net",
+        "path": "/activity;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 302,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://ad.doubleclick.net/activity;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "ad.doubleclick.net",
+        "path": "/activity;dc_pre=CIaSov3Vm5cDFadE9QUdtMsYuw;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 302,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://ad.doubleclick.net/activity;dc_pre=CIaSov3Vm5cDFadE9QUdtMsYuw;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "k-aeu1.contentsquare.net",
+        "path": "/v2/recording",
+        "query": [
+          "ct",
+          "happid",
+          "hsid",
+          "huu",
+          "let",
+          "pid",
+          "pn",
+          "ri",
+          "rst",
+          "rt",
+          "sn",
+          "uu",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://k-aeu1.contentsquare.net/v2/recording",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/gmp/conversion/_dc_unique_id=2249769927660474362;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwd0F7xwZG7hovlv7iB5MTcBfRP9rEQHvMLZT;_dc_time=1790955722;dc_pre=CIaSov3Vm5cDFadE9QUdtMsYuw;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": 42,
+        "hits": 1,
+        "example": "https://www.google.com/gmp/conversion/_dc_unique_id=2249769927660474362;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwd0F7xwZG7hovlv7iB5MTcBfRP9rEQHvMLZT;_dc_time=1790955722;dc_pre=CIaSov3Vm5cDFadE9QUdtMsYuw;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "apps.euw2.pure.cloud",
+        "path": "/messenger/i18n/en-us.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://apps.euw2.pure.cloud/messenger/i18n/en-us.json",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "bam.eu01.nr-data.net",
+        "path": "/{n}/NRJS-fdad80285c4bc1c6ed8",
+        "query": [
+          "a",
+          "af",
+          "be",
+          "ck",
+          "dc",
+          "fe",
+          "perf",
+          "ptid",
+          "ref",
+          "rst",
+          "s",
+          "sa",
+          "t",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 198,
+        "hits": 1,
+        "example": "https://bam.eu01.nr-data.net/1/NRJS-fdad80285c4bc1c6ed8",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "bam.eu01.nr-data.net",
+        "path": "/events/{n}/NRJS-fdad80285c4bc1c6ed8",
+        "query": [
+          "a",
+          "ck",
+          "ptid",
+          "ref",
+          "rst",
+          "s",
+          "sa",
+          "t",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": 24,
+        "hits": 2,
+        "example": "https://bam.eu01.nr-data.net/events/1/NRJS-fdad80285c4bc1c6ed8",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "bam.eu01.nr-data.net",
+        "path": "/jserrors/{n}/NRJS-fdad80285c4bc1c6ed8",
+        "query": [
+          "a",
+          "ck",
+          "ptid",
+          "ref",
+          "rst",
+          "s",
+          "sa",
+          "t",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": 24,
+        "hits": 1,
+        "example": "https://bam.eu01.nr-data.net/jserrors/1/NRJS-fdad80285c4bc1c6ed8",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "nas.lon.infinity-tracking.com",
+        "path": "/allocate",
+        "query": [
+          "autoformat",
+          "href",
+          "ictvid",
+          "igrp",
+          "newVisitor",
+          "nums",
+          "pv",
+          "state",
+          "t",
+          "ua",
+          "v",
+          "vref"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 2,
+        "hits": 1,
+        "example": "https://nas.lon.infinity-tracking.com/allocate",
+        "sameSite": false
+      },
+      {
+        "method": "PUT",
+        "host": "web.lon.infinity-tracking.com",
+        "path": "/v1/meta",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 204,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://web.lon.infinity-tracking.com/v1/meta",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "web.lon.infinity-tracking.com",
+        "path": "/v1/web-event",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 204,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://web.lon.infinity-tracking.com/v1/web-event",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "websdk.admiral.com",
+        "path": "/ee/v1/privacy/set-consent",
+        "query": [
+          "configId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://websdk.admiral.com/ee/v1/privacy/set-consent",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "websdk.admiral.com",
+        "path": "/ee/va6/v1/interact",
+        "query": [
+          "configId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://websdk.admiral.com/ee/va6/v1/interact",
+        "sameSite": true
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "apps.euw2.pure.cloud",
+        "count": 18
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "count": 4
+      },
+      {
+        "host": "script.infinity-tracking.com",
+        "count": 4
+      },
+      {
+        "host": "consent.trustarc.com",
+        "count": 3
+      },
+      {
+        "host": "cdn.optimizely.com",
+        "count": 2
+      },
+      {
+        "host": "assets.adobedtm.com",
+        "count": 2
+      },
+      {
+        "host": "t.contentsquare.net",
+        "count": 2
+      },
+      {
+        "host": "connect.facebook.net",
+        "count": 2
+      },
+      {
+        "host": "d34r8q7sht0t9k.cloudfront.net",
+        "count": 1
+      },
+      {
+        "host": "js.adsrvr.org",
+        "count": 1
+      },
+      {
+        "host": "c.amazon-adsystem.com",
+        "count": 1
+      },
+      {
+        "host": "cdn.veritonic.com",
+        "count": 1
+      },
+      {
+        "host": "pixel.byspotify.com",
+        "count": 1
+      },
+      {
+        "host": "www.googleadservices.com",
+        "count": 1
+      },
+      {
+        "host": "cdn.heapanalytics.com",
+        "count": 1
+      },
+      {
+        "host": "bat.bing.com",
+        "count": 1
+      },
+      {
+        "host": "c0.adalyser.com",
+        "count": 1
+      },
+      {
+        "host": "googleads.g.doubleclick.net",
+        "count": 1
+      },
+      {
+        "host": "js-agent.newrelic.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [
+      "dataLayer"
+    ],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 2,
+      "thirdPartyEndpoints": 30,
+      "thirdPartyScriptHosts": 19,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/about-us.png",
+  "renderedHtml": "pages/about-us.html"
+}

@@ -1,37 +1,165 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
+/* hero — Admiral hero banner B. Values lifted from www.admiral.com (gated canon). */
+
+main .hero-container > .hero-wrapper {
+  max-width: none;
   padding: 0;
 }
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  overflow: hidden;
+  background-color: var(--color-navy);
+  text-align: center;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+.hero .hero-media { display: none; }
+
+.hero .hero-banner-image {
+  position: relative;
+  width: 100%;
+  height: 37vw;
+  max-height: 283px;
+  min-height: 118px;
+  overflow: hidden;
 }
 
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
-}
+.hero.left .hero-banner-image { height: 62.5vw; }
 
-.hero img {
-  object-fit: cover;
+.hero .hero-banner-image :is(picture, img) {
+  display: block;
   width: 100%;
   height: 100%;
 }
 
-@media (width >= 900px) {
+.hero .hero-banner-image img {
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.hero.left .hero-banner-image img { object-position: 50% 100%; }
+
+.hero .container-sml {
+  position: relative;
+  padding: 30px 10px 40px;
+}
+
+.hero .hero-banner-copy :is(h1, h2) {
+  max-width: 100%;
+  margin-top: -5px;
+  padding-bottom: 18px;
+  color: #fff;
+  font-size: 21.6px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.hero .hero-banner-copy p {
+  margin-top: -9px;
+  padding-bottom: 7px;
+  color: var(--color-pale-blue);
+}
+
+.hero.left .hero-banner-copy p {
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.hero .hero-banner-copy p.button-wrapper {
+  margin-top: -5px;
+  padding-bottom: 0;
+}
+
+.hero .hero-banner-copy a.button:any-link {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 44px;
+  margin: 0;
+  padding: 9px 10px;
+  border: 0;
+  background-image: linear-gradient(#00c535 0%, #00a32e 100%);
+  font-size: 16.2px;
+  line-height: 24px;
+}
+
+@media (width >= 768px) {
   .hero {
-    padding: 40px 32px;
+    background-color: transparent;
+  }
+
+  .hero .hero-media {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+
+  .hero .hero-media :is(picture, img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero .hero-media img {
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .hero .hero-banner-image { display: none; }
+
+  /* live: .hero-banner--B .container-sml { height: 30vw; min-height: 420px; max-height: 510px } */
+  .hero .container-sml {
+    display: block;
+    width: var(--container);
+    max-width: var(--container);
+    height: 30vw;
+    min-height: 420px;
+    max-height: 510px;
+    margin: 0 auto;
+    padding: 40px 20px 0;
+    overflow: hidden;
+  }
+
+  .hero .hero-background {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 2;
+    width: 522px;
+    padding: 34px 24px 40px;
+    transform: translateY(-50%);
+    border-radius: 8px;
+    background-color: var(--color-navy);
+  }
+
+  .hero.left .hero-background {
+    right: auto;
+    left: 20px;
+  }
+
+  .hero .hero-banner-copy :is(h1, h2) {
+    margin-top: -6px;
+    padding-bottom: 30px;
+    font-size: 37.8px;
+    line-height: 48px;
+  }
+
+  .hero.left .hero-banner-copy :is(h1, h2) {
+    width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero .hero-banner-copy p { margin-top: -3px; }
+  .hero.left .hero-banner-copy p { padding-bottom: 33px; }
+
+  .hero .hero-banner-copy p.button-wrapper { margin-top: 0; }
+
+  .hero .hero-banner-copy a.button:any-link {
+    width: auto;
+    min-height: 52px;
+    margin: 0 22px;
+    padding: 10px 15px;
+    font-size: 21.6px;
+    line-height: 30px;
   }
 }

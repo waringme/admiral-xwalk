@@ -1,0 +1,10 @@
+{"ts":"2026-10-02T15:43:52Z","skill":"stardust:replica","phase":"setup","event":"end","detail":"bounded run: 3 archetypes (product-landing, hub-landing, finder-intro)"}
+{"ts":"2026-10-02T15:43:52Z","skill":"stardust:extract","phase":"per-page-extraction","event":"end","detail":"3/3 captured (--pages, --dynamics)","artifact":"stardust/current/pages/"}
+{"ts":"2026-10-02T15:43:52Z","skill":"stardust:replica","phase":"preserve-direction","event":"start"}
+{"ts":"2026-10-02T16:51:30Z","skill":"stardust:dynamics","phase":"detect","event":"start"}
+{"ts":"2026-10-02T16:56:35Z","skill":"stardust:dynamics","phase":"triage","event":"end","detail":"15 findings curated to 12 rows; 4 self, 7 owner-batch, 1 decided-out","artifact":"stardust/dynamic-features.md"}
+{"ts":"2026-10-02T16:56:35Z","skill":"stardust:replica","phase":"preserve-direction","event":"end","detail":"bounded-single spec synthesized; register 4 deferred / 0 applied","artifact":"stardust/direction.md"}
+{"ts":"2026-10-02T16:56:35Z","skill":"stardust:replica","phase":"recreate","event":"end","detail":"3 archetypes authored (shared canon + per-archetype CSS)","artifact":"stardust/prototypes/"}
+{"ts":"2026-10-02T16:56:35Z","skill":"stardust:replica","phase":"source-fidelity-gate","event":"end","detail":"6/6 breakpoint gates pass: 0.22/0.85, 0.32/0.95, 0.33/1.14 % pixel; all height Δ0; 0 structural red","artifact":"stardust/replica/progress.json"}
+{"ts":"2026-10-02T17:45:15Z","skill":"stardust:replica","phase":"approval","event":"end","detail":"3 archetypes approved by user"}
+{"ts":"2026-10-02T18:39:53Z","skill":"stardust:deploy","phase":"convert","event":"end","detail":"7 blocks + chrome, 3 pages staged; EDS harness gates 6/6 pass","artifact":"blocks/"}

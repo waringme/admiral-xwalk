@@ -1,0 +1,1187 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 3,
+    "concurrency": 3
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://www.admiral.com/favicon.ico",
+    "file": "assets/favicon.ico"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "dynamicSurface": {
+    "pages": 3,
+    "pagesWithSameSiteData": 2,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 1,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "consent.trustarc.com",
+        "path": "/v2/consentcategories/getnonemptyindexes",
+        "query": [
+          "category",
+          "cmId",
+          "fullURL",
+          "referer"
+        ],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://consent.trustarc.com/v2/consentcategories/getnonemptyindexes",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "consent.trustarc.com",
+        "path": "/analytics",
+        "query": [
+          "action",
+          "domain",
+          "implied",
+          "new",
+          "referer",
+          "session"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "sameSite": false,
+        "example": "https://consent.trustarc.com/analytics",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "api-cdn.euw2.pure.cloud",
+        "path": "/webdeployments/v1/deployments/{uuid}/domains.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://api-cdn.euw2.pure.cloud/webdeployments/v1/deployments/ab457f96-7037-40da-8f6c-988bdd8a7189/domains.json",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "consent.trustarc.com",
+        "path": "/consent/log",
+        "query": [
+          "behavior",
+          "categories",
+          "cmid",
+          "level",
+          "session",
+          "uid",
+          "userType"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "sameSite": false,
+        "example": "https://consent.trustarc.com/consent/log",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "api-cdn.euw2.pure.cloud",
+        "path": "/webdeployments/v1/deployments/{uuid}/config.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://api-cdn.euw2.pure.cloud/webdeployments/v1/deployments/ab457f96-7037-40da-8f6c-988bdd8a7189/config.json",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "c.amazon-adsystem.com",
+        "path": "/aat/amzn.js",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "sameSite": false,
+        "example": "https://c.amazon-adsystem.com/aat/amzn.js",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "ad.doubleclick.net",
+        "path": "/ccm/s/collect",
+        "query": [
+          "_gsid",
+          "auid",
+          "fmt",
+          "gtm"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://ad.doubleclick.net/ccm/s/collect",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "analytics.google.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_gaz",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "are",
+          "cid",
+          "cu",
+          "dl",
+          "dma",
+          "dt",
+          "en",
+          "ep.allowLinker",
+          "ep.cookieName",
+          "ep.customTask",
+          "ep.home_tier",
+          "ep.item_name",
+          "ep.level_of_cover",
+          "ep.use_amp_client_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "up.",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://analytics.google.com/g/collect",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/ccm/collect",
+        "query": [
+          "_gsid",
+          "_tu",
+          "apvc",
+          "auid",
+          "dl",
+          "dma",
+          "dt",
+          "en",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft",
+          "tid",
+          "tids"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://www.google.com/ccm/collect",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ip.veritonicmetrics.com",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://ip.veritonicmetrics.com/",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "c.amazon-adsystem.com",
+        "path": "/aat/allowlist/allowlist.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://c.amazon-adsystem.com/aat/allowlist/allowlist.json",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "pixels.spotify.com",
+        "path": "/v1/config/{hash}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://pixels.spotify.com/v1/config/65b48e685f134788976f337dde4cf036",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "aax-eu.amazon-adsystem.com",
+        "path": "/s/iu3",
+        "query": [
+          "event",
+          "eventSource",
+          "pid",
+          "ts",
+          "uuid"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://aax-eu.amazon-adsystem.com/s/iu3",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "atr.veritonicmetrics.com",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://atr.veritonicmetrics.com/",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ara.paa-reporting-advertising.amazon",
+        "path": "/aat",
+        "query": [
+          "event",
+          "eventSource",
+          "pid",
+          "ts",
+          "uuid"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://ara.paa-reporting-advertising.amazon/aat",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "c.contentsquare.net",
+        "path": "/pageview",
+        "query": [
+          "ct",
+          "dh",
+          "dr",
+          "dt",
+          "dw",
+          "ex",
+          "happid",
+          "hd",
+          "hsid",
+          "huu",
+          "la",
+          "pid",
+          "pn",
+          "pvt",
+          "sh",
+          "sn",
+          "sw",
+          "uc",
+          "url",
+          "uu",
+          "v",
+          "wh",
+          "ww"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://c.contentsquare.net/pageview",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "logx.optimizely.com",
+        "path": "/v1/events",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://logx.optimizely.com/v1/events",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "c.contentsquare.net",
+        "path": "/dvar",
+        "query": [
+          "ct",
+          "dv",
+          "happid",
+          "hsid",
+          "huu",
+          "pid",
+          "pn",
+          "r",
+          "sn",
+          "uu",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://c.contentsquare.net/dvar",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "web.lon.infinity-tracking.com",
+        "path": "/v3/info",
+        "query": [
+          "features",
+          "inf",
+          "pv",
+          "ua",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://web.lon.infinity-tracking.com/v3/info",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "k-aeu1.contentsquare.net",
+        "path": "/v2/recording",
+        "query": [
+          "ct",
+          "happid",
+          "hsid",
+          "huu",
+          "let",
+          "pid",
+          "pn",
+          "ri",
+          "rst",
+          "rt",
+          "sn",
+          "uu",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://k-aeu1.contentsquare.net/v2/recording",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "bam.eu01.nr-data.net",
+        "path": "/{n}/NRJS-fdad80285c4bc1c6ed8",
+        "query": [
+          "a",
+          "af",
+          "be",
+          "ck",
+          "dc",
+          "fe",
+          "perf",
+          "ptid",
+          "ref",
+          "rst",
+          "s",
+          "sa",
+          "t",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://bam.eu01.nr-data.net/1/NRJS-fdad80285c4bc1c6ed8",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "bam.eu01.nr-data.net",
+        "path": "/events/{n}/NRJS-fdad80285c4bc1c6ed8",
+        "query": [
+          "a",
+          "ck",
+          "ptid",
+          "ref",
+          "rst",
+          "s",
+          "sa",
+          "t",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": "image/gif",
+        "sameSite": false,
+        "example": "https://bam.eu01.nr-data.net/events/1/NRJS-fdad80285c4bc1c6ed8",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "bam.eu01.nr-data.net",
+        "path": "/jserrors/{n}/NRJS-fdad80285c4bc1c6ed8",
+        "query": [
+          "a",
+          "ck",
+          "ptid",
+          "ref",
+          "rst",
+          "s",
+          "sa",
+          "t",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": "image/gif",
+        "sameSite": false,
+        "example": "https://bam.eu01.nr-data.net/jserrors/1/NRJS-fdad80285c4bc1c6ed8",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "apps.euw2.pure.cloud",
+        "path": "/messenger/i18n/en-us.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://apps.euw2.pure.cloud/messenger/i18n/en-us.json",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "nas.lon.infinity-tracking.com",
+        "path": "/allocate",
+        "query": [
+          "autoformat",
+          "href",
+          "ictvid",
+          "igrp",
+          "newVisitor",
+          "nums",
+          "pv",
+          "state",
+          "t",
+          "ua",
+          "v",
+          "vref"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://nas.lon.infinity-tracking.com/allocate",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "PUT",
+        "host": "web.lon.infinity-tracking.com",
+        "path": "/v1/meta",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://web.lon.infinity-tracking.com/v1/meta",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "web.lon.infinity-tracking.com",
+        "path": "/v1/web-event",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://web.lon.infinity-tracking.com/v1/web-event",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "pixels.spotify.com",
+        "path": "/v1/ingest",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://pixels.spotify.com/v1/ingest",
+        "pages": 2,
+        "examples": [
+          "index",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "websdk.admiral.com",
+        "path": "/ee/v1/privacy/set-consent",
+        "query": [
+          "configId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://websdk.admiral.com/ee/v1/privacy/set-consent",
+        "pages": 2,
+        "examples": [
+          "index",
+          "about-us"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "websdk.admiral.com",
+        "path": "/ee/va6/v1/interact",
+        "query": [
+          "configId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://websdk.admiral.com/ee/va6/v1/interact",
+        "pages": 2,
+        "examples": [
+          "index",
+          "about-us"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "ad.doubleclick.net",
+        "path": "/activity;src=12615506;type=allpages;cat=allpages;rcb=4;ord=3372435701904;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115616986~115938465~115938468~117776795~118131809~118897920~118897930~119860442~120213116~120385422~120469145~120469153~121280969;epver=2;dc_random=1790955721_H-DrY7d-DE3gJZN3qnhv5VDEBRStMrDf0A;~oref=https%3A%2F%2Fwww.admiral.com%2F",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://ad.doubleclick.net/activity;src=12615506;type=allpages;cat=allpages;rcb=4;ord=3372435701904;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115616986~115938465~115938468~117776795~118131809~118897920~118897930~119860442~120213116~120385422~120469145~120469153~121280969;epver=2;dc_random=1790955721_H-DrY7d-DE3gJZN3qnhv5VDEBRStMrDf0A;~oref=https%3A%2F%2Fwww.admiral.com%2F",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ad.doubleclick.net",
+        "path": "/activity;dc_pre=CKfc0f3Vm5cDFVxV9QUdgtkBEQ;src=12615506;type=allpages;cat=allpages;rcb=4;ord=3372435701904;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115616986~115938465~115938468~117776795~118131809~118897920~118897930~119860442~120213116~120385422~120469145~120469153~121280969;epver=2;dc_random=1790955721_H-DrY7d-DE3gJZN3qnhv5VDEBRStMrDf0A;~oref=https%3A%2F%2Fwww.admiral.com%2F",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://ad.doubleclick.net/activity;dc_pre=CKfc0f3Vm5cDFVxV9QUdgtkBEQ;src=12615506;type=allpages;cat=allpages;rcb=4;ord=3372435701904;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115616986~115938465~115938468~117776795~118131809~118897920~118897930~119860442~120213116~120385422~120469145~120469153~121280969;epver=2;dc_random=1790955721_H-DrY7d-DE3gJZN3qnhv5VDEBRStMrDf0A;~oref=https%3A%2F%2Fwww.admiral.com%2F",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/gmp/conversion/_dc_unique_id=6688692217012965987;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwZhc-9f83DvVfpnqZI4jvSBllnIeEy0Wp-85;_dc_time=1790955723;cid=CAQS4QEAQM4h3LTEu93rm_Wb9fdb5DoHSFgVhAIBIn5GpK4EDHuCKgX9jZ60rguyqkGID_bd6WqdHEyDNo18M1Ui8cZ8gGjk8NW6YuRf4S5p0qRfiDUSMHhhiRI_sWEfrviHcz9iQxIr08hACbzfwoRRk0e9VCmfmCbzwyc2sdiXMl3DxIwz_ZlTi87cMmyUIEFp8Y46wRgttWByxvaQ9iGR93dk6qYH3kzp2-R6knuelFN7A1vtJUZkWp8mdMVlbUeeS1Ltg_zjGribrnevqSioJv7OSGhhAMe69qkQbG6Mu7jRRxY;eps=AHas8cAaGPDMTN8BDL0sg8gAIyNc4tWu028u4gZO_uGNVlQ3bZieWH5O_XsT4nEoXiluBXMHZap_ciPILbA1or-aRKutG7KUUFoW29wsIE5FM5LJNQ;dc_pre=CKfc0f3Vm5cDFVxV9QUdgtkBEQ;src=12615506;type=allpages;cat=allpages;rcb=4;ord=3372435701904;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115616986~115938465~115938468~117776795~118131809~118897920~118897930~119860442~120213116~120385422~120469145~120469153~121280969;epver=2;dc_random=1790955721_H-DrY7d-DE3gJZN3qnhv5VDEBRStMrDf0A;~oref=https%3A%2F%2Fwww.admiral.com%2F",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "sameSite": false,
+        "example": "https://www.google.com/gmp/conversion/_dc_unique_id=6688692217012965987;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwZhc-9f83DvVfpnqZI4jvSBllnIeEy0Wp-85;_dc_time=1790955723;cid=CAQS4QEAQM4h3LTEu93rm_Wb9fdb5DoHSFgVhAIBIn5GpK4EDHuCKgX9jZ60rguyqkGID_bd6WqdHEyDNo18M1Ui8cZ8gGjk8NW6YuRf4S5p0qRfiDUSMHhhiRI_sWEfrviHcz9iQxIr08hACbzfwoRRk0e9VCmfmCbzwyc2sdiXMl3DxIwz_ZlTi87cMmyUIEFp8Y46wRgttWByxvaQ9iGR93dk6qYH3kzp2-R6knuelFN7A1vtJUZkWp8mdMVlbUeeS1Ltg_zjGribrnevqSioJv7OSGhhAMe69qkQbG6Mu7jRRxY;eps=AHas8cAaGPDMTN8BDL0sg8gAIyNc4tWu028u4gZO_uGNVlQ3bZieWH5O_XsT4nEoXiluBXMHZap_ciPILbA1or-aRKutG7KUUFoW29wsIE5FM5LJNQ;dc_pre=CKfc0f3Vm5cDFVxV9QUdgtkBEQ;src=12615506;type=allpages;cat=allpages;rcb=4;ord=3372435701904;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115616986~115938465~115938468~117776795~118131809~118897920~118897930~119860442~120213116~120385422~120469145~120469153~121280969;epver=2;dc_random=1790955721_H-DrY7d-DE3gJZN3qnhv5VDEBRStMrDf0A;~oref=https%3A%2F%2Fwww.admiral.com%2F",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "ad.doubleclick.net",
+        "path": "/activity;src=16229618;type=remarket;cat=homepage;rcb=8;ord=7465351829263;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9238259995z89102176791za20gzb9102176791zd9102176791xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938469~117776795~118131809~118897920~118897930~119860442~120213116~120385423~120469145~120469153~121280969;epver=2;dc_random=1790955721_rRqKrjdk4vBGGI0MwprpEEaSF-1lCTPx3w;~oref=https%3A%2F%2Fwww.admiral.com%2F",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://ad.doubleclick.net/activity;src=16229618;type=remarket;cat=homepage;rcb=8;ord=7465351829263;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9238259995z89102176791za20gzb9102176791zd9102176791xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938469~117776795~118131809~118897920~118897930~119860442~120213116~120385423~120469145~120469153~121280969;epver=2;dc_random=1790955721_rRqKrjdk4vBGGI0MwprpEEaSF-1lCTPx3w;~oref=https%3A%2F%2Fwww.admiral.com%2F",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ad.doubleclick.net",
+        "path": "/activity;dc_pre=CNbu0f3Vm5cDFUJE9QUdisE7ng;src=16229618;type=remarket;cat=homepage;rcb=8;ord=7465351829263;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9238259995z89102176791za20gzb9102176791zd9102176791xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938469~117776795~118131809~118897920~118897930~119860442~120213116~120385423~120469145~120469153~121280969;epver=2;dc_random=1790955721_rRqKrjdk4vBGGI0MwprpEEaSF-1lCTPx3w;~oref=https%3A%2F%2Fwww.admiral.com%2F",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://ad.doubleclick.net/activity;dc_pre=CNbu0f3Vm5cDFUJE9QUdisE7ng;src=16229618;type=remarket;cat=homepage;rcb=8;ord=7465351829263;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9238259995z89102176791za20gzb9102176791zd9102176791xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938469~117776795~118131809~118897920~118897930~119860442~120213116~120385423~120469145~120469153~121280969;epver=2;dc_random=1790955721_rRqKrjdk4vBGGI0MwprpEEaSF-1lCTPx3w;~oref=https%3A%2F%2Fwww.admiral.com%2F",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/gmp/conversion/_dc_unique_id=8167283190993361749;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwWvc3dVwkW8yGAnl9Vir3QabQp66oJnCT7Va;_dc_time=1790955724;cid=CAQS4QEAQM4h3Jm_mASRXs6d00HUh9R6Kn4LZjUexm8N8tI-QDWiwNs1pw3_JxpUn8ZIZzUuSx-P-ofQVKQCrI9zSD834ow0x6CtJQsz4VKFjtdT5CAeq2AgK4NVPSYe9pLdHWiINUCetlD3CuMcmNzQ3OF5vu_oX1Um3waOi3z_EwGfC8nT7sqUHAwh3xpfPy1c6wVblApB3FFCVOiwBOeO1GqQn3LQ_xhe9VbRnna2G5KDwKUIoRcP8dAbKEADShcglB-7GU_eJkVW3iiR_buGfah57jabgoCLfjzK6g9wc11jE_8;eps=AHas8cBEIASJ4LUsMoqFpnrro-bckcUAwEykC1u8uzP2EE-a4LS5eTf_3aDJEIpmdReg1C6_QhddNiQyukyu7lNrOcPS4A7Lh_rQg9Ixzj_x6uPNtA;dc_pre=CNbu0f3Vm5cDFUJE9QUdisE7ng;src=16229618;type=remarket;cat=homepage;rcb=8;ord=7465351829263;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9238259995z89102176791za20gzb9102176791zd9102176791xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938469~117776795~118131809~118897920~118897930~119860442~120213116~120385423~120469145~120469153~121280969;epver=2;dc_random=1790955721_rRqKrjdk4vBGGI0MwprpEEaSF-1lCTPx3w;~oref=https%3A%2F%2Fwww.admiral.com%2F",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "sameSite": false,
+        "example": "https://www.google.com/gmp/conversion/_dc_unique_id=8167283190993361749;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwWvc3dVwkW8yGAnl9Vir3QabQp66oJnCT7Va;_dc_time=1790955724;cid=CAQS4QEAQM4h3Jm_mASRXs6d00HUh9R6Kn4LZjUexm8N8tI-QDWiwNs1pw3_JxpUn8ZIZzUuSx-P-ofQVKQCrI9zSD834ow0x6CtJQsz4VKFjtdT5CAeq2AgK4NVPSYe9pLdHWiINUCetlD3CuMcmNzQ3OF5vu_oX1Um3waOi3z_EwGfC8nT7sqUHAwh3xpfPy1c6wVblApB3FFCVOiwBOeO1GqQn3LQ_xhe9VbRnna2G5KDwKUIoRcP8dAbKEADShcglB-7GU_eJkVW3iiR_buGfah57jabgoCLfjzK6g9wc11jE_8;eps=AHas8cBEIASJ4LUsMoqFpnrro-bckcUAwEykC1u8uzP2EE-a4LS5eTf_3aDJEIpmdReg1C6_QhddNiQyukyu7lNrOcPS4A7Lh_rQg9Ixzj_x6uPNtA;dc_pre=CNbu0f3Vm5cDFUJE9QUdisE7ng;src=16229618;type=remarket;cat=homepage;rcb=8;ord=7465351829263;npa=0;auiddc=1208562173.1790955722;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9238259995z89102176791za20gzb9102176791zd9102176791xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938469~117776795~118131809~118897920~118897930~119860442~120213116~120385423~120469145~120469153~121280969;epver=2;dc_random=1790955721_rRqKrjdk4vBGGI0MwprpEEaSF-1lCTPx3w;~oref=https%3A%2F%2Fwww.admiral.com%2F",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "ad.doubleclick.net",
+        "path": "/activity;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://ad.doubleclick.net/activity;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us",
+        "pages": 1,
+        "examples": [
+          "about-us"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ad.doubleclick.net",
+        "path": "/activity;dc_pre=CIaSov3Vm5cDFadE9QUdtMsYuw;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://ad.doubleclick.net/activity;dc_pre=CIaSov3Vm5cDFadE9QUdtMsYuw;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us",
+        "pages": 1,
+        "examples": [
+          "about-us"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/gmp/conversion/_dc_unique_id=2249769927660474362;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwd0F7xwZG7hovlv7iB5MTcBfRP9rEQHvMLZT;_dc_time=1790955722;dc_pre=CIaSov3Vm5cDFadE9QUdtMsYuw;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "sameSite": false,
+        "example": "https://www.google.com/gmp/conversion/_dc_unique_id=2249769927660474362;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwd0F7xwZG7hovlv7iB5MTcBfRP9rEQHvMLZT;_dc_time=1790955722;dc_pre=CIaSov3Vm5cDFadE9QUdtMsYuw;src=12615506;type=allpages;cat=allpages;rcb=17;ord=2549269529155;npa=0;auiddc=577283043.1790955721;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121280969;epver=2;dc_random=1790955721_5LPrqLxhz8fB8iirPuexhnwYaUjwEVMctQ;~oref=https%3A%2F%2Fwww.admiral.com%2Fabout-us",
+        "pages": 1,
+        "examples": [
+          "about-us"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "_tu",
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "pages": 1,
+        "examples": [
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "are",
+          "cid",
+          "cu",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dt",
+          "en",
+          "ep.allowLinker",
+          "ep.cookieName",
+          "ep.customTask",
+          "ep.home_tier",
+          "ep.item_name",
+          "ep.level_of_cover",
+          "ep.use_amp_client_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "gtm_up",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "up.",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://www.google-analytics.com/g/collect",
+        "pages": 1,
+        "examples": [
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "ad.doubleclick.net",
+        "path": "/activity;src=12615506;type=allpages;cat=allpages;rcb=18;ord=4263522930739;npa=0;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gcu=1;auiddc=361194286.1790955722;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121280971;epver=2;dc_random=1790955721_xulZ18wxudmsbvJcs8q_PudBInY9ebvrCA;~oref=https%3A%2F%2Fwww.admiral.com%2Ftravel-insurance%2Fski-festivals",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://ad.doubleclick.net/activity;src=12615506;type=allpages;cat=allpages;rcb=18;ord=4263522930739;npa=0;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gcu=1;auiddc=361194286.1790955722;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121280971;epver=2;dc_random=1790955721_xulZ18wxudmsbvJcs8q_PudBInY9ebvrCA;~oref=https%3A%2F%2Fwww.admiral.com%2Ftravel-insurance%2Fski-festivals",
+        "pages": 1,
+        "examples": [
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ad.doubleclick.net",
+        "path": "/activity;dc_pre=CICFxv3Vm5cDFXTbiwEd86kBUA;src=12615506;type=allpages;cat=allpages;rcb=18;ord=4263522930739;npa=0;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gcu=1;auiddc=361194286.1790955722;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121280971;epver=2;dc_random=1790955721_xulZ18wxudmsbvJcs8q_PudBInY9ebvrCA;~oref=https%3A%2F%2Fwww.admiral.com%2Ftravel-insurance%2Fski-festivals",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://ad.doubleclick.net/activity;dc_pre=CICFxv3Vm5cDFXTbiwEd86kBUA;src=12615506;type=allpages;cat=allpages;rcb=18;ord=4263522930739;npa=0;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gcu=1;auiddc=361194286.1790955722;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121280971;epver=2;dc_random=1790955721_xulZ18wxudmsbvJcs8q_PudBInY9ebvrCA;~oref=https%3A%2F%2Fwww.admiral.com%2Ftravel-insurance%2Fski-festivals",
+        "pages": 1,
+        "examples": [
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/gmp/conversion/_dc_unique_id=13255360122616777537;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwfMfPk02VNVrW30EO1RIbFdypWjX1JxfSCGl;_dc_time=1790955723;cid=CAQS4QEAQM4h3G-rtsqzyY59vgN_hb2tkW2niuU08YHP8bGLmUEpIdDzCV63KhYJGvgy6gh8tSWNTaCSs4eA7hG5YnyHaaAb7s6ECYI9xiMfdQB4nGeRsZG7yQfmzHJp_jRpTI99Tw106vVTb2L9X1bgz9iobBPlKAnHpj6PZ1HAqyo38GmnZQovp4Y1Oga5vkyPQjhyWVANCmqrGsr29JRRg8QDFhIl56aC5tv7vz2WG9lPqrTvbQqB29VZCgmVPBqTKREplzXnUW2O0hQogokKAhyZWMudW6NvS6cmwNb_r22FamU;eps=AHas8cB4KU9tpL3PgjHh3MtbyJkcYxtM9gc_Gv62so428qePiP2eiQSICNl8JB3H9tO9xd5GJPzNeY4m6j1pcL1AFhtRkebfnPPiIAzyb4YzxxoNCA;dc_pre=CICFxv3Vm5cDFXTbiwEd86kBUA;src=12615506;type=allpages;cat=allpages;rcb=18;ord=4263522930739;npa=0;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gcu=1;auiddc=361194286.1790955722;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121280971;epver=2;dc_random=1790955721_xulZ18wxudmsbvJcs8q_PudBInY9ebvrCA;~oref=https%3A%2F%2Fwww.admiral.com%2Ftravel-insurance%2Fski-festivals",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "sameSite": false,
+        "example": "https://www.google.com/gmp/conversion/_dc_unique_id=13255360122616777537;_dc_ptd=ChAI8Kz91QYQ6bmh_5TVg-wREh8AVjRIwfMfPk02VNVrW30EO1RIbFdypWjX1JxfSCGl;_dc_time=1790955723;cid=CAQS4QEAQM4h3G-rtsqzyY59vgN_hb2tkW2niuU08YHP8bGLmUEpIdDzCV63KhYJGvgy6gh8tSWNTaCSs4eA7hG5YnyHaaAb7s6ECYI9xiMfdQB4nGeRsZG7yQfmzHJp_jRpTI99Tw106vVTb2L9X1bgz9iobBPlKAnHpj6PZ1HAqyo38GmnZQovp4Y1Oga5vkyPQjhyWVANCmqrGsr29JRRg8QDFhIl56aC5tv7vz2WG9lPqrTvbQqB29VZCgmVPBqTKREplzXnUW2O0hQogokKAhyZWMudW6NvS6cmwNb_r22FamU;eps=AHas8cB4KU9tpL3PgjHh3MtbyJkcYxtM9gc_Gv62so428qePiP2eiQSICNl8JB3H9tO9xd5GJPzNeY4m6j1pcL1AFhtRkebfnPPiIAzyb4YzxxoNCA;dc_pre=CICFxv3Vm5cDFXTbiwEd86kBUA;src=12615506;type=allpages;cat=allpages;rcb=18;ord=4263522930739;npa=0;gdid=dNTIxZG;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gcu=1;auiddc=361194286.1790955722;gtm=45fe69u2v9189903373z89102176791za200zd9189903373xeaxf1;gcs=G111;gcd=13r3r3r3r5l1;dma=0;dc_fmt=3;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121280971;epver=2;dc_random=1790955721_xulZ18wxudmsbvJcs8q_PudBInY9ebvrCA;~oref=https%3A%2F%2Fwww.admiral.com%2Ftravel-insurance%2Fski-festivals",
+        "pages": 1,
+        "examples": [
+          "travel-insurance-ski-festivals"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "apps.euw2.pure.cloud",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "script.infinity-tracking.com",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "consent.trustarc.com",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "cdn.optimizely.com",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "assets.adobedtm.com",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "t.contentsquare.net",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "connect.facebook.net",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "d34r8q7sht0t9k.cloudfront.net",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "cdn.veritonic.com",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "js.adsrvr.org",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "pixel.byspotify.com",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "c.amazon-adsystem.com",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "cdn.heapanalytics.com",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "www.googleadservices.com",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "c0.adalyser.com",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "googleads.g.doubleclick.net",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "js-agent.newrelic.com",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "host": "bat.bing.com",
+        "pages": 2,
+        "examples": [
+          "index",
+          "about-us"
+        ]
+      }
+    ],
+    "frameworkHints": [],
+    "globalState": [
+      {
+        "name": "dataLayer",
+        "pages": 3,
+        "examples": [
+          "index",
+          "about-us",
+          "travel-insurance-ski-festivals"
+        ]
+      },
+      {
+        "name": "drupalSettings",
+        "pages": 1,
+        "examples": [
+          "travel-insurance-ski-festivals"
+        ]
+      }
+    ],
+    "formTargets": []
+  }
+}

@@ -1,0 +1,23 @@
+/*
+ * Admiral replica — shared motion layer. ONLY behaviors observed firing on the live site
+ * (stardust/replica/motion/<slug>.json, motion-observe.mjs). Hover families probed with no
+ * measured change (pods, more-links, CTA buttons, footer links) are deliberately absent.
+ */
+
+/* Product tile hover — observed: translateY(-2px), bg #5ed7ff, shadow, transition 0.3s */
+.product-grid__item { transition: 0.3s; }
+
+.product-grid__item:hover {
+  transform: translateY(-2px);
+  background-color: #5ed7ff;
+  box-shadow: rgb(0 0 0 / 10%) 0 4px 12px 0;
+}
+
+/* Desktop main-nav link hover — observed: background white; transition padding 0.3s */
+@media (min-width: 768px) {
+  .mega-nav__main > .mega-nav__item > a { transition: padding 0.3s; }
+  .mega-nav__main > .mega-nav__item > a:hover { background-color: #fff; }
+}
+
+/* Testimonials track — observed transform transition 0.5s on arrow click (slick, no autoplay) */
+.slick-track { transition: transform 0.5s ease; }

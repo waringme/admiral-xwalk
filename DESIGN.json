@@ -1,0 +1,154 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "mode": "bounded-single",
+    "writtenAt": "2026-10-02T16:56:46Z",
+    "againstInput": "https://www.admiral.com/",
+    "synthesizedFrom": [
+      "stardust/current/pages/index.json",
+      "stardust/current/pages/about-us.json",
+      "stardust/current/pages/travel-insurance-ski-festivals.json",
+      "stardust/replica/tokens.json"
+    ]
+  },
+  "mode": "preserve",
+  "tokens": {
+    "color": {
+      "page": "#f0f0eb",
+      "text": "#4f4f4f",
+      "heading": "#2350a0",
+      "link": "#0078ff",
+      "navy": "#0c3a84",
+      "ink": "#21201c",
+      "paleBlue": "#82c8ff",
+      "tile": "#77ddff",
+      "tileHover": "#5ed7ff",
+      "tileInk": "#005485",
+      "awardBand": "#091f30",
+      "testimonial": "#ee5615",
+      "avatar": "#ff7911",
+      "podBorder": "#b7b7cb",
+      "footerTop": "#000000",
+      "footer": "#282828",
+      "footerLink": "#00b5ff",
+      "secondaryNav": "#000000",
+      "account": "#ffdf43",
+      "claim": "#c20060",
+      "breadcrumb": "#d6d6d6"
+    },
+    "fonts": {
+      "brand": {
+        "family": "jaf-facitweb",
+        "stack": "'jaf-facitweb', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+        "source": "Adobe Fonts kit mcu8nnf (licensed; referenced, never rehosted)",
+        "weights": [
+          200,
+          300,
+          400,
+          600
+        ]
+      },
+      "navMobile": {
+        "family": "aktiv-grotesk",
+        "stack": "'aktiv-grotesk', 'jaf-facitweb', …",
+        "source": "same kit"
+      },
+      "rendering": {
+        "-webkit-font-smoothing": "antialiased",
+        "-moz-osx-font-smoothing": "grayscale"
+      },
+      "bodyBase": {
+        "fontSize": "9px",
+        "fontWeight": 300,
+        "lineHeight": 1.15
+      }
+    },
+    "typeRamp": {
+      "h2": {
+        "mobile": "21.6px/30px 600, pb 32",
+        "desktop": "37.8px/48px 600, pb 32"
+      },
+      "h3": {
+        "mobile": "16.2px/24px 600, mt -10 pb 22",
+        "desktop": "19.8px/28px 600, mt -4 pb 20"
+      },
+      "p": {
+        "mobile": "14.4px/22px 300, mt -12 pb 30",
+        "desktop": "18px/28px 300, mt -10 pb 28"
+      },
+      "heroHeading": {
+        "mobile": "21.6px/30px 400",
+        "desktop": "37.8px/48px 400"
+      },
+      "subHeroHeading": {
+        "mobile": "18px/24px 600",
+        "desktop": "25.2px/34px 600"
+      },
+      "testimonial": {
+        "mobile": "18px/24px 600",
+        "desktop": "25.2px/34px 600"
+      }
+    },
+    "containers": {
+      "content": "1024px (padding 20 desktop / 10 mobile)",
+      "narrow": "768px (padding 30)",
+      "chrome": "max 1200px (padding-left 17)"
+    },
+    "radii": {
+      "tile": "8px",
+      "heroPanel": "8px",
+      "pod": "4px",
+      "subHero": "4px",
+      "heroButtonsMobile": "10px"
+    },
+    "shadows": {
+      "tileHover": "rgba(0,0,0,.1) 0 4px 12px 0"
+    },
+    "breakpoints": {
+      "layout": "min-width: 768px",
+      "fluidHero": "30vw clamped 420–510px (.hero-banner--B .container-sml)"
+    }
+  },
+  "components": {
+    "hero": "gradient #00c535→#00a32e, radius 4, 21.6px/30 uppercase, min-height 52 (mobile 16.2/24, 44)",
+    "aquaMidi": "gradient #00b8ea→#0080cc, 1px #0080c2, radius 4, 13.5px/28 uppercase, h 30 (mobile 12.15px, h 29)",
+    "makeAClaim": "#005485, radius 8, 16px/24 600, padding 8/20",
+    "navCta": "1px #07f outline, radius 4, 13.5px uppercase"
+  },
+  "chrome": {
+    "headerDesktop": "118px (47 + 70 + 1px border)",
+    "headerMobile": "50px (+76px quick-action bar on the homepage)",
+    "breadcrumbs": "35px"
+  },
+  "extensions": {
+    "archetypes": [
+      {
+        "pageType": "product-landing",
+        "slug": "index",
+        "url": "https://www.admiral.com/"
+      },
+      {
+        "pageType": "hub-landing",
+        "slug": "about-us",
+        "url": "https://www.admiral.com/about-us"
+      },
+      {
+        "pageType": "finder-intro",
+        "slug": "travel-insurance-ski-festivals",
+        "url": "https://www.admiral.com/travel-insurance/ski-festivals"
+      }
+    ],
+    "modules": [
+      "mega-nav",
+      "breadcrumbs",
+      "hero-banner-B",
+      "product-grid",
+      "sub-hero-banner",
+      "pod-grid",
+      "custom-banner-award",
+      "testimonials-carousel",
+      "app-banner",
+      "footer-explore"
+    ]
+  }
+}

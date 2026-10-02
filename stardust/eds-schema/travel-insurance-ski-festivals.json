@@ -1,0 +1,114 @@
+{
+ "source": "http://localhost:8791/travel-insurance-ski-festivals-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "container",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "The ultimate ski festival guide"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Ski festivals are taking our love for mountains to new heights! These incredible events bring together your favourite snow sport activities with magical live music performances for a truly unforgettable experience. Ski and snowboard along the breathtaking pistes of some of the world’s best winter resorts and dance the night away to your favourite music with the incredible parties."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Be part of the fun and find your perfect ski festival with our finder tool below. Plus we’ve got everything you need to know right here, from a festival guide for newbies to handy packing lists to make sure you don’t forget anything."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 3,
+   "repeats": []
+  },
+  {
+   "section": "container",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Ski Festival Finder"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Find your perfect ski festival anywhere in the world by answering these five quick questions"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Start",
+     "href": "/travel-insurance/ski-festivals/finder"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "10 things to expect from your first ski festival"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Ski festivals offer an unforgettable experience with non-stop parties, live music and plenty of skiing. Find out what to expect with our handy ski festival guide."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Read more",
+     "href": "/magazine/guides/travel/10-things-to-expect-from-your-first-ski-festival"
+    },
+    {
+     "role": "heading",
+     "order": 6,
+     "text": "The ultimate ski festival packing list"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Ski trips are one of the most difficult holidays to pack for. Don't forget anything with our packing lists covering all the gear, clothes and accessories."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Read more",
+     "href": "/magazine/guides/travel/ski-festival-packing-list"
+    },
+    {
+     "role": "heading",
+     "order": 9,
+     "text": "17 things only true skiers understand"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "All true ski lovers can agree on one thing - skiing is the best fun in the world! Here's 17 other things all us ski aficionados all know to be true too."
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Read more",
+     "href": "/magazine/guides/travel/17-things-you-only-know-if-youre-a-true-ski-aficionado"
+    }
+   ],
+   "imgCount": 3,
+   "editableTexts": 8,
+   "repeats": [
+    {
+     "unitSelector": "DIV.grid__cell",
+     "count": 4,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    }
+   ]
+  }
+ ]
+}

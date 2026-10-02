@@ -1,0 +1,438 @@
+{
+ "source": "http://localhost:8791/index-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "wrapper",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Trust us - we've been insuring cars for over 30 years"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Get reliable cover from an insurer you can trust."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "EXPLORE OUR COVER",
+     "href": "/car-insurance"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "wrapper",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Car insurance",
+     "href": "/car-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Home insurance",
+     "href": "/home-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Pet insurance",
+     "href": "/pet-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "MultiCover insurance",
+     "href": "/multicover-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "MultiCar insurance",
+     "href": "/multicar-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Van insurance",
+     "href": "/van-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Travel insurance",
+     "href": "/travel-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Personal loans",
+     "href": "/loans/personal-loans"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Learner insurance",
+     "href": "/learner-driver-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Landlord insurance",
+     "href": "/home-insurance/landlord"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Temp car insurance",
+     "href": "/car-insurance/temporary-car-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Breakdown cover",
+     "href": "/breakdown-cover"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "Make a claim",
+     "href": "/existing-customers/make-a-claim.php"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 0,
+   "repeats": [
+    {
+     "unitSelector": "A.product-grid__item",
+     "count": 12,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "container",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "There are some fake emails going around pretending to be us"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "If you get an email that doesn't seem right, here's what to do next."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Find Out More",
+     "href": "/help-support-hub/privacy-online-security/scams-fraud"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "wrapper",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Looking after your pet on hot days"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Keep your pet cool and happy with our handy tips."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Tips for hot weather",
+     "href": "https://www.admiral.com/resources/pet-hub/pet-health-advice/pet-care-in-hot-weather"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "Stay safe online"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Learn how to protect yourself from online scams and fake emails."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Follow our tips",
+     "href": "https://www.admiral.com/magazine/guides/loans/how-to-stay-safe-online"
+    },
+    {
+     "role": "heading",
+     "order": 6,
+     "text": "Travelling with a medical condition"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Here’s all you need to know about travelling with a medical condition and what to tell us."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "What to know",
+     "href": "/magazine/guides/travel/pre-existing-condition"
+    }
+   ],
+   "imgCount": 3,
+   "editableTexts": 6,
+   "repeats": [
+    {
+     "unitSelector": "DIV.grid__cell",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 1,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "custom-banner",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "May the Best Motor Insurer win... oh wait, that’s us again!"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Thanks for picking us for Best Motor Insurer for the 11th year in a row."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "wrapper",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Quick, easy and simple. That's what I like. The website is clear and easy to use. The purchase process was quick and easy, and received all my documents within minutes."
+    },
+    {
+     "role": "heading",
+     "order": 2,
+     "text": "Mahjabeen"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Ilford"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "The best car insurance on the market!"
+    },
+    {
+     "role": "heading",
+     "order": 5,
+     "text": "Stefan"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Manchester"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Really easy to set up. The Admiral team were very helpful and it was easy to get to talk to someone when I had a question."
+    },
+    {
+     "role": "heading",
+     "order": 8,
+     "text": "Deborah"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Wallasey"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Quick, easy and simple. That's what I like. The website is clear and easy to use. The purchase process was quick and easy, and received all my documents within minutes."
+    },
+    {
+     "role": "heading",
+     "order": 11,
+     "text": "Mahjabeen"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Ilford"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "The best car insurance on the market!"
+    },
+    {
+     "role": "heading",
+     "order": 14,
+     "text": "Stefan"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "Manchester"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "Really easy to set up. The Admiral team were very helpful and it was easy to get to talk to someone when I had a question."
+    },
+    {
+     "role": "heading",
+     "order": 17,
+     "text": "Deborah"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "Wallasey"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "Quick, easy and simple. That's what I like. The website is clear and easy to use. The purchase process was quick and easy, and received all my documents within minutes."
+    },
+    {
+     "role": "heading",
+     "order": 20,
+     "text": "Mahjabeen"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "Ilford"
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "Next"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 21,
+   "repeats": [
+    {
+     "unitSelector": "DIV.slick-slide",
+     "count": 7,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "wrapper",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Get to know us"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "For over 30 years, we've been protecting what matters most - whether it's your car, home, holiday or four-legged friend."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "During the inconvenient moments and the really hard times, we're there when you need us."
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Find out more and how we’ve got your back."
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "about who we are",
+     "href": "/about-us"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 4,
+   "repeats": [
+    {
+     "unitSelector": "P.",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 0
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "wrapper",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Download the Admiral app and manage your policy on the go"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "The easy way to view your documents and make changes to your cover."
+    }
+   ],
+   "imgCount": 2,
+   "editableTexts": 2,
+   "repeats": []
+  }
+ ]
+}
