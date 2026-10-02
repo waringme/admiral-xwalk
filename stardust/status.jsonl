@@ -8,3 +8,4 @@
 {"ts":"2026-10-02T16:56:35Z","skill":"stardust:replica","phase":"source-fidelity-gate","event":"end","detail":"6/6 breakpoint gates pass: 0.22/0.85, 0.32/0.95, 0.33/1.14 % pixel; all height Δ0; 0 structural red","artifact":"stardust/replica/progress.json"}
 {"ts":"2026-10-02T17:45:15Z","skill":"stardust:replica","phase":"approval","event":"end","detail":"3 archetypes approved by user"}
 {"ts":"2026-10-02T18:39:53Z","skill":"stardust:deploy","phase":"convert","event":"end","detail":"7 blocks + chrome, 3 pages staged; EDS harness gates 6/6 pass","artifact":"blocks/"}
+{"ts":"2026-10-02T19:05:09Z","skill":"stardust:deploy","phase":"dam-package","event":"end","detail":"24 assets packaged; content repointed to /content/dam/admiral-xwalk/images","artifact":"stardust/packages/admiral-xwalk-images-1.0.0.zip"}

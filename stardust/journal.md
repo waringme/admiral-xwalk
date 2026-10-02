@@ -76,3 +76,15 @@ content/*.plain.html, stardust/eds-conversion-log.md, stardust/runtime-contract.
 **Open questions:** upload the content from the UI; preview at the branch URL; add the EDS domains to the Adobe Fonts kit; then run the published-origin gate.
 
 **Next:** platform content upload → published-origin gate (CLS, content-diff, AI readability) → PR to main.
+
+## 2026-10-02T19:05:09Z — DAM image package for the sample pages
+
+**Prompt:** the images are not in AEM; create an image JCR package.
+
+**Decisions:**
+- Built a FileVault package with 24 dam:Asset nodes under /content/dam/admiral-xwalk/images.
+- The user chose to repoint the staged pages to the DAM paths.
+
+**Artifacts:** stardust/packages/admiral-xwalk-images-1.0.0.zip, stardust/packages/dam-image-map.json, content/*.plain.html (img srcs).
+
+**Next:** install the package on author, reprocess the assets, then upload the content.
