@@ -20,6 +20,45 @@
         "name": "keywords",
         "multi": true,
         "label": "Keywords"
+      },
+      {
+        "component": "select",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "",
+        "options": [
+          {
+            "name": "Product landing",
+            "value": "product-landing"
+          },
+          {
+            "name": "Hub landing",
+            "value": "hub-landing"
+          },
+          {
+            "name": "Finder intro",
+            "value": "finder-intro"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "theme",
+        "label": "Header variant",
+        "valueType": "string",
+        "value": "",
+        "description": "Quick actions: show the Contact Us / Claims / MyAccount bar under the mobile header",
+        "options": [
+          {
+            "name": "Standard",
+            "value": ""
+          },
+          {
+            "name": "Quick actions",
+            "value": "quick-actions"
+          }
+        ]
       }
     ]
   },

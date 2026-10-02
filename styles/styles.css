@@ -46,7 +46,7 @@
   --container-narrow: 768px;
   --container-chrome: 1200px;
 
-  /* nav height: mobile topbar 50px (+76px quick-action bar on the homepage), desktop 118px */
+  /* nav height: mobile topbar 50px (+76px quick-action bar on theme "quick-actions" pages), desktop 118px */
   --nav-height: 50px;
 }
 
@@ -72,11 +72,11 @@
   line-gap-override: 0%;
 }
 
-body.front-page { --nav-height: 126px; }
+body.quick-actions { --nav-height: 126px; }
 
 @media (width >= 768px) {
   :root,
-  body.front-page { --nav-height: 118px; }
+  body.quick-actions { --nav-height: 118px; }
 }
 
 *,

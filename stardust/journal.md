@@ -88,3 +88,16 @@ content/*.plain.html, stardust/eds-conversion-log.md, stardust/runtime-contract.
 **Artifacts:** stardust/packages/admiral-xwalk-images-1.0.0.zip, stardust/packages/dam-image-map.json, content/*.plain.html (img srcs).
 
 **Next:** install the package on author, reprocess the assets, then upload the content.
+
+## 2026-10-02T19:47:37Z — Template metadata on the sample pages
+
+**Prompt:** add the templates used to the content.
+
+**Decisions:**
+- Template metadata set from the site catalog: product-landing / hub-landing / finder-intro.
+- The homepage quick-action bar moved to `Theme: quick-actions`, because live shows the bar per page, not per template.
+- Added Template and Header variant fields to the UE page model.
+
+**Artifacts:** models/_page.json, component-models.json, blocks/header/header.js, styles/styles.css, content/*.plain.html.
+
+**Findings:** homepage re-gate unchanged (1.06% / 0.86%, height Δ0).

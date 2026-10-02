@@ -11,7 +11,7 @@ import { loadFragment } from '../fragment/fragment.js';
  *                     dropdown columns (optional <p><strong>subtitle</strong></p> + <ul> of links)
  *                     and one CTA panel (<p><em>title</em></p><p>text</p><p><a>link</a></p>)
  *   4. mobile extras  <ul>: appended to the mobile menu (dark, dark, rubine rows)
- *   5. quick actions  <ul>: the mobile quick-action bar, shown on the homepage only
+ *   5. quick actions  <ul>: the mobile quick-action bar, shown on pages with theme `quick-actions`
  * Authored nodes are MOVED into the layout, never rebuilt (EW1). Generated chrome text:
  * the "Menu" toggle label and each dropdown title (repeats the parent label) — runtime UI.
  * Behaviour observed live (stardust/replica/motion/index.json): click-open dropdowns with a
@@ -128,9 +128,9 @@ export default async function decorate(block) {
   topbar.append(toggle);
   primary.append(topbar);
 
-  // 5. quick actions (homepage only, mobile)
+  // 5. quick actions (mobile; pages with theme "quick-actions", e.g. the homepage)
   const quickList = sectionList(quick);
-  if (quickList && document.body.classList.contains('front-page')) {
+  if (quickList && document.body.classList.contains('quick-actions')) {
     quickList.className = 'mega-nav-hero-buttons hide-tablet';
     [...quickList.children].forEach((li, i) => {
       li.className = 'mega-nav-hero-item';
