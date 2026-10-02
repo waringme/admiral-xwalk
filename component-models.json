@@ -136,6 +136,87 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Narrow text",
+            "value": "narrow"
+          },
+          {
+            "name": "Centred intro",
+            "value": "centered-intro"
+          },
+          {
+            "name": "Page intro",
+            "value": "intro"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "banner",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "mobileImage",
+        "label": "Mobile Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "mobileImageAlt",
+        "label": "Mobile Image Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "breadcrumbs",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Trail (list of links)",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Show image on mobile",
+            "value": "mobile-image"
           }
         ]
       }
@@ -150,6 +231,13 @@
         "name": "image",
         "label": "Image",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt",
+        "value": ""
       },
       {
         "component": "richtext",
@@ -203,7 +291,21 @@
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Alt",
+        "label": "Image Alt",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "mobileImage",
+        "label": "Mobile Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "mobileImageAlt",
+        "label": "Mobile Image Alt",
         "value": ""
       },
       {
@@ -211,6 +313,164 @@
         "name": "text",
         "value": "",
         "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Panel left",
+            "value": "left"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "product-tile",
+    "fields": [
+      {
+        "component": "select",
+        "name": "icon",
+        "label": "Icon",
+        "valueType": "string",
+        "value": "car-insurance",
+        "options": [
+          {
+            "name": "Car Insurance",
+            "value": "car-insurance"
+          },
+          {
+            "name": "Home Insurance",
+            "value": "home-insurance"
+          },
+          {
+            "name": "Pet Insurance",
+            "value": "pet-insurance"
+          },
+          {
+            "name": "Multicover Insurance",
+            "value": "multicover-insurance"
+          },
+          {
+            "name": "Multicar Insurance",
+            "value": "multicar-insurance"
+          },
+          {
+            "name": "Van Insurance",
+            "value": "van-insurance"
+          },
+          {
+            "name": "Travel Insurance",
+            "value": "travel-insurance"
+          },
+          {
+            "name": "Personal Loans",
+            "value": "personal-loans"
+          },
+          {
+            "name": "Learner Insurance",
+            "value": "learner-insurance"
+          },
+          {
+            "name": "Landlord Insurance",
+            "value": "landlord-insurance"
+          },
+          {
+            "name": "Temp Car Insurance",
+            "value": "temp-car-insurance"
+          },
+          {
+            "name": "Breakdown Cover",
+            "value": "breakdown-cover"
+          }
+        ]
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "linkText",
+        "label": "Label",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "mobileImage",
+        "label": "Mobile Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "mobileImageAlt",
+        "label": "Mobile Image Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Light",
+            "value": "light"
+          },
+          {
+            "name": "Image after copy (mobile)",
+            "value": "image-after"
+          },
+          {
+            "name": "App store badges",
+            "value": "app"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "testimonial",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Quote, name (heading) and location",
         "valueType": "string"
       }
     ]

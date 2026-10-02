@@ -1,0 +1,266 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics plan",
+  "writtenAt": "2026-10-02T16:52:17.180Z",
+  "input": "stardust/current/_dynamics.json",
+  "target": "https://main--admiral-xwalk--waringme.aem.page",
+  "migrated": null
+ },
+ "rows": [
+  {
+   "id": "a-experimentation-a-b-personalisation",
+   "class": "A",
+   "feature": "experimentation: A/B / personalisation",
+   "pages": 3,
+   "probed": 3,
+   "reach": null,
+   "evidence": [
+    "cdn.optimizely.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which experiments move to the new host"
+  },
+  {
+   "id": "a-unknown-third-party-host-api-cdn-euw2-pure-cloud",
+   "class": "A",
+   "feature": "unknown third-party host api-cdn.euw2.pure.cloud",
+   "pages": 3,
+   "probed": 3,
+   "reach": null,
+   "evidence": [
+    "api-cdn.euw2.pure.cloud"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-cms-app-settings-object-datalayer",
+   "class": "A",
+   "feature": "CMS / app settings object dataLayer",
+   "pages": 3,
+   "probed": 3,
+   "reach": null,
+   "evidence": [],
+   "pattern": "read-settings",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "— (keys name endpoints, ids, vendors)"
+  },
+  {
+   "id": "a-cms-app-settings-object-drupalsettings",
+   "class": "A",
+   "feature": "CMS / app settings object drupalSettings",
+   "pages": 1,
+   "probed": 3,
+   "reach": null,
+   "evidence": [],
+   "pattern": "read-settings",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "— (keys name endpoints, ids, vendors)"
+  },
+  {
+   "id": "i18n-locale-variants-gb",
+   "class": "I18N",
+   "feature": "locale variants gb",
+   "pages": 1,
+   "probed": 3,
+   "reach": null,
+   "evidence": [
+    "https://apps.apple.com/gb/app/admiral-insurance/id1461457136"
+   ],
+   "pattern": "locale-tree",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "locale wave",
+   "decision": "scope of the locale trees"
+  },
+  {
+   "id": "t-consent-trustarc-iab-cmp",
+   "class": "T",
+   "feature": "consent: TrustArc / IAB CMP",
+   "pages": 3,
+   "probed": 3,
+   "reach": null,
+   "evidence": [
+    "consent.trustarc.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "CMP domain script reuse on the new host"
+  },
+  {
+   "id": "t-tag-manager-adobe-launch",
+   "class": "T",
+   "feature": "tag manager: Adobe Launch",
+   "pages": 3,
+   "probed": 3,
+   "reach": null,
+   "evidence": [
+    "assets.adobedtm.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "feature": "tag manager: Google Tag Manager",
+   "pages": 3,
+   "probed": 3,
+   "reach": null,
+   "evidence": [
+    "www.googletagmanager.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-unknown-third-party-host-mktgblobpubaccess1-blob-core-wind",
+   "class": "T",
+   "feature": "unknown third-party host mktgblobpubaccess1.blob.core.windows.net",
+   "pages": 3,
+   "probed": 3,
+   "reach": null,
+   "evidence": [
+    "mktgblobpubaccess1.blob.core.windows.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-unknown-third-party-host-d34r8q7sht0t9k-cloudfront-net",
+   "class": "T",
+   "feature": "unknown third-party host d34r8q7sht0t9k.cloudfront.net",
+   "pages": 3,
+   "probed": 3,
+   "reach": null,
+   "evidence": [
+    "d34r8q7sht0t9k.cloudfront.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-chat-live-chat-widget",
+   "class": "T",
+   "feature": "chat: live chat widget",
+   "pages": 3,
+   "probed": 3,
+   "reach": null,
+   "evidence": [
+    "apps.euw2.pure.cloud"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-rum-new-relic",
+   "class": "T",
+   "feature": "RUM: New Relic",
+   "pages": 3,
+   "probed": 3,
+   "reach": null,
+   "evidence": [
+    "js-agent.newrelic.com",
+    "bam.eu01.nr-data.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "feature": "marketing: ad / retargeting pixel",
+   "pages": 3,
+   "probed": 3,
+   "reach": null,
+   "evidence": [
+    "ade.googlesyndication.com",
+    "pagead2.googlesyndication.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "feature": "analytics: Google Analytics / Ads",
+   "pages": 3,
+   "probed": 3,
+   "reach": null,
+   "evidence": [
+    "www.google-analytics.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "x-sign-in-account-links",
+   "class": "X",
+   "feature": "sign-in / account links",
+   "pages": 3,
+   "probed": 3,
+   "reach": null,
+   "evidence": [
+    "https://myaccount.admiral.com/login",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://travelinsurance.admiral.com/auth/login"
+   ],
+   "pattern": "decided-out",
+   "disposition": "decided-out",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "register",
+   "decision": "auth / commerce on the new host?"
+  }
+ ]
+}

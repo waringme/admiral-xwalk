@@ -1,0 +1,11 @@
+{
+  "_provenance": { "writtenBy": "stardust:deploy", "readArtifacts": ["scripts/scripts.js", "scripts/aem.js"] },
+  "runtime": "vanilla-eds (aem-boilerplate-xwalk)",
+  "blockWrapperClass": "block",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "contentSource": "AEM author (fstab markup mountpoint) — pages staged as content/*.plain.html with field hints",
+  "layoutBreakpoint": "768px"
+}

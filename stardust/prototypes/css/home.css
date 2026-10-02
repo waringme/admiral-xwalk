@@ -1,0 +1,304 @@
+/* Admiral replica — product-landing archetype (homepage) modules. Values lifted from
+   www.admiral.com computed styles at 1440 and 360 (mobile-first, breakpoint 768px). */
+
+/* Hero (variant B-left, bespoke mobile image) */
+.hero-banner--30-years-trust { background-image: none; }
+.hero-banner__image-mobile-bespoke {
+  height: 62.5vw;
+  background-image: url('../assets/img/car-covered-with-hat-mobile.jpg');
+  background-position: 50% 100%;
+}
+
+.hero-banner__copy .buttons { margin-top: -5px; }
+
+.button--hero.button--green {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 10px;
+  font-size: 16.2px;
+  line-height: 24px;
+  background-image: linear-gradient(#00c535 0%, #00a32e 100%);
+}
+
+@media (min-width: 768px) {
+  .hero-banner--30-years-trust { background-image: url('../assets/img/car-covered-with-hat.jpg'); }
+  .hero-banner--B-left .hero-background { left: 20px; }
+  .hero-banner__copy h2.extra-narrow { width: 360px; margin-left: auto; margin-right: auto; }
+  .hero-banner--30-years-trust .hero-banner__copy p { padding-bottom: 33px; }
+  .hero-banner__copy .buttons { margin-top: 0; }
+
+  .button--hero.button--green {
+    width: auto;
+    min-height: 52px;
+    margin: 0 22px;
+    padding: 10px 15px;
+    font-size: 21.6px;
+    line-height: 30px;
+  }
+}
+
+/* Product tiles */
+.products { padding-top: 15px; }
+.products .container { padding-top: 15px; padding-bottom: 15px; }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.product-grid__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 16px;
+  background-color: var(--color-tile);
+  border-radius: 8px;
+}
+
+.product-grid__content { display: flex; align-items: center; gap: 5px; }
+.product-grid__icon { width: 50px; height: 50px; flex: 0 0 50px; background-repeat: no-repeat; }
+
+.product-grid__text {
+  position: relative;
+  padding-right: 15px;
+  color: var(--color-tile-ink);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.94px;
+}
+
+.product-grid__text::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: block;
+  width: 7px;
+  height: 15px;
+  transform: translateY(-7.5px);
+  background-repeat: no-repeat;
+}
+
+.button--make-a-claim {
+  display: inline-block;
+  padding: 8px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: var(--color-tile-ink);
+  border-radius: 8px;
+}
+
+.button--make-a-claim::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  margin-right: 6px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .products { padding-top: 20px; }
+  .products .container { padding-top: 20px; padding-bottom: 20px; }
+  .product-grid { grid-template-columns: repeat(4, 1fr); margin-bottom: 24px; }
+  .product-grid__content { flex-direction: column; }
+}
+
+/* Sub-hero banners */
+.sub-hero-banner--person-infront-house { background-color: #bbeeff; }
+.sub-hero-banner--person-infront-house .image { order: 2; background-image: url('../assets/img/subhero-annie-foldedhands-mobile.png'); }
+.sub-hero-banner--person-infront-house h3,
+.sub-hero-banner--person-infront-house p { color: var(--color-tile-ink); }
+.sub-hero-banner--admiral-app .image { background-image: url('../assets/img/sub-hero-admiral-app-mobile.jpg'); }
+
+section.container.pt-sml { padding-top: 15px; padding-bottom: 15px; }
+
+.app-icons { margin-top: 16px; }
+.app-icons img { display: inline-block; width: auto; height: 40px; }
+.app-icons .android { margin-left: 4px; }
+
+@media (min-width: 768px) {
+  section.container.pt-sml { padding-top: 20px; padding-bottom: 20px; }
+  .sub-hero-banner--person-infront-house .image { order: 0; margin-left: 0; background-image: url('../assets/img/sub-hero-annie-foldedhands.png'); }
+  .sub-hero-banner--admiral-app .image { background-image: url('../assets/img/sub-hero-admiral-app.jpg'); }
+  .app-icons { margin-top: 12px; }
+  .app-icons img { height: 52px; }
+  .app-icons .android { margin-left: 5px; }
+}
+
+/* Product pods row */
+.product-pods .container { padding-top: 15px; padding-bottom: 40px; }
+
+@media (min-width: 768px) {
+  .product-pods .container { padding-top: 20px; padding-bottom: 60px; }
+}
+
+/* Award banner */
+.custom-banner.dark-blue { background-color: #091f30; }
+
+.custom-banner .container { max-width: var(--container); padding: 0 10px; }
+
+.custom-banner .finance-award-11 {
+  width: 255px;
+  height: 200px;
+  margin: 0 auto;
+  background: url('../assets/img/personal-finance-award-11-mobile@2x.png') no-repeat 50% 50% / contain;
+}
+
+.custom-banner .text { padding-bottom: 30px; text-align: center; }
+.custom-banner h2.heading-small { margin-top: 10px; color: #fff; font-size: 20px; line-height: 24px; }
+.custom-banner p { margin-top: -12px; color: var(--color-pale-blue); font-weight: 400; }
+
+@media (min-width: 768px) {
+  .custom-banner.dark-blue { height: 330px; }
+
+  .custom-banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 330px;
+    padding: 0 30px 10px;
+  }
+
+  .custom-banner .finance-award-11 {
+    width: 40%;
+    height: 320px;
+    margin: 0 2.5%;
+    background-image: url('../assets/img/personal-finance-award-11@2x.png');
+  }
+
+  .custom-banner .text { width: 55%; padding-bottom: 0; }
+  .custom-banner h2.heading-small { margin-top: 0; font-size: 28px; line-height: 36px; }
+  .custom-banner p { margin-top: -10px; padding: 0 54px; }
+}
+
+/* Spacer + narrow text containers (768px max) */
+.spacer .container { padding-top: 30px; }
+.testimonials .container,
+.get-to-know .container { max-width: 768px; }
+
+@media (min-width: 768px) {
+  .spacer .container { max-width: 768px; padding: 50px 30px 0; }
+}
+
+/* Testimonials carousel */
+.testimonials .container { padding: 30px 10px 0; }
+
+.testimonials-slider {
+  position: relative;
+  margin-top: 19px;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.testimonials-slider::before,
+.testimonials-slider::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.testimonials-slider::before { top: -16px; left: 25px; background-image: url('../assets/img/icon-testimonial-quote-open-dark.svg'); }
+.testimonials-slider::after { top: 107px; right: 27px; background-image: url('../assets/img/icon-testimonial-quote-close-dark.svg'); }
+
+.slick-list { position: relative; z-index: 1; overflow: hidden; }
+.slick-track { display: flex; }
+.slick-slide { display: flex; flex: 0 0 100%; align-items: center; justify-content: center; min-height: 1px; }
+.testimonial { position: relative; width: 100%; }
+
+.testimonial .callout {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: #ee5615;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.testimonial .image {
+  position: relative;
+  width: 53px;
+  height: 53px;
+  margin: 23px auto 17px;
+  background: #ff7911 url('../assets/img/testimonial-user.svg') no-repeat 50% 100% / 38.5px 42px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: #ff7911 0 0 0 1px;
+}
+
+.testimonial__author { margin-top: -10px; padding-bottom: 14px; font-size: 16.2px; line-height: 24px; }
+
+.slick-arrow {
+  position: absolute;
+  z-index: 2;
+  top: 61.3px;
+  width: 10.1875px;
+  height: 20.39px;
+  padding: 0;
+  overflow: hidden;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  background: transparent no-repeat 50% 50% / 10.2px 20.4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.slick-prev { left: -2px; background-image: url('../assets/img/slick-arrow-prev.svg'); }
+.slick-next { right: -2px; background-image: url('../assets/img/slick-arrow-next.svg'); }
+
+@media (min-width: 768px) {
+  .testimonials .container { padding: 50px 30px 0; }
+  .testimonials-slider { margin: 0 0 29px; }
+  .testimonials-slider::before,
+  .testimonials-slider::after { width: 134px; height: 135px; }
+  .testimonials-slider::before { top: -29px; left: 29px; }
+  .testimonials-slider::after { top: 90px; right: 27px; }
+  .testimonial { padding: 0 60px; }
+  .testimonial .callout { font-size: 25.2px; line-height: 34px; }
+  .testimonial .image { width: 74px; height: 74px; margin: 25px auto 17px; background-size: 53.3px 58.4px; }
+  .testimonial__author { margin-top: -4px; padding-bottom: 11px; font-size: 19.8px; line-height: 28px; }
+  .slick-arrow { top: 54.75px; width: 12.6875px; height: 25.5px; background-size: 12.744px 25.488px; }
+  .slick-prev { left: -4px; }
+  .slick-next { right: -4px; }
+}
+
+.testimonial .image::before,
+.testimonial .image::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 105px;
+  height: 1px;
+  background-color: #ff7911;
+}
+
+.testimonial .image::before { right: calc(100% + 15px); }
+.testimonial .image::after { left: calc(100% + 15px); }
+
+/* Get to know us */
+.get-to-know .container { padding: 15px 10px 40px; }
+
+@media (min-width: 768px) {
+  .get-to-know .container { padding: 20px 30px 60px; }
+}
+
+/* App banner */
+.app-banner .container { padding-bottom: 30px; }
+
+@media (min-width: 768px) {
+  .app-banner .container { padding-bottom: 60px; }
+}

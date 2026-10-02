@@ -1,0 +1,63 @@
+/* breadcrumbs — values lifted from www.admiral.com (gated canon). */
+
+main .breadcrumbs-container > .breadcrumbs-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+.breadcrumbs {
+  overflow: hidden;
+  border-bottom: 1px solid #aaa;
+  background-color: #d6d6d6;
+}
+
+.breadcrumbs .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px 10px 10px;
+  overflow: hidden auto;
+}
+
+.breadcrumbs .container :is(ul, ol) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.breadcrumbs li {
+  color: var(--color-text);
+  font-size: 12.15px;
+  font-weight: 400;
+  line-height: 13.9725px;
+  text-transform: capitalize;
+}
+
+.breadcrumbs li a:any-link {
+  color: var(--color-text);
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* live: trailing space inside each crumb, then a 9px chevron (margin -2px 1px 0 2px) */
+.breadcrumbs li:not(:last-child)::after {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin: -2px 1px 0 5px;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20d%3D%22M6.6%2018H5l6.4-9L5%200h1.7l6.4%209-6.5%209z%22%20fill%3D%22%234f4f4f%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+@media (width >= 768px) {
+  .breadcrumbs .container {
+    width: 100%;
+    max-width: var(--container-chrome);
+    padding: 10px 20px 10px 17px;
+  }
+
+  .breadcrumbs li {
+    font-size: 12.6px;
+    line-height: 14.49px;
+  }
+}

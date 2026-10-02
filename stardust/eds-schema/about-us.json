@@ -1,0 +1,224 @@
+{
+ "source": "http://localhost:8791/about-us-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero-banner--about-us",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "About Us"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Find out more about Admiral, what we do and what we stand for. The home of MultiCover Insurance and more."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "wrapper",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Admiral is a UK-based company, set up in 1993 to specialise in ."
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "car insurance",
+     "href": "/car-insurance"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "We now offer a variety of products including , , , , , , and ."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "MultiCover",
+     "href": "/multicover-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "MultiCar",
+     "href": "/multi-car-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "home insurance",
+     "href": "/home-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "pet insurance",
+     "href": "https://www.admiral.com/pet-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "van insurance",
+     "href": "https://www.admiral.com/van-insurance"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "landlord insurance",
+     "href": "https://www.admiral.com/home-insurance/landlord"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "travel insurance",
+     "href": "/travel-insurance"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "But that’s not all you need to know about us. Read on to find out more about Admiral, what we stand for and what our customers think of us."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 3,
+   "repeats": [
+    {
+     "unitSelector": "P.",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "wrapper",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "A brief history of Admiral"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Here are some of the stand-out moments since we started in 1993."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Our milestones",
+     "href": "/about-us/our-milestones"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "The Admiral brand"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Find out a little more about what we stand for."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Our brand",
+     "href": "/about-us/the-admiral-brand"
+    },
+    {
+     "role": "heading",
+     "order": 6,
+     "text": "Admiral Stay at Home Refund"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Here’s how we gave back to our customers during the Coronavirus lockdown."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "How we gave back",
+     "href": "/about-us/stay-at-home-refund"
+    },
+    {
+     "role": "heading",
+     "order": 9,
+     "text": "Community & sponsorship"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Community is important to us and we’re involved with a host of different initiatives and events – both big and small."
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Our community",
+     "href": "/community-and-sponsorship"
+    },
+    {
+     "role": "heading",
+     "order": 12,
+     "text": "Working for Admiral"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "From humble beginnings with 57 employees in Cardiff to over 11,000 staff in eight countries – what’s it like to work for Admiral?"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "See for yourself",
+     "href": "/about-us/working-for-admiral"
+    },
+    {
+     "role": "heading",
+     "order": 15,
+     "text": "Our awards"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "We've come a long way, from start-up to delivering award-winning products and services."
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "See our awards",
+     "href": "/about-us/awards.php"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 12,
+   "repeats": [
+    {
+     "unitSelector": "DIV.grid__cell",
+     "count": 6,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  }
+ ]
+}

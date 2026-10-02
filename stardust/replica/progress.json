@@ -1,0 +1,342 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-02T16:56:46Z",
+    "againstInput": "https://www.admiral.com/",
+    "regime": "prototype (standalone prototype vs live origin)",
+    "instruments": "content-diff + visual-diff (diff skill, --profile generic --dismiss), stitch-shot + pixel-compare + crop-compare + chrome-parity + anchor (replica)"
+  },
+  "pageTypes": [
+    {
+      "pageType": "product-landing",
+      "archetype": "index",
+      "live": "https://www.admiral.com/",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "contentRoot": "#block-admiral-annie-content",
+      "breakpoints": {
+        "1440": {
+          "iterations": 5,
+          "overCap": "5 pixel rounds vs cap 3: rounds 3–5 were markup/parity corrections (runtime slick clones + JSON-LD, Google badge width, footer link colours/weights, visually-hidden footer h2); live capture cached — no extra live hits",
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "justified",
+            "pixelPct": 0.22,
+            "heightDelta": 0,
+            "chrome": {
+              "header": 100.0,
+              "footer": 99.73
+            },
+            "chromeParity": "quiet",
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "IMAGERY GAP",
+              "why": "live counts consent (TrustArc) + chat widget <img>s rendered 0x0; page imagery is CSS backgrounds on both sides"
+            },
+            {
+              "probe": "pixel",
+              "flag": "TrustArc floating cookie badge (#teconsent) bottom-left in live captures",
+              "why": "third-party consent UI, dynamics row 5 (embed-passthrough, owner decision); not page design"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×3 (inline <style> text inside live content root)",
+              "why": "Drupal per-section <style> blocks; presentation moved to stylesheets"
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×3 (pods)",
+              "why": "object-fit: cover crop, identical to live"
+            },
+            {
+              "probe": "content",
+              "flag": "fonts",
+              "why": "same licensed Adobe Fonts kit mcu8nnf referenced on both sides — no substitution, no font fork reported",
+              "permanent": false
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 4000–4082",
+              "pct": 2.9,
+              "cause": "capture-state: TrustArc cookie badge present only on live",
+              "flaggedFor": "delivery"
+            }
+          ]
+        },
+        "360": {
+          "iterations": 4,
+          "overCap": "4th round fixed the mobile header crop (toggle icon position, divider, quick-action widths) after the full-page gate already passed at round 3",
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "justified",
+            "pixelPct": 0.85,
+            "heightDelta": 0,
+            "chrome": {
+              "header": 100.0,
+              "footer": 99.01
+            },
+            "chromeParity": "quiet",
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "IMAGERY GAP",
+              "why": "live counts consent (TrustArc) + chat widget <img>s rendered 0x0; page imagery is CSS backgrounds on both sides"
+            },
+            {
+              "probe": "pixel",
+              "flag": "TrustArc floating cookie badge (#teconsent) bottom-left in live captures",
+              "why": "third-party consent UI, dynamics row 5 (embed-passthrough, owner decision); not page design"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 6500–6615",
+              "pct": 7.5,
+              "cause": "capture-state: TrustArc cookie badge present only on live",
+              "flaggedFor": "delivery"
+            }
+          ]
+        }
+      },
+      "wideViewport": {
+        "checkedAt": [
+          1280,
+          1680,
+          1920
+        ],
+        "finding": "hero height was frozen at 432px; re-lifted the authored model (30vw, 420–510px) — box map now matches live at all three widths"
+      },
+      "motion": {
+        "observed": [
+          "product-tile hover (translateY -2px, #5ed7ff, shadow, 0.3s)",
+          "desktop nav-link hover (bg #fff)",
+          "testimonials slick transform 0.5s on arrow click",
+          "mega-nav click-open dropdown + blackout",
+          "mobile Menu toggle"
+        ],
+        "implemented": [
+          "css/motion.css",
+          "js/motion.js"
+        ],
+        "dead": [
+          "pod hover",
+          "more-link hover",
+          "hero CTA hover",
+          "make-a-claim hover",
+          "footer link hover"
+        ],
+        "header": "static, no scroll morph",
+        "evidence": [
+          "stardust/replica/motion/index.json",
+          "stardust/replica/motion/index-360.json"
+        ],
+        "pixelAfterMotion": {
+          "1440": 0.22,
+          "360": 0.85
+        }
+      }
+    },
+    {
+      "pageType": "hub-landing",
+      "archetype": "about-us",
+      "live": "https://www.admiral.com/about-us",
+      "prototype": "stardust/prototypes/about-us-proposed.html",
+      "contentRoot": "#block-admiral-annie-content > div:first-child (live nests the footer inside the content root on this template; scope mirrored symmetrically)",
+      "breakpoints": {
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "justified",
+            "pixelPct": 0.32,
+            "heightDelta": 0,
+            "chrome": {
+              "header": 100.0,
+              "strip": 99.98,
+              "footer": 99.47
+            },
+            "chromeParity": "quiet",
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "IMAGERY GAP",
+              "why": "live counts consent (TrustArc) + chat widget <img>s rendered 0x0; page imagery is CSS backgrounds on both sides"
+            },
+            {
+              "probe": "pixel",
+              "flag": "TrustArc floating cookie badge (#teconsent) bottom-left in live captures",
+              "why": "third-party consent UI, dynamics row 5 (embed-passthrough, owner decision); not page design"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×1 (inline <style>)",
+              "why": "presentation moved to stylesheets"
+            }
+          ],
+          "residuals": []
+        },
+        "360": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "justified",
+            "pixelPct": 0.95,
+            "heightDelta": 0,
+            "chrome": {
+              "header": 100.0,
+              "strip": 99.93,
+              "footer": 99.13
+            },
+            "chromeParity": "quiet",
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "IMAGERY GAP",
+              "why": "live counts consent (TrustArc) + chat widget <img>s rendered 0x0; page imagery is CSS backgrounds on both sides"
+            },
+            {
+              "probe": "pixel",
+              "flag": "TrustArc floating cookie badge (#teconsent) bottom-left in live captures",
+              "why": "third-party consent UI, dynamics row 5 (embed-passthrough, owner decision); not page design"
+            }
+          ],
+          "residuals": []
+        }
+      },
+      "motion": {
+        "observed": [],
+        "implemented": [
+          "shared mega-nav behaviour"
+        ],
+        "dead": [
+          "pod hover",
+          "more-link hover",
+          "breadcrumb hover",
+          "utility-bar hover"
+        ],
+        "header": "static",
+        "evidence": [
+          "stardust/replica/motion/about-us.json"
+        ]
+      }
+    },
+    {
+      "pageType": "finder-intro",
+      "archetype": "travel-insurance-ski-festivals",
+      "live": "https://www.admiral.com/travel-insurance/ski-festivals",
+      "prototype": "stardust/prototypes/travel-insurance-ski-festivals-proposed.html",
+      "contentRoot": "#block-admiral-annie-content",
+      "breakpoints": {
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "contentDiff": "none — content + roles match",
+            "visualFlags": "justified",
+            "pixelPct": 0.33,
+            "heightDelta": 0,
+            "chrome": {
+              "header": 100.0,
+              "strip": 99.96,
+              "footer": 99.61
+            },
+            "chromeParity": "quiet",
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "IMAGERY GAP",
+              "why": "live counts consent (TrustArc) + chat widget <img>s rendered 0x0; page imagery is CSS backgrounds on both sides"
+            },
+            {
+              "probe": "pixel",
+              "flag": "TrustArc floating cookie badge (#teconsent) bottom-left in live captures",
+              "why": "third-party consent UI, dynamics row 5 (embed-passthrough, owner decision); not page design"
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×3 (pods)",
+              "why": "object-fit: cover crop, identical to live"
+            }
+          ],
+          "residuals": []
+        },
+        "360": {
+          "iterations": 1,
+          "result": {
+            "structuralRed": 0,
+            "contentDiff": "none — content + roles match",
+            "visualFlags": "justified",
+            "pixelPct": 1.14,
+            "heightDelta": 0,
+            "chrome": {
+              "header": 100.0,
+              "strip": 99.86,
+              "footer": 99.02
+            },
+            "chromeParity": "quiet",
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "IMAGERY GAP",
+              "why": "live counts consent (TrustArc) + chat widget <img>s rendered 0x0; page imagery is CSS backgrounds on both sides"
+            },
+            {
+              "probe": "pixel",
+              "flag": "TrustArc floating cookie badge (#teconsent) bottom-left in live captures",
+              "why": "third-party consent UI, dynamics row 5 (embed-passthrough, owner decision); not page design"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 4000–4027",
+              "pct": 17.3,
+              "cause": "capture-state: TrustArc cookie badge present only on live (27-row tail band)",
+              "flaggedFor": "delivery"
+            }
+          ]
+        }
+      },
+      "motion": {
+        "observed": [],
+        "implemented": [
+          "shared mega-nav behaviour"
+        ],
+        "dead": [
+          "pod hover",
+          "more-link hover",
+          "Start CTA hover"
+        ],
+        "header": "static",
+        "evidence": [
+          "stardust/replica/motion/travel-insurance-ski-festivals.json"
+        ]
+      },
+      "notes": "The finder itself lives at /travel-insurance/ski-festivals/finder (a separate catalog template, finder-results); this archetype links to it with the Start CTA."
+    }
+  ],
+  "shared": {
+    "canon": [
+      "stardust/prototypes/css/canon.css",
+      "stardust/prototypes/css/icons.css",
+      "stardust/prototypes/css/motion.css",
+      "stardust/prototypes/js/motion.js"
+    ],
+    "fonts": "Adobe Fonts kit mcu8nnf referenced (jaf-facitweb, aktiv-grotesk); EDS domains must be added to the kit before launch",
+    "icons": "all icons harvested verbatim from live computed background-image data URIs and inline SVG — none hand-drawn",
+    "untestedRange": "768–1023px tablet: no overflow (validation loop), but not pixel-gated",
+    "validation": "stardust/validation/<slug>/{desktop,tablet,mobile}.png — 0 console errors, 0 failed requests, no overflow; remaining a11y items mirror live and are register entries R-01..R-04 (deferred)"
+  }
+}

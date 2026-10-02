@@ -1,0 +1,26 @@
+/* Admiral replica — finder-intro archetype (Ski Festival Hub) modules. Values lifted from
+   www.admiral.com/travel-insurance/ski-festivals computed styles at 1440 and 360. */
+
+.intro.container { padding: 30px 10px 0; }
+.intro h1 { font-size: 18px; line-height: 30px; }
+
+@media (min-width: 768px) {
+  .intro.container { padding: 50px 20px 0; }
+  .intro h1 { line-height: 48px; }
+}
+
+.finder-grid.container { padding-bottom: 40px; }
+
+@media (min-width: 768px) {
+  .finder-grid.container { padding-bottom: 60px; }
+}
+
+.sub-hero-banner--ski-festivals .image { background-image: url('../assets/img/sub-hero-ski-festivals-mobile.jpg'); }
+
+@media (min-width: 768px) {
+  .sub-hero-banner--ski-festivals .image { background-image: url('../assets/img/sub-hero-ski-festivals.jpg'); }
+}
+
+/* Live containers on this page carry clearfix ::before/::after (display: table) — margin containment */
+.intro.container,
+.finder-grid.container { display: flow-root; }

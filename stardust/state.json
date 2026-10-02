@@ -1,0 +1,143 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-02T17:45:15Z",
+    "stardustVersion": "0.10.0"
+  },
+  "site": {
+    "originUrl": "https://www.admiral.com",
+    "deployUrl": null,
+    "extractedAt": "2026-10-02T15:43:52Z",
+    "pageCap": 3,
+    "totalDiscovered": 827,
+    "crawled": 3
+  },
+  "direction": {
+    "resolvedAt": "2026-10-02T16:56:46Z",
+    "phrase": "/stardust:replica sample product landing, hub-landing, finder-intro",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "verbatim"
+  },
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://www.admiral.com/",
+      "title": "Car, MultiCar and MultiCover Insurance Quotes – Admiral",
+      "type": "product-landing",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-02T15:42:08.381Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-02T16:56:46Z",
+          "note": "preserve mode (bounded-single)"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-02T16:56:46Z",
+          "note": "source-fidelity gate passed 1440+360"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-02T17:45:15Z",
+          "approvedBy": "user",
+          "note": "user: carry on and deploy"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": null,
+      "deploy": {
+        "status": "staged",
+        "at": "2026-10-02T18:39:53Z",
+        "contentPath": "content/index.plain.html",
+        "note": "EDS blocks on branch stardust-replica; content awaiting platform upload"
+      }
+    },
+    {
+      "slug": "about-us",
+      "url": "https://www.admiral.com/about-us",
+      "title": "About Us - Admiral",
+      "type": "hub-landing",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-02T15:42:09.143Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-02T16:56:46Z",
+          "note": "preserve mode (bounded-single)"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-02T16:56:46Z",
+          "note": "source-fidelity gate passed 1440+360"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-02T17:45:15Z",
+          "approvedBy": "user",
+          "note": "user: carry on and deploy"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/about-us.json",
+      "prototypePath": "stardust/prototypes/about-us-proposed.html",
+      "migratedPath": null,
+      "deploy": {
+        "status": "staged",
+        "at": "2026-10-02T18:39:53Z",
+        "contentPath": "content/about-us.plain.html",
+        "note": "EDS blocks on branch stardust-replica; content awaiting platform upload"
+      }
+    },
+    {
+      "slug": "travel-insurance-ski-festivals",
+      "url": "https://www.admiral.com/travel-insurance/ski-festivals",
+      "title": "The ultimate ski festivals guide – Admiral",
+      "type": "finder-intro",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-02T15:42:09.149Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-02T16:56:46Z",
+          "note": "preserve mode (bounded-single)"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-02T16:56:46Z",
+          "note": "source-fidelity gate passed 1440+360"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-02T17:45:15Z",
+          "approvedBy": "user",
+          "note": "user: carry on and deploy"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/travel-insurance-ski-festivals.json",
+      "prototypePath": "stardust/prototypes/travel-insurance-ski-festivals-proposed.html",
+      "migratedPath": null,
+      "deploy": {
+        "status": "staged",
+        "at": "2026-10-02T18:39:53Z",
+        "contentPath": "content/travel-insurance/ski-festivals.plain.html",
+        "note": "EDS blocks on branch stardust-replica; content awaiting platform upload"
+      }
+    }
+  ]
+}
