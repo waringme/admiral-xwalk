@@ -201,3 +201,9 @@ Harness: `aem up --html-folder stardust/.work/preview` (port 3001), pages built 
 1. Install package 1.1.0 and reprocess the assets.
 2. Upload the content.
 3. Publish the six child pages so `/query-index.json` lists them. Until then the cards stay on their authored fallback, and the child-page sibling strips stay empty.
+
+## DAM image package 1.2.0 (2026-10-04)
+- `stardust/packages/admiral-xwalk-images-1.2.0.zip` holds all 66 images the staged pages reference: 24 in `images/`, 42 in `images/about-us/`. It replaces 1.0.0 (24 assets) and 1.1.0.
+- Filter mode is `update`: the package adds and refreshes these assets, and never deletes other assets in the folder.
+- Each asset now carries an explicit `renditions` nt:folder node.
+- Verified: zip integrity, 203 well-formed XML files, 66/66 content refs present, and every original is a valid image.
