@@ -7,10 +7,8 @@
       "aemSitePath": "/content/admiral-xwalk",
       "aemAssetsFolderPath": "/content/dam/admiral-xwalk",
       "aemSiteName": "admiral-xwalk",
-      "aemSiteTitle": "admiral-xwalk"
+      "aemSiteTitle": "admiral-xwalk",
+      "baseUrl": "http://www.admiral.com"
     }
-  },
-  "features": [
-    "site-planning"
-  ]
+  }
 }
