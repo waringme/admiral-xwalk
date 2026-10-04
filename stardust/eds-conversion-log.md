@@ -207,3 +207,21 @@ Harness: `aem up --html-folder stardust/.work/preview` (port 3001), pages built 
 - Filter mode is `update`: the package adds and refreshes these assets, and never deletes other assets in the folder.
 - Each asset now carries an explicit `renditions` nt:folder node.
 - Verified: zip integrity, 203 well-formed XML files, 66/66 content refs present, and every original is a valid image.
+
+## Dynamic cards: page-summary fallback and editor support (2026-10-04)
+- **What the published site showed:**
+  - `/query-index.json` lists paths only, because GitHub main still has the old `helix-query.yaml`.
+  - The pages carry no card-* or template meta. The page model on GitHub predates those fields, so they aren't rendered.
+- **Folder mode no longer depends on those.** For each page directly inside the folder, it takes the following, in order:
+  1. the index card properties
+  2. the page's own head meta: card-title, card-summary, card-link-text, card-order, description, og:image
+  3. its first heading, paragraph and image
+- Nested sub-folders, nav and footer are excluded.
+- **Universal Editor (author):**
+  - Folder links come with the site's content-path prefix; the block strips it.
+  - Pages are listed from AEM via the folder's Sling JSON (depth 2: jcr:title, jcr:description, image, card-* properties), so authors see the dynamic cards while editing.
+  - This mode is untested here, because there is no author access from this environment. If the request fails, the authored cards show.
+- An unset folder field (an empty first row) no longer renders as a blank card.
+- **Verified locally:**
+  - With a paths-only index copied from the published one: 6 cards, current page excluded, descriptions from each page.
+  - With a full-property index: the 6 curated cards in Card order.
