@@ -14,22 +14,8 @@
  */
 import { loadCSS } from '../../scripts/aem.js';
 import {
-  folderCards, folderOf, wrap, AUTHOR_ROOT,
+  folderCards, readConfig, wrap, AUTHOR_ROOT,
 } from '../cards/cards.js';
-
-const ORDERS = ['latest', 'card-order'];
-
-function readConfig(block) {
-  const config = { folder: null, count: 6, order: 'latest' };
-  [...block.children].forEach((row) => {
-    const text = row.textContent.trim();
-    const folder = folderOf(row);
-    if (folder && !config.folder) config.folder = folder;
-    else if (/^\d+$/.test(text)) config.count = Math.max(1, Number(text));
-    else if (ORDERS.includes(text.toLowerCase())) config.order = text.toLowerCase();
-  });
-  return config;
-}
 
 export default async function decorate(block) {
   const config = readConfig(block);

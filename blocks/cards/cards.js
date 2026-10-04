@@ -3,18 +3,17 @@
  * (replica of www.admiral.com). Reconstructive container (stardust/eds-schema: home,
  * about-us, ski hub pods).
  *
- * Model (xwalk container, _cards.json): hand-authored card items. Folder-driven cards are the
- * separate `cards-folder` block, which reuses folderCards() below. For content authored before
- * that split, a leading folder row is still honoured:
- *   legacy row       folder  optional folder (e.g. /about-us). When set, the block lists the
- *                    pages directly inside that folder (the current page excluded), one card
- *                    per page, sorted by Card order then title. Each card takes the page's
- *                    Card title / Card summary / Card link text / Image properties from the
- *                    query index; anything missing is summarised from the page itself (first
- *                    heading, first paragraph, first image). In the Universal Editor (AEM
- *                    author) the folder's child pages are read from AEM instead. The authored
- *                    card rows stay as the no-JS / no-pages fallback (document-first).
- *   one row per card item —
+ * Model (xwalk container, _cards.json) — block fields render first as single-cell rows:
+ *   folder  optional folder picker (e.g. /about-us). When set, the block lists the pages
+ *           directly inside that folder (the current page excluded), one card per page. Each
+ *           card takes the page's Card title / Card summary / Card link text / Image properties
+ *           from the query index; anything missing is summarised from the page itself (title,
+ *           description, first image). In the Universal Editor (AEM author) the folder's child
+ *           pages are read from AEM instead. Card items stay as the no-pages fallback.
+ *   count   number of folder cards (default 6)
+ *   order   `latest` (most recently modified first, default) or `card-order`
+ * The `cards-folder` block is the same listing without card items (readConfig/folderCards).
+ *   then one row per card item —
  *     cell 1  image  <picture> (the image strip; hidden on mobile unless `mobile-image`)
  *     cell 2  text   optional <p><strong>tag</strong></p> (painted as a strip on the image) +
  *                    <h3> + <p> + a plain link <p><a>…</a></p> (the arrow "more" link)
@@ -128,10 +127,17 @@ function cardPicture(src) {
   return pic;
 }
 
+/** page titles carry the site name ("Our milestones - Admiral"); the card heading drops it */
+function withoutSiteName(title = '') {
+  const site = (document.title.match(/\s[-|–]\s([^-|–]+)$/) || [])[1];
+  if (!site) return title;
+  return title.replace(new RegExp(`\\s[-|–]\\s${site.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`), '');
+}
+
 function indexCard(entry) {
   const pod = wrap('pod');
   if (usable(entry.image)) pod.append(wrap('image', cardPicture(entry.image)));
-  pod.append(el('h3', entry.cardTitle || entry.title));
+  pod.append(el('h3', entry.cardTitle || withoutSiteName(entry.title)));
   const summary = entry.cardSummary || entry.description;
   if (summary) pod.append(el('p', summary));
   const a = el('a', entry.cardLinkText || 'Find out more');
@@ -245,20 +251,40 @@ export {
   folderOf, sitePath, wrap, AUTHOR_ROOT,
 };
 
-export default async function decorate(block) {
-  const grid = wrap('grid');
-  let folder = null;
-  [...block.children].forEach((row, i) => {
-    const path = folderOf(row);
-    if (path && !folder) folder = path;
-    else if (!(i === 0 && isEmptyFieldRow(row))) grid.append(buildCard(row));
-  });
-  block.replaceChildren(grid);
-  if (!folder) return;
+const ORDERS = ['latest', 'card-order'];
 
-  block.dataset.folder = folder;
+/**
+ * splits the block's rows into its folder settings (single-cell field rows: folder, count,
+ * order — set or empty) and its card item rows (image + text cells)
+ */
+function readConfig(block) {
+  const config = {
+    folder: null, count: 6, order: 'latest', items: [],
+  };
+  [...block.children].forEach((row) => {
+    const text = row.textContent.trim();
+    const folder = folderOf(row);
+    if (folder && !config.folder) config.folder = folder;
+    else if (row.children.length === 1 && /^\d+$/.test(text)) config.count = Math.max(1, Number(text));
+    else if (row.children.length === 1 && ORDERS.includes(text.toLowerCase())) {
+      config.order = text.toLowerCase();
+    } else if (!isEmptyFieldRow(row)) config.items.push(row);
+  });
+  return config;
+}
+
+export { readConfig };
+
+export default async function decorate(block) {
+  const config = readConfig(block);
+  const grid = wrap('grid');
+  config.items.forEach((row) => grid.append(buildCard(row)));
+  block.replaceChildren(grid);
+  if (!config.folder) return;
+
+  block.dataset.folder = config.folder;
   try {
-    const cells = await folderCards(folder);
+    const cells = await folderCards(config.folder, { limit: config.count, order: config.order });
     if (cells.length) grid.replaceChildren(...cells);
   } catch {
     // listing unavailable: the authored fallback cards stay

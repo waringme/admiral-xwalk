@@ -385,6 +385,39 @@
     "id": "cards",
     "fields": [
       {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "folder",
+        "label": "Folder",
+        "description": "Optional. Pick a folder to build the cards from its pages (this page excluded). Each card uses the page's Card title, Card summary, Card link text and Image properties, falling back to its title, description and first image. Leave empty to use the cards below."
+      },
+      {
+        "component": "number",
+        "valueType": "number",
+        "name": "count",
+        "label": "Number of cards",
+        "value": 6,
+        "description": "Used when a folder is picked"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "order",
+        "label": "Order",
+        "value": "latest",
+        "options": [
+          {
+            "name": "Latest first",
+            "value": "latest"
+          },
+          {
+            "name": "Card order (page property)",
+            "value": "card-order"
+          }
+        ],
+        "description": "Used when a folder is picked"
+      },
+      {
         "component": "multiselect",
         "name": "classes",
         "label": "Style",
