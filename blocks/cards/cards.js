@@ -157,10 +157,16 @@ async function summarise(entry) {
     && usable(entry.image)) return entry;
   const out = { ...entry, image: usable(entry.image) ? entry.image : '' };
   try {
-    const resp = await fetch(entry.path);
+    // published pages answer on their path; author pages need .html (entry.href)
+    const resp = await fetch(entry.href || entry.path);
     if (!resp.ok) return out;
     const doc = new DOMParser().parseFromString(await resp.text(), 'text/html');
-    const base = new URL(entry.path, window.location.origin);
+    const base = new URL(entry.href || entry.path, window.location.origin);
+    // keep the query: author image URLs can carry rendition parameters
+    const local = (src) => {
+      const u = new URL(src, base);
+      return u.origin === window.location.origin ? `${u.pathname}${u.search}` : u.href;
+    };
     const meta = (name) => doc.head.querySelector(`meta[name="${name}"], meta[property="${name}"]`)
       ?.getAttribute('content')?.trim();
     const sections = [...doc.querySelectorAll('main > div')]
@@ -177,8 +183,8 @@ async function summarise(entry) {
     out.cardOrder ||= meta('card-order');
     if (!out.title && heading) out.title = heading.textContent.trim();
     out.description ||= meta('description') || para?.textContent.trim();
-    if (!out.image && usable(ogImage)) out.image = new URL(ogImage, base).pathname;
-    if (!out.image && img) out.image = new URL(img.getAttribute('src'), base).pathname;
+    if (!out.image && usable(ogImage)) out.image = local(ogImage);
+    if (!out.image && img) out.image = local(img.getAttribute('src'));
   } catch {
     // page unreadable: keep what the index had
   }
@@ -213,7 +219,7 @@ async function fromAuthor(folder, { limit, order }) {
   if (!resp.ok) return [];
   const json = await resp.json();
   const here = normalise(window.location.pathname);
-  return Object.entries(json)
+  const pages = Object.entries(json)
     .filter(([, v]) => v && v['jcr:primaryType'] === 'cq:Page' && v['jcr:content'])
     .map(([name, v]) => {
       const c = v['jcr:content'];
@@ -233,6 +239,8 @@ async function fromAuthor(folder, { limit, order }) {
     .filter((e) => normalise(e.path) !== here)
     .sort(order === 'latest' ? byLatest : byOrder)
     .slice(0, limit);
+  // as on the published site: a page without an Image property shows its first image
+  return Promise.all(pages.map(summarise));
 }
 
 /**
