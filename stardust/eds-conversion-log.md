@@ -225,3 +225,26 @@ Harness: `aem up --html-folder stardust/.work/preview` (port 3001), pages built 
 - **Verified locally:**
   - With a paths-only index copied from the published one: 6 cards, current page excluded, descriptions from each page.
   - With a full-property index: the 6 curated cards in Card order.
+
+## Cards from folder block and section names (2026-10-04)
+- **New `cards-folder` block** ("Cards (from folder)"):
+  - Fields: **Folder** (folder picker), **Number of cards** (default 6), **Order** (Latest first, the default, or Card order) and the cards style options.
+  - It has no hand-authored card items. Each card is built from a page in the folder (same summary logic as before), and the current page is excluded.
+  - It renders with the cards design: it loads `blocks/cards/cards.css` and adds the `cards`, `cards-wrapper` and `cards-container` classes.
+  - In the Universal Editor, an unset folder shows a prompt, so the block stays selectable.
+- **Latest first** sorts by the index `lastModified` (author: `cq:lastModified`) and keeps the first N. The published index already carries lastModified.
+- **The manual Cards block** lost its folder field: it is hand-authored cards only. A legacy folder row in existing content is still honoured.
+- **Content:**
+  - The About Us cards are now a single `cards-folder` block: `/about-us`, 6, latest.
+  - The child pages' "More about us" strips use the same block (`mobile-image lead-two`).
+- **Section names:** every section on the 9 pages now carries a `name` in its section metadata (Universal Editor "Section Name"). The generators derive it from:
+  - the block title (plus its heading for hero / teaser / banner)
+  - else the first heading
+  - else the style label
+  - explicit names for "About Us pages", "More about us", "Community cards" and "Sponsorship cards"
+- **DAM:** package 1.2.0 still covers every referenced image, including the card images that are referenced only from page metadata. The package builder now also counts metadata Image refs.
+- **Verified locally** (real published index copy):
+  - About Us: 6 cards, latest first.
+  - Child pages: 5 cards, self excluded.
+  - Layout identical to the previous cards: thirds / 2-then-3, wrapper padding 0/120 (desktop) and 0/60 (mobile).
+  - The card order now follows "latest", by request, so the About Us pod order no longer mirrors live.

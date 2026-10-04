@@ -1,0 +1,84 @@
+{
+  "definitions": [
+    {
+      "title": "Cards (from folder)",
+      "id": "cards-folder",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Cards Folder",
+              "model": "cards-folder",
+              "count": 6,
+              "order": "latest"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "cards-folder",
+      "fields": [
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "folder",
+          "label": "Folder",
+          "description": "Pick a folder: one card per page directly inside it (this page excluded). Each card uses the page's Card title, Card summary, Card link text and Image properties, falling back to its title, description and first image."
+        },
+        {
+          "component": "number",
+          "valueType": "number",
+          "name": "count",
+          "label": "Number of cards",
+          "value": 6
+        },
+        {
+          "component": "select",
+          "valueType": "string",
+          "name": "order",
+          "label": "Order",
+          "value": "latest",
+          "options": [
+            {
+              "name": "Latest first",
+              "value": "latest"
+            },
+            {
+              "name": "Card order (page property)",
+              "value": "card-order"
+            }
+          ]
+        },
+        {
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Style",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Show image on mobile",
+              "value": "mobile-image"
+            },
+            {
+              "name": "Two per row",
+              "value": "two-up"
+            },
+            {
+              "name": "First two wide, then thirds",
+              "value": "lead-two"
+            },
+            {
+              "name": "Narrow column (768px)",
+              "value": "narrow"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

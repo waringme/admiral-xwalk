@@ -3,8 +3,10 @@
  * (replica of www.admiral.com). Reconstructive container (stardust/eds-schema: home,
  * about-us, ski hub pods).
  *
- * Model (xwalk container, _cards.json):
- *   container field  folder  optional folder (e.g. /about-us). When set, the block lists the
+ * Model (xwalk container, _cards.json): hand-authored card items. Folder-driven cards are the
+ * separate `cards-folder` block, which reuses folderCards() below. For content authored before
+ * that split, a leading folder row is still honoured:
+ *   legacy row       folder  optional folder (e.g. /about-us). When set, the block lists the
  *                    pages directly inside that folder (the current page excluded), one card
  *                    per page, sorted by Card order then title. Each card takes the page's
  *                    Card title / Card summary / Card link text / Image properties from the
@@ -179,23 +181,27 @@ async function summarise(entry) {
 
 const byOrder = (a, b) => (Number(a.cardOrder) || 999) - (Number(b.cardOrder) || 999)
   || String(a.cardTitle || a.title).localeCompare(String(b.cardTitle || b.title));
+const byLatest = (a, b) => (Number(b.lastModified) || 0) - (Number(a.lastModified) || 0);
 
 /** published site: the folder's direct child pages from the query index */
-async function fromIndex(folder) {
+async function fromIndex(folder, { limit, order }) {
   const resp = await fetch(`${INDEX}?limit=1000`);
   if (!resp.ok) return [];
   const { data = [] } = await resp.json();
   const canonical = document.querySelector('link[rel="canonical"]');
   const here = normalise(canonical ? new URL(canonical.href).pathname : window.location.pathname);
   const prefix = folder === '/' ? '/' : `${folder}/`;
-  const pages = data.filter((e) => e.path && e.path.startsWith(prefix) && e.path !== prefix
+  let pages = data.filter((e) => e.path && e.path.startsWith(prefix) && e.path !== prefix
     && !e.path.slice(prefix.length).includes('/') && normalise(e.path) !== here
     && !/^\/(nav|footer)$/.test(e.path));
-  return (await Promise.all(pages.map(summarise))).sort(byOrder);
+  // latest first can be cut before reading the pages; card order needs their properties
+  if (order === 'latest') pages = pages.sort(byLatest).slice(0, limit);
+  const entries = await Promise.all(pages.map(summarise));
+  return order === 'latest' ? entries : entries.sort(byOrder).slice(0, limit);
 }
 
 /** Universal Editor (AEM author): the folder's child pages and their page properties */
-async function fromAuthor(folder) {
+async function fromAuthor(folder, { limit, order }) {
   const root = `${AUTHOR_ROOT}${folder === '/' ? '' : folder}`;
   const resp = await fetch(`${root}.2.json`);
   if (!resp.ok) return [];
@@ -215,11 +221,29 @@ async function fromAuthor(folder) {
         cardSummary: c['card-summary'],
         cardLinkText: c['card-link-text'],
         cardOrder: c['card-order'],
+        lastModified: Date.parse(c['cq:lastModified'] || '') / 1000 || 0,
       };
     })
     .filter((e) => normalise(e.path) !== here)
-    .sort(byOrder);
+    .sort(order === 'latest' ? byLatest : byOrder)
+    .slice(0, limit);
 }
+
+/**
+ * the pages of a folder as card cells (shared with cards-folder)
+ * @param {string} folder site path, e.g. /about-us
+ * @param {{limit?: number, order?: 'latest'|'card-order'}} options
+ * @returns {Promise<Element[]>}
+ */
+export async function folderCards(folder, { limit = 1000, order = 'card-order' } = {}) {
+  const opts = { limit, order };
+  const entries = AUTHOR_ROOT ? await fromAuthor(folder, opts) : await fromIndex(folder, opts);
+  return entries.map(indexCard);
+}
+
+export {
+  folderOf, sitePath, wrap, AUTHOR_ROOT,
+};
 
 export default async function decorate(block) {
   const grid = wrap('grid');
@@ -234,8 +258,8 @@ export default async function decorate(block) {
 
   block.dataset.folder = folder;
   try {
-    const entries = AUTHOR_ROOT ? await fromAuthor(folder) : await fromIndex(folder);
-    if (entries.length) grid.replaceChildren(...entries.map(indexCard));
+    const cells = await folderCards(folder);
+    if (cells.length) grid.replaceChildren(...cells);
   } catch {
     // listing unavailable: the authored fallback cards stay
   }

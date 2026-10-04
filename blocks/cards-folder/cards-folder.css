@@ -1,0 +1,9 @@
+/* cards-folder — renders with blocks/cards/cards.css (loaded by the block); only the
+   Universal Editor prompt is its own. */
+.cards-folder .placeholder {
+  padding: 20px;
+  border: 1px dashed var(--color-border-pod, #ccc);
+  color: var(--color-text);
+  font-size: 14.4px;
+  text-align: center;
+}
