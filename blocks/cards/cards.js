@@ -104,7 +104,12 @@ function buildCard(row) {
   return cell;
 }
 
-const usable = (src) => src && !src.startsWith('about:');
+/**
+ * an image URL this page can show: not a broken reference, and on AEM author not an Edge
+ * Delivery media URL (./media_… only exists on the published site; author serves the DAM)
+ */
+const usable = (src) => Boolean(src) && !src.startsWith('about:')
+  && !(AUTHOR_ROOT && /\/media_[0-9a-f]+\./.test(src));
 
 /** <picture> for a card image; Edge Delivery media get the usual optimised renditions */
 function cardPicture(src) {
