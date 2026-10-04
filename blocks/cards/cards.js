@@ -109,6 +109,7 @@ function buildCard(row) {
  * Delivery media URL (./media_… only exists on the published site; author serves the DAM)
  */
 const usable = (src) => Boolean(src) && !src.startsWith('about:')
+  && !/\/default-meta-image\.(png|jpe?g)/.test(src)
   && !(AUTHOR_ROOT && /\/media_[0-9a-f]+\./.test(src));
 
 /** <picture> for a card image; Edge Delivery media get the usual optimised renditions */
@@ -128,6 +129,8 @@ function cardPicture(src) {
   } else {
     img.src = url.href;
   }
+  // an image that still fails to load drops its strip rather than showing a broken icon
+  img.addEventListener('error', () => pic.closest('.image')?.remove(), { once: true });
   pic.append(img);
   return pic;
 }
@@ -188,8 +191,11 @@ async function summarise(entry) {
     out.cardOrder ||= meta('card-order');
     if (!out.title && heading) out.title = heading.textContent.trim();
     out.description ||= meta('description') || para?.textContent.trim();
-    if (!out.image && usable(ogImage)) out.image = local(ogImage);
-    if (!out.image && img) out.image = local(img.getAttribute('src'));
+    // published: og:image is the page's Image property (else its first image); author pages
+    // fill og:image with a site default, so the first image on the page comes first there
+    const firstImage = img ? local(img.getAttribute('src')) : '';
+    const shareImage = usable(ogImage) ? local(ogImage) : '';
+    if (!out.image) out.image = (AUTHOR_ROOT ? firstImage || shareImage : shareImage || firstImage);
   } catch {
     // page unreadable: keep what the index had
   }
