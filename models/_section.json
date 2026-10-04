@@ -45,6 +45,38 @@
             {
               "name": "Page intro",
               "value": "intro"
+            },
+            {
+              "name": "Breaker image",
+              "value": "breaker"
+            },
+            {
+              "name": "Article column",
+              "value": "article"
+            },
+            {
+              "name": "Centred title",
+              "value": "centered-title"
+            },
+            {
+              "name": "Title banner",
+              "value": "title-banner"
+            },
+            {
+              "name": "Award",
+              "value": "award"
+            },
+            {
+              "name": "Award (white)",
+              "value": "award-alt"
+            },
+            {
+              "name": "Logo row",
+              "value": "logos"
+            },
+            {
+              "name": "Hero image",
+              "value": "hero-image"
             }
           ]
         }
@@ -67,7 +99,8 @@
         "banner",
         "testimonials",
         "columns",
-        "fragment"
+        "fragment",
+        "timeline"
       ]
     }
   ]

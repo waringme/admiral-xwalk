@@ -13,6 +13,9 @@ main .cards-container > .teaser-wrapper + .cards-wrapper { padding: 0 10px 40px;
 /* About Us hub pods follow default-content intro copy: no top pad, large bottom pad */
 main .cards-container > .cards-wrapper:has(.cards.mobile-image) { padding: 0 10px 60px; }
 
+/* community/sponsorship pods: 768px article column */
+main .cards-container > .cards-wrapper:has(.cards.narrow) { padding: 0 10px 40px; }
+
 .cards .grid { margin: -5px; }
 .cards .grid-cell { padding: 5px; }
 
@@ -91,6 +94,14 @@ main .cards-container > .cards-wrapper:has(.cards.mobile-image) { padding: 0 10p
   main .cards-container > .teaser-wrapper + .cards-wrapper { padding: 0 20px 60px; }
   main .cards-container > .cards-wrapper:has(.cards.mobile-image) { padding: 0 20px 120px; }
 
+  /* live .pt-lrg: pods straight after the timeline open with the full 120px */
+  main .timeline-container + .cards-container > .cards-wrapper:has(.cards) { padding-top: 120px; }
+
+  main .cards-container > .cards-wrapper:has(.cards.narrow) {
+    width: var(--container-narrow);
+    padding: 0 30px 60px;
+  }
+
   .cards .grid {
     display: flex;
     flex-wrap: wrap;
@@ -101,6 +112,9 @@ main .cards-container > .cards-wrapper:has(.cards.mobile-image) { padding: 0 10p
     width: 33.3333%;
     padding: 7.5px;
   }
+
+  .cards.two-up .grid-cell,
+  .cards.lead-two .grid-cell:nth-child(-n + 2) { width: 50%; }
 
   .cards .pod {
     display: flex;
@@ -133,3 +147,40 @@ main .cards-container > .cards-wrapper:has(.cards.mobile-image) { padding: 0 10p
 }
 
 /* live arrow-circle vector, harvested verbatim from www.admiral.com */
+
+/* category strip over the bottom of the image (community / sponsorship pods) */
+.cards .pod .tag {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 6.8px 10.2px;
+  border-right: 1px solid var(--color-border-pod);
+  border-left: 1px solid var(--color-border-pod);
+  background-color: #aacc83;
+  color: var(--color-heading);
+  font-size: 13.5px;
+  font-weight: 900;
+  line-height: 15.525px;
+  text-transform: uppercase;
+}
+
+.cards .pod .tag p {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  line-height: inherit;
+}
+
+.cards .pod .tag strong { font-weight: inherit; }
+.cards .pod .tag-sponsorship { background-color: #ffe98a; }
+
+@media (width >= 768px) {
+  .cards.two-up .pod .image,
+  .cards.lead-two .grid-cell:nth-child(-n + 2) .pod .image {
+    height: 214px;
+    min-height: 145px;
+  }
+
+  .cards .pod .tag { padding: 6.9px 10.4px; }
+}

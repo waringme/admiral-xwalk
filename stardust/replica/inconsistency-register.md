@@ -45,3 +45,25 @@ as a handover list (the prototypes reproduce the live behaviour exactly).
 - **Minimal change:** author text links "App Store" / "Google Play"; the teaser `app` variant paints the same badge images and visually hides the label (no visual delta).
 - **Status:** applied
 - **Where:** product-landing app banner (teaser block, `app` variant)
+
+## R-06 — Per-image inline sizing on two About Us child pages
+
+- **Evidence:**
+  - /about-us/our-milestones: the 30-year graphic carries `style="height:230px"`, while every other timeline graphic shows at its own size.
+  - /about-us/awards.php: the four award logos carry per-image widths (200 / 200 / 140 / 100px).
+- **Finding:** one-off sizing lives in the markup, not the design system.
+- **Build:**
+  - Timeline graphics show at their own size, so the 30-year graphic is 63px taller.
+  - Award logos share one box (200 × 73.5px), so the Sunday Times logo is 27px shorter.
+- **Minimal change:** upload the 30-year graphic and the Sunday Times logo to the DAM at their live display size. No code change is needed.
+- **Status:** deferred
+- **Where:** timeline block (our-milestones), award sections (awards)
+
+## R-07 — Empty list after the lockdown-support list
+
+- **Evidence:** /about-us/stay-at-home-refund: an empty `<ul>` with `margin-top:-12px` follows the list (captured tree at 360 and 1440).
+- **Finding:** authoring residue. It pulls the section bottom up by 12px (8px at desktop).
+- **Build:** the empty list is not reproduced, so the sibling cards sit 13px lower (360) / 8px lower (1440). At 360 that shift alone takes the pixel gate to 13.5%; the layout above it matches to ≤2px.
+- **Minimal change:** none needed; the build is the clean version.
+- **Status:** deferred (live-side residue, intentionally not replicated)
+- **Where:** stay-at-home-refund article section

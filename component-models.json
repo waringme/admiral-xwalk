@@ -39,6 +39,18 @@
           {
             "name": "Finder intro",
             "value": "finder-intro"
+          },
+          {
+            "name": "Timeline",
+            "value": "timeline"
+          },
+          {
+            "name": "Stacked banners",
+            "value": "stacked-banners"
+          },
+          {
+            "name": "Article",
+            "value": "article"
           }
         ]
       },
@@ -59,6 +71,39 @@
             "value": "quick-actions"
           }
         ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image (social + card image)",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "card-title",
+        "label": "Card title",
+        "description": "Heading used when this page appears in a dynamic cards block (falls back to the page title)"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "card-summary",
+        "label": "Card summary",
+        "description": "Summary used in dynamic cards (falls back to the description)"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "card-link-text",
+        "label": "Card link text"
+      },
+      {
+        "component": "number",
+        "valueType": "number",
+        "name": "card-order",
+        "label": "Card order"
       }
     ]
   },
@@ -187,6 +232,38 @@
           {
             "name": "Page intro",
             "value": "intro"
+          },
+          {
+            "name": "Breaker image",
+            "value": "breaker"
+          },
+          {
+            "name": "Article column",
+            "value": "article"
+          },
+          {
+            "name": "Centred title",
+            "value": "centered-title"
+          },
+          {
+            "name": "Title banner",
+            "value": "title-banner"
+          },
+          {
+            "name": "Award",
+            "value": "award"
+          },
+          {
+            "name": "Award (white)",
+            "value": "award-alt"
+          },
+          {
+            "name": "Logo row",
+            "value": "logos"
+          },
+          {
+            "name": "Hero image",
+            "value": "hero-image"
           }
         ]
       }
@@ -248,6 +325,13 @@
     "id": "cards",
     "fields": [
       {
+        "component": "aem-content",
+        "name": "folder",
+        "label": "Folder (dynamic cards)",
+        "valueType": "string",
+        "description": "Optional. Build the cards from the pages in this folder (Card title, Card summary, Card link text, Image, Card order page properties). The card items below stay as the fallback."
+      },
+      {
         "component": "multiselect",
         "name": "classes",
         "label": "Style",
@@ -256,6 +340,18 @@
           {
             "name": "Show image on mobile",
             "value": "mobile-image"
+          },
+          {
+            "name": "Two per row",
+            "value": "two-up"
+          },
+          {
+            "name": "First two wide, then thirds",
+            "value": "lead-two"
+          },
+          {
+            "name": "Narrow column (768px)",
+            "value": "narrow"
           }
         ]
       }
@@ -510,6 +606,51 @@
         "name": "text",
         "value": "",
         "label": "Quote, name (heading) and location",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "milestone",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Icon or photo",
+        "description": "Square icons show above the date; landscape photos show under the title",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "select",
+        "name": "display",
+        "label": "Image display",
+        "description": "Square icons and graphics: desktop only, or on every screen. Landscape photos always show.",
+        "valueType": "string",
+        "value": "icon",
+        "options": [
+          {
+            "name": "Icon (desktop only)",
+            "value": "icon"
+          },
+          {
+            "name": "Feature (all screens)",
+            "value": "feature"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Date (heading 3), title (heading 2) and text",
         "valueType": "string"
       }
     ]

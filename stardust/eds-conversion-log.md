@@ -115,3 +115,89 @@ Harness: `aem up --html-folder stardust/.work/preview` (port 3001), pages built 
   `/car-insurance/electric/tesla-insurance` (same template) doesn't. So it moved from `template: front-page` to
   `theme: quick-actions` (homepage). The header block and the `--nav-height` reservation key on `body.quick-actions`.
 - Re-gated the homepage (local images mapped): 1.06% / 0.86%, height Δ0 — unchanged.
+
+## About Us child pages + dynamic cards (2026-10-04)
+
+**Pages** — six pages under `/about-us/`, all with verbatim live copy and live images (43 new images under the DAM `about-us/` folder):
+
+| Page | Template | Content |
+|---|---|---|
+| `our-milestones` | timeline | breaker, title, timeline block (20 milestones) |
+| `the-admiral-brand` | timeline | breaker, article |
+| `stay-at-home-refund` | timeline | breaker, article with list |
+| `working-for-admiral` | timeline | breaker, article, logos, awards list |
+| `community-and-sponsorship` | article | hero image, article, two intros, 11 community and 4 sponsorship pods (with tags) |
+| `awards` | stacked-banners | title banner, banner block, alternating award sections |
+
+- The live community page sits at `/community-and-sponsorship`; it is placed under `/about-us/` as asked.
+
+**Each page's metadata** feeds its card:
+- Title, Description, Image, Template
+- Card Title, Card Summary, Card Link Text, Card Order (1–6). The card copy is the live About Us pod copy, so the hub is unchanged.
+
+**Dynamic cards** (`blocks/cards`):
+- **Folder field.** The cards block gained a `folder` field (aem-content). When it is set, the block reads `/query-index.json` and renders one card per page in that folder, sorted by Card Order.
+  - Each card uses the page's Card Title, Card Summary, Card Link Text and Image. It falls back to the page title and description.
+  - The current page is excluded (by its canonical path).
+- **Fallback.** The authored rows stay as the fallback (document-first), so About Us shows its six cards even before the index exists.
+- **`helix-query.yaml`** indexes:
+  - title, description, image path, template
+  - cardTitle, cardSummary, cardLinkText, cardOrder
+- **Siblings strip.** Every child page except Awards and Community ends with the same dynamic strip: folder `/about-us`, variant `mobile-image lead-two`. That gives live's 2-then-3 layout.
+- **New variants:**
+  - `two-up`, `lead-two` and `narrow`
+  - `mobile-image` (keeps the image strip on mobile)
+- **Tag strip.** A first `<p><strong>` in the card text becomes the coloured tag strip on the image (Community / Sponsorship).
+
+**Timeline block** (`blocks/timeline`, new):
+- Built from milestone items: image, alt, display, and text (h3 date, h2 title, p).
+- **Desktop:**
+  - Entries alternate around a 10px centre line, with an opening year badge derived from the first date.
+  - Landscape photos sit under the title; square icons sit above the date, on the text baseline.
+- **Mobile:**
+  - Entries are centred and joined by live's 22×68 divider (4px line, 22px dot), drawn in CSS.
+  - Photos lead the entry, and pictograms are hidden.
+- **`display` option** (Icon / Feature): Feature graphics (25-year badge, Alfie, 30-year graphic) show on every screen, as on live.
+
+**Section styles added:** breaker, article, centered-title, title-banner, award, award-alt, logos, hero-image.
+- Spacing that depends on the neighbouring section (lifted from live):
+  - hero image → article opens 50/30px
+  - article → intro has no gap
+  - pods → heading uses `.pt-sml` (20/15px)
+  - timeline → pods uses `.pt-lrg` (120px)
+  - narrow pods sit directly under their intro
+- Breadcrumbs stay on one line (live `nowrap`).
+
+**Gates** — EDS harness vs live:
+- Local images were mapped in, and the dynamic cards ran against a mock `query-index.json` built from the page metadata; the mock was deleted afterwards.
+
+| Page | 1440 | 360 |
+|---|---|---|
+| About Us | 0.32% Δ0 | 1.05% Δ0 (unchanged by the dynamic cards) |
+| Our milestones | 4.49% Δ−63 (R-06) | 6.78% Δ−4 |
+| The Admiral brand | 0.32% Δ0 | 5.82% Δ−1 |
+| Stay at Home Refund | 4.68% Δ−8 (R-07) | 13.53% Δ−13 (R-07 — FAIL) |
+| Community & sponsorship | 0.47% Δ0 | 1.56% Δ0 |
+| Working for Admiral | 0.54% Δ0 | 8.53% Δ4 |
+| Awards | 4.06% Δ28 (R-06) | 8.62% Δ29 |
+| Homepage (regression) | 1.06% Δ0 | 0.86% Δ0 |
+| Ski Festival Hub (regression) | 0.47% Δ0 | 1.14% Δ0 |
+
+- The Stay at Home Refund page at 360 fails the 10% threshold, because live's empty trailing list (R-07) shifts the cards 13px. Everything above it matches to ≤2px.
+- Fixes found by the gates:
+  - siblings strip `two-up` → `lead-two` (−400px at desktop)
+  - stacked logos on mobile
+  - the timeline's mobile divider, photo-first order and Feature display
+  - removed the 104px first-entry gap
+  - icon/photo baseline (8px per entry)
+  - article list spacing (14/16px items, last item +28px, list −12px on mobile)
+  - title-banner mobile spacing
+  - breaker −7px on mobile
+  - the community neighbour spacing
+
+**DAM:** package `admiral-xwalk-images-1.1.0.zip` holds 66 assets, including the `about-us/` subfolder. Install it in place of 1.0.0.
+
+**Go-live order:**
+1. Install package 1.1.0 and reprocess the assets.
+2. Upload the content.
+3. Publish the six child pages so `/query-index.json` lists them. Until then the cards stay on their authored fallback, and the child-page sibling strips stay empty.

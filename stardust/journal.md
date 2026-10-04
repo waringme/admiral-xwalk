@@ -101,3 +101,23 @@ content/*.plain.html, stardust/eds-conversion-log.md, stardust/runtime-contract.
 **Artifacts:** models/_page.json, component-models.json, blocks/header/header.js, styles/styles.css, content/*.plain.html.
 
 **Findings:** homepage re-gate unchanged (1.06% / 0.86%, height Δ0).
+
+## 2026-10-04 — About Us child pages and dynamic cards
+
+**Prompt:** create the About Us cards as pages under /about-us with the live images and content, then make the card block dynamic from a folder.
+
+**Decisions:**
+- Six pages under `/about-us/`, with copy taken verbatim from live and the card summaries taken from the live hub pods.
+- Cards gained a folder field plus a query-index listing; the authored rows remain as the fallback.
+- New timeline block, with an author-facing Icon/Feature display option, because live shows some graphics on mobile and hides others.
+- Live-side one-off sizing (R-06) and empty markup (R-07) were logged, not replicated.
+
+**Artifacts:**
+- `blocks/cards/*`, `blocks/timeline/*`, `blocks/breadcrumbs/breadcrumbs.css`, `styles/styles.css`
+- `models/_page.json`, `models/_section.json`, `helix-query.yaml`
+- `content/about-us/*.plain.html`, `content/about-us.plain.html`
+- `stardust/packages/admiral-xwalk-images-1.1.0.zip`
+
+**Findings:**
+- 13 of 14 child-page gates pass. The Stay at Home Refund page at 360 fails at 13.5%, because of R-07.
+- The homepage, About Us and Ski Festival Hub gates are unchanged.

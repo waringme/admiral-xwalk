@@ -18,14 +18,17 @@ main .breadcrumbs-container > .breadcrumbs-wrapper {
   overflow: hidden auto;
 }
 
+/* live: one line (white-space: nowrap); a long trail scrolls inside the container */
 .breadcrumbs .container :is(ul, ol) {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 2px;
 }
 
 .breadcrumbs li {
+  flex: none;
   color: var(--color-text);
+  white-space: nowrap;
   font-size: 12.15px;
   font-weight: 400;
   line-height: 13.9725px;

@@ -14,3 +14,27 @@ indices:
       robots:
         select: head > meta[name="robots"]
         value: attribute(el, "content")
+      title:
+        select: head > meta[property="og:title"]
+        value: attribute(el, "content")
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, "content")
+      image:
+        select: head > meta[property="og:image"]
+        value: match(attribute(el, "content"), "https:\/\/[^/]+(/.*)")
+      template:
+        select: head > meta[name="template"]
+        value: attribute(el, "content")
+      cardTitle:
+        select: head > meta[name="card-title"]
+        value: attribute(el, "content")
+      cardSummary:
+        select: head > meta[name="card-summary"]
+        value: attribute(el, "content")
+      cardLinkText:
+        select: head > meta[name="card-link-text"]
+        value: attribute(el, "content")
+      cardOrder:
+        select: head > meta[name="card-order"]
+        value: attribute(el, "content")

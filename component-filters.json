@@ -20,7 +20,8 @@
       "banner",
       "testimonials",
       "columns",
-      "fragment"
+      "fragment",
+      "timeline"
     ]
   },
   {
@@ -54,6 +55,12 @@
     "id": "testimonials",
     "components": [
       "testimonial"
+    ]
+  },
+  {
+    "id": "timeline",
+    "components": [
+      "milestone"
     ]
   }
 ]

@@ -1,0 +1,83 @@
+{
+  "definitions": [
+    {
+      "title": "Timeline",
+      "id": "timeline",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Timeline",
+              "filter": "timeline"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Milestone",
+      "id": "milestone",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Milestone",
+              "model": "milestone"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "milestone",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Icon or photo",
+          "description": "Square icons show above the date; landscape photos show under the title",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Alt",
+          "value": ""
+        },
+        {
+          "component": "select",
+          "name": "display",
+          "label": "Image display",
+          "description": "Square icons and graphics: desktop only, or on every screen. Landscape photos always show.",
+          "valueType": "string",
+          "value": "icon",
+          "options": [
+            { "name": "Icon (desktop only)", "value": "icon" },
+            { "name": "Feature (all screens)", "value": "feature" }
+          ]
+        },
+        {
+          "component": "richtext",
+          "name": "text",
+          "value": "",
+          "label": "Date (heading 3), title (heading 2) and text",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "timeline",
+      "components": [
+        "milestone"
+      ]
+    }
+  ]
+}

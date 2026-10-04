@@ -37,6 +37,13 @@
       "id": "cards",
       "fields": [
         {
+          "component": "aem-content",
+          "name": "folder",
+          "label": "Folder (dynamic cards)",
+          "valueType": "string",
+          "description": "Optional. Build the cards from the pages in this folder (Card title, Card summary, Card link text, Image, Card order page properties). The card items below stay as the fallback."
+        },
+        {
           "component": "multiselect",
           "name": "classes",
           "label": "Style",
@@ -45,6 +52,18 @@
             {
               "name": "Show image on mobile",
               "value": "mobile-image"
+            },
+            {
+              "name": "Two per row",
+              "value": "two-up"
+            },
+            {
+              "name": "First two wide, then thirds",
+              "value": "lead-two"
+            },
+            {
+              "name": "Narrow column (768px)",
+              "value": "narrow"
             }
           ]
         }

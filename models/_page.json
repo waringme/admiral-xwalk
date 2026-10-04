@@ -40,6 +40,18 @@
             {
               "name": "Finder intro",
               "value": "finder-intro"
+            },
+            {
+              "name": "Timeline",
+              "value": "timeline"
+            },
+            {
+              "name": "Stacked banners",
+              "value": "stacked-banners"
+            },
+            {
+              "name": "Article",
+              "value": "article"
             }
           ]
         },
@@ -60,6 +72,39 @@
               "value": "quick-actions"
             }
           ]
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image (social + card image)",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "card-title",
+          "label": "Card title",
+          "description": "Heading used when this page appears in a dynamic cards block (falls back to the page title)"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "card-summary",
+          "label": "Card summary",
+          "description": "Summary used in dynamic cards (falls back to the description)"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "card-link-text",
+          "label": "Card link text"
+        },
+        {
+          "component": "number",
+          "valueType": "number",
+          "name": "card-order",
+          "label": "Card order"
         }
       ]
     }

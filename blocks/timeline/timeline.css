@@ -1,0 +1,173 @@
+/* timeline — Admiral milestones timeline. Values lifted from
+   www.admiral.com/about-us/our-milestones (computed styles at 1440 and 360). */
+
+main .timeline-container > .timeline-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.timeline .timeline-line { position: relative; }
+
+.timeline .milestone {
+  position: relative;
+  text-align: center;
+}
+
+/* mobile: entries joined by the live divider (22x68 — 4px line, 22px dot) */
+.timeline .milestone:not(:first-child)::before {
+  display: block;
+  height: 68px;
+  background:
+    radial-gradient(circle, #2350a0 10.5px, transparent 11px) 50% 21px / 22px 22px no-repeat,
+    linear-gradient(#2350a0, #2350a0) 50% 2px / 4px 64px no-repeat;
+  content: '';
+}
+
+.timeline .content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+/* mobile: the photo leads the entry (live .show-mobile copy above the date) */
+.timeline .photo { order: -1; }
+
+.timeline .date :is(h2, h3, h4) {
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+
+.timeline .title :is(h2, h3) { padding-bottom: 32px; }
+
+.timeline .content p {
+  margin-top: -10px;
+  padding-bottom: 0;
+}
+
+.timeline .icon { display: none; }
+
+.timeline .icon.feature:not(:empty) { display: block; }
+
+/* icons and feature graphics at their own size (live: 118-241px wide) */
+.timeline .icon :is(picture, img) {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.timeline .icon img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.timeline .photo :is(picture, img) {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.timeline .photo img {
+  width: 300px;
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #b7b7b7;
+  border-radius: 8px;
+}
+
+.timeline :is(.photo, .icon.feature):not(:empty) {
+  margin: -12px 0 0;
+  padding: 9px 0 21px;
+}
+
+@media (width >= 768px) {
+  .timeline .milestone {
+    width: 50%;
+    text-align: right;
+  }
+
+  .timeline .milestone.right {
+    left: 50%;
+    text-align: left;
+  }
+
+  /* live: the first entry drops 104px under the badge without pushing the next one down */
+  .timeline .milestone:first-child {
+    top: 104px;
+    padding-bottom: 84px;
+  }
+
+  /* opening badge: the first entry's year on a navy disc above the line */
+  .timeline .timeline-line[data-year]::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    border-radius: 50%;
+    background-color: #2250a0;
+    color: #fff;
+    content: attr(data-year);
+    font-size: 23px;
+  }
+
+  /* centre line: each entry draws its own segment on the inner edge */
+  .timeline .milestone::before,
+  .timeline .milestone:not(:first-child)::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    height: auto;
+    background: #2250a0;
+    content: '';
+  }
+
+  .timeline .milestone.left::before { right: -5px; }
+  .timeline .milestone.right::before { left: -5px; }
+  .timeline .milestone:first-child::before { top: -104px; }
+
+  .timeline .content {
+    display: block;
+    padding: 20px 30px 10px;
+  }
+
+  .timeline :is(.photo, .icon.feature):not(:empty) {
+    margin: -10px 0 28px;
+    padding: 0;
+  }
+
+  .timeline .date { position: relative; }
+
+  /* entry dot, level with the date (live: 25px, 2px below the date line top) */
+  .timeline .milestone:not(:first-child) .date::after {
+    position: absolute;
+    top: 2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #2250a0;
+    content: '';
+  }
+
+  .timeline .milestone.left .date::after { right: -42.5px; }
+  .timeline .milestone.right .date::after { left: -42.5px; }
+
+  .timeline .date :is(h2, h3, h4) { margin-top: -4px; }
+
+  .timeline .icon:not(:empty) {
+    display: block;
+    margin: -10px 0 28px;
+  }
+
+  /* live: icons and photos sit on the text baseline (the line box adds the gap under them) */
+  .timeline :is(.icon, .photo) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .timeline :is(.icon, .photo) :is(picture, img) { vertical-align: baseline; }
+}

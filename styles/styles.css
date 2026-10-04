@@ -326,6 +326,203 @@ main .section.intro h1 {
   }
 }
 
+/* About Us child pages (lifted from www.admiral.com/about-us/*) */
+main .section.breaker > .default-content-wrapper {
+  max-width: var(--container-narrow);
+  padding: 30px 10px 0;
+}
+
+main .section.breaker p:has(picture, img) {
+  margin: -7px 0 36px;
+  padding: 0;
+  border: 1px solid var(--color-border-pod);
+  line-height: 0;
+}
+
+main .section.breaker img { width: 100%; }
+
+main .section.article > .default-content-wrapper {
+  max-width: var(--container-narrow);
+  padding: 15px 10px 40px;
+}
+
+main .section:is(.article, .centered-title) h1 {
+  padding-bottom: 32px;
+  font-size: 21.6px;
+  line-height: 30px;
+}
+
+main .section.article ul {
+  margin-top: -12px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+main .section.article li {
+  padding-bottom: 14px;
+  font-size: 14.4px;
+  line-height: 22px;
+}
+
+/* live: the closing list item carries the section's extra 28px */
+main .section.article li:last-child { padding-bottom: 42px; }
+
+main .section.centered-title > .default-content-wrapper {
+  max-width: var(--container-narrow);
+  text-align: center;
+}
+
+main .section.title-banner {
+  background-color: var(--color-navy);
+  text-align: center;
+}
+
+main .section.title-banner > .default-content-wrapper {
+  max-width: var(--container);
+  padding: 30px 10px 40px;
+}
+
+main .section.title-banner h1 {
+  margin: -10px 0 20px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #357bb0;
+  color: var(--color-pale-blue);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+main .section.title-banner h2 {
+  max-width: 628px;
+  margin: -6px auto 0;
+  padding-bottom: 0;
+  color: #fff;
+  font-weight: 400;
+}
+
+main .section:is(.award, .award-alt) > .default-content-wrapper {
+  max-width: var(--container-narrow);
+  padding: 30px 10px 40px;
+  text-align: center;
+}
+
+main .section.award-alt { background-color: #fff; }
+
+main .section:is(.award, .award-alt) p:has(picture, img) {
+  margin: 0 0 19px;
+  padding: 0;
+  line-height: 0;
+}
+
+main .section:is(.award, .award-alt) img {
+  width: auto;
+  max-width: 200px;
+  max-height: 73.5px;
+  margin: 0 auto;
+}
+
+main .section.logos > .default-content-wrapper {
+  max-width: var(--container-narrow);
+  padding: 0 10px 40px;
+}
+
+/* live: .grid__cell--1/3 — stacked 160px cells on mobile, thirds of the 723px grid on desktop */
+main .section.logos p:has(picture, img) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 5px 0;
+  line-height: 0;
+}
+
+main .section.logos img {
+  width: 150px;
+  height: 150px;
+}
+
+main .section.hero-image > .default-content-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+main .section.hero-image p:has(picture, img) {
+  height: 37vw;
+  max-height: 283px;
+  min-height: 118px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  line-height: 0;
+}
+
+main .section.hero-image :is(picture, img) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (width >= 768px) {
+  main .section.breaker > .default-content-wrapper { padding: 50px 30px 0; }
+  main .section.breaker p:has(picture, img) { margin-top: -4px; }
+  main .section.article > .default-content-wrapper { padding: 20px 30px 60px; }
+
+  main .section:is(.article, .centered-title) h1 {
+    font-size: 37.8px;
+    line-height: 48px;
+  }
+
+  main .section.article ul { margin-top: -8px; }
+
+  main .section.article li {
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  main .section.article li:last-child { padding-bottom: 44px; }
+
+  main .section.centered-title > .default-content-wrapper { padding: 0 30px; }
+  main .section.title-banner > .default-content-wrapper { padding: 40px 20px 60px; }
+
+  main .section.title-banner h1 {
+    margin: -6px 0 30px;
+    padding-bottom: 12px;
+    font-size: 25.2px;
+    line-height: 34px;
+  }
+
+  main .section:is(.award, .award-alt) > .default-content-wrapper { padding: 50px 30px 60px; }
+  main .section.logos > .default-content-wrapper { padding: 0 30px 90px; }
+
+  main .section.logos p:has(picture, img) {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+    padding: 0;
+  }
+
+  /* live: .hero-banner--B .container { height: 39.5vw; min-height: 554px; max-height: 672px } */
+  main .section.hero-image p:has(picture, img) {
+    height: 39.5vw;
+    max-height: 672px;
+    min-height: 554px;
+  }
+}
+
+/* section spacing by neighbour (live community page): an article under a hero banner opens
+   wider and runs straight into a following intro; a heading after a pod grid sits closer (.pt-sml) */
+main .cards-container + .section.centered-intro > .default-content-wrapper { padding-top: 15px; }
+main .section.hero-image + .section.article > .default-content-wrapper { padding-top: 30px; }
+main .section.article:has(+ .section.centered-intro) > .default-content-wrapper { padding-bottom: 0; }
+
+@media (width >= 768px) {
+  main .cards-container + .section.centered-intro > .default-content-wrapper { padding-top: 20px; }
+  main .section.hero-image + .section.article > .default-content-wrapper { padding-top: 50px; }
+}
+
 /* card-as-link inner anchor while editing (EW6) */
 a .prosemirror-editor a:any-link {
   color: inherit;
