@@ -115,6 +115,36 @@
           "label": "Card order"
         },
         {
+          "component": "select",
+          "name": "category",
+          "label": "Category",
+          "valueType": "string",
+          "value": "",
+          "description": "Groups the page in category listings (e.g. the travel-planning hub rows)",
+          "options": [
+            {
+              "name": "None",
+              "value": ""
+            },
+            {
+              "name": "Airports and travel",
+              "value": "airports-and-travel"
+            },
+            {
+              "name": "Prepare for your destination",
+              "value": "prepare-for-your-destination"
+            },
+            {
+              "name": "The practical stuff",
+              "value": "practical-stuff"
+            },
+            {
+              "name": "What type of trip are you taking?",
+              "value": "type-of-trip"
+            }
+          ]
+        },
+        {
           "component": "text",
           "valueType": "string",
           "name": "author",

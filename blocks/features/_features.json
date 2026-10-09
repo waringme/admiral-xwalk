@@ -57,6 +57,10 @@
             {
               "name": "Numbered steps",
               "value": "steps"
+            },
+            {
+              "name": "Icon columns (three across)",
+              "value": "columns"
             }
           ]
         }

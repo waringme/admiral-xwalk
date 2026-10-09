@@ -325,3 +325,50 @@ Brief: the client's demo email covers two templates, **Landing pages** and **Art
 - The homepage gains "Latest travel tips and guides" after the existing hand-picked cards: a cards-folder block on `/resources/travel-hub/travel-planning`, 3 cards, latest first.
 - This completes the email's "hub pages, the homepage and landing pages" listing story.
 - Verified locally at 1440 and 360: 3 cards with images, no overflow.
+
+## Travel-planning hub, fully migrated with category listings (2026-10-09)
+- **The hub** (`/resources/travel-hub/travel-planning`) now mirrors live:
+  - hero (small page-title h1 above the h2 headline)
+  - the four category rows: Airports and travel · Prepare for your destination · The practical stuff · What type of trip are you taking?
+  - FAQs and Policy books
+- **Each row is a cards-folder block** with a Category filter, sorted by Card order (live order).
+  - "What type of trip" uses folder `/`, so it also lists the two product pages at their own paths.
+  - The earlier "Latest travel planning articles" demo row is removed.
+
+**Card pages imported** (all from live, demo grade):
+- **10 more articles**, moved from their old live `/magazine/guides/travel/…` (and `/magazine/travel/…`) URLs into the hub folder. Old URLs in content are rewritten to the new paths. Now 17 articles.
+  - hand-luggage-restrictions-faqs, hiring-a-car-abroad, travel-insurance-for-a-holiday-in-the-uk, camping-essentials
+  - how-to-get-the-best-exchange-rates-on-travel-money, travel-vaccinations, lost-or-stolen-passport
+  - excess-waiver-travel-insurance, travelling-on-budget, travel-insurance-for-a-business-trip
+- **2 product pages** (Landing page template), built by a general section converter (`stardust/.work/replica/autoconv.py`):
+  - `/travel-insurance/winter-sports-insurance` (live `.php`): cornflower hero with pods, Annie and Alfie side panels, icon-column features, cover tables, FAQs, useful-guide cards, tabs as an accordion
+  - `/travel-insurance/destination/uk`: photo hero, tables, FAQs, tabs
+- **5 live cards point at removed articles** (they redirect to the homepage) and are not imported:
+  - airport parking, planning a skiing holiday, spring breaks, Montenegro, look beyond the frame
+  - With the folder listing they are simply absent: the email's "first card doesn't link anywhere" case.
+
+**Category:**
+- The new page property **Category** (select) is indexed by helix-query (`category`).
+- Every listed page carries Category + Card Order (its live position in its row) and its live card title, summary and link text. Product pages take the hub card image.
+
+**Folder blocks** (cards and cards-folder):
+- New **Category filter** field: with a category, the block lists every page with it anywhere under the folder.
+  - Published site: from the index.
+  - Editor: from the AEM query builder (untested here; no author access).
+- **Sort by Card order** moved into Style (option `card-order`; default latest first), keeping the blocks within the 4-field limit. Older content with an Order row is still read.
+- Folder settings are read by position (folder, count, category), as AEM renders them.
+- Articles' "related articles" are now the newest 3 in the same category.
+
+**Other changes:**
+- features `columns` style (live .grid--badges)
+- highlights stay dark on pastel pods inside dark heroes
+- section style `cornflower`
+- the hero's h1 is small when an h2 headline follows
+
+**Verified locally** (mock index built from the page metadata, categories included):
+- 24 pages at 1440 and 360, all clean
+- each hub row lists its live cards in live order (3 / 2 / 8 / 6)
+- related cards follow the category; the homepage's latest 3 draw from all 17 articles
+- side-by-side with live: hub and product pages match in structure and look
+
+**DAM:** `stardust/packages/admiral-xwalk-images-1.4.0.zip` holds 133 assets (update mode) and replaces 1.3.0.

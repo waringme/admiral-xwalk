@@ -11,7 +11,8 @@
  *           description, first image). In the Universal Editor (AEM author) the folder's child
  *           pages are read from AEM instead. Card items stay as the no-pages fallback.
  *   count   number of folder cards (default 6)
- *   order   `latest` (most recently modified first, default) or `card-order`
+ *   category  optional: only pages with that Category, from anywhere under the folder
+ * Style `card-order` sorts by the Card order property; otherwise latest first.
  * The `cards-folder` block is the same listing without card items (readConfig/folderCards).
  *   then one row per card item —
  *     cell 1  image  <picture> (the image strip; hidden on mobile unless `mobile-image`)
@@ -206,8 +207,11 @@ const byOrder = (a, b) => (Number(a.cardOrder) || 999) - (Number(b.cardOrder) ||
   || String(a.cardTitle || a.title).localeCompare(String(b.cardTitle || b.title));
 const byLatest = (a, b) => (Number(b.lastModified) || 0) - (Number(a.lastModified) || 0);
 
-/** published site: the folder's direct child pages from the query index */
-async function fromIndex(folder, { limit, order }) {
+/**
+ * published site: the folder's direct child pages from the query index — or, with a category,
+ * every page under the folder (any depth) whose Category property matches
+ */
+async function fromIndex(folder, { limit, order, category }) {
   const resp = await fetch(`${INDEX}?limit=1000`);
   if (!resp.ok) return [];
   const { data = [] } = await resp.json();
@@ -215,38 +219,61 @@ async function fromIndex(folder, { limit, order }) {
   const here = normalise(canonical ? new URL(canonical.href).pathname : window.location.pathname);
   const prefix = folder === '/' ? '/' : `${folder}/`;
   let pages = data.filter((e) => e.path && e.path.startsWith(prefix) && e.path !== prefix
-    && !e.path.slice(prefix.length).includes('/') && normalise(e.path) !== here
-    && !/^\/(nav|footer)$/.test(e.path));
+    && (category ? e.category === category : !e.path.slice(prefix.length).includes('/'))
+    && normalise(e.path) !== here && !/^\/(nav|footer|fragments)(\/|$)/.test(e.path));
   // latest first can be cut before reading the pages; card order needs their properties
   if (order === 'latest') pages = pages.sort(byLatest).slice(0, limit);
   const entries = await Promise.all(pages.map(summarise));
   return order === 'latest' ? entries : entries.sort(byOrder).slice(0, limit);
 }
 
-/** Universal Editor (AEM author): the folder's child pages and their page properties */
-async function fromAuthor(folder, { limit, order }) {
+/** author page JSON → listing entry */
+function authorEntry(path, c) {
+  return {
+    path,
+    href: `${path}.html`,
+    title: c['jcr:title'] || path.split('/').pop(),
+    description: c['jcr:description'],
+    image: c.image,
+    cardTitle: c['card-title'],
+    cardSummary: c['card-summary'],
+    cardLinkText: c['card-link-text'],
+    cardOrder: c['card-order'],
+    lastModified: Date.parse(c['cq:lastModified'] || '') / 1000 || 0,
+  };
+}
+
+/**
+ * Universal Editor (AEM author): the folder's child pages and their page properties — with a
+ * category, every page under the folder with that Category (AEM query builder)
+ */
+async function fromAuthor(folder, { limit, order, category }) {
   const root = `${AUTHOR_ROOT}${folder === '/' ? '' : folder}`;
-  const resp = await fetch(`${root}.2.json`);
-  if (!resp.ok) return [];
-  const json = await resp.json();
   const here = normalise(window.location.pathname);
-  const pages = Object.entries(json)
-    .filter(([, v]) => v && v['jcr:primaryType'] === 'cq:Page' && v['jcr:content'])
-    .map(([name, v]) => {
-      const c = v['jcr:content'];
-      return {
-        path: `${root}/${name}`,
-        href: `${root}/${name}.html`,
-        title: c['jcr:title'] || name,
-        description: c['jcr:description'],
-        image: c.image,
-        cardTitle: c['card-title'],
-        cardSummary: c['card-summary'],
-        cardLinkText: c['card-link-text'],
-        cardOrder: c['card-order'],
-        lastModified: Date.parse(c['cq:lastModified'] || '') / 1000 || 0,
-      };
-    })
+  let pages;
+  if (category) {
+    const q = new URLSearchParams({
+      path: root,
+      type: 'cq:Page',
+      property: 'jcr:content/category',
+      'property.value': category,
+      'p.limit': '200',
+      'p.hits': 'full',
+      'p.nodedepth': '1',
+    });
+    const resp = await fetch(`/bin/querybuilder.json?${q}`);
+    if (!resp.ok) return [];
+    const { hits = [] } = await resp.json();
+    pages = hits.filter((h) => h['jcr:content']).map((h) => authorEntry(h['jcr:path'], h['jcr:content']));
+  } else {
+    const resp = await fetch(`${root}.2.json`);
+    if (!resp.ok) return [];
+    const json = await resp.json();
+    pages = Object.entries(json)
+      .filter(([, v]) => v && v['jcr:primaryType'] === 'cq:Page' && v['jcr:content'])
+      .map(([name, v]) => authorEntry(`${root}/${name}`, v['jcr:content']));
+  }
+  pages = pages
     .filter((e) => normalise(e.path) !== here)
     .sort(order === 'latest' ? byLatest : byOrder)
     .slice(0, limit);
@@ -257,11 +284,11 @@ async function fromAuthor(folder, { limit, order }) {
 /**
  * the pages of a folder as card cells (shared with cards-folder)
  * @param {string} folder site path, e.g. /about-us
- * @param {{limit?: number, order?: 'latest'|'card-order'}} options
+ * @param {{limit?: number, order?: 'latest'|'card-order', category?: string}} options
  * @returns {Promise<Element[]>}
  */
-export async function folderCards(folder, { limit = 1000, order = 'card-order' } = {}) {
-  const opts = { limit, order };
+export async function folderCards(folder, { limit = 1000, order = 'card-order', category = '' } = {}) {
+  const opts = { limit, order, category };
   const entries = AUTHOR_ROOT ? await fromAuthor(folder, opts) : await fromIndex(folder, opts);
   return entries.map(indexCard);
 }
@@ -271,23 +298,39 @@ export {
 };
 
 const ORDERS = ['latest', 'card-order'];
+const SETTINGS = ['folder', 'count', 'category'];
 
 /**
- * splits the block's rows into its folder settings (single-cell field rows: folder, count,
- * order — set or empty) and its card item rows (image + text cells)
+ * splits the block's rows into its folder settings — the leading single-cell field rows, in
+ * model order: folder, count, category (set or empty) — and its card item rows (image + text
+ * cells). The order is a style: class `card-order` sorts by Card order, else latest first
+ * (content authored with the earlier separate Order row is still read).
  */
 function readConfig(block) {
   const config = {
-    folder: null, count: 6, order: 'latest', items: [],
+    folder: null,
+    count: 6,
+    order: block.classList.contains('card-order') ? 'card-order' : 'latest',
+    category: '',
+    items: [],
   };
+  let field = 0;
   [...block.children].forEach((row) => {
     const text = row.textContent.trim();
-    const folder = folderOf(row);
-    if (folder && !config.folder) config.folder = folder;
-    else if (row.children.length === 1 && /^\d+$/.test(text)) config.count = Math.max(1, Number(text));
-    else if (row.children.length === 1 && ORDERS.includes(text.toLowerCase())) {
+    const setting = row.children.length === 1 && field < SETTINGS.length && !config.items.length
+      ? SETTINGS[field] : null;
+    if (!setting) {
+      if (!isEmptyFieldRow(row)) config.items.push(row);
+      return;
+    }
+    if (ORDERS.includes(text.toLowerCase())) { // earlier content: an Order row after count
       config.order = text.toLowerCase();
-    } else if (!isEmptyFieldRow(row)) config.items.push(row);
+      return;
+    }
+    field += 1;
+    if (setting === 'folder') config.folder = folderOf(row);
+    else if (setting === 'count' && /^\d+$/.test(text)) config.count = Math.max(1, Number(text));
+    else if (setting === 'category') config.category = text.toLowerCase();
   });
   return config;
 }
@@ -303,7 +346,9 @@ export default async function decorate(block) {
 
   block.dataset.folder = config.folder;
   try {
-    const cells = await folderCards(config.folder, { limit: config.count, order: config.order });
+    const cells = await folderCards(config.folder, {
+      limit: config.count, order: config.order, category: config.category,
+    });
     if (cells.length) grid.replaceChildren(...cells);
   } catch {
     // listing unavailable: the authored fallback cards stay

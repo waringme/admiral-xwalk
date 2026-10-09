@@ -45,7 +45,9 @@ main .highlights-container > .highlights-wrapper {
 .highlights.colours .highlight { background-color: #fac; }
 .highlights.colours .highlight:nth-child(3n + 2) { background-color: #fdffaa; }
 .highlights.colours .highlight:nth-child(3n + 3) { background-color: #ffb06f; }
-.highlights.colours .highlight :is(h2, h3, h4, p) { color: var(--color-ink); }
+
+/* stays dark on the pastel pods, also inside dark hero sections */
+main .section .highlights.colours .highlight :is(h2, h3, h4, p) { color: var(--color-ink); }
 
 @media (width >= 768px) {
   main .highlights-container > .highlights-wrapper { padding: 0 20px 40px; }

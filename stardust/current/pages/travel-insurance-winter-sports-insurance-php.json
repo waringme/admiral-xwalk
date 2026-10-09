@@ -1,0 +1,966 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-09T18:26:35.937Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "travel-insurance-winter-sports-insurance-php",
+  "url": "https://www.admiral.com/travel-insurance/winter-sports-insurance.php",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-09T18:26:35.937Z",
+  "finalUrl": "https://www.admiral.com/travel-insurance/winter-sports-insurance.php",
+  "title": "Winter Sports Travel Insurance | Admiral",
+  "description": "Stay stress-free on the slopes and cover your alpine adventures with our winter sports travel insurance. Read more about our winter sports insurance add-on here.",
+  "og": {
+    "title": "Winter Sports Travel Insurance | Admiral",
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Winter Sports Insurance"
+    },
+    {
+      "tag": "h2",
+      "text": "Stay stress-free on the slopes with our winter sports cover"
+    },
+    {
+      "tag": "h3",
+      "text": "Up to £500 safety net"
+    },
+    {
+      "tag": "h3",
+      "text": "Protect your equipment"
+    },
+    {
+      "tag": "h3",
+      "text": "5 Star rated cover"
+    },
+    {
+      "tag": "h2",
+      "text": "What’s winter sports insurance?"
+    },
+    {
+      "tag": "h2",
+      "text": "What does winter sports insurance cover?"
+    },
+    {
+      "tag": "h3",
+      "text": "Lost, stolen or damaged ski equipment"
+    },
+    {
+      "tag": "h3",
+      "text": "Piste closure"
+    },
+    {
+      "tag": "h3",
+      "text": "Ski pack cover for illness or injury"
+    },
+    {
+      "tag": "h3",
+      "text": "Delays caused by avalanche"
+    },
+    {
+      "tag": "h3",
+      "text": "Replacement equipment hire"
+    },
+    {
+      "tag": "h2",
+      "text": "What isn’t covered?"
+    },
+    {
+      "tag": "h3",
+      "text": "Off-piste activities"
+    },
+    {
+      "tag": "h3",
+      "text": "Wear and tear to equipment"
+    },
+    {
+      "tag": "h3",
+      "text": "Careless behaviour"
+    },
+    {
+      "tag": "h3",
+      "text": "Unattended items"
+    },
+    {
+      "tag": "h2",
+      "text": "Do I need winter sports insurance?"
+    },
+    {
+      "tag": "h2",
+      "text": "Do I need annual or single trip winter sports cover?"
+    },
+    {
+      "tag": "h2",
+      "text": "Choose from three levels of cover"
+    },
+    {
+      "tag": "h3",
+      "text": "Good to know"
+    },
+    {
+      "tag": "h3",
+      "text": "Single article limits for my winter sports equipment"
+    },
+    {
+      "tag": "h3",
+      "text": "Which winter sports are covered?"
+    },
+    {
+      "tag": "h2",
+      "text": "Will I need to pay an excess if I make a claim?"
+    },
+    {
+      "tag": "h3",
+      "text": "How to add winter sports cover to my policy"
+    },
+    {
+      "tag": "h2",
+      "text": "What destinations are covered?"
+    },
+    {
+      "tag": "h3",
+      "text": "Europe"
+    },
+    {
+      "tag": "h3",
+      "text": "America and Canada"
+    },
+    {
+      "tag": "h3",
+      "text": "Japan"
+    },
+    {
+      "tag": "h2",
+      "text": "Pre-existing conditions and winter sports"
+    },
+    {
+      "tag": "h3",
+      "text": "MoneyHelper directory"
+    },
+    {
+      "tag": "h2",
+      "text": "Useful guides"
+    },
+    {
+      "tag": "h3",
+      "text": "Looking for the perfect skiing holiday?"
+    },
+    {
+      "tag": "h3",
+      "text": "Confused about travel insurance?"
+    },
+    {
+      "tag": "h3",
+      "text": "Protect your belongings"
+    },
+    {
+      "tag": "h2",
+      "text": "Your questions answered"
+    },
+    {
+      "tag": "h3",
+      "text": "Are there any age restrictions for ski insurance?"
+    },
+    {
+      "tag": "h3",
+      "text": "Am I covered to ski or snowboard off-piste?"
+    },
+    {
+      "tag": "h3",
+      "text": "Does winter sports cover me anywhere in the world?"
+    },
+    {
+      "tag": "h2",
+      "text": "Need to make a claim?"
+    },
+    {
+      "tag": "h2",
+      "text": "Getting the most out of your trip"
+    },
+    {
+      "tag": "h3",
+      "text": "Going anywhere nice?"
+    },
+    {
+      "tag": "h3",
+      "text": "UK"
+    },
+    {
+      "tag": "h3",
+      "text": "Worldwide"
+    },
+    {
+      "tag": "h3",
+      "text": "Europe"
+    },
+    {
+      "tag": "h3",
+      "text": "Australia"
+    },
+    {
+      "tag": "h3",
+      "text": "China"
+    },
+    {
+      "tag": "h3",
+      "text": "Egypt"
+    },
+    {
+      "tag": "h3",
+      "text": "India"
+    },
+    {
+      "tag": "h3",
+      "text": "Turkey"
+    },
+    {
+      "tag": "h3",
+      "text": "Thailand"
+    },
+    {
+      "tag": "h3",
+      "text": "Canada"
+    },
+    {
+      "tag": "h3",
+      "text": "Single Trip Insurance"
+    },
+    {
+      "tag": "h3",
+      "text": "Annual Trip Insurance"
+    },
+    {
+      "tag": "h2",
+      "text": "Explore our website"
+    }
+  ],
+  "body": [
+    "Contact us",
+    "Help and Support",
+    "My account",
+    "Claims",
+    "Multi Cover",
+    "Motor Motor Car Insurance Multi Car Insurance Van Insurance Black Box Insurance Electric Car Insurance Learner Driver Insurance Temporary Car Insurance Motoring Extras Car Finance Breakdown Cover Van insurance add-ons Car insurance add-ons Support Add a car to your policy Car Insurance FAQs Motor resource hub Admiral App The easy way to view and manage your insurance policy on the go. Find out more",
+    "Home Home Home Insurance Landlord Insurance Contents Insurance Buildings Insurance Multi Cover Insurance Renters Insurance Optional Extras Home Legal Expenses Home Emergency Cover Accidental Damage Personal Possessions Bicycle Cover High Risk Items Cover Landlord Emergency Cover Landlord Legal Expenses Support Home resource hub Landlord resource hub Add a home to your car insurance Home Insurance FAQs Extreme weather support Storm Hub Freeze Hub Admiral App Easily manage your cover, view your documents, and much more with the Admiral app. Find out more",
+    "Travel Travel Travel Insurance Single Trip Insurance Annual Travel Insurance Over 50s Travel Insurance Over 80s Travel Insurance Specialist Cover Winter Sports Insurance Cruise Insurance Gadget Travel Insurance Enhanced Trip Disruption Support Travel Insurance FAQs Travel resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Pet Pet Pet Insurance Multi Pet Insurance Dog Insurance Puppy Insurance Cat Insurance Kitten Insurance Lifetime Pet Insurance Time Limited Pet Insurance Pet breeds Cockapoo Pet Insurance Cocker Spaniel Pet Insurance Shih Tzu Pet Insurance Support Pet resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Money Money Personal Loans Car Loans Car Finance Hire Purchase Homeowner Loans More Finance Home Improvement Loans Debt Consolidation Loan Support Money FAQs Money worries How to improve your credit score A good credit score can help you get a better deal on a loan, mortgage and other types of finance. Find out more",
+    "Business",
+    "Homepage",
+    "Travel Insurance",
+    "Ski Insurance",
+    "If you’re too ill or injured to use hired gear, lift passes or ski lessons",
+    "Up to £1k if your winter sports equipment is lost, stolen or damaged",
+    "Our Platinum Travel Insurance has Defaqto’s highest rating",
+    "Winter sports insurance (or winter sports cover) financially protects you and your equipment if anything goes wrong on your skiing or winter sports holiday.",
+    "As well as the cover from your core travel insurance, you’ll also have protection for things like lost or damaged gear, piste closure and costs for hired equipment you’re too ill or injured to use.",
+    "If you’re going on a winter sports trip, you need to add this specialist cover when buying your regular travel insurance policy. You won’t be covered without it.",
+    "As well as everything your standard travel insurance policy covers, our winter sports add-on will cover you for the following events.",
+    "Remember policy limits and exclusions apply, so always check your policy book.",
+    "If your ski equipment is lost, stolen or damaged during your trip, you can claim up to your policy limits (single article limits apply).",
+    "A set payout if the slopes are closed for more than 24 hours due to bad weather or lack of snow.",
+    "A safety net if you're too ill or injured to use hired ski equipment, ski school classes or any lift passes.",
+    "If your arrival at or departure from your resort is delayed for more than 12 hours by an avalanche, we'll pay towards the cost of additional travel and accommodation costs.",
+    "If your equipment is lost, stolen or damaged, we’ll pay towards replacement equipment hire so you can keep skiing.",
+    "There are some situations which we don’t cover. For a full list of exclusions, check your policy book.",
+    "Standard travel insurance policies usually don’t cover winter sports.",
+    "This means you'll need to buy a winter sports add-on to make sure your travel insurance covers you for skiing, snowboarding or other winter sports.",
+    "If you go on a winter sports holiday without having the right cover in place, your travel insurance policy will become invalid and you won't be able to make a claim – even if it’s for something completely unrelated to your winter sport, like lost baggage, trip cancellation, or any medical costs.",
+    "If you’re only planning a one-off ski trip, our single trip insurance with the winter sports add-on will probably suit you.",
+    "If you intend to go on multiple winter sports holidays, our annual Travel insurance with the winter sports add-on may suit you better.",
+    "This would cover you for every holiday you take in a year, up to 31 days per trip. But bear in mind you can only do a maximum of 21 days of winter sports throughout the year during your policy term.",
+    "You can choose from three levels of cover to suit your budget and needs.",
+    "The table below shows the standard benefits and “up to” limits of each level of cover. You may have to pay a different excess depending on your tier and what you need to claim for.",
+    "We've covered our cover limits for your ski equipment above - but it's important to note that single article limits apply. But what does this mean?",
+    "We have a £250 single article limit.",
+    "This means that if you're a Platinum customer (meaning you have a £1,000 limit), and you need to claim for two bits of equipment worth £250 and £300, for example, the maximum amount you can receive is £500.",
+    "It's important to note you'll also need to pay an excess.",
+    "If you need to make a claim, you may need to pay an excess. This depends on what you're making a claim for, as not every type of claim you make on your winter sports cover includes an excess fee.",
+    "Under our winter sports cover, you won't need to pay an excess if you claim for:",
+    "unused ski pack cover (hired ski equipment, ski school fees or lift passes)",
+    "piste closure for more than 24 hours",
+    "delays caused by avalanche",
+    "If you claim for anything other than those three situations, you'll need to pay an excess. The amount of excess you pay depends on which level of cover you have.",
+    "It's important to remember that excess is charged for each person claiming, and for each incident being claimed on.",
+    "Check out our excess limits below.",
+    "If you're a new customer, you can add winter sports to your travel insurance when getting a quote.",
+    "If you're an existing customer, you can add it to your policy in your travel portal or by giving us a call.",
+    "Off to hotspots like Val D'Isere or Zermatt? This falls under our European cover.",
+    "Head to skiing destinations like Aspen or Whistler with our worldwide cover.",
+    "Looking further afield to destinations like Taseko in Japan? Our worldwide cover will protect you.",
+    "We never cover areas where the Foreign, Commonwealth & Development Office (FCDO) have advised against travelling to.",
+    "If you’ve got a pre-existing condition and want to get winter sports cover with us, you must declare it.",
+    "If you don’t tell us about your pre-existing conditions or give us incorrect information, your policy may be invalid, and we may refuse all or part of any claim you make.",
+    "Your pre-existing conditions won’t be covered unless you’ve:",
+    "Declared them all on your policy",
+    "Received written confirmation that we’ll cover your medical condition",
+    "Paid any additional premium in full",
+    "If we can't cover your medical condition, you can use the MoneyHelper directory to find a specialist insurer who might be able to cover you if you've been:",
+    "refused travel insurance or had your policy cancelled",
+    "offered cover with a medical exclusion that you can't remove from your policy",
+    "quoted a price for a travel insurance policy with high medical costs",
+    "MoneyHelper makes it easier to find and compare policies you can afford that cover your condition and medical needs. Access the MoneyHelper directory online or call MoneyHelper on 0800 138 7777 (phone lines are open Monday to Friday 8:00am - 6:00pm, excluding bank holidays).",
+    "We're sure you'll love our great products but maybe you have a few questions. You can find answers in this section.",
+    "We don’t offer the upgrade to anyone over 75 years old for trips within Europe and over 70 years old for trips outside of Europe.",
+    "Head to our travel insurance page or our travel FAQs hub to find out more about your cover, making a claim, and everything in between.",
+    "Travel insurance Travel insurance FAQS",
+    "Off to one of the destinations below? Take a look at our guides for some hints and tips on what you need to remember.",
+    "UK",
+    "Worldwide",
+    "Europe",
+    "Australia",
+    "China",
+    "Egypt",
+    "India",
+    "Turkey",
+    "Thailand",
+    "Canada",
+    "Car Insurance",
+    "Multi-Car Insurance",
+    "Black Box Insurance",
+    "Temporary Car Insurance",
+    "Electric Car Insurance",
+    "Learner Driver Insurance",
+    "Home Insurance",
+    "Contents Insurance",
+    "Buildings Insurance",
+    "Landlord Insurance",
+    "Renters Insurance",
+    "Flood Insurance",
+    "Optional Cover",
+    "Contents Calculator",
+    "Other Products",
+    "MultiCover Products",
+    "Personal Loans",
+    "Van Insurance",
+    "Travel Insurance",
+    "Pet Insurance",
+    "Breakdown Cover",
+    "Homeowner Loans",
+    "Car Finance",
+    "Policy Details",
+    "Make a claim",
+    "View policy books",
+    "Complaint information",
+    "Legal information",
+    "Insurance glossary",
+    "Magazine",
+    "Magazine – meet the team",
+    "About Us",
+    "Community & Sponsorship",
+    "Customer offers",
+    "Refer a friend",
+    "Jobs",
+    "Admiral App",
+    "© 1993-2026 Admiral",
+    "Sitemap",
+    "Contact Us",
+    "Accessibility",
+    "Conditions of Use",
+    "Privacy & Security",
+    "Press Office",
+    "Cookie Preferences",
+    "Admiral is a trading name of EUI Limited. (Reg No: 02686904). EUI Limited is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 309378). These details can be confirmed by visiting the Financial Services Register. EUI Limited acts for, and on behalf of, other regulated insurance companies. Further details may be provided on request. Admiral Money, Admiral Loans, Admiral Car Finance, Admiral Homeowner Loans, Admiral Mortgages, Admiral One and Finble are all trading names of Admiral Financial Services Limited (AFSL). Admiral Financial Services Limited (Reg No: 10255225) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 771862). These details can be confirmed by visiting the Financial Services Register Veygo and Admiral Business are trading names of Able Insurance Services Limited. Able Insurance Services Limited (Reg No: 2890075) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 311649). These details can be confirmed by visiting the Financial Services Register Admiral Group plc is registered in England and Wales at Tŷ Admiral, David Street, Cardiff. CF10 2EH (Reg No:03849958)."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Contact us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Help and Support",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "My account",
+      "href": "https://travelinsurance.admiral.com/auth/login?_its=eJwljsGOwyAQQ_9lzokEBDIMf9BDL_sD0QATLVJKJEL3UjXfvkp7tGX7-QV_JUOAGNESZTtKpGm0tNJIMblRzeLYxEkrRhjg6NwFArStnxpJO1QTmXPjmk-zeDt5WnJpkvqikiQVZyY02Tt0pLzBNCdGZGfttca9txKfvewVwgvy_uBSIQAM0GSV1qR9VfrlWmW7ZQgfxgBHS_c9X1e-OPhYP7JehfcAR-lyxbX2xr3_AT2LQ_0"
+    },
+    {
+      "label": "Claims",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "Multi Cover",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Motor",
+      "href": "#"
+    },
+    {
+      "label": "Home",
+      "href": "#"
+    },
+    {
+      "label": "Travel",
+      "href": "#"
+    },
+    {
+      "label": "Pet",
+      "href": "#"
+    },
+    {
+      "label": "Money",
+      "href": "#"
+    },
+    {
+      "label": "Business",
+      "href": "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav"
+    },
+    {
+      "label": "Homepage",
+      "href": "/"
+    },
+    {
+      "label": "Travel Insurance",
+      "href": "/travel-insurance"
+    },
+    {
+      "label": "Ski Insurance",
+      "href": "#"
+    },
+    {
+      "label": "Start my quote",
+      "href": "https://travelinsurance.admiral.com/quotejourney?tracking=d74a862b-d67e-40fa-9558-279a67cf4f52&campaignCode=&_its=eJwljsGOwyAQQ_9lzokEBDIMf9BDL_sD0QATLVJKJEL3UjXfvkp7tGX7-QV_JUOAGNESZTtKpGm0tNJIMblRzeLYxEkrRhjg6NwFArStnxpJO1QTmXPjmk-zeDt5WnJpkvqikiQVZyY02Tt0pLzBNCdGZGfttca9txKfvewVwgvy_uBSIQAM0GSV1qR9VfrlWmW7ZQgfxgBHS_c9X1e-OPhYP7JehfcAR-lyxbX2xr3_AT2LQ_0"
+    },
+    {
+      "label": "Retrieve quote",
+      "href": "https://travelinsurance.admiral.com/auth/login?_its=eJwljsGOwyAQQ_9lzokEBDIMf9BDL_sD0QATLVJKJEL3UjXfvkp7tGX7-QV_JUOAGNESZTtKpGm0tNJIMblRzeLYxEkrRhjg6NwFArStnxpJO1QTmXPjmk-zeDt5WnJpkvqikiQVZyY02Tt0pLzBNCdGZGfttca9txKfvewVwgvy_uBSIQAM0GSV1qR9VfrlWmW7ZQgfxgBHS_c9X1e-OPhYP7JehfcAR-lyxbX2xr3_AT2LQ_0"
+    },
+    {
+      "label": "What's covered?",
+      "href": "#"
+    },
+    {
+      "label": "Pre-existing conditions",
+      "href": "#"
+    },
+    {
+      "label": "MoneyHelper directory",
+      "href": "#"
+    },
+    {
+      "label": "travel insurance",
+      "href": "https://www.admiral.com/travel-insurance"
+    },
+    {
+      "label": "policy book.",
+      "href": "/existing-customers/policy-documents.php"
+    },
+    {
+      "label": "policy book.",
+      "href": "/existing-customers/policy-documents.php"
+    },
+    {
+      "label": "single trip insurance",
+      "href": "/travel-insurance/single-trip-insurance.php"
+    },
+    {
+      "label": "annual Travel insurance",
+      "href": "/travel-insurance/annual-travel-insurance.php"
+    },
+    {
+      "label": "travel portal",
+      "href": "https://travelinsurance.admiral.com/auth/login?_its=eJwljsGOwyAQQ_9lzokEBDIMf9BDL_sD0QATLVJKJEL3UjXfvkp7tGX7-QV_JUOAGNESZTtKpGm0tNJIMblRzeLYxEkrRhjg6NwFArStnxpJO1QTmXPjmk-zeDt5WnJpkvqikiQVZyY02Tt0pLzBNCdGZGfttca9txKfvewVwgvy_uBSIQAM0GSV1qR9VfrlWmW7ZQgfxgBHS_c9X1e-OPhYP7JehfcAR-lyxbX2xr3_AT2LQ_0"
+    },
+    {
+      "label": "giving us a call.",
+      "href": "/contact-us/travel"
+    },
+    {
+      "label": "European cover.",
+      "href": "/travel-insurance/destination/europe"
+    },
+    {
+      "label": "worldwide cover.",
+      "href": "/travel-insurance/destination/worldwide"
+    },
+    {
+      "label": "worldwide cover",
+      "href": "/travel-insurance/destination/worldwide"
+    },
+    {
+      "label": "pre-existing condition",
+      "href": "/magazine/guides/travel/pre-existing-condition"
+    },
+    {
+      "label": "MoneyHelper directory",
+      "href": "https://www.moneyhelper.org.uk/en/everyday-money/insurance/travel-insurance-directory"
+    },
+    {
+      "label": "MoneyHelper directory online",
+      "href": "https://www.moneyhelper.org.uk/en/everyday-money/insurance/travel-insurance-directory"
+    },
+    {
+      "label": "0800 138 7777",
+      "href": "tel:08001387777"
+    },
+    {
+      "label": "Visit the MoneyHelper Directory",
+      "href": "https://www.moneyhelper.org.uk/en/everyday-money/insurance/travel-insurance-directory"
+    },
+    {
+      "label": "Plan your trip",
+      "href": "/magazine/guides/travel/how-to-plan-a-skiing-holiday"
+    },
+    {
+      "label": "Learn the lingo",
+      "href": "/magazine/guides/travel/travel-insurance-jargon-buster"
+    },
+    {
+      "label": "What you need to know",
+      "href": "/magazine/guides/travel/insurance-for-lost-or-delayed-baggage"
+    },
+    {
+      "label": "show more",
+      "href": null
+    },
+    {
+      "label": "Travel insurance",
+      "href": "/travel-insurance"
+    },
+    {
+      "label": "Travel insurance FAQS",
+      "href": "/travel-insurance/FAQs"
+    },
+    {
+      "label": "Where are you going?",
+      "href": "#"
+    },
+    {
+      "label": "Who's travelling?",
+      "href": "#"
+    },
+    {
+      "label": "What will you do?",
+      "href": "#"
+    },
+    {
+      "label": "UK",
+      "href": "/travel-insurance/destination/uk"
+    },
+    {
+      "label": "Worldwide",
+      "href": "/travel-insurance/destination/worldwide"
+    },
+    {
+      "label": "Europe",
+      "href": "/travel-insurance/destination/europe"
+    },
+    {
+      "label": "Australia",
+      "href": "/travel-insurance/destination/australia"
+    },
+    {
+      "label": "China",
+      "href": "/travel-insurance/destination/china"
+    },
+    {
+      "label": "Egypt",
+      "href": "/travel-insurance/destination/egypt"
+    },
+    {
+      "label": "India",
+      "href": "/travel-insurance/destination/india"
+    },
+    {
+      "label": "Turkey",
+      "href": "/travel-insurance/destination/turkey"
+    },
+    {
+      "label": "Thailand",
+      "href": "/travel-insurance/destination/thailand"
+    },
+    {
+      "label": "Canada",
+      "href": "/travel-insurance/destination/canada"
+    },
+    {
+      "label": "Single Trip Insurance",
+      "href": "/travel-insurance/single-trip-insurance.php"
+    },
+    {
+      "label": "Annual Trip Insurance",
+      "href": "/travel-insurance/annual-travel-insurance.php"
+    },
+    {
+      "label": "Car Insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "Multi-Car Insurance",
+      "href": "/multi-car-insurance"
+    },
+    {
+      "label": "Black Box Insurance",
+      "href": "/black-box-insurance"
+    },
+    {
+      "label": "Temporary Car Insurance",
+      "href": "/car-insurance/temporary-car-insurance"
+    },
+    {
+      "label": "Electric Car Insurance",
+      "href": "/car-insurance/electric"
+    },
+    {
+      "label": "Learner Driver Insurance",
+      "href": "/learner-driver-insurance"
+    },
+    {
+      "label": "Home Insurance",
+      "href": "/home-insurance"
+    },
+    {
+      "label": "Contents Insurance",
+      "href": "/home-insurance/contents-insurance.php"
+    },
+    {
+      "label": "Buildings Insurance",
+      "href": "/home-insurance/buildings-insurance.php"
+    },
+    {
+      "label": "Landlord Insurance",
+      "href": "/home-insurance/landlord"
+    },
+    {
+      "label": "Renters Insurance",
+      "href": "/home-insurance/renters-insurance.php"
+    },
+    {
+      "label": "Flood Insurance",
+      "href": "/home-insurance/flood"
+    },
+    {
+      "label": "Optional Cover",
+      "href": "/home-insurance/optional-cover"
+    },
+    {
+      "label": "Contents Calculator",
+      "href": "/home-insurance/contents-calculator"
+    },
+    {
+      "label": "MultiCover Products",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Personal Loans",
+      "href": "/loans/personal-loans"
+    },
+    {
+      "label": "Van Insurance",
+      "href": "/van-insurance"
+    },
+    {
+      "label": "Travel Insurance",
+      "href": "/travel-insurance"
+    },
+    {
+      "label": "Pet Insurance",
+      "href": "/pet-insurance"
+    },
+    {
+      "label": "Breakdown Cover",
+      "href": "/breakdown-cover"
+    },
+    {
+      "label": "Homeowner Loans",
+      "href": "/homeowner-loans"
+    },
+    {
+      "label": "Car Finance",
+      "href": "/loans/car-finance"
+    },
+    {
+      "label": "Policy Details",
+      "href": "/myaccount"
+    },
+    {
+      "label": "Make a claim",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "View policy books",
+      "href": "/existing-customers/policy-documents.php"
+    },
+    {
+      "label": "Complaint information",
+      "href": "/contact-us/complaint-information.php"
+    },
+    {
+      "label": "Legal information",
+      "href": "/existing-customers/legal-information.php"
+    },
+    {
+      "label": "Insurance glossary",
+      "href": "/insurance-glossary"
+    },
+    {
+      "label": "Magazine",
+      "href": "/magazine"
+    },
+    {
+      "label": "Magazine – meet the team",
+      "href": "/magazine/meet-the-team"
+    },
+    {
+      "label": "About Us",
+      "href": "/about-us"
+    },
+    {
+      "label": "Community & Sponsorship",
+      "href": "/community-and-sponsorship"
+    },
+    {
+      "label": "Customer offers",
+      "href": "/existing-customers/customer-discount.php"
+    },
+    {
+      "label": "Refer a friend",
+      "href": "https://www.admiral.com/refer-a-friend"
+    },
+    {
+      "label": "Jobs",
+      "href": "https://admiraljobs.co.uk/"
+    },
+    {
+      "label": "Admiral App",
+      "href": "/myaccount/admiral-app"
+    },
+    {
+      "label": "Sitemap",
+      "href": "/sitemap.php"
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Accessibility",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "Conditions of Use",
+      "href": "/insurance/your-policy/conditions-of-use.php"
+    },
+    {
+      "label": "Privacy & Security",
+      "href": "/your-privacy-and-security"
+    },
+    {
+      "label": "Press Office",
+      "href": "/press-office"
+    },
+    {
+      "label": "Cookie Preferences",
+      "href": "/cookie-policy"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    }
+  ],
+  "links": [
+    "https://www.admiral.com/contact-us",
+    "https://www.admiral.com/help-support-hub",
+    "https://travelinsurance.admiral.com/auth/login?_its=eJwljsGOwyAQQ_9lzokEBDIMf9BDL_sD0QATLVJKJEL3UjXfvkp7tGX7-QV_JUOAGNESZTtKpGm0tNJIMblRzeLYxEkrRhjg6NwFArStnxpJO1QTmXPjmk-zeDt5WnJpkvqikiQVZyY02Tt0pLzBNCdGZGfttca9txKfvewVwgvy_uBSIQAM0GSV1qR9VfrlWmW7ZQgfxgBHS_c9X1e-OPhYP7JehfcAR-lyxbX2xr3_AT2LQ_0",
+    "https://www.admiral.com/existing-customers/make-a-claim.php",
+    "https://www.admiral.com/",
+    "https://www.admiral.com/travel-insurance/winter-sports-insurance.php#",
+    "https://www.admiral.com/multicover-insurance",
+    "https://www.admiral.com/car-insurance",
+    "https://www.admiral.com/multi-car-insurance",
+    "https://www.admiral.com/van-insurance",
+    "https://www.admiral.com/black-box-insurance",
+    "https://www.admiral.com/car-insurance/electric",
+    "https://www.admiral.com/learner-driver-insurance",
+    "https://www.admiral.com/car-insurance/temporary-car-insurance",
+    "https://www.admiral.com/loans/car-finance",
+    "https://www.admiral.com/breakdown-cover",
+    "https://www.admiral.com/van-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/add-a-car-guide",
+    "https://www.admiral.com/car-insurance/FAQs",
+    "https://www.admiral.com/resources/motor-hub",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/home-insurance",
+    "https://www.admiral.com/home-insurance/landlord",
+    "https://www.admiral.com/home-insurance/contents-insurance.php",
+    "https://www.admiral.com/home-insurance/buildings-insurance.php",
+    "https://www.admiral.com/home-insurance/renters-insurance.php",
+    "https://www.admiral.com/home-insurance/optional-cover/family-legal-protection.php",
+    "https://www.admiral.com/home-insurance/optional-cover/home-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/accidental-damage.php",
+    "https://www.admiral.com/home-insurance/optional-cover/personal-possessions.php",
+    "https://www.admiral.com/home-insurance/optional-cover/bicycle-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/high-risk-items",
+    "https://www.admiral.com/home-insurance/landlord/landlord-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/landlord/landlord-legal-protection",
+    "https://www.admiral.com/home-insurance/home-resource-hub",
+    "https://www.admiral.com/resources/landlord-hub",
+    "https://www.admiral.com/add-a-home-guide",
+    "https://www.admiral.com/home-insurance/FAQs",
+    "https://www.admiral.com/weather/storm",
+    "https://www.admiral.com/weather/freeze",
+    "https://www.admiral.com/travel-insurance",
+    "https://www.admiral.com/travel-insurance/single-trip-insurance.php",
+    "https://www.admiral.com/travel-insurance/annual-travel-insurance.php",
+    "https://www.admiral.com/travel-insurance/over-50s-travel-insurance",
+    "https://www.admiral.com/travel-insurance/travel-insurance-over-80s",
+    "https://www.admiral.com/travel-insurance/winter-sports-insurance.php",
+    "https://www.admiral.com/travel-insurance/cruise-insurance.php",
+    "https://www.admiral.com/travel-insurance/gadget-insurance.php",
+    "https://www.admiral.com/travel-insurance/travel-disruption-insurance",
+    "https://www.admiral.com/travel-insurance/FAQs",
+    "https://www.admiral.com/resources/travel-hub",
+    "https://www.admiral.com/refer-a-friend",
+    "https://www.admiral.com/pet-insurance",
+    "https://www.admiral.com/pet-insurance/multi-pet-insurance",
+    "https://www.admiral.com/pet-insurance/dog-insurance",
+    "https://www.admiral.com/pet-insurance/puppy-insurance",
+    "https://www.admiral.com/pet-insurance/cat-insurance",
+    "https://www.admiral.com/pet-insurance/kitten-insurance",
+    "https://www.admiral.com/pet-insurance/lifetime-pet-insurance",
+    "https://www.admiral.com/pet-insurance/time-limited-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cockapoo-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cocker-spaniel-pet-insurance",
+    "https://www.admiral.com/pet-insurance/shih-tzu-pet-insurance",
+    "https://www.admiral.com/resources/pet-hub",
+    "https://www.admiral.com/loans/personal-loans",
+    "https://www.admiral.com/loans/car-finance/car-loans",
+    "https://www.admiral.com/loans/car-finance/hire-purchase",
+    "https://www.admiral.com/homeowner-loans",
+    "https://www.admiral.com/loans/personal-loans/home-improvements",
+    "https://www.admiral.com/loans/debt-consolidation-loan",
+    "https://money.admiral.com/help?_its=eJwljsGOwyAQQ_9lzokEBDIMf9BDL_sD0QATLVJKJEL3UjXfvkp7tGX7-QV_JUOAGNESZTtKpGm0tNJIMblRzeLYxEkrRhjg6NwFArStnxpJO1QTmXPjmk-zeDt5WnJpkvqikiQVZyY02Tt0pLzBNCdGZGfttca9txKfvewVwgvy_uBSIQAM0GSV1qR9VfrlWmW7ZQgfxgBHS_c9X1e-OPhYP7JehfcAR-lyxbX2xr3_AT2LQ_0",
+    "https://money.admiral.com/help/financial-support?_its=eJwljsGOwyAQQ_9lzokEBDIMf9BDL_sD0QATLVJKJEL3UjXfvkp7tGX7-QV_JUOAGNESZTtKpGm0tNJIMblRzeLYxEkrRhjg6NwFArStnxpJO1QTmXPjmk-zeDt5WnJpkvqikiQVZyY02Tt0pLzBNCdGZGfttca9txKfvewVwgvy_uBSIQAM0GSV1qR9VfrlWmW7ZQgfxgBHS_c9X1e-OPhYP7JehfcAR-lyxbX2xr3_AT2LQ_0",
+    "https://www.admiral.com/loans/improve-your-credit-score",
+    "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav",
+    "https://www.admiral.com/car-insurance/policy-upgrades/breakdown-cover/breakdown-assist.php",
+    "https://travelinsurance.admiral.com/quotejourney?tracking=d74a862b-d67e-40fa-9558-279a67cf4f52&campaignCode=&_its=eJwljsGOwyAQQ_9lzokEBDIMf9BDL_sD0QATLVJKJEL3UjXfvkp7tGX7-QV_JUOAGNESZTtKpGm0tNJIMblRzeLYxEkrRhjg6NwFArStnxpJO1QTmXPjmk-zeDt5WnJpkvqikiQVZyY02Tt0pLzBNCdGZGfttca9txKfvewVwgvy_uBSIQAM0GSV1qR9VfrlWmW7ZQgfxgBHS_c9X1e-OPhYP7JehfcAR-lyxbX2xr3_AT2LQ_0",
+    "https://www.admiral.com/existing-customers/policy-documents.php",
+    "https://www.admiral.com/contact-us/travel",
+    "https://www.admiral.com/travel-insurance/destination/europe",
+    "https://www.admiral.com/travel-insurance/destination/worldwide",
+    "https://www.admiral.com/magazine/guides/travel/pre-existing-condition",
+    "https://www.moneyhelper.org.uk/en/everyday-money/insurance/travel-insurance-directory",
+    "tel:08001387777",
+    "https://www.admiral.com/magazine/guides/travel/how-to-plan-a-skiing-holiday",
+    "https://www.admiral.com/magazine/guides/travel/travel-insurance-jargon-buster",
+    "https://www.admiral.com/magazine/guides/travel/insurance-for-lost-or-delayed-baggage",
+    "https://www.gov.uk/foreign-travel-advice",
+    "https://www.admiral.com/travel-insurance/family-travel-insurance",
+    "https://www.admiral.com/travel-insurance/destination/uk",
+    "https://www.admiral.com/travel-insurance/destination/australia",
+    "https://www.admiral.com/travel-insurance/destination/china",
+    "https://www.admiral.com/travel-insurance/destination/egypt",
+    "https://www.admiral.com/travel-insurance/destination/india",
+    "https://www.admiral.com/travel-insurance/destination/turkey",
+    "https://www.admiral.com/travel-insurance/destination/thailand",
+    "https://www.admiral.com/travel-insurance/destination/canada",
+    "https://www.admiral.com/travel-insurance/student-travel-insurance",
+    "https://www.admiral.com/travel-insurance/pregnancy-travel-insurance",
+    "https://www.admiral.com/travel-insurance/travel-insurance-over-65",
+    "https://www.admiral.com/travel-insurance/medical-conditions",
+    "https://www.admiral.com/travel-insurance/adventurous-sports-insurance",
+    "https://www.admiral.com/home-insurance/flood",
+    "https://www.admiral.com/home-insurance/optional-cover",
+    "https://www.admiral.com/home-insurance/contents-calculator",
+    "https://www.admiral.com/myaccount",
+    "https://www.admiral.com/contact-us/complaint-information.php",
+    "https://www.admiral.com/existing-customers/legal-information.php",
+    "https://www.admiral.com/insurance-glossary",
+    "https://www.admiral.com/magazine",
+    "https://www.admiral.com/magazine/meet-the-team",
+    "https://www.admiral.com/about-us",
+    "https://www.admiral.com/community-and-sponsorship",
+    "https://www.admiral.com/existing-customers/customer-discount.php",
+    "https://admiraljobs.co.uk/",
+    "https://twitter.com/admiralUK",
+    "https://www.youtube.com/user/AdmiralInsurance",
+    "https://www.facebook.com/admiralUK",
+    "https://www.admiral.com/sitemap.php",
+    "https://www.admiral.com/insurance/your-policy/conditions-of-use.php",
+    "https://www.admiral.com/your-privacy-and-security",
+    "https://www.admiral.com/press-office",
+    "https://www.admiral.com/cookie-policy",
+    "https://www.fca.org.uk/register"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/logos/admiral-logo.svg",
+        "alt": "Admiral Insurance logo",
+        "w": 300,
+        "h": 93
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_800/public/2024-02/Article%20Photo%20%286%29.png?itok=GSxjA77o",
+        "alt": "Looking for the perfect skiing holiday?",
+        "w": 800,
+        "h": 533
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_800/public/2023-03/Article%20Photo.jpg?itok=WrRi9F2Y",
+        "alt": "Confused about travel insurance?",
+        "w": 800,
+        "h": 533
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_800/public/2018-05/baggage-carousel.jpg?itok=jsBCmaNj",
+        "alt": "Protect your belongings",
+        "w": 800,
+        "h": 534
+      }
+    ],
+    "allImgCount": 5,
+    "cssBackgrounds": [
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/side-images/annie-pointing.png",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badges/badge-broken-equipment.svg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badges/badge-piste-closure.svg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badges/badge-ski-pack.svg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badges/badge-avalanche.svg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badges/badge-replacement-equipment.svg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/side-images/alfie-stick.png",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badges/badge-icon-europe.svg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badges/badge-icon-america-canada.svg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badges/badge-icon-japan.svg"
+    ],
+    "modals": [],
+    "videos": [],
+    "iframes": [
+      {
+        "src": "https://widget.trustpilot.com/trustboxes/54d39695764ea907c0f34825/index.html?templateId=54d39695764ea907c0f34825&businessunitId=4be0843700006400050788f5#locale=en-US&styleHeight=24px&styleWidth=100%25&theme=light&sku=Travel_&noReviews=hide&scrollToList=true&styleAlignment=center",
+        "title": "Customer reviews powered by Trustpilot"
+      }
+    ]
+  },
+  "customProps": {
+    "--animate-duration": "1s",
+    "--animate-delay": "1s",
+    "--animate-repeat": "1"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 54,
+    "mainTextLen": 46277,
+    "realImageCount": 4,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/travel-insurance-winter-sports-insurance-php.png",
+  "renderedHtml": "pages/travel-insurance-winter-sports-insurance-php.html"
+}

@@ -53,21 +53,33 @@
         },
         {
           "component": "select",
+          "name": "category",
+          "label": "Category filter",
           "valueType": "string",
-          "name": "order",
-          "label": "Order",
-          "value": "latest",
+          "value": "",
+          "description": "Optional: only pages with this Category, from anywhere under the folder",
           "options": [
             {
-              "name": "Latest first",
-              "value": "latest"
+              "name": "Any (pages directly in the folder)",
+              "value": ""
             },
             {
-              "name": "Card order (page property)",
-              "value": "card-order"
+              "name": "Airports and travel",
+              "value": "airports-and-travel"
+            },
+            {
+              "name": "Prepare for your destination",
+              "value": "prepare-for-your-destination"
+            },
+            {
+              "name": "The practical stuff",
+              "value": "practical-stuff"
+            },
+            {
+              "name": "What type of trip are you taking?",
+              "value": "type-of-trip"
             }
-          ],
-          "description": "Used when a folder is picked"
+          ]
         },
         {
           "component": "multiselect",
@@ -75,6 +87,10 @@
           "label": "Style",
           "valueType": "string",
           "options": [
+            {
+              "name": "Sort by Card order (default: latest first)",
+              "value": "card-order"
+            },
             {
               "name": "Show image on mobile",
               "value": "mobile-image"

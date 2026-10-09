@@ -121,6 +121,21 @@ main .features-container > .features-wrapper {
   content: '';
 }
 
+/* columns: icon above heading and copy, three across (live .grid--badges, e.g. winter sports cover) */
+.features.columns > ul { grid-template-columns: 1fr; }
+
+.features.columns .feature {
+  flex-direction: column;
+  border: 0;
+  background: none;
+  text-align: center;
+}
+
+.features.columns .feature-icon {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
 /* steps: numbered columns (how to make a claim) */
 .features.steps > ul {
   counter-reset: step;
@@ -164,8 +179,10 @@ main .features-container > .features-wrapper {
   .features.ticks .feature-body > :not(:is(h2, h3, h4)) { grid-column: 2; }
   .features.ticks .feature-body > :is(h2, h3, h4) { grid-row: 1 / span 9; }
 
-  .features.steps > ul {
+  .features:is(.steps, .columns) > ul {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
+
+  main .features-container > .features-wrapper:has(.features.columns) { max-width: var(--container); }
 }

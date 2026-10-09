@@ -5,7 +5,8 @@
  * Model (xwalk block, _cards-folder.json) — one single-cell row per field, in this order:
  *   folder  the folder to list (link or path; /content/<site> prefix and .html are dropped)
  *   count   how many cards (default 6)
- *   order   `latest` (most recently modified first, default) or `card-order` (page property)
+ *   category  optional: only pages with that Category property, from anywhere under the folder
+ * Style `card-order` sorts by the Card order page property; otherwise latest first.
  * Variants (classes): the cards variants — `mobile-image`, `two-up`, `lead-two`, `narrow`.
  * Each page becomes a card from its Card title / Card summary / Card link text / Image
  * properties, falling back to its title, description and first image; the current page is
@@ -35,7 +36,9 @@ export default async function decorate(block) {
 
   block.dataset.folder = config.folder;
   try {
-    const cells = await folderCards(config.folder, { limit: config.count, order: config.order });
+    const cells = await folderCards(config.folder, {
+      limit: config.count, order: config.order, category: config.category,
+    });
     grid.append(...cells);
     if (!cells.length && AUTHOR_ROOT) grid.append(wrap('placeholder', `No pages found in ${config.folder}.`));
   } catch {
