@@ -320,3 +320,8 @@ Brief: the client's demo email covers two templates, **Landing pages** and **Art
 2. Push the code.
 3. Upload the content (fragments and nav-ppc included).
 4. Publish the articles, then the hub and the landing pages.
+
+## Homepage: latest travel articles (2026-10-09)
+- The homepage gains "Latest travel tips and guides" after the existing hand-picked cards: a cards-folder block on `/resources/travel-hub/travel-planning`, 3 cards, latest first.
+- This completes the email's "hub pages, the homepage and landing pages" listing story.
+- Verified locally at 1440 and 360: 3 cards with images, no overflow.
