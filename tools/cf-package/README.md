@@ -2,7 +2,7 @@
 
 This package holds the content shared by the SEO (`/travel-insurance`) and PPC (`/travel-insurance/generic`) landing pages. It covers the content that is the same and only laid out differently on each page. The scope is in `stardust/travel-landing-cf-scope.md`.
 
-Build with `python3 tools/cf-package/build.py`. The output is `dist/admiral-xwalk-travel-cf-<version>.zip`.
+Build with `python3 tools/cf-package/build.py`. The output is `dist/admiral-xwalk-travel-cf-<version>.zip` (current: 1.0.1 — 1.0.0 typed the reference fields as plain text lists, which GraphQL rejects).
 
 | What | Where |
 |---|---|

@@ -398,3 +398,8 @@ Brief: the client's demo email covers two templates, **Landing pages** and **Art
   - Side by side with live, the PPC alternating layout and colour pods match live.
   - The other travel pages are unchanged.
 - **DAM:** images package 1.5.0 holds 138 assets, including the 13 icons and illustrations the fragments reference.
+
+## Content fragment package 1.0.1 (2026-10-09)
+- **Bug:** the Features (Feature List) and Rows (Cover Levels) fragment-reference fields had `valueType="string[]"`. GraphQL typed them as `[String]`, and both persisted queries failed validation on publish ("Subselection not allowed on leaf type [String]").
+- **Fix:** they are now `valueType="string/content-fragment[]"`, typed as the referenced models.
+- Rebuilt as `tools/cf-package/dist/admiral-xwalk-travel-cf-1.0.1.zip`. Reinstalling replaces the 4 models; then republish the models.

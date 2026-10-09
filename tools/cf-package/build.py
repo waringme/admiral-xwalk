@@ -22,7 +22,7 @@ ROOT = HERE.parents[1]
 DIST = HERE / 'dist'
 DATA = HERE / 'fragments'
 GRAPHQL = HERE / 'graphql'
-NAME, GROUP, VERSION = 'admiral-xwalk-travel-cf', 'admiral-xwalk', '1.0.0'
+NAME, GROUP, VERSION = 'admiral-xwalk-travel-cf', 'admiral-xwalk', '1.0.1'
 
 CONF = '/conf/admiral-xwalk'
 MODELS = f'{CONF}/settings/dam/cfm/models'
@@ -101,10 +101,11 @@ def field_xml(index, name, label, meta, required, description, ref=None):
         specific = ('sling:resourceType="dam/cfm/models/editor/components/contentreference" '
                     f'filter="hierarchy" nameSuffix="contentReference" rootPath="{IMAGES_ROOT}" '
                     'showThumbnail="true" validation="cfm.validation.contenttype.image" valueType="string"')
-    else:  # fragment-reference, multiple values
+    else:  # fragment-reference, multiple values: string/content-fragment[] makes GraphQL type it as the
+        # referenced model ([FeatureModel]); plain string[] would make it a leaf [String]
         specific = ('sling:resourceType="dam/cfm/models/editor/components/fragmentreference" '
                     f'filter="hierarchy" fragmentmodelreference="[{MODELS}/{ref}]" nameSuffix="contentReference" '
-                    f'rootPath="{FRAGMENTS}" valueType="string[]"')
+                    f'rootPath="{FRAGMENTS}" valueType="string/content-fragment[]"')
     node = f'_x0031_7600000000{index:02d}'
     if data:
         return (f'                        <{node} {common} {specific}>\n'
