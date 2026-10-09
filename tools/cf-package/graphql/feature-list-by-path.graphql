@@ -1,0 +1,44 @@
+# Get a feature list content fragment (and its features) by path.
+#
+# Persisted as admiral-xwalk/feature-list-by-path; execute with
+#   GET /graphql/execute.json/admiral-xwalk/feature-list-by-path;path=/content/dam/admiral-xwalk/fragments/travel/cover-features
+# (path is passed unencoded; add ;variation=<name> for a variation other than master)
+
+query getFeatureListByPath($path: String!, $variation: String = "master") {
+  featureListByPath(_path: $path, variation: $variation) {
+    item {
+      _path
+      title
+      introduction {
+        html
+      }
+      features {
+        ... on FeatureModel {
+          _path
+          title
+          description {
+            html
+          }
+          icon {
+            ... on ImageRef {
+              _path
+              _authorUrl
+              _publishUrl
+            }
+          }
+          illustration {
+            ... on ImageRef {
+              _path
+              _authorUrl
+              _publishUrl
+            }
+          }
+          imageAlt
+        }
+      }
+      footnote {
+        html
+      }
+    }
+  }
+}

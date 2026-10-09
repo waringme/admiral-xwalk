@@ -1,0 +1,8 @@
+{
+  "model": "feature",
+  "title": "Delayed or missed departure",
+  "description": "<p>Delayed or missed your transport because of something unexpected? We'll cover reasonable costs for extra accommodation and travel.</p>",
+  "icon": "/content/dam/admiral-xwalk/images/travel/badge-delayed-departure-v2.svg",
+  "illustration": "/content/dam/admiral-xwalk/images/travel/travel-flight-clock.png",
+  "imageAlt": ""
+}

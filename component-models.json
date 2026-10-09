@@ -719,6 +719,62 @@
     ]
   },
   {
+    "id": "content-fragment",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "valueType": "string",
+        "name": "fragment",
+        "label": "Content fragment",
+        "description": "A Feature List or Cover Levels fragment, e.g. /content/dam/admiral-xwalk/fragments/travel/cover-features",
+        "rootPath": "/content/dam/admiral-xwalk/fragments",
+        "required": true,
+        "variationName": "fragmentVariation"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "fragmentVariation",
+        "label": "Selected variation",
+        "value": "",
+        "description": "Stored by the fragment picker; empty means master.",
+        "condition": {
+          "==": [
+            {
+              "var": "__alwaysFalse"
+            },
+            true
+          ]
+        }
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Display",
+        "valueType": "string",
+        "description": "How this page shows the shared content. Cover Levels fragments always show as a table.",
+        "options": [
+          {
+            "name": "Alternating (large illustrations)",
+            "value": "alternating"
+          },
+          {
+            "name": "Pods (blue)",
+            "value": "pods"
+          },
+          {
+            "name": "Pods (colours, with icons)",
+            "value": "pods-colours"
+          },
+          {
+            "name": "Hide heading",
+            "value": "no-heading"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "features",
     "fields": [
       {

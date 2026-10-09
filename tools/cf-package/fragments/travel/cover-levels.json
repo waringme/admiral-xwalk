@@ -1,0 +1,20 @@
+{
+  "model": "cover-levels",
+  "title": "Choose from three levels of cover",
+  "introduction": "",
+  "goodToKnow": "<h3>Good to know</h3><p>The table below shows the standard benefits and maximum limits of each level of cover. Individual benefits may have different limits depending on what you need to claim for.</p>",
+  "column1": "Admiral",
+  "column2": "Admiral Gold",
+  "column3": "Admiral Platinum",
+  "levels": [
+    "travel/levels/emergency-medical-treatment-and-repatriation",
+    "travel/levels/personal-liability",
+    "travel/levels/legal-assistance",
+    "travel/levels/personal-accident",
+    "travel/levels/cancellation-or-cutting-your-trip-short",
+    "travel/levels/personal-belongings",
+    "travel/levels/catastrophe-cover",
+    "travel/levels/money-and-documents",
+    "travel/levels/excess"
+  ]
+}

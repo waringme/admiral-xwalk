@@ -1,0 +1,13 @@
+{
+  "model": "feature-list",
+  "title": "What does travel insurance cover?",
+  "introduction": "<p>Here are just some of the things our travel insurance covers.</p>",
+  "features": [
+    "travel/features/emergency-medical-expenses",
+    "travel/features/delayed-or-missed-departure",
+    "travel/features/lost-or-stolen-personal-belongings",
+    "travel/features/cancelling-or-cutting-your-trip-short",
+    "travel/features/legal-assistance"
+  ],
+  "footnote": "<p>Like with any insurance, our policies only cover certain situations - and policy limits and exclusions apply. Always check your <a href=\"https://www.admiral.com/existing-customers/policy-documents.php?product=travel\">policy book</a>!</p>"
+}

@@ -372,3 +372,29 @@ Brief: the client's demo email covers two templates, **Landing pages** and **Art
 - side-by-side with live: hub and product pages match in structure and look
 
 **DAM:** `stardust/packages/admiral-xwalk-images-1.4.0.zip` holds 133 assets (update mode) and replaces 1.3.0.
+
+## Travel landing pages: shared content as AEM Content Fragments (2026-10-09)
+- **Scope:** `stardust/travel-landing-cf-scope.md`. The SEO and PPC pages were compared section by section. Same content in a different layout becomes a Content Fragment:
+  - key benefits: blue pods (SEO), colour pods with icons (PPC)
+  - cover features: boxed with badges (SEO), alternating with illustrations (PPC; the live PPC layout restored)
+  - cover levels: one set of figures (the SEO full values), a table on both pages
+- "What's travel insurance?" stays a shared page fragment (same layout, different copy). Exclusions, pre-existing conditions and FAQs stay page copy (different copy).
+- **Package:** `tools/cf-package/dist/admiral-xwalk-travel-cf-1.0.0.zip`, from build.py (pattern: waringme/vhi-ie press-release).
+  - 4 models: Feature, Feature List, Cover Level, Cover Levels (nested fragment references)
+  - 20 fragments
+  - GraphQL endpoint + 2 persisted queries
+  - Install notes: tools/cf-package/README.md
+- **Block:** `blocks/content-fragment` has a fragment picker and a Display style: boxed / alternating / pods / pods-colours / no-heading.
+  - It reads the fragment through the persisted queries: the publish tier on the site, author in the Universal Editor.
+  - It renders with the features / highlights / comparison-table / callout CSS.
+  - It instruments every fragment field (nested fragments as resources) for in-context editing.
+- **Pages:**
+  - SEO uses key-benefits (pods), cover-features (boxed) and cover-levels.
+  - PPC uses key-benefits (pods-colours no-heading, inside the hero), cover-features (alternating) and cover-levels, plus its upgrade notes.
+  - The page fragments `whats-covered` and `levels-of-cover` are no longer used.
+- **Verified:**
+  - The publish GraphQL CORS answers the site origin.
+  - Locally with the GraphQL mocked from the fragment data: both pages render all 3 fragments at 1440 and 360, with no errors, overflow or broken images.
+  - Side by side with live, the PPC alternating layout and colour pods match live.
+  - The other travel pages are unchanged.
+- **DAM:** images package 1.5.0 holds 138 assets, including the 13 icons and illustrations the fragments reference.

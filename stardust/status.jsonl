@@ -13,3 +13,4 @@
 {"ts":"2026-10-04T11:17:20Z","skill":"stardust:deploy","phase":"about-us-children","event":"end","detail":"6 child pages, dynamic cards (folder + query index), timeline block; gates 13/14 pass (R-07)","artifact":"content/about-us/"}
 {"ts":"2026-10-09T17:32:13Z","skill":"stardust:deploy","phase":"travel-demo","event":"end","detail":"2 landing pages + hub + 7 articles, 4 shared fragments, 6 new blocks, article template; 12 pages clean at 1440/360"}
 {"ts":"2026-10-09T18:57:51Z","skill":"stardust:deploy","phase":"travel-hub-full","event":"end","detail":"hub rows as category folder listings; +10 articles, +2 product pages; 24 pages clean at 1440/360"}
+{"ts":"2026-10-09T19:31:32Z","skill":"stardust:deploy","phase":"travel-cf","event":"end","detail":"SEO/PPC scope; 3 shared contents as CFs (4 models, 20 fragments, 2 persisted queries); content-fragment block on both pages"}

@@ -1,0 +1,11 @@
+{
+  "model": "feature-list",
+  "title": "Why choose Admiral Travel Insurance?",
+  "introduction": "",
+  "features": [
+    "travel/features/benefit-medical-expenses-cover",
+    "travel/features/benefit-protect-your-belongings",
+    "travel/features/benefit-5-star-rated-cover"
+  ],
+  "footnote": ""
+}

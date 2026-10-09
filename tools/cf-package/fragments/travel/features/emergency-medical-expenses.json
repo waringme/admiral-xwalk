@@ -1,0 +1,8 @@
+{
+  "model": "feature",
+  "title": "Emergency medical expenses",
+  "description": "<p>We cover reasonable and necessary emergency medical treatment costs if you get ill or injured in an accident abroad.</p>",
+  "icon": "/content/dam/admiral-xwalk/images/travel/badge-medical-expenses-v2.svg",
+  "illustration": "/content/dam/admiral-xwalk/images/travel/travel-health.png",
+  "imageAlt": ""
+}

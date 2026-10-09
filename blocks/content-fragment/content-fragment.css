@@ -1,0 +1,37 @@
+/* content-fragment — layout around the shared designs it renders with (features, highlights,
+   comparison-table and callout CSS are loaded by the block). Widths follow the live travel pages:
+   768px for lists and the table, 1024px for pods. */
+
+main .content-fragment-container > .content-fragment-wrapper {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  padding: 30px 10px 20px;
+}
+
+main .content-fragment-container > .content-fragment-wrapper:has(.highlights) {
+  max-width: var(--container);
+  padding-top: 0;
+}
+
+.content-fragment .content-fragment-header { text-align: center; }
+.content-fragment .content-fragment-header > :last-child > :last-child { padding-bottom: 30px; }
+.content-fragment .callout { margin-bottom: 20px; }
+.content-fragment .callout > div > :last-child { padding-bottom: 0; }
+.content-fragment .comparison-table { margin-bottom: 20px; }
+.content-fragment .features { margin-bottom: 20px; }
+.content-fragment .highlight .highlight-icon + h3 { margin-top: 0; }
+.content-fragment .highlight > div > :last-child { padding-bottom: 0; }
+
+.content-fragment .content-fragment-message {
+  padding: 16px;
+  border: 1px dashed var(--color-border-pod);
+  text-align: center;
+}
+
+@media (width >= 768px) {
+  main .content-fragment-container > .content-fragment-wrapper { padding: 50px 30px 40px; }
+
+  main .content-fragment-container > .content-fragment-wrapper:has(.highlights) {
+    padding: 0 20px 40px;
+  }
+}
