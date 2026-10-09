@@ -545,6 +545,10 @@
             "value": "card-order"
           },
           {
+            "name": "Include sub-folders (their pages, not the folder pages)",
+            "value": "include-subfolders"
+          },
+          {
             "name": "Show image on mobile",
             "value": "mobile-image"
           },
@@ -621,6 +625,10 @@
           {
             "name": "Sort by Card order (default: latest first)",
             "value": "card-order"
+          },
+          {
+            "name": "Include sub-folders (their pages, not the folder pages)",
+            "value": "include-subfolders"
           },
           {
             "name": "Show image on mobile",

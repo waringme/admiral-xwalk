@@ -529,6 +529,13 @@ main .section:is(.ice-blue, .sky, .white, .sea-blue, .centered) > .default-conte
 
 main .section.centered > .default-content-wrapper { text-align: center; }
 
+/* a page title in a centred section (e.g. the travel-planning sub-folder pages) */
+main .section.centered h1 {
+  padding-bottom: 20px;
+  font-size: 25.2px;
+  line-height: 34px;
+}
+
 main .section.landing-hero {
   position: relative;
   overflow: hidden;
@@ -617,6 +624,11 @@ main .section.sea-blue a.button:any-link {
 @media (width >= 768px) {
   main .section:is(.ice-blue, .sky, .white, .sea-blue, .centered) > .default-content-wrapper {
     padding: 50px 30px 20px;
+  }
+
+  main .section.centered h1 {
+    font-size: 37.8px;
+    line-height: 48px;
   }
 
   main .section.landing-hero > .default-content-wrapper {

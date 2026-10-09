@@ -403,3 +403,31 @@ Brief: the client's demo email covers two templates, **Landing pages** and **Art
 - **Bug:** the Features (Feature List) and Rows (Cover Levels) fragment-reference fields had `valueType="string[]"`. GraphQL typed them as `[String]`, and both persisted queries failed validation on publish ("Subselection not allowed on leaf type [String]").
 - **Fix:** they are now `valueType="string/content-fragment[]"`, typed as the referenced models.
 - Rebuilt as `tools/cf-package/dist/admiral-xwalk-travel-cf-1.0.1.zip`. Reinstalling replaces the 4 models; then republish the models.
+
+## Travel-planning hub: one sub-folder per row (2026-10-09)
+- **Requested:** the hub's sections are dynamic from sub-folders (folder picker per row), replacing the Category filter.
+- **Structure:** each row is `/resources/travel-hub/travel-planning/<row>/`:
+  - `airports-and-travel` (3)
+  - `prepare-for-your-destination` (2)
+  - `practical-stuff` (8)
+  - `type-of-trip` (6, including the 2 product pages, now `type-of-trip/winter-sports-insurance` and `type-of-trip/travel-insurance-uk`, by decision)
+- Each sub-folder is a page of its own: centred title + intro + cards-folder listing it.
+- **The hub:** each row is a cards-folder block on its sub-folder, sorted by Card order (live order).
+- **Moves:** articles and product pages moved into the sub-folders.
+  - In content, live URLs and the earlier paths are rewritten to the new ones.
+  - Breadcrumbs gain the sub-folder.
+  - Related articles = the newest 3 in the same sub-folder.
+- **Folder blocks:** new style **Include sub-folders** (`include-subfolders`). It lists the pages in sub-folders too, leaving out the sub-folder pages themselves. The homepage and SEO landing "latest" lists use it on the hub. The editor uses the query builder when it is set.
+- Centred-section h1 sized as a page title.
+- **Verified locally** (mock index of the new structure):
+  - hub rows 3 / 2 / 8 / 6 in live order
+  - sub-folder pages list their row
+  - related articles stay within the sub-folder
+  - the homepage's latest 3 come from the sub-folders
+  - 28 pages clean at 1440 and 360
+- **Superseded files to delete before uploading** (the earlier flat layout; content files cannot be deleted from here):
+  - 17 `content/resources/travel-hub/travel-planning/<article>.plain.html` at the hub root
+  - `content/travel-insurance/winter-sports-insurance.plain.html`
+  - `content/travel-insurance/destination/uk.plain.html`
+  - `content/fragments/travel/whats-covered.plain.html`
+  - `content/fragments/travel/levels-of-cover.plain.html`

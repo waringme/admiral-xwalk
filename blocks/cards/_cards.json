@@ -92,6 +92,10 @@
               "value": "card-order"
             },
             {
+              "name": "Include sub-folders (their pages, not the folder pages)",
+              "value": "include-subfolders"
+            },
+            {
               "name": "Show image on mobile",
               "value": "mobile-image"
             },

@@ -12,7 +12,8 @@
  *           pages are read from AEM instead. Card items stay as the no-pages fallback.
  *   count   number of folder cards (default 6)
  *   category  optional: only pages with that Category, from anywhere under the folder
- * Style `card-order` sorts by the Card order property; otherwise latest first.
+ * Style `card-order` sorts by the Card order property; otherwise latest first. Style
+ * `include-subfolders` lists the pages in the folder's sub-folders too (not the sub-folder pages).
  * The `cards-folder` block is the same listing without card items (readConfig/folderCards).
  *   then one row per card item —
  *     cell 1  image  <picture> (the image strip; hidden on mobile unless `mobile-image`)
@@ -211,7 +212,12 @@ const byLatest = (a, b) => (Number(b.lastModified) || 0) - (Number(a.lastModifie
  * published site: the folder's direct child pages from the query index — or, with a category,
  * every page under the folder (any depth) whose Category property matches
  */
-async function fromIndex(folder, { limit, order, category }) {
+/** pages that are not themselves folders of other listed pages (sub-folder pages are skipped) */
+const leaves = (pages) => pages.filter((e) => !pages.some((o) => o.path.startsWith(`${normalise(e.path)}/`)));
+
+async function fromIndex(folder, {
+  limit, order, category, deep,
+}) {
   const resp = await fetch(`${INDEX}?limit=1000`);
   if (!resp.ok) return [];
   const { data = [] } = await resp.json();
@@ -219,8 +225,11 @@ async function fromIndex(folder, { limit, order, category }) {
   const here = normalise(canonical ? new URL(canonical.href).pathname : window.location.pathname);
   const prefix = folder === '/' ? '/' : `${folder}/`;
   let pages = data.filter((e) => e.path && e.path.startsWith(prefix) && e.path !== prefix
-    && (category ? e.category === category : !e.path.slice(prefix.length).includes('/'))
-    && normalise(e.path) !== here && !/^\/(nav|footer|fragments)(\/|$)/.test(e.path));
+    && (category || deep || !e.path.slice(prefix.length).includes('/'))
+    && (!category || e.category === category)
+    && !/^\/(nav|footer|fragments)(\/|$)/.test(e.path));
+  if (deep) pages = leaves(pages);
+  pages = pages.filter((e) => normalise(e.path) !== here);
   // latest first can be cut before reading the pages; card order needs their properties
   if (order === 'latest') pages = pages.sort(byLatest).slice(0, limit);
   const entries = await Promise.all(pages.map(summarise));
@@ -247,24 +256,30 @@ function authorEntry(path, c) {
  * Universal Editor (AEM author): the folder's child pages and their page properties — with a
  * category, every page under the folder with that Category (AEM query builder)
  */
-async function fromAuthor(folder, { limit, order, category }) {
+async function fromAuthor(folder, {
+  limit, order, category, deep,
+}) {
   const root = `${AUTHOR_ROOT}${folder === '/' ? '' : folder}`;
   const here = normalise(window.location.pathname);
   let pages;
-  if (category) {
+  if (category || deep) {
     const q = new URLSearchParams({
       path: root,
       type: 'cq:Page',
-      property: 'jcr:content/category',
-      'property.value': category,
-      'p.limit': '200',
+      'p.limit': '500',
       'p.hits': 'full',
       'p.nodedepth': '1',
     });
+    if (category) {
+      q.set('property', 'jcr:content/category');
+      q.set('property.value', category);
+    }
     const resp = await fetch(`/bin/querybuilder.json?${q}`);
     if (!resp.ok) return [];
     const { hits = [] } = await resp.json();
-    pages = hits.filter((h) => h['jcr:content']).map((h) => authorEntry(h['jcr:path'], h['jcr:content']));
+    pages = hits.filter((h) => h['jcr:content'] && h['jcr:path'] !== root)
+      .map((h) => authorEntry(h['jcr:path'], h['jcr:content']));
+    if (deep) pages = leaves(pages);
   } else {
     const resp = await fetch(`${root}.2.json`);
     if (!resp.ok) return [];
@@ -287,8 +302,12 @@ async function fromAuthor(folder, { limit, order, category }) {
  * @param {{limit?: number, order?: 'latest'|'card-order', category?: string}} options
  * @returns {Promise<Element[]>}
  */
-export async function folderCards(folder, { limit = 1000, order = 'card-order', category = '' } = {}) {
-  const opts = { limit, order, category };
+export async function folderCards(folder, {
+  limit = 1000, order = 'card-order', category = '', deep = false,
+} = {}) {
+  const opts = {
+    limit, order, category, deep,
+  };
   const entries = AUTHOR_ROOT ? await fromAuthor(folder, opts) : await fromIndex(folder, opts);
   return entries.map(indexCard);
 }
@@ -311,6 +330,7 @@ function readConfig(block) {
     folder: null,
     count: 6,
     order: block.classList.contains('card-order') ? 'card-order' : 'latest',
+    deep: block.classList.contains('include-subfolders'),
     category: '',
     items: [],
   };
@@ -347,7 +367,7 @@ export default async function decorate(block) {
   block.dataset.folder = config.folder;
   try {
     const cells = await folderCards(config.folder, {
-      limit: config.count, order: config.order, category: config.category,
+      limit: config.count, order: config.order, category: config.category, deep: config.deep,
     });
     if (cells.length) grid.replaceChildren(...cells);
   } catch {
