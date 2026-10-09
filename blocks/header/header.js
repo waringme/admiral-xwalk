@@ -149,6 +149,8 @@ export default async function decorate(block) {
   mainNav.id = 'nav-main';
   mainNav.setAttribute('aria-label', 'Main');
   const mainList = sectionList(main);
+  // reduced navigation (e.g. /nav-ppc: logo only) — no menu to open
+  if (!mainList) toggle.remove();
   if (mainList) {
     mainList.className = 'mega-nav-list';
     [...mainList.children].forEach((li) => {

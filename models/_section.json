@@ -77,8 +77,54 @@
             {
               "name": "Hero image",
               "value": "hero-image"
+            },
+            {
+              "name": "Landing hero (ice blue, centred)",
+              "value": "landing-hero"
+            },
+            {
+              "name": "Ice blue",
+              "value": "ice-blue"
+            },
+            {
+              "name": "Sky",
+              "value": "sky"
+            },
+            {
+              "name": "Sea blue",
+              "value": "sea-blue"
+            },
+            {
+              "name": "White",
+              "value": "white"
+            },
+            {
+              "name": "Centred",
+              "value": "centered"
+            },
+            {
+              "name": "Article title (mint)",
+              "value": "article-title"
+            },
+            {
+              "name": "Article body",
+              "value": "article-body"
             }
           ]
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image-left",
+          "label": "Image left (decorative, desktop)",
+          "multi": false
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image-right",
+          "label": "Image right (decorative, desktop)",
+          "multi": false
         }
       ]
     }
@@ -101,7 +147,13 @@
         "testimonials",
         "columns",
         "fragment",
-        "timeline"
+        "timeline",
+        "features",
+        "media-text",
+        "comparison-table",
+        "callout",
+        "accordion",
+        "highlights"
       ]
     }
   ]

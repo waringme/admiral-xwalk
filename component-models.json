@@ -29,6 +29,14 @@
         "value": "",
         "options": [
           {
+            "name": "Landing page",
+            "value": "landing-page"
+          },
+          {
+            "name": "Article",
+            "value": "article"
+          },
+          {
             "name": "Product landing",
             "value": "product-landing"
           },
@@ -49,8 +57,8 @@
             "value": "stacked-banners"
           },
           {
-            "name": "Article",
-            "value": "article"
+            "name": "Content page",
+            "value": "content-page"
           }
         ]
       },
@@ -104,6 +112,37 @@
         "valueType": "number",
         "name": "card-order",
         "label": "Card order"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "author",
+        "label": "Author (articles)"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "author-image",
+        "label": "Author image (articles)",
+        "multi": false
+      },
+      {
+        "component": "date-time",
+        "valueType": "date-time",
+        "name": "published",
+        "label": "Published (articles)"
+      },
+      {
+        "component": "date-time",
+        "valueType": "date-time",
+        "name": "updated",
+        "label": "Updated (articles)"
+      },
+      {
+        "component": "number",
+        "valueType": "number",
+        "name": "read-time",
+        "label": "Read time in minutes (articles)"
       }
     ]
   },
@@ -264,8 +303,72 @@
           {
             "name": "Hero image",
             "value": "hero-image"
+          },
+          {
+            "name": "Landing hero (ice blue, centred)",
+            "value": "landing-hero"
+          },
+          {
+            "name": "Ice blue",
+            "value": "ice-blue"
+          },
+          {
+            "name": "Sky",
+            "value": "sky"
+          },
+          {
+            "name": "Sea blue",
+            "value": "sea-blue"
+          },
+          {
+            "name": "White",
+            "value": "white"
+          },
+          {
+            "name": "Centred",
+            "value": "centered"
+          },
+          {
+            "name": "Article title (mint)",
+            "value": "article-title"
+          },
+          {
+            "name": "Article body",
+            "value": "article-body"
           }
         ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image-left",
+        "label": "Image left (decorative, desktop)",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image-right",
+        "label": "Image right (decorative, desktop)",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "accordion-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "summary",
+        "label": "Question / title"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Answer",
+        "valueType": "string"
       }
     ]
   },
@@ -318,6 +421,39 @@
         "value": "",
         "label": "Trail (list of links)",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "callout",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text (e.g. heading 3 'Good to know' + paragraph)",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Colour",
+        "valueType": "string",
+        "value": "",
+        "options": [
+          {
+            "name": "Yellow (Good to know)",
+            "value": ""
+          },
+          {
+            "name": "Blue",
+            "value": "blue"
+          },
+          {
+            "name": "White (quote)",
+            "value": "white"
+          }
+        ]
       }
     ]
   },
@@ -489,6 +625,92 @@
     ]
   },
   {
+    "id": "comparison-row",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Row label",
+        "description": "Leave empty on the first row to make it the column headings"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "value1",
+        "label": "Column 1",
+        "description": "Type x for 'not included'"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "value2",
+        "label": "Column 2"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "value3",
+        "label": "Column 3"
+      }
+    ]
+  },
+  {
+    "id": "features",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Alternating (icon left / right)",
+            "value": "alternating"
+          },
+          {
+            "name": "Rows with photo and arrow",
+            "value": "rows"
+          },
+          {
+            "name": "Ticked list",
+            "value": "ticks"
+          },
+          {
+            "name": "Numbered steps",
+            "value": "steps"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feature",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Icon or photo",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Heading (heading 3) and text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
@@ -545,6 +767,93 @@
           {
             "name": "Panel left",
             "value": "left"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "highlights",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Colour",
+        "valueType": "string",
+        "value": "",
+        "options": [
+          {
+            "name": "Admiral blue",
+            "value": ""
+          },
+          {
+            "name": "Pink / yellow / orange",
+            "value": "colours"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "highlight",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Icon (optional)",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Heading (heading 3) and text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "media-text",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "description": "Pick a DAM asset (e.g. a character cut-out)",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Image on the right",
+            "value": "image-right"
           }
         ]
       }

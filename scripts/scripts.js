@@ -9,6 +9,8 @@ import {
   loadSection,
   loadSections,
   loadCSS,
+  getMetadata,
+  toClassName,
 } from './aem.js';
 
 /**
@@ -110,6 +112,30 @@ export function decorateButtons(main) {
 }
 
 /**
+ * Section character images: a section's "Image left" / "Image right" properties (section
+ * metadata image-left / image-right) become decorative cut-outs at its bottom corners
+ * (live: the travel landing hero's Alfie and Annie).
+ * @param {Element} main The main element
+ */
+function decorateSectionImages(main) {
+  main.querySelectorAll('.section[data-image-left], .section[data-image-right]').forEach((section) => {
+    const holder = document.createElement('div');
+    holder.className = 'section-images';
+    holder.setAttribute('aria-hidden', 'true');
+    [['left', section.dataset.imageLeft], ['right', section.dataset.imageRight]].forEach(([side, src]) => {
+      if (!src) return;
+      const img = document.createElement('img');
+      img.className = side;
+      img.src = src;
+      img.alt = '';
+      holder.append(img);
+    });
+    section.classList.add('has-images');
+    section.append(holder);
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -118,8 +144,30 @@ export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
+  decorateSectionImages(main);
   decorateBlocks(main);
   decorateButtons(main);
+}
+
+/** page templates with their own decoration (templates/<name>/<name>.js + .css) */
+const TEMPLATES = ['article'];
+
+/**
+ * Runs the page template's decoration, if it has one (before the first section loads, so
+ * template-built content is in place for LCP).
+ * @param {Element} main The main element
+ */
+async function decorateTemplate(main) {
+  const template = toClassName(getMetadata('template'));
+  if (!TEMPLATES.includes(template)) return;
+  try {
+    const base = `${window.hlx.codeBasePath}/templates/${template}/${template}`;
+    const [mod] = await Promise.all([import(`${base}.js`), loadCSS(`${base}.css`)]);
+    if (mod.default) await mod.default(main);
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.error(`template ${template} failed`, error);
+  }
 }
 
 /**
@@ -132,6 +180,7 @@ async function loadEager(doc) {
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);
+    await decorateTemplate(main);
     document.body.classList.add('appear');
     await loadSection(main.querySelector('.section'), waitForFirstImage);
   }

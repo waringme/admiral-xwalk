@@ -1,0 +1,201 @@
+/* article template — values lifted from www.admiral.com/resources/travel-hub/travel-planning/
+   best-time-to-book-holiday-flight (1440 and 360): mint title #b5ead7, h1 #0f1e64, 1024px body
+   with a 260px right-aligned sticky contents column and a 1px #b7b7cb rule. */
+
+main .section.article-title { background-color: #b5ead7; }
+
+main .section.article-title > .default-content-wrapper {
+  max-width: var(--container-narrow);
+  padding: 24px 30px;
+}
+
+main .section.article-title h1 {
+  padding: 0;
+  color: #0f1e64;
+  font-size: 21.6px;
+  line-height: 30px;
+}
+
+main .section.article-body > .article-layout {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 30px 10px 40px;
+}
+
+main .section.article-body .default-content-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+.article-toc { display: none; }
+
+.article-meta {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0 22px;
+  padding: 10px 0;
+  border-top: 1px solid var(--color-border-pod);
+  border-bottom: 1px solid var(--color-border-pod);
+}
+
+.article-meta:not(:has(.article-meta-avatar)) { grid-template-columns: 1fr; }
+
+.article-meta-avatar {
+  width: 42px;
+  height: 40px;
+  border: 1px solid var(--color-border-pod);
+  object-fit: cover;
+}
+
+.article-meta-text p {
+  margin: 0;
+  padding: 0;
+  font-size: 12.6px;
+  line-height: 20px;
+}
+
+.article-meta-text .article-meta-author { font-weight: 700; }
+
+.article-share {
+  display: flex;
+  grid-column: 1 / -1;
+  gap: 5px;
+}
+
+.article-share a {
+  width: 34px;
+  height: 34px;
+  background: #3b5998 center / 18px no-repeat;
+}
+
+.article-share-facebook {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M14 8V6c0-.9.6-1 1-1h2V2h-3c-3 0-4 2-4 4v2H8v3h2v11h4V11h3l.5-3z'/%3E%3C/svg%3E");
+}
+
+.article-share a.article-share-x {
+  background-color: #1da1f2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M17.5 3h3.1l-6.8 7.7L21.8 21h-6.2l-4.9-6.3L5.1 21H2l7.3-8.3L1.6 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.1 4.7H5.3z'/%3E%3C/svg%3E");
+}
+
+.article-share a.article-share-email {
+  background-color: #9b9b9b;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M2 5h20v14H2zm2 2v.5l8 5 8-5V7zm16 10V9.8l-8 5-8-5V17z'/%3E%3C/svg%3E");
+}
+
+/* story copy: the live magazine rhythm */
+.article-story :is(picture, img) {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-story p:has(> picture, > img) {
+  margin: 0 0 28px;
+  padding: 0;
+  border: 1px solid #b8b8cc;
+  line-height: 0;
+}
+
+.article-story h2 {
+  margin-top: 12px;
+  padding-bottom: 28px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.article-story ul,
+.article-story ol {
+  margin-top: -12px;
+  padding: 0 0 30px 20px;
+  list-style: disc;
+}
+
+.article-story ol { list-style: decimal; }
+
+.article-story li {
+  padding-bottom: 14px;
+  font-size: 14.4px;
+  line-height: 22px;
+}
+
+@media (width >= 768px) {
+  main .section.article-title > .default-content-wrapper { padding: 30px; }
+
+  main .section.article-title h1 {
+    font-size: 37.8px;
+    line-height: 48px;
+  }
+
+  main .section.article-body > .article-layout {
+    display: flex;
+    padding: 0 30px 60px;
+  }
+
+  .article-toc {
+    position: sticky;
+    top: 45px;
+    display: block;
+    flex: 0 0 289px;
+    align-self: flex-start;
+    padding-right: 29px;
+  }
+
+  .article-toc h3 {
+    margin-top: 41px;
+    text-align: right;
+  }
+
+  .article-toc ul {
+    margin-top: -8px;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+  }
+
+  .article-toc li {
+    padding-bottom: 16px;
+    font-size: 14.4px;
+    line-height: 22px;
+  }
+
+  .article-toc a:any-link { color: var(--color-text); }
+  .article-toc a:any-link:hover { color: var(--color-link); }
+
+  .article-story {
+    flex: 1;
+    min-width: 0;
+    padding-left: 29px;
+    border-left: 1px solid var(--color-border-pod);
+  }
+
+  .article-meta {
+    grid-template-columns: 42px 1fr auto;
+    margin: 35px 0;
+  }
+
+  .article-meta:not(:has(.article-meta-avatar)) { grid-template-columns: 1fr auto; }
+
+  .article-meta-text .article-meta-author { font-size: 14.4px; }
+
+  .article-share { grid-column: auto; }
+
+  .article-story h2 {
+    margin-top: 28px;
+    font-size: 25.2px;
+    line-height: 34px;
+  }
+
+  .article-story ul,
+  .article-story ol {
+    margin-top: -8px;
+    padding-bottom: 28px;
+  }
+
+  .article-story li {
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

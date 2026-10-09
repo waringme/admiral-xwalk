@@ -1,0 +1,34 @@
+/* callout — values lifted from www.admiral.com/travel-insurance (.notification-banners.bg-yellow,
+   .bg-pale-cyan-blue and .quote-box.bg-white at 1440 and 360). */
+
+main .callout-container > .callout-wrapper {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  padding: 0 10px 20px;
+}
+
+.callout {
+  padding: 15px;
+  border: 1px solid var(--color-border-pod);
+  background-color: #fd0;
+  color: var(--color-ink);
+}
+
+.callout :is(h2, h3, h4) { color: inherit; }
+.callout > :last-child { padding-bottom: 0; }
+.callout.blue { background-color: #7df; }
+
+.callout.white {
+  border-radius: 10px;
+  background-color: #fff;
+  color: var(--color-text);
+}
+
+/* stays dark inside dark sections (the sea-blue "What the experts say" band paints copy white) */
+main .callout.white :is(h2, h3, h4) { color: var(--color-heading); }
+main .callout.white :is(p, li) { color: var(--color-text); }
+
+@media (width >= 768px) {
+  main .callout-container > .callout-wrapper { padding: 0 30px 20px; }
+  .callout { padding: 21px; }
+}

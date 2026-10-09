@@ -83,6 +83,36 @@
       "id": "blocks",
       "components": [
         {
+          "title": "Accordion",
+          "id": "accordion",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Accordion",
+                  "filter": "accordion"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Accordion item",
+          "id": "accordion-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Accordion Item",
+                  "model": "accordion-item"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Banner",
           "id": "banner",
           "plugins": {
@@ -107,6 +137,21 @@
                 "template": {
                   "name": "Breadcrumbs",
                   "model": "breadcrumbs"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Callout",
+          "id": "callout",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Callout",
+                  "model": "callout"
                 }
               }
             }
@@ -176,6 +221,67 @@
           }
         },
         {
+          "title": "Comparison table",
+          "id": "comparison-table",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Comparison Table",
+                  "filter": "comparison-table"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Table row",
+          "id": "comparison-row",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Table Row",
+                  "model": "comparison-row"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Features",
+          "id": "features",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Features",
+                  "filter": "features",
+                  "model": "features"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Feature",
+          "id": "feature",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Feature",
+                  "model": "feature"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Fragment",
           "id": "fragment",
           "plugins": {
@@ -200,6 +306,52 @@
                 "template": {
                   "name": "Hero",
                   "model": "hero"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Highlights",
+          "id": "highlights",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Highlights",
+                  "filter": "highlights",
+                  "model": "highlights"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Highlight",
+          "id": "highlight",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Highlight",
+                  "model": "highlight"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Media and text",
+          "id": "media-text",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Media Text",
+                  "model": "media-text"
                 }
               }
             }

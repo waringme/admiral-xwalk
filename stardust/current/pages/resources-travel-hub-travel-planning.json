@@ -1,0 +1,917 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-09T16:36:43.134Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "resources-travel-hub-travel-planning",
+  "url": "https://www.admiral.com/resources/travel-hub/travel-planning",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-09T16:36:43.134Z",
+  "finalUrl": "https://www.admiral.com/resources/travel-hub/travel-planning",
+  "title": "Travel Planning Help and Advice | Admiral",
+  "description": "Discover everything you need for planning a perfect holiday. From destination ideas to packing tips, our travel resource hub has you covered for an unforgettable trip.",
+  "og": {
+    "title": "Travel Planning Help and Advice | Admiral",
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Travel planning for your trip"
+    },
+    {
+      "tag": "h2",
+      "text": "Tips and advice for getting the most out of your trip"
+    },
+    {
+      "tag": "h3",
+      "text": "Airports and travel"
+    },
+    {
+      "tag": "h3",
+      "text": "Essential tips for booking airport parking"
+    },
+    {
+      "tag": "h3",
+      "text": "The best time to book your holiday or flight"
+    },
+    {
+      "tag": "h3",
+      "text": "Ultimate guide to hand luggage restrictions"
+    },
+    {
+      "tag": "h3",
+      "text": "Top tips for hiring a car abroad"
+    },
+    {
+      "tag": "h3",
+      "text": "Prepare for your destination"
+    },
+    {
+      "tag": "h3",
+      "text": "The complete guide to planning a skiing holiday"
+    },
+    {
+      "tag": "h3",
+      "text": "Do I need travel insurance for a UK holiday?"
+    },
+    {
+      "tag": "h3",
+      "text": "Camping in UK: What you need to know"
+    },
+    {
+      "tag": "h3",
+      "text": "Best spring breaks for nature lovers"
+    },
+    {
+      "tag": "h3",
+      "text": "Why you should visit Montenegro over Croatia"
+    },
+    {
+      "tag": "h3",
+      "text": "The practical stuff"
+    },
+    {
+      "tag": "h3",
+      "text": "How to get the best rates on travel money"
+    },
+    {
+      "tag": "h3",
+      "text": "Ultimate guide to travel vaccinations"
+    },
+    {
+      "tag": "h3",
+      "text": "Look beyond the frame"
+    },
+    {
+      "tag": "h3",
+      "text": "Our guide to passports"
+    },
+    {
+      "tag": "h3",
+      "text": "A guide to excess waiver cover on travel insurance"
+    },
+    {
+      "tag": "h3",
+      "text": "How to save money on holiday"
+    },
+    {
+      "tag": "h3",
+      "text": "Travelling in Europe – the new EES tracking system explained"
+    },
+    {
+      "tag": "h3",
+      "text": "What to pack for a beach holiday in the winter"
+    },
+    {
+      "tag": "h3",
+      "text": "A guide to travel visas"
+    },
+    {
+      "tag": "h3",
+      "text": "What type of trip are you taking?"
+    },
+    {
+      "tag": "h3",
+      "text": "Skiing and winter sports cover"
+    },
+    {
+      "tag": "h3",
+      "text": "Travel insurance UK"
+    },
+    {
+      "tag": "h3",
+      "text": "Business trip insurance"
+    },
+    {
+      "tag": "h3",
+      "text": "Summer vs winter holidays"
+    },
+    {
+      "tag": "h3",
+      "text": "Where to go on your last minute or autumn sun holiday"
+    },
+    {
+      "tag": "h3",
+      "text": "The ultimate festival survival guide"
+    },
+    {
+      "tag": "h2",
+      "text": "Your questions answered"
+    },
+    {
+      "tag": "h3",
+      "text": "Can I get cover in the event of scheduled airline failure?"
+    },
+    {
+      "tag": "h3",
+      "text": "My partner and I live at separate addresses, can we still buy a couple policy?"
+    },
+    {
+      "tag": "h3",
+      "text": "Will I need a visa to travel to the EU after Brexit?"
+    },
+    {
+      "tag": "h3",
+      "text": "What happens if strike/industrial action disrupts my trip?"
+    },
+    {
+      "tag": "h3",
+      "text": "How long will I need on my passport after Brexit?"
+    },
+    {
+      "tag": "h3",
+      "text": "Policy books"
+    },
+    {
+      "tag": "h2",
+      "text": "Explore our website"
+    }
+  ],
+  "body": [
+    "Contact us",
+    "Help and Support",
+    "My account",
+    "Claims",
+    "Multi Cover",
+    "Motor Motor Car Insurance Multi Car Insurance Van Insurance Black Box Insurance Electric Car Insurance Learner Driver Insurance Temporary Car Insurance Motoring Extras Car Finance Breakdown Cover Van insurance add-ons Car insurance add-ons Support Add a car to your policy Car Insurance FAQs Motor resource hub Admiral App The easy way to view and manage your insurance policy on the go. Find out more",
+    "Home Home Home Insurance Landlord Insurance Contents Insurance Buildings Insurance Multi Cover Insurance Renters Insurance Optional Extras Home Legal Expenses Home Emergency Cover Accidental Damage Personal Possessions Bicycle Cover High Risk Items Cover Landlord Emergency Cover Landlord Legal Expenses Support Home resource hub Landlord resource hub Add a home to your car insurance Home Insurance FAQs Extreme weather support Storm Hub Freeze Hub Admiral App Easily manage your cover, view your documents, and much more with the Admiral app. Find out more",
+    "Travel Travel Travel Insurance Single Trip Insurance Annual Travel Insurance Over 50s Travel Insurance Over 80s Travel Insurance Specialist Cover Winter Sports Insurance Cruise Insurance Gadget Travel Insurance Enhanced Trip Disruption Support Travel Insurance FAQs Travel resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Pet Pet Pet Insurance Multi Pet Insurance Dog Insurance Puppy Insurance Cat Insurance Kitten Insurance Lifetime Pet Insurance Time Limited Pet Insurance Pet breeds Cockapoo Pet Insurance Cocker Spaniel Pet Insurance Shih Tzu Pet Insurance Support Pet resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Money Money Personal Loans Car Loans Car Finance Hire Purchase Homeowner Loans More Finance Home Improvement Loans Debt Consolidation Loan Support Money FAQs Money worries How to improve your credit score A good credit score can help you get a better deal on a loan, mortgage and other types of finance. Find out more",
+    "Business",
+    "Homepage",
+    "Travel Resource Hub",
+    "Travel Planning",
+    "Going on holiday comes with its fair share of planning. If you're unsure of how to start planning a holiday, or simply want to check you haven't forgotten anything, this is the resource for you.",
+    "Get set for your journey.",
+    "Get airport parking for your trip without breaking the bank.",
+    "Read our guide on the best time to book your trip.",
+    "Packing your hand luggage can be tricky but it doesn’t need to be.",
+    "Hire the perfect car for your trip without breaking the bank.",
+    "Be prepared for any holiday location.",
+    "Plan the perfect ski trip with our tips and tricks.",
+    "Find out whether you really need travel cover if you’re staying in the UK.",
+    "Ensure you’ve got the best camping trip planned.",
+    "We list some of the best picks for springtime getaways.",
+    "Thinking of going to Croatia? You may prefer a Montenegro trip.",
+    "Extra information and support for your next trip.",
+    "Secure your travel money without overpaying.",
+    "Learn what vaccinations you need for your next trip.",
+    "Discover which locations are hot on social media.",
+    "Learn the rules around passports.",
+    "How does an excess waiver help you?",
+    "Stay under budget overseas.",
+    "Does EES affect for your trip?",
+    "Find out exactly what you need for a winter beach holiday.",
+    "When you need them, how to apply for one, and everything in between.",
+    "Check out our useful resources to help you plan your next trip, wherever you're going and whatever you're getting up to.",
+    "Make sure you’re covered on your winter sports adventure.",
+    "Cover for trips that are closer to home.",
+    "Get cover for your work-based trips.",
+    "Summer or winter trips - what's best? Find out in our handy guide.",
+    "We’ve got the top spots for your next autumn or last-minute adventure.",
+    "Heading to a festival? Use our guide to get prepped and keep yourself safe.",
+    "We will not pay any claim due to the actions or failure of any company providing or organising your transport or accommodation, to provide those services (whether caused by error, insolvency, bankruptcy, liquidation, omission, default or other reason).",
+    "We always recommend getting familiar with your policy book.",
+    "Car Insurance",
+    "Multi-Car Insurance",
+    "Black Box Insurance",
+    "Temporary Car Insurance",
+    "Electric Car Insurance",
+    "Learner Driver Insurance",
+    "Home Insurance",
+    "Contents Insurance",
+    "Buildings Insurance",
+    "Landlord Insurance",
+    "Renters Insurance",
+    "Flood Insurance",
+    "Optional Cover",
+    "Contents Calculator",
+    "Other Products",
+    "MultiCover Products",
+    "Personal Loans",
+    "Van Insurance",
+    "Travel Insurance",
+    "Pet Insurance",
+    "Breakdown Cover",
+    "Homeowner Loans",
+    "Car Finance",
+    "Policy Details",
+    "Make a claim",
+    "View policy books",
+    "Complaint information",
+    "Legal information",
+    "Insurance glossary",
+    "Magazine",
+    "Magazine – meet the team",
+    "About Us",
+    "Community & Sponsorship",
+    "Customer offers",
+    "Refer a friend",
+    "Jobs",
+    "Admiral App",
+    "© 1993-2026 Admiral",
+    "Sitemap",
+    "Contact Us",
+    "Accessibility",
+    "Conditions of Use",
+    "Privacy & Security",
+    "Press Office",
+    "Cookie Preferences",
+    "Admiral is a trading name of EUI Limited. (Reg No: 02686904). EUI Limited is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 309378). These details can be confirmed by visiting the Financial Services Register. EUI Limited acts for, and on behalf of, other regulated insurance companies. Further details may be provided on request. Admiral Money, Admiral Loans, Admiral Car Finance, Admiral Homeowner Loans, Admiral Mortgages, Admiral One and Finble are all trading names of Admiral Financial Services Limited (AFSL). Admiral Financial Services Limited (Reg No: 10255225) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 771862). These details can be confirmed by visiting the Financial Services Register Veygo and Admiral Business are trading names of Able Insurance Services Limited. Able Insurance Services Limited (Reg No: 2890075) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 311649). These details can be confirmed by visiting the Financial Services Register Admiral Group plc is registered in England and Wales at Tŷ Admiral, David Street, Cardiff. CF10 2EH (Reg No:03849958)."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Contact us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Help and Support",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "My account",
+      "href": "https://myaccount.admiral.com/login?_its=eJwljklqxDAURO9Saxk0WNZwgyyyyQXMt_RFBI4MspJN0z57cPeyinq8euCvZkRoLlrpoiaTip5mq-0UyKTJhGyNpCwXs0HgHDQYEX0fl3JB2cV4Ka-dWr706mfjw5pr5zRWmTjJbaHgdPbW2SC9dmlJ5BzZeXYQoDF63X5HPRriA_n4odoQAYHOhXvn_k7pm1rj_SMjvhwCZ0-fR76vvHV4VV9cbuApcNbB91wpr-3zH_pXQ6w"
+    },
+    {
+      "label": "Claims",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "Multi Cover",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Motor",
+      "href": "#"
+    },
+    {
+      "label": "Home",
+      "href": "#"
+    },
+    {
+      "label": "Travel",
+      "href": "#"
+    },
+    {
+      "label": "Pet",
+      "href": "#"
+    },
+    {
+      "label": "Money",
+      "href": "#"
+    },
+    {
+      "label": "Business",
+      "href": "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav"
+    },
+    {
+      "label": "Homepage",
+      "href": "/"
+    },
+    {
+      "label": "Travel Resource Hub",
+      "href": "/resources/travel-hub"
+    },
+    {
+      "label": "Travel Planning",
+      "href": "#"
+    },
+    {
+      "label": "Book the best space",
+      "href": "/magazine/guides/travel/tips-for-booking-airport-parking"
+    },
+    {
+      "label": "Save on your flight",
+      "href": "/magazine/guides/travel/best-time-to-book-holiday-flight"
+    },
+    {
+      "label": "Luggage guidelines",
+      "href": "/magazine/guides/travel/hand-luggage-restrictions-faqs"
+    },
+    {
+      "label": "Get around on holiday",
+      "href": "/magazine/guides/travel/hiring-a-car-abroad"
+    },
+    {
+      "label": "Stay safe in the snow",
+      "href": "/magazine/guides/travel/how-to-plan-a-skiing-holiday"
+    },
+    {
+      "label": "Staycation cover",
+      "href": "/magazine/guides/travel/travel-insurance-for-a-holiday-in-the-uk"
+    },
+    {
+      "label": "Prep your adventure",
+      "href": "/magazine/guides/travel/camping-essentials"
+    },
+    {
+      "label": "Take a trip in nature",
+      "href": "/magazine/guides/travel/spring-breaks-nature-lovers"
+    },
+    {
+      "label": "Montenegro guide",
+      "href": "/magazine/guides/travel/why-you-should-visit-montenegro"
+    },
+    {
+      "label": "Save on travel money",
+      "href": "/magazine/guides/travel/how-to-get-the-best-exchange-rates-on-travel-money"
+    },
+    {
+      "label": "Protect your health",
+      "href": "/magazine/guides/travel/travel-vaccinations"
+    },
+    {
+      "label": "Top destinations",
+      "href": "/magazine/guides/look-beyond-the-frame"
+    },
+    {
+      "label": "Read more",
+      "href": "/guides/travel/lost-or-stolen-passport"
+    },
+    {
+      "label": "Learn the basics",
+      "href": "/magazine/guides/travel/excess-waiver-travel-insurance"
+    },
+    {
+      "label": "Cost-cutting tips",
+      "href": "/magazine/guides/travel/travelling-on-budget"
+    },
+    {
+      "label": "What to expect",
+      "href": "/resources/travel-hub/travel-planning/eu-entry-exit-system"
+    },
+    {
+      "label": "Pack your suitcase",
+      "href": "/resources/travel-hub/travel-planning/beach-holiday-essentials-winter"
+    },
+    {
+      "label": "Know your stuff",
+      "href": "/resources/travel-hub/travel-planning/travel-visa-requirements"
+    },
+    {
+      "label": "Stay safe in the snow",
+      "href": "/travel-insurance/winter-sports-insurance.php"
+    },
+    {
+      "label": "Simple staycations",
+      "href": "/travel-insurance/destination/uk"
+    },
+    {
+      "label": "Working away",
+      "href": "/magazine/travel/travel-insurance-for-a-business-trip"
+    },
+    {
+      "label": "Make your mind up",
+      "href": "/resources/travel-hub/travel-planning/summer-vs-winter-holidays"
+    },
+    {
+      "label": "Where to go",
+      "href": "/resources/travel-hub/travel-planning/late-summer-sun-holiday"
+    },
+    {
+      "label": "Learn more",
+      "href": "/resources/travel-hub/travel-planning/festival-survival-guide"
+    },
+    {
+      "label": "policy book",
+      "href": "/existing-customers/policy-documents.php?product=travel"
+    },
+    {
+      "label": "Car Insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "Multi-Car Insurance",
+      "href": "/multi-car-insurance"
+    },
+    {
+      "label": "Black Box Insurance",
+      "href": "/black-box-insurance"
+    },
+    {
+      "label": "Temporary Car Insurance",
+      "href": "/car-insurance/temporary-car-insurance"
+    },
+    {
+      "label": "Electric Car Insurance",
+      "href": "/car-insurance/electric"
+    },
+    {
+      "label": "Learner Driver Insurance",
+      "href": "/learner-driver-insurance"
+    },
+    {
+      "label": "Home Insurance",
+      "href": "/home-insurance"
+    },
+    {
+      "label": "Contents Insurance",
+      "href": "/home-insurance/contents-insurance.php"
+    },
+    {
+      "label": "Buildings Insurance",
+      "href": "/home-insurance/buildings-insurance.php"
+    },
+    {
+      "label": "Landlord Insurance",
+      "href": "/home-insurance/landlord"
+    },
+    {
+      "label": "Renters Insurance",
+      "href": "/home-insurance/renters-insurance.php"
+    },
+    {
+      "label": "Flood Insurance",
+      "href": "/home-insurance/flood"
+    },
+    {
+      "label": "Optional Cover",
+      "href": "/home-insurance/optional-cover"
+    },
+    {
+      "label": "Contents Calculator",
+      "href": "/home-insurance/contents-calculator"
+    },
+    {
+      "label": "MultiCover Products",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Personal Loans",
+      "href": "/loans/personal-loans"
+    },
+    {
+      "label": "Van Insurance",
+      "href": "/van-insurance"
+    },
+    {
+      "label": "Travel Insurance",
+      "href": "/travel-insurance"
+    },
+    {
+      "label": "Pet Insurance",
+      "href": "/pet-insurance"
+    },
+    {
+      "label": "Breakdown Cover",
+      "href": "/breakdown-cover"
+    },
+    {
+      "label": "Homeowner Loans",
+      "href": "/homeowner-loans"
+    },
+    {
+      "label": "Car Finance",
+      "href": "/loans/car-finance"
+    },
+    {
+      "label": "Policy Details",
+      "href": "/myaccount"
+    },
+    {
+      "label": "Make a claim",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "View policy books",
+      "href": "/existing-customers/policy-documents.php"
+    },
+    {
+      "label": "Complaint information",
+      "href": "/contact-us/complaint-information.php"
+    },
+    {
+      "label": "Legal information",
+      "href": "/existing-customers/legal-information.php"
+    },
+    {
+      "label": "Insurance glossary",
+      "href": "/insurance-glossary"
+    },
+    {
+      "label": "Magazine",
+      "href": "/magazine"
+    },
+    {
+      "label": "Magazine – meet the team",
+      "href": "/magazine/meet-the-team"
+    },
+    {
+      "label": "About Us",
+      "href": "/about-us"
+    },
+    {
+      "label": "Community & Sponsorship",
+      "href": "/community-and-sponsorship"
+    },
+    {
+      "label": "Customer offers",
+      "href": "/existing-customers/customer-discount.php"
+    },
+    {
+      "label": "Refer a friend",
+      "href": "https://www.admiral.com/refer-a-friend"
+    },
+    {
+      "label": "Jobs",
+      "href": "https://admiraljobs.co.uk/"
+    },
+    {
+      "label": "Admiral App",
+      "href": "/myaccount/admiral-app"
+    },
+    {
+      "label": "Sitemap",
+      "href": "/sitemap.php"
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Accessibility",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "Conditions of Use",
+      "href": "/insurance/your-policy/conditions-of-use.php"
+    },
+    {
+      "label": "Privacy & Security",
+      "href": "/your-privacy-and-security"
+    },
+    {
+      "label": "Press Office",
+      "href": "/press-office"
+    },
+    {
+      "label": "Cookie Preferences",
+      "href": "/cookie-policy"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    }
+  ],
+  "links": [
+    "https://www.admiral.com/contact-us",
+    "https://www.admiral.com/help-support-hub",
+    "https://myaccount.admiral.com/login?_its=eJwljklqxDAURO9Saxk0WNZwgyyyyQXMt_RFBI4MspJN0z57cPeyinq8euCvZkRoLlrpoiaTip5mq-0UyKTJhGyNpCwXs0HgHDQYEX0fl3JB2cV4Ka-dWr706mfjw5pr5zRWmTjJbaHgdPbW2SC9dmlJ5BzZeXYQoDF63X5HPRriA_n4odoQAYHOhXvn_k7pm1rj_SMjvhwCZ0-fR76vvHV4VV9cbuApcNbB91wpr-3zH_pXQ6w",
+    "https://www.admiral.com/existing-customers/make-a-claim.php",
+    "https://www.admiral.com/",
+    "https://www.admiral.com/resources/travel-hub/travel-planning#",
+    "https://www.admiral.com/multicover-insurance",
+    "https://www.admiral.com/car-insurance",
+    "https://www.admiral.com/multi-car-insurance",
+    "https://www.admiral.com/van-insurance",
+    "https://www.admiral.com/black-box-insurance",
+    "https://www.admiral.com/car-insurance/electric",
+    "https://www.admiral.com/learner-driver-insurance",
+    "https://www.admiral.com/car-insurance/temporary-car-insurance",
+    "https://www.admiral.com/loans/car-finance",
+    "https://www.admiral.com/breakdown-cover",
+    "https://www.admiral.com/van-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/add-a-car-guide",
+    "https://www.admiral.com/car-insurance/FAQs",
+    "https://www.admiral.com/resources/motor-hub",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/home-insurance",
+    "https://www.admiral.com/home-insurance/landlord",
+    "https://www.admiral.com/home-insurance/contents-insurance.php",
+    "https://www.admiral.com/home-insurance/buildings-insurance.php",
+    "https://www.admiral.com/home-insurance/renters-insurance.php",
+    "https://www.admiral.com/home-insurance/optional-cover/family-legal-protection.php",
+    "https://www.admiral.com/home-insurance/optional-cover/home-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/accidental-damage.php",
+    "https://www.admiral.com/home-insurance/optional-cover/personal-possessions.php",
+    "https://www.admiral.com/home-insurance/optional-cover/bicycle-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/high-risk-items",
+    "https://www.admiral.com/home-insurance/landlord/landlord-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/landlord/landlord-legal-protection",
+    "https://www.admiral.com/home-insurance/home-resource-hub",
+    "https://www.admiral.com/resources/landlord-hub",
+    "https://www.admiral.com/add-a-home-guide",
+    "https://www.admiral.com/home-insurance/FAQs",
+    "https://www.admiral.com/weather/storm",
+    "https://www.admiral.com/weather/freeze",
+    "https://www.admiral.com/travel-insurance",
+    "https://www.admiral.com/travel-insurance/single-trip-insurance.php",
+    "https://www.admiral.com/travel-insurance/annual-travel-insurance.php",
+    "https://www.admiral.com/travel-insurance/over-50s-travel-insurance",
+    "https://www.admiral.com/travel-insurance/travel-insurance-over-80s",
+    "https://www.admiral.com/travel-insurance/winter-sports-insurance.php",
+    "https://www.admiral.com/travel-insurance/cruise-insurance.php",
+    "https://www.admiral.com/travel-insurance/gadget-insurance.php",
+    "https://www.admiral.com/travel-insurance/travel-disruption-insurance",
+    "https://www.admiral.com/travel-insurance/FAQs",
+    "https://www.admiral.com/resources/travel-hub",
+    "https://www.admiral.com/refer-a-friend",
+    "https://www.admiral.com/pet-insurance",
+    "https://www.admiral.com/pet-insurance/multi-pet-insurance",
+    "https://www.admiral.com/pet-insurance/dog-insurance",
+    "https://www.admiral.com/pet-insurance/puppy-insurance",
+    "https://www.admiral.com/pet-insurance/cat-insurance",
+    "https://www.admiral.com/pet-insurance/kitten-insurance",
+    "https://www.admiral.com/pet-insurance/lifetime-pet-insurance",
+    "https://www.admiral.com/pet-insurance/time-limited-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cockapoo-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cocker-spaniel-pet-insurance",
+    "https://www.admiral.com/pet-insurance/shih-tzu-pet-insurance",
+    "https://www.admiral.com/resources/pet-hub",
+    "https://www.admiral.com/loans/personal-loans",
+    "https://www.admiral.com/loans/car-finance/car-loans",
+    "https://www.admiral.com/loans/car-finance/hire-purchase",
+    "https://www.admiral.com/homeowner-loans",
+    "https://www.admiral.com/loans/personal-loans/home-improvements",
+    "https://www.admiral.com/loans/debt-consolidation-loan",
+    "https://money.admiral.com/help?_its=eJwljklqxDAURO9Saxk0WNZwgyyyyQXMt_RFBI4MspJN0z57cPeyinq8euCvZkRoLlrpoiaTip5mq-0UyKTJhGyNpCwXs0HgHDQYEX0fl3JB2cV4Ka-dWr706mfjw5pr5zRWmTjJbaHgdPbW2SC9dmlJ5BzZeXYQoDF63X5HPRriA_n4odoQAYHOhXvn_k7pm1rj_SMjvhwCZ0-fR76vvHV4VV9cbuApcNbB91wpr-3zH_pXQ6w",
+    "https://money.admiral.com/help/financial-support?_its=eJwljklqxDAURO9Saxk0WNZwgyyyyQXMt_RFBI4MspJN0z57cPeyinq8euCvZkRoLlrpoiaTip5mq-0UyKTJhGyNpCwXs0HgHDQYEX0fl3JB2cV4Ka-dWr706mfjw5pr5zRWmTjJbaHgdPbW2SC9dmlJ5BzZeXYQoDF63X5HPRriA_n4odoQAYHOhXvn_k7pm1rj_SMjvhwCZ0-fR76vvHV4VV9cbuApcNbB91wpr-3zH_pXQ6w",
+    "https://www.admiral.com/loans/improve-your-credit-score",
+    "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav",
+    "https://www.admiral.com/car-insurance/policy-upgrades/breakdown-cover/breakdown-assist.php",
+    "https://www.admiral.com/magazine/guides/travel/tips-for-booking-airport-parking",
+    "https://www.admiral.com/magazine/guides/travel/best-time-to-book-holiday-flight",
+    "https://www.admiral.com/magazine/guides/travel/hand-luggage-restrictions-faqs",
+    "https://www.admiral.com/magazine/guides/travel/hiring-a-car-abroad",
+    "https://www.admiral.com/magazine/guides/travel/how-to-plan-a-skiing-holiday",
+    "https://www.admiral.com/magazine/guides/travel/travel-insurance-for-a-holiday-in-the-uk",
+    "https://www.admiral.com/magazine/guides/travel/camping-essentials",
+    "https://www.admiral.com/magazine/guides/travel/spring-breaks-nature-lovers",
+    "https://www.admiral.com/magazine/guides/travel/why-you-should-visit-montenegro",
+    "https://www.admiral.com/magazine/guides/travel/how-to-get-the-best-exchange-rates-on-travel-money",
+    "https://www.admiral.com/magazine/guides/travel/travel-vaccinations",
+    "https://www.admiral.com/magazine/guides/look-beyond-the-frame",
+    "https://www.admiral.com/guides/travel/lost-or-stolen-passport",
+    "https://www.admiral.com/magazine/guides/travel/excess-waiver-travel-insurance",
+    "https://www.admiral.com/magazine/guides/travel/travelling-on-budget",
+    "https://www.admiral.com/resources/travel-hub/travel-planning/eu-entry-exit-system",
+    "https://www.admiral.com/resources/travel-hub/travel-planning/beach-holiday-essentials-winter",
+    "https://www.admiral.com/resources/travel-hub/travel-planning/travel-visa-requirements",
+    "https://www.admiral.com/travel-insurance/destination/uk",
+    "https://www.admiral.com/magazine/travel/travel-insurance-for-a-business-trip",
+    "https://www.admiral.com/resources/travel-hub/travel-planning/summer-vs-winter-holidays",
+    "https://www.admiral.com/resources/travel-hub/travel-planning/late-summer-sun-holiday",
+    "https://www.admiral.com/resources/travel-hub/travel-planning/festival-survival-guide",
+    "https://www.gov.uk/foreign-travel-advice",
+    "https://www.admiral.com/existing-customers/policy-documents.php?product=travel",
+    "https://www.admiral.com/home-insurance/flood",
+    "https://www.admiral.com/home-insurance/optional-cover",
+    "https://www.admiral.com/home-insurance/contents-calculator",
+    "https://www.admiral.com/myaccount",
+    "https://www.admiral.com/existing-customers/policy-documents.php",
+    "https://www.admiral.com/contact-us/complaint-information.php",
+    "https://www.admiral.com/existing-customers/legal-information.php",
+    "https://www.admiral.com/insurance-glossary",
+    "https://www.admiral.com/magazine",
+    "https://www.admiral.com/magazine/meet-the-team",
+    "https://www.admiral.com/about-us",
+    "https://www.admiral.com/community-and-sponsorship",
+    "https://www.admiral.com/existing-customers/customer-discount.php",
+    "https://admiraljobs.co.uk/",
+    "https://twitter.com/admiralUK",
+    "https://www.youtube.com/user/AdmiralInsurance",
+    "https://www.facebook.com/admiralUK",
+    "https://www.admiral.com/sitemap.php",
+    "https://www.admiral.com/insurance/your-policy/conditions-of-use.php",
+    "https://www.admiral.com/your-privacy-and-security",
+    "https://www.admiral.com/press-office",
+    "https://www.admiral.com/cookie-policy",
+    "https://www.fca.org.uk/register"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/logos/admiral-logo.svg",
+        "alt": "Admiral Insurance logo",
+        "w": 300,
+        "h": 93
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_600/public/2023-10/Article%20Photo%20%2827%29.jpg",
+        "alt": "Essential tips for booking airport parking ",
+        "w": 600,
+        "h": 400
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_600/public/2020-09/GettyImages-1214800454_2.jpg",
+        "alt": "The best time to book your holiday or flight ",
+        "w": 600,
+        "h": 400
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_600/public/2020-09/GettyImages-1039616328_1.jpg",
+        "alt": "Ultimate guide to hand luggage restrictions ",
+        "w": 600,
+        "h": 400
+      },
+      {
+        "src": "https://admiral.com/sites/default/files/public/styles/magazine_article_600/public/2023-11/Article%20Photo%20%2831%29.jpg",
+        "alt": "Top tips for hiring a car abroad",
+        "w": 600,
+        "h": 400
+      },
+      {
+        "src": "https://admiral.com/sites/default/files/public/styles/magazine_article_600/public/2024-02/Article%20Photo%20%286%29.png",
+        "alt": "The complete guide to planning a skiing holiday",
+        "w": 600,
+        "h": 400
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_600/public/2018-03/couple-selfie-uk_0.jpg",
+        "alt": "Do I need travel insurance for a UK holiday?",
+        "w": 600,
+        "h": 400
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_600/public/2021-05/tent-in-countryside-near-a-lake_0.jpg",
+        "alt": "Camping in UK: What you need to know",
+        "w": 600,
+        "h": 395
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_600/public/2022-03/GettyImages-1185391018.jpg",
+        "alt": "Best spring breaks for nature lovers",
+        "w": 600,
+        "h": 400
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_600/public/2020-01/Kotor.jpeg",
+        "alt": "Why you should visit Montenegro over Croatia",
+        "w": 600,
+        "h": 400
+      },
+      {
+        "src": "https://admiral.com/sites/default/files/public/styles/magazine_article_600/public/2024-02/Article%20Photo%20%2833%29.jpg",
+        "alt": "How to get the best rates on travel money ",
+        "w": 600,
+        "h": 400
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_600/public/2019-02/two-travel-vaccination-syringes-on-a-map.jpg",
+        "alt": "Ultimate guide to travel vaccinations",
+        "w": 600,
+        "h": 400
+      },
+      {
+        "src": "https://admiral.com/sites/default/files/public/styles/magazine_article_600/public/2023-06/Article%20Photo%20%281%29.jpg",
+        "alt": "Look beyond the frame",
+        "w": 600,
+        "h": 400
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_1280/public/2024-05/passport-hand-over.png",
+        "alt": "Our guide to passports",
+        "w": 1280,
+        "h": 853
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_1280/public/2024-10/Travel%20excess%20waiver%20cover.png",
+        "alt": "A guide to excess waiver cover on travel insurance",
+        "w": 1280,
+        "h": 853
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_1280/public/2024-12/credit-card-beach.png",
+        "alt": "How to save money on holiday",
+        "w": 1280,
+        "h": 853
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_1280/public/2025-01/Article%20photo%20%20%2825%29.jpg",
+        "alt": "Travelling in Europe – the new EES tracking system explained",
+        "w": 1280,
+        "h": 853
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_800/public/2025-03/What%20to%20pack%20for%20a%20beach%20holiday%20in%20the%20winter.jpg",
+        "alt": "What to pack for a beach holiday in the winter",
+        "w": 800,
+        "h": 533
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_800/public/2025-04/Article%20photo%20%2871%29.jpg",
+        "alt": "A guide to travel visas",
+        "w": 800,
+        "h": 533
+      },
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/articles/winter-sports.jpg",
+        "alt": "Skiing and winter sports cover",
+        "w": 315,
+        "h": 138
+      },
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/articles/travel-insurance.jpg",
+        "alt": "Travel insurance UK",
+        "w": 316,
+        "h": 138
+      },
+      {
+        "src": "https://admiral.com/sites/default/files/public/styles/magazine_article_600/public/2023-08/Article%20Photo%20%2819%29.jpg",
+        "alt": "Business trip insurance",
+        "w": 600,
+        "h": 400
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_800/public/2025-02/wings-plane-sky_0.jpg",
+        "alt": "Summer vs winter holidayse",
+        "w": 800,
+        "h": 533
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_800/public/2025-08/sunset-beach-couple.png",
+        "alt": "Where to go on your last minute or autumn sun holiday",
+        "w": 800,
+        "h": 533
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_800/public/2025-07/festival-sign-post.png",
+        "alt": "The ultimate festival survival guide",
+        "w": 800,
+        "h": 533
+      }
+    ],
+    "allImgCount": 25,
+    "cssBackgrounds": [
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/hero/background/hands-over-map-desktop.jpg"
+    ],
+    "modals": [
+      "close Choose the PDF relevant to your policy start date..."
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--animate-duration": "1s",
+    "--animate-delay": "1s",
+    "--animate-repeat": "1"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 38,
+    "mainTextLen": 35756,
+    "realImageCount": 25,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/resources-travel-hub-travel-planning.png",
+  "renderedHtml": "pages/resources-travel-hub-travel-planning.html"
+}

@@ -1,0 +1,77 @@
+/* accordion — values lifted from www.admiral.com/travel-insurance (.pod--faq at 1440 and 360):
+   white box, 1px #b7b7cb border, 16/15px padding, heading 19.8px #2350a0, + / × toggle #0078ff. */
+
+main .accordion-container > .accordion-wrapper {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  padding: 0 10px 25px;
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+  border: 1px solid var(--color-border-pod);
+  background-color: #fff;
+}
+
+.accordion-item-label {
+  position: relative;
+  display: block;
+  padding: 13px 45px 11px 15px;
+  color: var(--color-heading);
+  font-size: 16.2px;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.accordion-item-label::-webkit-details-marker { display: none; }
+
+.accordion-item-label::after {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 58 58'%3E%3Cpolygon fill='%230078ff' points='31.4,58 26.6,58 26.6,31.4 0,31.4 0,26.6 26.6,26.6 26.6,0 31.4,0 31.4,26.6 58,26.6 58,31.4 31.4,31.4'/%3E%3C/svg%3E") center / contain no-repeat;
+  content: '';
+  transition: transform 0.2s;
+}
+
+.accordion-item[open] > .accordion-item-label::after { transform: rotate(45deg); }
+
+.accordion-item-body { padding: 12px 15px 18px; }
+.accordion-item-body > :last-child { padding-bottom: 0; }
+
+.accordion-item-body ul {
+  margin-top: -12px;
+  padding: 0 0 30px 20px;
+  list-style: disc;
+}
+
+.accordion-item-body li {
+  padding-bottom: 14px;
+  font-size: 14.4px;
+  line-height: 22px;
+}
+
+@media (width >= 768px) {
+  main .accordion-container > .accordion-wrapper { padding: 0 30px 35px; }
+
+  .accordion-item-label {
+    font-size: 19.8px;
+    line-height: 28px;
+  }
+
+  .accordion-item-body ul {
+    margin-top: -8px;
+    padding-bottom: 28px;
+  }
+
+  .accordion-item-body li {
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

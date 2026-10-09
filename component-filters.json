@@ -22,7 +22,19 @@
       "testimonials",
       "columns",
       "fragment",
-      "timeline"
+      "timeline",
+      "features",
+      "media-text",
+      "comparison-table",
+      "callout",
+      "accordion",
+      "highlights"
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "accordion-item"
     ]
   },
   {
@@ -44,6 +56,24 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "comparison-table",
+    "components": [
+      "comparison-row"
+    ]
+  },
+  {
+    "id": "features",
+    "components": [
+      "feature"
+    ]
+  },
+  {
+    "id": "highlights",
+    "components": [
+      "highlight"
     ]
   },
   {

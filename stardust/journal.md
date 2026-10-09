@@ -121,3 +121,23 @@ content/*.plain.html, stardust/eds-conversion-log.md, stardust/runtime-contract.
 **Findings:**
 - 13 of 14 child-page gates pass. The Stay at Home Refund page at 360 fails at 13.5%, because of R-07.
 - The homepage, About Us and Ski Festival Hub gates are unchanged.
+
+## 2026-10-09 — Travel demo (landing pages + articles)
+
+**Prompt:** import the travel insurance SEO and PPC pages, the travel-planning hub and the example article, and build the Landing page and Article templates for the demo.
+
+**Decisions (asked):**
+- the hub's 6 articles plus the example
+- one shared fragment each, using the SEO wording
+- demo-grade close match
+
+**Artifacts:**
+- `blocks/{features,media-text,comparison-table,callout,accordion,highlights}`, `templates/article`, `scripts/scripts.js`, `styles/styles.css`
+- `models/_page.json`, `models/_section.json`
+- 15 pages: 2 landing, 1 hub, 7 articles, 4 fragments, nav-ppc
+- `stardust/packages/admiral-xwalk-images-1.3.0.zip`
+
+**Findings:**
+- Live already shares two of the three sections on the SEO page (Drupal reusable blocks) but not on PPC, which is the demo's point.
+- One hub card points at a removed URL.
+- All 12 pages are clean at 1440 and 360.

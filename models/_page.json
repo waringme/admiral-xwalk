@@ -30,6 +30,14 @@
           "value": "",
           "options": [
             {
+              "name": "Landing page",
+              "value": "landing-page"
+            },
+            {
+              "name": "Article",
+              "value": "article"
+            },
+            {
               "name": "Product landing",
               "value": "product-landing"
             },
@@ -50,8 +58,8 @@
               "value": "stacked-banners"
             },
             {
-              "name": "Article",
-              "value": "article"
+              "name": "Content page",
+              "value": "content-page"
             }
           ]
         },
@@ -105,6 +113,37 @@
           "valueType": "number",
           "name": "card-order",
           "label": "Card order"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "author",
+          "label": "Author (articles)"
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "author-image",
+          "label": "Author image (articles)",
+          "multi": false
+        },
+        {
+          "component": "date-time",
+          "valueType": "date-time",
+          "name": "published",
+          "label": "Published (articles)"
+        },
+        {
+          "component": "date-time",
+          "valueType": "date-time",
+          "name": "updated",
+          "label": "Updated (articles)"
+        },
+        {
+          "component": "number",
+          "valueType": "number",
+          "name": "read-time",
+          "label": "Read time in minutes (articles)"
         }
       ]
     }

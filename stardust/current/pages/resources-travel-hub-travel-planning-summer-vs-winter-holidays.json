@@ -1,0 +1,704 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-09T16:37:02.581Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "resources-travel-hub-travel-planning-summer-vs-winter-holidays",
+  "url": "https://www.admiral.com/resources/travel-hub/travel-planning/summer-vs-winter-holidays",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-09T16:37:02.581Z",
+  "finalUrl": "https://www.admiral.com/resources/travel-hub/travel-planning/summer-vs-winter-holidays",
+  "title": "Summer Holidays vs Winter Holidays | Admiral",
+  "description": "Explore the pros and cons of summer holidays vs winter holidays. From beach escapes to snowy adventures, discover which season offers the perfect getaway for you.",
+  "og": {
+    "title": "Summer Holidays vs Winter Holidays | Admiral",
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Summer vs. winter travel: which is best?"
+    },
+    {
+      "tag": "h3",
+      "text": "Article contents"
+    },
+    {
+      "tag": "h2",
+      "text": "The pros of summer holidays"
+    },
+    {
+      "tag": "h3",
+      "text": "Better weather"
+    },
+    {
+      "tag": "h3",
+      "text": "Longer days"
+    },
+    {
+      "tag": "h3",
+      "text": "More to do"
+    },
+    {
+      "tag": "h2",
+      "text": "The cons of summer holidays"
+    },
+    {
+      "tag": "h3",
+      "text": "Higher rates"
+    },
+    {
+      "tag": "h3",
+      "text": "More crowds"
+    },
+    {
+      "tag": "h3",
+      "text": "Less availability"
+    },
+    {
+      "tag": "h2",
+      "text": "The pros of winter holidays"
+    },
+    {
+      "tag": "h3",
+      "text": "Lower rates"
+    },
+    {
+      "tag": "h3",
+      "text": "Fewer crowds"
+    },
+    {
+      "tag": "h2",
+      "text": "The cons of winter holidays"
+    },
+    {
+      "tag": "h3",
+      "text": "Worse weather"
+    },
+    {
+      "tag": "h3",
+      "text": "Less to do"
+    },
+    {
+      "tag": "h3",
+      "text": "Flight cancellations"
+    },
+    {
+      "tag": "h2",
+      "text": "Travel tips for summer"
+    },
+    {
+      "tag": "h2",
+      "text": "Travel tips for winter"
+    },
+    {
+      "tag": "h2",
+      "text": "Should I travel in winter or summer?"
+    },
+    {
+      "tag": "h2",
+      "text": "Travel insurance for your trip"
+    },
+    {
+      "tag": "h3",
+      "text": "Share with your friends..."
+    },
+    {
+      "tag": "h2",
+      "text": "Check out our related articles"
+    },
+    {
+      "tag": "h3",
+      "text": "UK winter staycation guide"
+    },
+    {
+      "tag": "h3",
+      "text": "The best time to book your holiday or flight"
+    },
+    {
+      "tag": "h3",
+      "text": "Trip cancellation cover and travel insurance"
+    },
+    {
+      "tag": "h2",
+      "text": "Chasing the sun? Take Admiral Travel Insurance with you"
+    },
+    {
+      "tag": "h2",
+      "text": "Explore our website"
+    }
+  ],
+  "body": [
+    "Contact us",
+    "Help and Support",
+    "My account",
+    "Claims",
+    "Multi Cover",
+    "Motor Motor Car Insurance Multi Car Insurance Van Insurance Black Box Insurance Electric Car Insurance Learner Driver Insurance Temporary Car Insurance Motoring Extras Car Finance Breakdown Cover Van insurance add-ons Car insurance add-ons Support Add a car to your policy Car Insurance FAQs Motor resource hub Admiral App The easy way to view and manage your insurance policy on the go. Find out more",
+    "Home Home Home Insurance Landlord Insurance Contents Insurance Buildings Insurance Multi Cover Insurance Renters Insurance Optional Extras Home Legal Expenses Home Emergency Cover Accidental Damage Personal Possessions Bicycle Cover High Risk Items Cover Landlord Emergency Cover Landlord Legal Expenses Support Home resource hub Landlord resource hub Add a home to your car insurance Home Insurance FAQs Extreme weather support Storm Hub Freeze Hub Admiral App Easily manage your cover, view your documents, and much more with the Admiral app. Find out more",
+    "Travel Travel Travel Insurance Single Trip Insurance Annual Travel Insurance Over 50s Travel Insurance Over 80s Travel Insurance Specialist Cover Winter Sports Insurance Cruise Insurance Gadget Travel Insurance Enhanced Trip Disruption Support Travel Insurance FAQs Travel resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Pet Pet Pet Insurance Multi Pet Insurance Dog Insurance Puppy Insurance Cat Insurance Kitten Insurance Lifetime Pet Insurance Time Limited Pet Insurance Pet breeds Cockapoo Pet Insurance Cocker Spaniel Pet Insurance Shih Tzu Pet Insurance Support Pet resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Money Money Personal Loans Car Loans Car Finance Hire Purchase Homeowner Loans More Finance Home Improvement Loans Debt Consolidation Loan Support Money FAQs Money worries How to improve your credit score A good credit score can help you get a better deal on a loan, mortgage and other types of finance. Find out more",
+    "Business",
+    "Homepage",
+    "Travel Resource Hub",
+    "Travel Planning",
+    "Summer vs. winter travel: which is best?",
+    "The pros of summer holidays",
+    "The cons of summer holidays",
+    "The pros of winter holidays",
+    "The cons of winter holidays",
+    "Travel tips for summer",
+    "Travel tips for winter",
+    "Should I travel in winter or summer?",
+    "Travel insurance for your trip",
+    "Katie Rees",
+    "7 February 2025 | Updated 8 April 2025 | 5 minute read",
+    "We all love a trip away, but the time of year you choose to go away can contribute to the type of holiday you have, including the location and activities we choose, and how much it costs us.",
+    "If you’re deciding when’s the best time to go on holiday, we’ve rounded up the pros and cons of going away in the summer and the winter.",
+    "Naturally, the weather is better in most countries during summer, meaning there are far more places you can travel to in the summer without having to worry about bad weather.",
+    "This gives you more freedom to explore towns and cities, take part in outdoor activities and go on long walks.",
+    "Summer brings longer days, giving you more time to explore and have fun on your holiday, whether you’re in the UK or elsewhere.",
+    "A lot of sunny holiday hotspots close their bars and restaurants in the winter, as tourist footfall is much lower. This means that you’ll get the most out of your chosen location if you travel in the summer.",
+    "Because the demand for holidays skyrockets during the summer months, rates for flights and hotels are usually higher than they would be in other seasons.",
+    "Summer is the top time for people to go on holiday, so you’ll find that a lot of popular spots are very crowded at this time of the year.",
+    "Because summer is the busiest time for most hotels and airlines, it can be harder to find a room or seat for the dates you want.",
+    "You may also end up paying more for a room with limited availability, or you’ll have to book a location that isn’t ideal for you if the one you want is fully booked.",
+    "Because the demand for flights and hotels is lower during the winter months, you can grab better deals when booking your trip.",
+    "Some booking sites also have Black Friday deals in November that you can use to save a lot of money on your flights or accommodation.",
+    "Around Christmas and New Year, it’s likely that you’ll see a spike in rates, as people tend to visit home or go on short trips during the holidays.",
+    "Fewer people go on holiday in the winter, so it’s likely that wherever you go will be less crowded than it would be in the spring or summer.",
+    "Cities known for their Christmas markets and other festive activities may see a spike in footfall during the winter, so keep this in mind before booking if you want a quieter trip.",
+    "In many countries, temperatures drop in the winter months and inconvenient weather like rain and snow becomes more likely.",
+    "As mentioned above, popular holiday locations, such as those on the Spanish coast, often close restaurants and bars during the winter because of lower footfall. Certain activities, such as boat trips and aquatic sports, may also be limited due to the weather.",
+    "However, there are places that thrive more in winter than they do in summer, such as ski resorts.",
+    "During the winter months, strong winds, snow and ice can cause delays and cancellations at airports. If you’re unfortunate enough to be travelling on a very cold or stormy day, you may run into flight issues.",
+    "This is where travel insurance comes in handy.",
+    "When travelling in summer, there are a few things you can do to stay safe and comfortable:",
+    "Book accommodation and activities well in advance to avoid higher last-minute prices.",
+    "Arrive at the airport a few hours earlier to avoid long queues at check-in and security.",
+    "Check in online so that you can skip the above step at the airport.",
+    "Pack sunglasses and sun cream to protect your eyes and skin.",
+    "Take out travel insurance to cover you for unexpected issues and events.",
+    "If you’re travelling in the winter, follow these tips to make your trip more enjoyable:",
+    "Pack lots of warm clothing, including thermals and thick socks.",
+    "Check the status of your flight online to see if there are any delays or cancellations.",
+    "Check in online to avoid the queues at the check-in desks.",
+    "Plan your days in advance to make the most of the daylight hours.",
+    "Take out travel insurance to make sure you’re covered for any unexpected issues or events.",
+    "Going on holiday in the winter or summer depends on a range of personal factors, including:",
+    "what activities you want to take part in (i.e. mostly indoor or mostly outdoor)",
+    "what kind of weather you want",
+    "where you’re going",
+    "how much you want to spend on flights and accommodation",
+    "If you’re looking to take a cultured city break, you may find that winter is the best time to go. Cities like London and Rome can get very hot during the summer months but can cool down in the winter.",
+    "Of course, if it’s a beach or walking holiday you’re after, summer is your best bet.",
+    "Before heading off on your next holiday, make sure you have travel insurance in place for yourself and your family.",
+    "We offer travel insurance for single trips or for multiple trips within the year. Our travel cover can help support you with:",
+    "loss of personal belongings (e.g. your suitcase during transportation)",
+    "medical bills abroad",
+    "repatriation",
+    "cancelled or missed flights",
+    "Check out our travel insurance page to learn more about what we offer.",
+    "06 Feb 2025",
+    "14 May 2025",
+    "22 Aug 2022",
+    "Car Insurance",
+    "Multi-Car Insurance",
+    "Black Box Insurance",
+    "Temporary Car Insurance",
+    "Electric Car Insurance",
+    "Learner Driver Insurance",
+    "Home Insurance",
+    "Contents Insurance",
+    "Buildings Insurance",
+    "Landlord Insurance",
+    "Renters Insurance",
+    "Flood Insurance",
+    "Optional Cover",
+    "Contents Calculator",
+    "Other Products",
+    "MultiCover Products",
+    "Personal Loans",
+    "Van Insurance",
+    "Travel Insurance",
+    "Pet Insurance",
+    "Breakdown Cover",
+    "Homeowner Loans",
+    "Car Finance",
+    "Policy Details",
+    "Make a claim",
+    "View policy books",
+    "Complaint information",
+    "Legal information",
+    "Insurance glossary",
+    "Magazine",
+    "Magazine – meet the team",
+    "About Us",
+    "Community & Sponsorship",
+    "Customer offers",
+    "Refer a friend",
+    "Jobs",
+    "Admiral App",
+    "© 1993-2026 Admiral",
+    "Sitemap",
+    "Contact Us",
+    "Accessibility",
+    "Conditions of Use",
+    "Privacy & Security",
+    "Press Office",
+    "Cookie Preferences",
+    "Admiral is a trading name of EUI Limited. (Reg No: 02686904). EUI Limited is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 309378). These details can be confirmed by visiting the Financial Services Register. EUI Limited acts for, and on behalf of, other regulated insurance companies. Further details may be provided on request. Admiral Money, Admiral Loans, Admiral Car Finance, Admiral Homeowner Loans, Admiral Mortgages, Admiral One and Finble are all trading names of Admiral Financial Services Limited (AFSL). Admiral Financial Services Limited (Reg No: 10255225) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 771862). These details can be confirmed by visiting the Financial Services Register Veygo and Admiral Business are trading names of Able Insurance Services Limited. Able Insurance Services Limited (Reg No: 2890075) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 311649). These details can be confirmed by visiting the Financial Services Register Admiral Group plc is registered in England and Wales at Tŷ Admiral, David Street, Cardiff. CF10 2EH (Reg No:03849958)."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Contact us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Help and Support",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "My account",
+      "href": "https://myaccount.admiral.com/login?_its=eJwljsEOgyAQRP9lz5ogsuzCH_TQS3_AIGxTEosJ0l6a-u2N9jiTmXnzgXdO4AGjTaNVtjfIujfM1DtDukdllbKEo9EEHWwtNAEPdWn7QG5AO7JW-xJK2vXEZmQ3pVwltklFiWq2wZFOjIROsaZoYyAKaMyxFlqreX61vBbwH0jrM-QCHqCDKnepVepfxUcoRZZLAn8yOthqvK7puPLHwWnd5H4Uvh1suckRHwbW-P0BxJlCIQ"
+    },
+    {
+      "label": "Claims",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "Multi Cover",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Motor",
+      "href": "#"
+    },
+    {
+      "label": "Home",
+      "href": "#"
+    },
+    {
+      "label": "Travel",
+      "href": "#"
+    },
+    {
+      "label": "Pet",
+      "href": "#"
+    },
+    {
+      "label": "Money",
+      "href": "#"
+    },
+    {
+      "label": "Business",
+      "href": "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav"
+    },
+    {
+      "label": "Homepage",
+      "href": "/"
+    },
+    {
+      "label": "Travel Resource Hub",
+      "href": "/resources/travel-hub"
+    },
+    {
+      "label": "Travel Planning",
+      "href": "/resources/travel-hub/travel-planning"
+    },
+    {
+      "label": "Summer vs. winter travel: which is best?",
+      "href": "#"
+    },
+    {
+      "label": "single trips",
+      "href": "https://www.admiral.com/travel-insurance/single-trip-insurance.php"
+    },
+    {
+      "label": "multiple trips",
+      "href": "https://www.admiral.com/travel-insurance/annual-travel-insurance.php"
+    },
+    {
+      "label": "travel insurance page",
+      "href": "https://www.admiral.com/travel-insurance"
+    },
+    {
+      "label": "06 Feb 2025 UK winter staycation guide",
+      "href": "/magazine/guides/travel/winter-staycation-guide"
+    },
+    {
+      "label": "14 May 2025 The best time to book your holiday or flight",
+      "href": "/resources/travel-hub/travel-planning/best-time-to-book-holiday-flight"
+    },
+    {
+      "label": "22 Aug 2022 Trip cancellation cover and travel insurance",
+      "href": "/resources/travel-hub/travel-planning/travel-insurance-cancellation-cover"
+    },
+    {
+      "label": "Summer travel insurance",
+      "href": "/travel-insurance"
+    },
+    {
+      "label": "Car Insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "Multi-Car Insurance",
+      "href": "/multi-car-insurance"
+    },
+    {
+      "label": "Black Box Insurance",
+      "href": "/black-box-insurance"
+    },
+    {
+      "label": "Temporary Car Insurance",
+      "href": "/car-insurance/temporary-car-insurance"
+    },
+    {
+      "label": "Electric Car Insurance",
+      "href": "/car-insurance/electric"
+    },
+    {
+      "label": "Learner Driver Insurance",
+      "href": "/learner-driver-insurance"
+    },
+    {
+      "label": "Home Insurance",
+      "href": "/home-insurance"
+    },
+    {
+      "label": "Contents Insurance",
+      "href": "/home-insurance/contents-insurance.php"
+    },
+    {
+      "label": "Buildings Insurance",
+      "href": "/home-insurance/buildings-insurance.php"
+    },
+    {
+      "label": "Landlord Insurance",
+      "href": "/home-insurance/landlord"
+    },
+    {
+      "label": "Renters Insurance",
+      "href": "/home-insurance/renters-insurance.php"
+    },
+    {
+      "label": "Flood Insurance",
+      "href": "/home-insurance/flood"
+    },
+    {
+      "label": "Optional Cover",
+      "href": "/home-insurance/optional-cover"
+    },
+    {
+      "label": "Contents Calculator",
+      "href": "/home-insurance/contents-calculator"
+    },
+    {
+      "label": "MultiCover Products",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Personal Loans",
+      "href": "/loans/personal-loans"
+    },
+    {
+      "label": "Van Insurance",
+      "href": "/van-insurance"
+    },
+    {
+      "label": "Travel Insurance",
+      "href": "/travel-insurance"
+    },
+    {
+      "label": "Pet Insurance",
+      "href": "/pet-insurance"
+    },
+    {
+      "label": "Breakdown Cover",
+      "href": "/breakdown-cover"
+    },
+    {
+      "label": "Homeowner Loans",
+      "href": "/homeowner-loans"
+    },
+    {
+      "label": "Car Finance",
+      "href": "/loans/car-finance"
+    },
+    {
+      "label": "Policy Details",
+      "href": "/myaccount"
+    },
+    {
+      "label": "Make a claim",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "View policy books",
+      "href": "/existing-customers/policy-documents.php"
+    },
+    {
+      "label": "Complaint information",
+      "href": "/contact-us/complaint-information.php"
+    },
+    {
+      "label": "Legal information",
+      "href": "/existing-customers/legal-information.php"
+    },
+    {
+      "label": "Insurance glossary",
+      "href": "/insurance-glossary"
+    },
+    {
+      "label": "Magazine",
+      "href": "/magazine"
+    },
+    {
+      "label": "Magazine – meet the team",
+      "href": "/magazine/meet-the-team"
+    },
+    {
+      "label": "About Us",
+      "href": "/about-us"
+    },
+    {
+      "label": "Community & Sponsorship",
+      "href": "/community-and-sponsorship"
+    },
+    {
+      "label": "Customer offers",
+      "href": "/existing-customers/customer-discount.php"
+    },
+    {
+      "label": "Refer a friend",
+      "href": "https://www.admiral.com/refer-a-friend"
+    },
+    {
+      "label": "Jobs",
+      "href": "https://admiraljobs.co.uk/"
+    },
+    {
+      "label": "Admiral App",
+      "href": "/myaccount/admiral-app"
+    },
+    {
+      "label": "Sitemap",
+      "href": "/sitemap.php"
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Accessibility",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "Conditions of Use",
+      "href": "/insurance/your-policy/conditions-of-use.php"
+    },
+    {
+      "label": "Privacy & Security",
+      "href": "/your-privacy-and-security"
+    },
+    {
+      "label": "Press Office",
+      "href": "/press-office"
+    },
+    {
+      "label": "Cookie Preferences",
+      "href": "/cookie-policy"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    }
+  ],
+  "links": [
+    "https://www.admiral.com/contact-us",
+    "https://www.admiral.com/help-support-hub",
+    "https://myaccount.admiral.com/login?_its=eJwljsEOgyAQRP9lz5ogsuzCH_TQS3_AIGxTEosJ0l6a-u2N9jiTmXnzgXdO4AGjTaNVtjfIujfM1DtDukdllbKEo9EEHWwtNAEPdWn7QG5AO7JW-xJK2vXEZmQ3pVwltklFiWq2wZFOjIROsaZoYyAKaMyxFlqreX61vBbwH0jrM-QCHqCDKnepVepfxUcoRZZLAn8yOthqvK7puPLHwWnd5H4Uvh1suckRHwbW-P0BxJlCIQ",
+    "https://www.admiral.com/existing-customers/make-a-claim.php",
+    "https://www.admiral.com/",
+    "https://www.admiral.com/resources/travel-hub/travel-planning/summer-vs-winter-holidays#",
+    "https://www.admiral.com/multicover-insurance",
+    "https://www.admiral.com/car-insurance",
+    "https://www.admiral.com/multi-car-insurance",
+    "https://www.admiral.com/van-insurance",
+    "https://www.admiral.com/black-box-insurance",
+    "https://www.admiral.com/car-insurance/electric",
+    "https://www.admiral.com/learner-driver-insurance",
+    "https://www.admiral.com/car-insurance/temporary-car-insurance",
+    "https://www.admiral.com/loans/car-finance",
+    "https://www.admiral.com/breakdown-cover",
+    "https://www.admiral.com/van-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/add-a-car-guide",
+    "https://www.admiral.com/car-insurance/FAQs",
+    "https://www.admiral.com/resources/motor-hub",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/home-insurance",
+    "https://www.admiral.com/home-insurance/landlord",
+    "https://www.admiral.com/home-insurance/contents-insurance.php",
+    "https://www.admiral.com/home-insurance/buildings-insurance.php",
+    "https://www.admiral.com/home-insurance/renters-insurance.php",
+    "https://www.admiral.com/home-insurance/optional-cover/family-legal-protection.php",
+    "https://www.admiral.com/home-insurance/optional-cover/home-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/accidental-damage.php",
+    "https://www.admiral.com/home-insurance/optional-cover/personal-possessions.php",
+    "https://www.admiral.com/home-insurance/optional-cover/bicycle-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/high-risk-items",
+    "https://www.admiral.com/home-insurance/landlord/landlord-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/landlord/landlord-legal-protection",
+    "https://www.admiral.com/home-insurance/home-resource-hub",
+    "https://www.admiral.com/resources/landlord-hub",
+    "https://www.admiral.com/add-a-home-guide",
+    "https://www.admiral.com/home-insurance/FAQs",
+    "https://www.admiral.com/weather/storm",
+    "https://www.admiral.com/weather/freeze",
+    "https://www.admiral.com/travel-insurance",
+    "https://www.admiral.com/travel-insurance/single-trip-insurance.php",
+    "https://www.admiral.com/travel-insurance/annual-travel-insurance.php",
+    "https://www.admiral.com/travel-insurance/over-50s-travel-insurance",
+    "https://www.admiral.com/travel-insurance/travel-insurance-over-80s",
+    "https://www.admiral.com/travel-insurance/winter-sports-insurance.php",
+    "https://www.admiral.com/travel-insurance/cruise-insurance.php",
+    "https://www.admiral.com/travel-insurance/gadget-insurance.php",
+    "https://www.admiral.com/travel-insurance/travel-disruption-insurance",
+    "https://www.admiral.com/travel-insurance/FAQs",
+    "https://www.admiral.com/resources/travel-hub",
+    "https://www.admiral.com/refer-a-friend",
+    "https://www.admiral.com/pet-insurance",
+    "https://www.admiral.com/pet-insurance/multi-pet-insurance",
+    "https://www.admiral.com/pet-insurance/dog-insurance",
+    "https://www.admiral.com/pet-insurance/puppy-insurance",
+    "https://www.admiral.com/pet-insurance/cat-insurance",
+    "https://www.admiral.com/pet-insurance/kitten-insurance",
+    "https://www.admiral.com/pet-insurance/lifetime-pet-insurance",
+    "https://www.admiral.com/pet-insurance/time-limited-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cockapoo-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cocker-spaniel-pet-insurance",
+    "https://www.admiral.com/pet-insurance/shih-tzu-pet-insurance",
+    "https://www.admiral.com/resources/pet-hub",
+    "https://www.admiral.com/loans/personal-loans",
+    "https://www.admiral.com/loans/car-finance/car-loans",
+    "https://www.admiral.com/loans/car-finance/hire-purchase",
+    "https://www.admiral.com/homeowner-loans",
+    "https://www.admiral.com/loans/personal-loans/home-improvements",
+    "https://www.admiral.com/loans/debt-consolidation-loan",
+    "https://money.admiral.com/help?_its=eJwljsEOgyAQRP9lz5ogsuzCH_TQS3_AIGxTEosJ0l6a-u2N9jiTmXnzgXdO4AGjTaNVtjfIujfM1DtDukdllbKEo9EEHWwtNAEPdWn7QG5AO7JW-xJK2vXEZmQ3pVwltklFiWq2wZFOjIROsaZoYyAKaMyxFlqreX61vBbwH0jrM-QCHqCDKnepVepfxUcoRZZLAn8yOthqvK7puPLHwWnd5H4Uvh1suckRHwbW-P0BxJlCIQ",
+    "https://money.admiral.com/help/financial-support?_its=eJwljsEOgyAQRP9lz5ogsuzCH_TQS3_AIGxTEosJ0l6a-u2N9jiTmXnzgXdO4AGjTaNVtjfIujfM1DtDukdllbKEo9EEHWwtNAEPdWn7QG5AO7JW-xJK2vXEZmQ3pVwltklFiWq2wZFOjIROsaZoYyAKaMyxFlqreX61vBbwH0jrM-QCHqCDKnepVepfxUcoRZZLAn8yOthqvK7puPLHwWnd5H4Uvh1suckRHwbW-P0BxJlCIQ",
+    "https://www.admiral.com/loans/improve-your-credit-score",
+    "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav",
+    "https://www.admiral.com/car-insurance/policy-upgrades/breakdown-cover/breakdown-assist.php",
+    "https://www.admiral.com/resources/travel-hub/travel-planning",
+    "mailto:?subject=Check%20out%20this%20article%20on%20admiral.com&body=Summer%20vs.%20winter%20travel:%20which%20is%20best?%20-%20https://admiral.com/resources/travel-hub/travel-planning/summer-vs-winter-holidays",
+    "https://www.admiral.com/magazine/guides/travel/winter-staycation-guide",
+    "https://www.admiral.com/resources/travel-hub/travel-planning/best-time-to-book-holiday-flight",
+    "https://www.admiral.com/resources/travel-hub/travel-planning/travel-insurance-cancellation-cover",
+    "https://www.admiral.com/home-insurance/flood",
+    "https://www.admiral.com/home-insurance/optional-cover",
+    "https://www.admiral.com/home-insurance/contents-calculator",
+    "https://www.admiral.com/myaccount",
+    "https://www.admiral.com/existing-customers/policy-documents.php",
+    "https://www.admiral.com/contact-us/complaint-information.php",
+    "https://www.admiral.com/existing-customers/legal-information.php",
+    "https://www.admiral.com/insurance-glossary",
+    "https://www.admiral.com/magazine",
+    "https://www.admiral.com/magazine/meet-the-team",
+    "https://www.admiral.com/about-us",
+    "https://www.admiral.com/community-and-sponsorship",
+    "https://www.admiral.com/existing-customers/customer-discount.php",
+    "https://admiraljobs.co.uk/",
+    "https://twitter.com/admiralUK",
+    "https://www.youtube.com/user/AdmiralInsurance",
+    "https://www.facebook.com/admiralUK",
+    "https://www.admiral.com/sitemap.php",
+    "https://www.admiral.com/insurance/your-policy/conditions-of-use.php",
+    "https://www.admiral.com/your-privacy-and-security",
+    "https://www.admiral.com/press-office",
+    "https://www.admiral.com/cookie-policy",
+    "https://www.fca.org.uk/register"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/logos/admiral-logo.svg",
+        "alt": "Admiral Insurance logo",
+        "w": 300,
+        "h": 93
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/thumbnail/public/pictures/2024-03/Katie-Rees.jpg?itok=x9lVMFmP",
+        "alt": "Profile picture for user Katie.Rees13",
+        "w": 40,
+        "h": 40
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_800/public/2025-02/wings-plane-sky_0.jpg?itok=aJ9XCy6a",
+        "alt": "image of plane wing in sky",
+        "w": 708,
+        "h": 471
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_list_485/public/2025-02/city-winter-street.jpg?itok=3JjEkuVV",
+        "alt": "image of city street with christmas decorations",
+        "w": 485,
+        "h": 216
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_list_485/public/2020-09/GettyImages-1214800454_2.jpg?itok=4wmWmDWm",
+        "alt": "family booking holiday",
+        "w": 485,
+        "h": 216
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_list_485/public/2022-08/woman-cancelled-holiday.jpg?itok=mIpaAttB",
+        "alt": "Image of a black woman after a cancelled holiday",
+        "w": 485,
+        "h": 216
+      }
+    ],
+    "allImgCount": 7,
+    "cssBackgrounds": [
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/mini-hero/background/travel-summer-desktop.jpg"
+    ],
+    "modals": [
+      "close Copy link https://admiral.com/resources/travel-hub/travel-planning/summer-vs-winter-holidays"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--animate-duration": "1s",
+    "--animate-delay": "1s",
+    "--animate-repeat": "1"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 28,
+    "mainTextLen": 38953,
+    "realImageCount": 6,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/resources-travel-hub-travel-planning-summer-vs-winter-holidays.png",
+  "renderedHtml": "pages/resources-travel-hub-travel-planning-summer-vs-winter-holidays.html"
+}

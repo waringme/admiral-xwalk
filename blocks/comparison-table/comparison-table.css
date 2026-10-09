@@ -1,0 +1,62 @@
+/* comparison-table — values lifted from www.admiral.com/travel-insurance (table.general.hybrid.blue,
+   1440 and 360): heading row #2c2822, row labels #0c3a84, borders #ada9a4, 19px cells. */
+
+main .comparison-table-container > .comparison-table-wrapper {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  padding: 0 10px 40px;
+}
+
+.comparison-table .comparison-table-scroll { overflow-x: auto; }
+
+.comparison-table table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-size: 14.4px;
+  line-height: 18px;
+}
+
+.comparison-table :is(th, td) {
+  padding: 14px 10px;
+  border: 1px solid #ada9a4;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.comparison-table thead th {
+  background-color: #2c2822;
+  color: #fff;
+  font-weight: 700;
+}
+
+.comparison-table tbody th {
+  width: 33%;
+  background-color: var(--color-navy);
+  color: #fff;
+  font-weight: 400;
+  text-align: right;
+}
+
+.comparison-table td {
+  background-color: #fff;
+  color: #2c2822;
+}
+
+.comparison-table .cross {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M1 1l12 12M13 1 1 13' stroke='%23999' stroke-width='1.5'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+@media (width >= 768px) {
+  main .comparison-table-container > .comparison-table-wrapper { padding: 0 20px 60px; }
+
+  .comparison-table table {
+    font-size: 19px;
+    line-height: 21.85px;
+  }
+
+  .comparison-table :is(th, td) { padding: 20px 16px; }
+}

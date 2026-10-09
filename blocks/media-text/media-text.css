@@ -1,0 +1,76 @@
+/* media-text — values lifted from www.admiral.com/travel-insurance (.side-image, 1440 and 360):
+   768px container, 50/60px padding, image 298px wide beside a 410px copy column. */
+
+main .media-text-container {
+  background-color: #fff;
+}
+
+main .media-text-container > .media-text-wrapper {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  padding: 30px 10px 0;
+}
+
+.media-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.media-text .media-text-copy > :last-child { padding-bottom: 0; }
+
+.media-text .media-text-copy ul {
+  margin-top: -12px;
+  padding: 0 0 0 20px;
+  list-style: disc;
+}
+
+.media-text .media-text-copy li {
+  padding-bottom: 14px;
+  font-size: 14.4px;
+  line-height: 22px;
+}
+
+.media-text .media-text-media {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 0;
+}
+
+.media-text .media-text-media :is(picture, img) {
+  display: inline-block;
+  width: auto;
+  max-width: 200px;
+  height: auto;
+}
+
+@media (width >= 768px) {
+  main .media-text-container > .media-text-wrapper { padding: 50px 30px 60px; }
+
+  .media-text {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .media-text.image-right { flex-direction: row; }
+
+  .media-text .media-text-copy {
+    flex: 0 1 410px;
+  }
+
+  .media-text .media-text-media {
+    flex: 0 0 auto;
+    margin: -50px 0 -60px;
+  }
+
+  .media-text .media-text-media :is(picture, img) { max-width: 298px; }
+
+  .media-text .media-text-copy ul { margin-top: -8px; }
+
+  .media-text .media-text-copy li {
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

@@ -163,3 +163,51 @@ main .hero-container > .hero-wrapper {
     line-height: 30px;
   }
 }
+
+/* mini: the compact promo card (live .hero-banner--B-mini: 700px wide, 276px photo + 424px panel, 318px tall) */
+@media (width >= 768px) {
+  .hero.mini {
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto 60px;
+  }
+
+  .hero.mini .hero-media {
+    position: relative;
+    inset: auto;
+    flex: 0 0 276px;
+    height: 318px;
+  }
+
+  .hero.mini .container-sml {
+    flex: 1;
+    width: auto;
+    height: 318px;
+    min-height: 318px;
+    max-height: none;
+    padding: 0;
+  }
+
+  .hero.mini .hero-background {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+    transform: none;
+    border-radius: 0;
+  }
+
+  .hero.mini .hero-banner-copy :is(h1, h2) {
+    padding-bottom: 20px;
+    font-size: 25.2px;
+    line-height: 34px;
+  }
+
+  .hero.mini .hero-banner-copy a.button:any-link {
+    min-height: 40px;
+    font-size: 16.2px;
+    line-height: 20px;
+  }
+}

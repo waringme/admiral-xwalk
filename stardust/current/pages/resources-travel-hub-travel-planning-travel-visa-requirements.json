@@ -1,0 +1,681 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-09T16:37:08.660Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "resources-travel-hub-travel-planning-travel-visa-requirements",
+  "url": "https://www.admiral.com/resources/travel-hub/travel-planning/travel-visa-requirements",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-09T16:37:08.660Z",
+  "finalUrl": "https://www.admiral.com/resources/travel-hub/travel-planning/travel-visa-requirements",
+  "title": "Requirements for Travel Visas | Admiral",
+  "description": "Travelling abroad? Read our guide on visa requirements and how to apply for a hassle-free trip. Learn everything you need to know about visas with Admiral.",
+  "og": {
+    "title": "Requirements for Travel Visas | Admiral",
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Travel visas: a guide"
+    },
+    {
+      "tag": "h3",
+      "text": "Article contents"
+    },
+    {
+      "tag": "h2",
+      "text": "Why do I need a visa?"
+    },
+    {
+      "tag": "h3",
+      "text": "To find out why you’re visiting"
+    },
+    {
+      "tag": "h3",
+      "text": "How long you’re planning to stay in the country"
+    },
+    {
+      "tag": "h3",
+      "text": "Immigration and security"
+    },
+    {
+      "tag": "h2",
+      "text": "What visa requirements do I need?"
+    },
+    {
+      "tag": "h3",
+      "text": "Check the visa requirements for the country you’re travelling to"
+    },
+    {
+      "tag": "h2",
+      "text": "What documents do I need to apply for a visa?"
+    },
+    {
+      "tag": "h3",
+      "text": "Your passport"
+    },
+    {
+      "tag": "h3",
+      "text": "The specific visa application form"
+    },
+    {
+      "tag": "h3",
+      "text": "Supporting documents"
+    },
+    {
+      "tag": "h2",
+      "text": "How much does it cost to get a visa?"
+    },
+    {
+      "tag": "h2",
+      "text": "How do I apply for a visa?"
+    },
+    {
+      "tag": "h3",
+      "text": "Research if it can be done online or in-person"
+    },
+    {
+      "tag": "h3",
+      "text": "Track your application"
+    },
+    {
+      "tag": "h2",
+      "text": "Our tips for getting a visa"
+    },
+    {
+      "tag": "h3",
+      "text": "Share with your friends..."
+    },
+    {
+      "tag": "h2",
+      "text": "Check out our related articles"
+    },
+    {
+      "tag": "h3",
+      "text": "Our guide to passports"
+    },
+    {
+      "tag": "h3",
+      "text": "What to do if you get ill abroad"
+    },
+    {
+      "tag": "h3",
+      "text": "How to get your money back after airline disruption"
+    },
+    {
+      "tag": "h2",
+      "text": "Explore our website"
+    }
+  ],
+  "body": [
+    "Contact us",
+    "Help and Support",
+    "My account",
+    "Claims",
+    "Multi Cover",
+    "Motor Motor Car Insurance Multi Car Insurance Van Insurance Black Box Insurance Electric Car Insurance Learner Driver Insurance Temporary Car Insurance Motoring Extras Car Finance Breakdown Cover Van insurance add-ons Car insurance add-ons Support Add a car to your policy Car Insurance FAQs Motor resource hub Admiral App The easy way to view and manage your insurance policy on the go. Find out more",
+    "Home Home Home Insurance Landlord Insurance Contents Insurance Buildings Insurance Multi Cover Insurance Renters Insurance Optional Extras Home Legal Expenses Home Emergency Cover Accidental Damage Personal Possessions Bicycle Cover High Risk Items Cover Landlord Emergency Cover Landlord Legal Expenses Support Home resource hub Landlord resource hub Add a home to your car insurance Home Insurance FAQs Extreme weather support Storm Hub Freeze Hub Admiral App Easily manage your cover, view your documents, and much more with the Admiral app. Find out more",
+    "Travel Travel Travel Insurance Single Trip Insurance Annual Travel Insurance Over 50s Travel Insurance Over 80s Travel Insurance Specialist Cover Winter Sports Insurance Cruise Insurance Gadget Travel Insurance Enhanced Trip Disruption Support Travel Insurance FAQs Travel resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Pet Pet Pet Insurance Multi Pet Insurance Dog Insurance Puppy Insurance Cat Insurance Kitten Insurance Lifetime Pet Insurance Time Limited Pet Insurance Pet breeds Cockapoo Pet Insurance Cocker Spaniel Pet Insurance Shih Tzu Pet Insurance Support Pet resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Money Money Personal Loans Car Loans Car Finance Hire Purchase Homeowner Loans More Finance Home Improvement Loans Debt Consolidation Loan Support Money FAQs Money worries How to improve your credit score A good credit score can help you get a better deal on a loan, mortgage and other types of finance. Find out more",
+    "Business",
+    "Homepage",
+    "Travel Resource Hub",
+    "Travel Planning",
+    "Travel visas: a guide",
+    "Why do I need a visa?",
+    "What visa requirements do I need?",
+    "What documents do I need to apply for a visa?",
+    "How much does it cost to get a visa?",
+    "How do I apply for a visa?",
+    "Our tips for getting a visa",
+    "Tegan Oldfield",
+    "22 April 2025 | 4 minute read",
+    "Depending on where you’re jetting off to on holiday, you may need a visa to make sure you can get into the country.",
+    "Visa requirements are different all over the world, so it’s important you do proper research to avoid being left in the lurch.",
+    "There are a few different reasons that some countries require you to have a visa.",
+    "Often, the purpose of a visa is to find out why you’re visiting the country.",
+    "That could be:",
+    "tourism – you're just there for a holiday",
+    "a business trip",
+    "to study at a university or other place of education",
+    "to work",
+    "Some places have stricter laws around visitors studying or working in their country.",
+    "Visas are also needed to figure out how long you’re planning to stay.",
+    "Some places have strict rules around how long you can stay, and some won’t even allow you in if you can’t prove you’ve already booked transport out of the country.",
+    "You might be able to apply to renew or extend your visa, so you can stay longer.",
+    "The most important reason is about immigration and security.",
+    "That means governments can:",
+    "keep an eye on who’s in the country",
+    "enforce some conditions around people staying, including how long they’re staying for",
+    "reduce the risk of allowing people into the country who might be a threat to public safety",
+    "There are lots of different types of visas for travelling, including student, work, and even refugee.",
+    "But if you’re planning to go on holiday somewhere with a visa system, you’ll likely just need a tourist visa. They’re also sometimes known as ‘travel visas’ or ‘visitor visas’.",
+    "Tourist visas do what they say on the tin – they're for people who want to explore a new country just for leisure or fun. They usually only allow relatively short stays, generally up to a few weeks.",
+    "The most important thing is to do your research on the country you’re travelling to.",
+    "Every country has different rules, so there’s really no one size fits all!",
+    "A good place to start is the Foreign, Commonwealth and Development Office’s foreign travel advice. You can filter by country to find out their travel visa requirements.",
+    "When it comes to making your application, there are a few things you’ll probably need on hand ready.",
+    "Firstly, and most importantly, you’ll need your passport.",
+    "Make sure it’s in date and doesn’t expire soon. Some countries require you to have at least six months left on your passport.",
+    "This will be different from country to country, but you’ll need to complete the actual application form, often online.",
+    "The form will include lots of questions, like where you’re staying, how long you’re staying, what the purpose of your trip is, and more.",
+    "Different countries will ask you for different documents to support your application.",
+    "This could be things like:",
+    "proof of travel – for instance, receipts for flight tickets",
+    "valid travel insurance – some places require you to take out travel insurance before you travel",
+    "You may need to pay a fee for your visa, including some different admin fees.",
+    "This is different from country to country.",
+    "For instance, a short-term tourist visa to Australia could roughly cost around £90 - or a single-trip visa to Thailand could cost around £35.",
+    "You can use the FCDO’s foreign travel advice page to find out how to apply for specific visas.",
+    "They have plenty of information on entry requirements for different countries.",
+    "With many countries, you can apply for the visa online – or you might be able to head to their embassy in the UK to apply in-person.",
+    "If you’ve applied online, you should get tracking updates on your visa’s progress via email, to let you know how it’s getting on.",
+    "Some can be sorted very quickly, while some can take a little longer.",
+    "If you're planning a holiday that needs a visa, here’s some things to be aware of:",
+    "Start your application early - as we said above, some visas can take a while, so try and sort it as soon as possible",
+    "Be prepared for any delays - it’s not uncommon for there to be issues or delays, so keep this in mind",
+    "Contact the embassy – if you have any issues, you can contact the country’s embassy for support",
+    "27 Apr 2026",
+    "25 Nov 2024",
+    "31 May 2022",
+    "Car Insurance",
+    "Multi-Car Insurance",
+    "Black Box Insurance",
+    "Temporary Car Insurance",
+    "Electric Car Insurance",
+    "Learner Driver Insurance",
+    "Home Insurance",
+    "Contents Insurance",
+    "Buildings Insurance",
+    "Landlord Insurance",
+    "Renters Insurance",
+    "Flood Insurance",
+    "Optional Cover",
+    "Contents Calculator",
+    "Other Products",
+    "MultiCover Products",
+    "Personal Loans",
+    "Van Insurance",
+    "Travel Insurance",
+    "Pet Insurance",
+    "Breakdown Cover",
+    "Homeowner Loans",
+    "Car Finance",
+    "Policy Details",
+    "Make a claim",
+    "View policy books",
+    "Complaint information",
+    "Legal information",
+    "Insurance glossary",
+    "Magazine",
+    "Magazine – meet the team",
+    "About Us",
+    "Community & Sponsorship",
+    "Customer offers",
+    "Refer a friend",
+    "Jobs",
+    "Admiral App",
+    "© 1993-2026 Admiral",
+    "Sitemap",
+    "Contact Us",
+    "Accessibility",
+    "Conditions of Use",
+    "Privacy & Security",
+    "Press Office",
+    "Cookie Preferences",
+    "Admiral is a trading name of EUI Limited. (Reg No: 02686904). EUI Limited is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 309378). These details can be confirmed by visiting the Financial Services Register. EUI Limited acts for, and on behalf of, other regulated insurance companies. Further details may be provided on request. Admiral Money, Admiral Loans, Admiral Car Finance, Admiral Homeowner Loans, Admiral Mortgages, Admiral One and Finble are all trading names of Admiral Financial Services Limited (AFSL). Admiral Financial Services Limited (Reg No: 10255225) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 771862). These details can be confirmed by visiting the Financial Services Register Veygo and Admiral Business are trading names of Able Insurance Services Limited. Able Insurance Services Limited (Reg No: 2890075) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 311649). These details can be confirmed by visiting the Financial Services Register Admiral Group plc is registered in England and Wales at Tŷ Admiral, David Street, Cardiff. CF10 2EH (Reg No:03849958)."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Contact us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Help and Support",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "My account",
+      "href": "https://myaccount.admiral.com/login?_its=eJwljktuxCAQRO9SaywBpvndIItscgELQ1tBcrCESTaj8dkjzyyrVE-vHvirBRGzIbkqaya9sZzMxmFKrNykLElShuZsEgTOkQYjou_jUi4osrPXdO2plUsv3sw-LKV2zmORmbNcbQpOF0-OgvTaZZuTc4mMcRBIY_S6_o56NMQHyvGTakMEBDpv3Dv3d8rfqTXePwriyyFw9vx5lPvKW4dX9cXbDTwFzjr4nivlNT3_AbOpQ1Y"
+    },
+    {
+      "label": "Claims",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "Multi Cover",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Motor",
+      "href": "#"
+    },
+    {
+      "label": "Home",
+      "href": "#"
+    },
+    {
+      "label": "Travel",
+      "href": "#"
+    },
+    {
+      "label": "Pet",
+      "href": "#"
+    },
+    {
+      "label": "Money",
+      "href": "#"
+    },
+    {
+      "label": "Business",
+      "href": "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav"
+    },
+    {
+      "label": "Homepage",
+      "href": "/"
+    },
+    {
+      "label": "Travel Resource Hub",
+      "href": "/resources/travel-hub"
+    },
+    {
+      "label": "Travel Planning",
+      "href": "/resources/travel-hub/travel-planning"
+    },
+    {
+      "label": "Travel visas: a guide",
+      "href": "#"
+    },
+    {
+      "label": "business trip",
+      "href": "https://www.admiral.com/magazine/travel/travel-insurance-for-a-business-trip"
+    },
+    {
+      "label": "foreign travel advice",
+      "href": "https://www.gov.uk/foreign-travel-advice"
+    },
+    {
+      "label": "travel insurance",
+      "href": "https://www.admiral.com/travel-insurance"
+    },
+    {
+      "label": "FCDO’s foreign travel advice page",
+      "href": "https://www.admiral.com/travel-insurance"
+    },
+    {
+      "label": "27 Apr 2026 Our guide to passports",
+      "href": "/magazine/guides/travel/lost-or-stolen-passport"
+    },
+    {
+      "label": "25 Nov 2024 What to do if you get ill abroad",
+      "href": "/resources/travel-hub/falling-ill-holiday-abroad"
+    },
+    {
+      "label": "31 May 2022 How to get your money back after airline disruption",
+      "href": "/magazine/guides/travel/how-to-get-your-money-back-after-travel-disruption"
+    },
+    {
+      "label": "Car Insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "Multi-Car Insurance",
+      "href": "/multi-car-insurance"
+    },
+    {
+      "label": "Black Box Insurance",
+      "href": "/black-box-insurance"
+    },
+    {
+      "label": "Temporary Car Insurance",
+      "href": "/car-insurance/temporary-car-insurance"
+    },
+    {
+      "label": "Electric Car Insurance",
+      "href": "/car-insurance/electric"
+    },
+    {
+      "label": "Learner Driver Insurance",
+      "href": "/learner-driver-insurance"
+    },
+    {
+      "label": "Home Insurance",
+      "href": "/home-insurance"
+    },
+    {
+      "label": "Contents Insurance",
+      "href": "/home-insurance/contents-insurance.php"
+    },
+    {
+      "label": "Buildings Insurance",
+      "href": "/home-insurance/buildings-insurance.php"
+    },
+    {
+      "label": "Landlord Insurance",
+      "href": "/home-insurance/landlord"
+    },
+    {
+      "label": "Renters Insurance",
+      "href": "/home-insurance/renters-insurance.php"
+    },
+    {
+      "label": "Flood Insurance",
+      "href": "/home-insurance/flood"
+    },
+    {
+      "label": "Optional Cover",
+      "href": "/home-insurance/optional-cover"
+    },
+    {
+      "label": "Contents Calculator",
+      "href": "/home-insurance/contents-calculator"
+    },
+    {
+      "label": "MultiCover Products",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Personal Loans",
+      "href": "/loans/personal-loans"
+    },
+    {
+      "label": "Van Insurance",
+      "href": "/van-insurance"
+    },
+    {
+      "label": "Travel Insurance",
+      "href": "/travel-insurance"
+    },
+    {
+      "label": "Pet Insurance",
+      "href": "/pet-insurance"
+    },
+    {
+      "label": "Breakdown Cover",
+      "href": "/breakdown-cover"
+    },
+    {
+      "label": "Homeowner Loans",
+      "href": "/homeowner-loans"
+    },
+    {
+      "label": "Car Finance",
+      "href": "/loans/car-finance"
+    },
+    {
+      "label": "Policy Details",
+      "href": "/myaccount"
+    },
+    {
+      "label": "Make a claim",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "View policy books",
+      "href": "/existing-customers/policy-documents.php"
+    },
+    {
+      "label": "Complaint information",
+      "href": "/contact-us/complaint-information.php"
+    },
+    {
+      "label": "Legal information",
+      "href": "/existing-customers/legal-information.php"
+    },
+    {
+      "label": "Insurance glossary",
+      "href": "/insurance-glossary"
+    },
+    {
+      "label": "Magazine",
+      "href": "/magazine"
+    },
+    {
+      "label": "Magazine – meet the team",
+      "href": "/magazine/meet-the-team"
+    },
+    {
+      "label": "About Us",
+      "href": "/about-us"
+    },
+    {
+      "label": "Community & Sponsorship",
+      "href": "/community-and-sponsorship"
+    },
+    {
+      "label": "Customer offers",
+      "href": "/existing-customers/customer-discount.php"
+    },
+    {
+      "label": "Refer a friend",
+      "href": "https://www.admiral.com/refer-a-friend"
+    },
+    {
+      "label": "Jobs",
+      "href": "https://admiraljobs.co.uk/"
+    },
+    {
+      "label": "Admiral App",
+      "href": "/myaccount/admiral-app"
+    },
+    {
+      "label": "Sitemap",
+      "href": "/sitemap.php"
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Accessibility",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "Conditions of Use",
+      "href": "/insurance/your-policy/conditions-of-use.php"
+    },
+    {
+      "label": "Privacy & Security",
+      "href": "/your-privacy-and-security"
+    },
+    {
+      "label": "Press Office",
+      "href": "/press-office"
+    },
+    {
+      "label": "Cookie Preferences",
+      "href": "/cookie-policy"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    }
+  ],
+  "links": [
+    "https://www.admiral.com/contact-us",
+    "https://www.admiral.com/help-support-hub",
+    "https://myaccount.admiral.com/login?_its=eJwljktuxCAQRO9SaywBpvndIItscgELQ1tBcrCESTaj8dkjzyyrVE-vHvirBRGzIbkqaya9sZzMxmFKrNykLElShuZsEgTOkQYjou_jUi4osrPXdO2plUsv3sw-LKV2zmORmbNcbQpOF0-OgvTaZZuTc4mMcRBIY_S6_o56NMQHyvGTakMEBDpv3Dv3d8rfqTXePwriyyFw9vx5lPvKW4dX9cXbDTwFzjr4nivlNT3_AbOpQ1Y",
+    "https://www.admiral.com/existing-customers/make-a-claim.php",
+    "https://www.admiral.com/",
+    "https://www.admiral.com/resources/travel-hub/travel-planning/travel-visa-requirements#",
+    "https://www.admiral.com/multicover-insurance",
+    "https://www.admiral.com/car-insurance",
+    "https://www.admiral.com/multi-car-insurance",
+    "https://www.admiral.com/van-insurance",
+    "https://www.admiral.com/black-box-insurance",
+    "https://www.admiral.com/car-insurance/electric",
+    "https://www.admiral.com/learner-driver-insurance",
+    "https://www.admiral.com/car-insurance/temporary-car-insurance",
+    "https://www.admiral.com/loans/car-finance",
+    "https://www.admiral.com/breakdown-cover",
+    "https://www.admiral.com/van-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/add-a-car-guide",
+    "https://www.admiral.com/car-insurance/FAQs",
+    "https://www.admiral.com/resources/motor-hub",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/home-insurance",
+    "https://www.admiral.com/home-insurance/landlord",
+    "https://www.admiral.com/home-insurance/contents-insurance.php",
+    "https://www.admiral.com/home-insurance/buildings-insurance.php",
+    "https://www.admiral.com/home-insurance/renters-insurance.php",
+    "https://www.admiral.com/home-insurance/optional-cover/family-legal-protection.php",
+    "https://www.admiral.com/home-insurance/optional-cover/home-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/accidental-damage.php",
+    "https://www.admiral.com/home-insurance/optional-cover/personal-possessions.php",
+    "https://www.admiral.com/home-insurance/optional-cover/bicycle-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/high-risk-items",
+    "https://www.admiral.com/home-insurance/landlord/landlord-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/landlord/landlord-legal-protection",
+    "https://www.admiral.com/home-insurance/home-resource-hub",
+    "https://www.admiral.com/resources/landlord-hub",
+    "https://www.admiral.com/add-a-home-guide",
+    "https://www.admiral.com/home-insurance/FAQs",
+    "https://www.admiral.com/weather/storm",
+    "https://www.admiral.com/weather/freeze",
+    "https://www.admiral.com/travel-insurance",
+    "https://www.admiral.com/travel-insurance/single-trip-insurance.php",
+    "https://www.admiral.com/travel-insurance/annual-travel-insurance.php",
+    "https://www.admiral.com/travel-insurance/over-50s-travel-insurance",
+    "https://www.admiral.com/travel-insurance/travel-insurance-over-80s",
+    "https://www.admiral.com/travel-insurance/winter-sports-insurance.php",
+    "https://www.admiral.com/travel-insurance/cruise-insurance.php",
+    "https://www.admiral.com/travel-insurance/gadget-insurance.php",
+    "https://www.admiral.com/travel-insurance/travel-disruption-insurance",
+    "https://www.admiral.com/travel-insurance/FAQs",
+    "https://www.admiral.com/resources/travel-hub",
+    "https://www.admiral.com/refer-a-friend",
+    "https://www.admiral.com/pet-insurance",
+    "https://www.admiral.com/pet-insurance/multi-pet-insurance",
+    "https://www.admiral.com/pet-insurance/dog-insurance",
+    "https://www.admiral.com/pet-insurance/puppy-insurance",
+    "https://www.admiral.com/pet-insurance/cat-insurance",
+    "https://www.admiral.com/pet-insurance/kitten-insurance",
+    "https://www.admiral.com/pet-insurance/lifetime-pet-insurance",
+    "https://www.admiral.com/pet-insurance/time-limited-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cockapoo-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cocker-spaniel-pet-insurance",
+    "https://www.admiral.com/pet-insurance/shih-tzu-pet-insurance",
+    "https://www.admiral.com/resources/pet-hub",
+    "https://www.admiral.com/loans/personal-loans",
+    "https://www.admiral.com/loans/car-finance/car-loans",
+    "https://www.admiral.com/loans/car-finance/hire-purchase",
+    "https://www.admiral.com/homeowner-loans",
+    "https://www.admiral.com/loans/personal-loans/home-improvements",
+    "https://www.admiral.com/loans/debt-consolidation-loan",
+    "https://money.admiral.com/help?_its=eJwljktuxCAQRO9SaywBpvndIItscgELQ1tBcrCESTaj8dkjzyyrVE-vHvirBRGzIbkqaya9sZzMxmFKrNykLElShuZsEgTOkQYjou_jUi4osrPXdO2plUsv3sw-LKV2zmORmbNcbQpOF0-OgvTaZZuTc4mMcRBIY_S6_o56NMQHyvGTakMEBDpv3Dv3d8rfqTXePwriyyFw9vx5lPvKW4dX9cXbDTwFzjr4nivlNT3_AbOpQ1Y",
+    "https://money.admiral.com/help/financial-support?_its=eJwljktuxCAQRO9SaywBpvndIItscgELQ1tBcrCESTaj8dkjzyyrVE-vHvirBRGzIbkqaya9sZzMxmFKrNykLElShuZsEgTOkQYjou_jUi4osrPXdO2plUsv3sw-LKV2zmORmbNcbQpOF0-OgvTaZZuTc4mMcRBIY_S6_o56NMQHyvGTakMEBDpv3Dv3d8rfqTXePwriyyFw9vx5lPvKW4dX9cXbDTwFzjr4nivlNT3_AbOpQ1Y",
+    "https://www.admiral.com/loans/improve-your-credit-score",
+    "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav",
+    "https://www.admiral.com/car-insurance/policy-upgrades/breakdown-cover/breakdown-assist.php",
+    "https://www.admiral.com/resources/travel-hub/travel-planning",
+    "mailto:?subject=Check%20out%20this%20article%20on%20admiral.com&body=Travel%20visas:%20a%20guide%20-%20https://admiral.com/resources/travel-hub/travel-planning/travel-visa-requirements",
+    "https://www.admiral.com/magazine/travel/travel-insurance-for-a-business-trip",
+    "https://www.gov.uk/foreign-travel-advice",
+    "https://www.admiral.com/magazine/guides/travel/lost-or-stolen-passport",
+    "https://www.admiral.com/resources/travel-hub/falling-ill-holiday-abroad",
+    "https://www.admiral.com/magazine/guides/travel/how-to-get-your-money-back-after-travel-disruption",
+    "https://www.admiral.com/home-insurance/flood",
+    "https://www.admiral.com/home-insurance/optional-cover",
+    "https://www.admiral.com/home-insurance/contents-calculator",
+    "https://www.admiral.com/myaccount",
+    "https://www.admiral.com/existing-customers/policy-documents.php",
+    "https://www.admiral.com/contact-us/complaint-information.php",
+    "https://www.admiral.com/existing-customers/legal-information.php",
+    "https://www.admiral.com/insurance-glossary",
+    "https://www.admiral.com/magazine",
+    "https://www.admiral.com/magazine/meet-the-team",
+    "https://www.admiral.com/about-us",
+    "https://www.admiral.com/community-and-sponsorship",
+    "https://www.admiral.com/existing-customers/customer-discount.php",
+    "https://admiraljobs.co.uk/",
+    "https://twitter.com/admiralUK",
+    "https://www.youtube.com/user/AdmiralInsurance",
+    "https://www.facebook.com/admiralUK",
+    "https://www.admiral.com/sitemap.php",
+    "https://www.admiral.com/insurance/your-policy/conditions-of-use.php",
+    "https://www.admiral.com/your-privacy-and-security",
+    "https://www.admiral.com/press-office",
+    "https://www.admiral.com/cookie-policy",
+    "https://www.fca.org.uk/register"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/logos/admiral-logo.svg",
+        "alt": "Admiral Insurance logo",
+        "w": 300,
+        "h": 93
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/thumbnail/public/pictures/2023-02/tegan-oldfield.jpg?itok=Zs3o3QPA",
+        "alt": "Profile picture for user Tegan.Oldfield",
+        "w": 40,
+        "h": 40
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_800/public/2025-04/Article%20photo%20%2871%29.jpg?itok=rOPeU1Og",
+        "alt": "A woman in airport with a backpack on, holding her passport and smiling",
+        "w": 708,
+        "h": 471
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_list_485/public/2024-05/passport-hand-over.png?itok=2cVo2mEL",
+        "alt": "person handing their passport to someone else",
+        "w": 485,
+        "h": 216
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_list_485/public/2024-11/Article%20photo%20%20%2815%29.jpg?itok=Q0rG6XtE",
+        "alt": "A doctor with a clipboard, speaking to a patient",
+        "w": 485,
+        "h": 216
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_list_485/public/2026-09/Article%20header%20image%20%284%29.png?itok=C0X4awXY",
+        "alt": "Departures board at an airport",
+        "w": 485,
+        "h": 216
+      }
+    ],
+    "allImgCount": 7,
+    "cssBackgrounds": [],
+    "modals": [
+      "close Copy link https://admiral.com/resources/travel-hub/travel-planning/travel-visa-requirements"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--animate-duration": "1s",
+    "--animate-delay": "1s",
+    "--animate-repeat": "1"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 23,
+    "mainTextLen": 36457,
+    "realImageCount": 6,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/resources-travel-hub-travel-planning-travel-visa-requirements.png",
+  "renderedHtml": "pages/resources-travel-hub-travel-planning-travel-visa-requirements.html"
+}

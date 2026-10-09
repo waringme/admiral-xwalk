@@ -512,6 +512,144 @@ main .section.hero-image :is(picture, img) {
   }
 }
 
+/* travel landing + hub section styles — values lifted from www.admiral.com/travel-insurance and
+   /travel-insurance/generic (1440 and 360): bg-ice-blue #bef, bg-sea-blue #005485, bg-sky #a7edef,
+   hero-banner--C (centred copy, Alfie and Annie cut-outs in the bottom corners). */
+main .section.ice-blue { background-color: #bef; }
+main .section.sky { background-color: #a7edef; }
+main .section.white { background-color: #fff; }
+main .section.sea-blue { background-color: #005485; }
+
+main .section.sea-blue :is(h1, h2, h3, h4, p) { color: #fff; }
+
+main .section:is(.ice-blue, .sky, .white, .sea-blue, .centered) > .default-content-wrapper {
+  max-width: var(--container-narrow);
+  padding: 30px 10px 15px;
+}
+
+main .section.centered > .default-content-wrapper { text-align: center; }
+
+main .section.landing-hero {
+  position: relative;
+  overflow: hidden;
+  background-color: #bef;
+  text-align: center;
+}
+
+main .section.landing-hero > div {
+  position: relative;
+  z-index: 1;
+}
+
+main .section.landing-hero > .default-content-wrapper {
+  max-width: 500px;
+  padding: 24px 10px 20px;
+}
+
+main .section.landing-hero h1 {
+  margin: 0 auto 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #21201c;
+  color: var(--color-ink);
+  font-size: 16.2px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+main .section.landing-hero h2 {
+  padding-bottom: 20px;
+  color: var(--color-heading);
+  font-size: 21.6px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+main .section.landing-hero p:has(> picture, > img) {
+  margin: 0;
+  padding: 10px 0 4px;
+  line-height: 0;
+}
+
+main .section.landing-hero p :is(picture, img) {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  height: 34px;
+}
+
+main .section.landing-hero p:not(.button-wrapper) {
+  font-size: 12.6px;
+  line-height: 20px;
+}
+
+main .section.landing-hero .button-wrapper {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+main .section.landing-hero a.button:any-link { min-width: 200px; }
+
+/* the hero's primary CTA is the live green; secondary keeps the aqua */
+main .section.landing-hero a.button.primary:any-link {
+  border-color: #0a8f24;
+  background-image: linear-gradient(#2bc444 0%, #11a12b 100%);
+}
+
+main .section.has-images .section-images { display: none; }
+
+/* quick links bar ("What are you looking for?") */
+main .section.sea-blue .button-wrapper {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+main .section.sea-blue a.button:any-link {
+  border-color: #fff;
+  background: none;
+}
+
+@media (width >= 768px) {
+  main .section:is(.ice-blue, .sky, .white, .sea-blue, .centered) > .default-content-wrapper {
+    padding: 50px 30px 20px;
+  }
+
+  main .section.landing-hero > .default-content-wrapper {
+    max-width: 708px;
+    padding: 30px 30px 40px;
+  }
+
+  main .section.landing-hero h1 {
+    max-width: 660px;
+    font-size: 25.2px;
+    line-height: 34px;
+  }
+
+  main .section.landing-hero h2 {
+    font-size: 37.8px;
+    line-height: 48px;
+  }
+
+  main .section.landing-hero p :is(picture, img) { height: 40px; }
+
+  main .section.has-images .section-images {
+    position: absolute;
+    inset: 0;
+    display: block;
+    pointer-events: none;
+  }
+
+  main .section.has-images .section-images img {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    max-width: 22%;
+    max-height: 85%;
+  }
+
+  main .section.has-images .section-images .left { left: 4%; }
+  main .section.has-images .section-images .right { right: 4%; }
+}
+
 /* section spacing by neighbour (live community page): an article under a hero banner opens
    wider and runs straight into a following intro; a heading after a pod grid sits closer (.pt-sml) */
 main .cards-container + .section.centered-intro > .default-content-wrapper { padding-top: 15px; }

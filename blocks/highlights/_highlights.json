@@ -1,0 +1,93 @@
+{
+  "definitions": [
+    {
+      "title": "Highlights",
+      "id": "highlights",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Highlights",
+              "filter": "highlights",
+              "model": "highlights"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Highlight",
+      "id": "highlight",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Highlight",
+              "model": "highlight"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "highlights",
+      "fields": [
+        {
+          "component": "select",
+          "name": "classes",
+          "label": "Colour",
+          "valueType": "string",
+          "value": "",
+          "options": [
+            {
+              "name": "Admiral blue",
+              "value": ""
+            },
+            {
+              "name": "Pink / yellow / orange",
+              "value": "colours"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "highlight",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Icon (optional)",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Alt",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "name": "text",
+          "value": "",
+          "label": "Heading (heading 3) and text",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "highlights",
+      "components": [
+        "highlight"
+      ]
+    }
+  ]
+}

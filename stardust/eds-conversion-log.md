@@ -248,3 +248,75 @@ Harness: `aem up --html-folder stardust/.work/preview` (port 3001), pages built 
   - Child pages: 5 cards, self excluded.
   - Layout identical to the previous cards: thirds / 2-then-3, wrapper padding 0/120 (desktop) and 0/60 (mobile).
   - The card order now follows "latest", by request, so the About Us pod order no longer mirrors live.
+
+## Travel demo: landing pages, articles, shared fragments (2026-10-09)
+Brief: the client's demo email covers two templates, **Landing pages** and **Articles**. It asks for:
+- content shared between the SEO and PPC landing pages
+- articles that appear automatically on hubs, landing pages and the homepage, from their teaser fields
+
+**Pages** (content/, demo-grade close match; captured live 2026-10-09):
+
+| Page | Template | Notes |
+|---|---|---|
+| `/travel-insurance` | landing-page | SEO page, about 30 sections |
+| `/travel-insurance/generic` | landing-page | PPC; reduced nav `/nav-ppc` (logo only), `noindex` as live |
+| `/resources/travel-hub/travel-planning` | landing-page | hub |
+| 7 articles under the hub | article | best-time-to-book-holiday-flight (the email's example) and the 6 the hub links to |
+
+**Shared fragments** (`/fragments/travel/`), placed on both landing pages:
+- `whats-travel-insurance`: media-text, Annie from the DAM
+- `whats-covered`: features with badges plus the policy-book note
+- `levels-of-cover`: "Good to know" callout plus a comparison table
+- The SEO wording is used, by decision. On live the PPC page has its own copies, and the SEO page already uses Drupal reusable-block-19398/19399 for two of them.
+- `travel-insurance-promo`: the article footer banner (hero `mini`), shared by every article.
+
+**Dynamic listings:**
+- the hub lists every article in its folder (cards-folder, latest, 9)
+- each article shows "Check out our related articles" (latest 3, itself excluded)
+- the SEO landing page gains "Travel tips and guides" (latest 3)
+- Each article carries Card Title / Card Summary / Card Link Text from its live hub card, plus Image = its featured image.
+- The live hub card for the example article points at an old URL, which is the email's "doesn't link anywhere" point; it is matched by title.
+
+**New blocks:**
+- features: boxed / alternating / rows / ticks / steps
+- media-text
+- comparison-table: rows with label + 3 values, an empty first label = the heading row, `x` = cross
+- callout: yellow / blue / white
+- accordion: native details
+- highlights: blue / colours
+- hero `mini` variant
+
+**Article template** (`templates/article`, loaded by scripts.js for Template = article):
+- mint title banner
+- sticky "Article contents" list built from the body's h2s
+- author bar from the page properties Author / Author image / Published / Updated / Read time, with share links
+
+**Section styles:**
+- landing-hero: ice blue and centred, with **Image left / Image right** section properties drawn as Alfie and Annie cut-outs
+- ice-blue, sky, sea-blue, white, centered, article-title, article-body
+
+**Page model:**
+- Template gains Landing page / Article. The About Us community page moves to `content-page`, so `article` now means the magazine template.
+- New article fields: Author, Author image, Published, Updated, Read time.
+
+**Header:** a nav with no main menu (`/nav-ppc`) drops the Menu toggle.
+
+**Verified locally** (harness with the page properties as head meta and a mock index built from the metadata):
+- 12 pages at 1440 and 360: no overflow, broken images, console errors or unloaded blocks
+- fragments load (5 fragment sections on each landing page)
+- dynamic cards show 3 on the landing page, 7 on the hub and 3 per article
+- Side-by-side with live screenshots: the SEO and PPC pages, the hub and the article match in structure and look.
+- Known simplifications:
+  - the Trustpilot widget becomes a text line
+  - FAQ pods are collapsible (some are open boxes on live)
+  - the cost slide-in drawer becomes an accordion item
+  - the hub's hand-curated category rows (many linking to articles not imported) are replaced by the dynamic listing
+- No pixel gate (demo-grade by decision).
+
+**DAM:** `stardust/packages/admiral-xwalk-images-1.3.0.zip` holds 103 assets, adding `images/travel/`. It is update mode and replaces 1.2.0.
+
+**Go-live order:**
+1. Install package 1.3.0, reprocess and publish the images.
+2. Push the code.
+3. Upload the content (fragments and nav-ppc included).
+4. Publish the articles, then the hub and the landing pages.
