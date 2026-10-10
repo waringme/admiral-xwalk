@@ -1,7 +1,7 @@
 {
   "definitions": [
     {
-      "title": "Comparison table",
+      "title": "Comparison Table",
       "id": "comparison-table",
       "plugins": {
         "xwalk": {
@@ -16,7 +16,7 @@
       }
     },
     {
-      "title": "Table row",
+      "title": "Table Row",
       "id": "comparison-row",
       "plugins": {
         "xwalk": {

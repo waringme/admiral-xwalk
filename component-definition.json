@@ -98,7 +98,7 @@
           }
         },
         {
-          "title": "Accordion item",
+          "title": "Accordion Item",
           "id": "accordion-item",
           "plugins": {
             "xwalk": {
@@ -158,7 +158,7 @@
           }
         },
         {
-          "title": "Cards (from folder)",
+          "title": "Cards Folder",
           "id": "cards-folder",
           "plugins": {
             "xwalk": {
@@ -220,7 +220,7 @@
           }
         },
         {
-          "title": "Comparison table",
+          "title": "Comparison Table",
           "id": "comparison-table",
           "plugins": {
             "xwalk": {
@@ -235,7 +235,7 @@
           }
         },
         {
-          "title": "Table row",
+          "title": "Table Row",
           "id": "comparison-row",
           "plugins": {
             "xwalk": {
@@ -357,7 +357,7 @@
           }
         },
         {
-          "title": "Media and text",
+          "title": "Media Text",
           "id": "media-text",
           "plugins": {
             "xwalk": {

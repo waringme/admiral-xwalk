@@ -28,6 +28,7 @@ PROPS = {
     'Author Image': ('author-image', 'string'), 'Published': ('published', 'date'),
     'Updated': ('updated', 'date'), 'Read Time': ('read-time', 'long'),
 }
+LABEL = {field: label for label, (field, _kind) in PROPS.items()}
 NS = ('xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" '
       'xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"')
 
@@ -54,6 +55,7 @@ def main():
         rel = '/' + str(f.relative_to(CONTENT))[:-len('.plain.html')]
         props = {}
         for label, raw in page_meta(f.read_text(encoding='utf-8')).items():
+            label = LABEL.get(label, label)
             if label in PROPS:
                 name, kind = PROPS[label]
                 v = value(kind, raw)

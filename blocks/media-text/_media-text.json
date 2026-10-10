@@ -1,7 +1,7 @@
 {
   "definitions": [
     {
-      "title": "Media and text",
+      "title": "Media Text",
       "id": "media-text",
       "plugins": {
         "xwalk": {

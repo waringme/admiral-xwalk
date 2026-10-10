@@ -1,7 +1,7 @@
 {
   "definitions": [
     {
-      "title": "Cards (from folder)",
+      "title": "Cards Folder",
       "id": "cards-folder",
       "plugins": {
         "xwalk": {

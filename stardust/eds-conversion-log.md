@@ -475,3 +475,13 @@ Brief: the client's demo email covers two templates, **Landing pages** and **Art
 - `/travel-insurance` is republished but empty in AEM. The PPC content is still the old upload (empty accordion, homepage description).
 - The SVG icons are still missing, so the CF 1.0.2 persisted query is not published.
 - `nav` does not render as metadata, so the header now also takes the PPC navigation from Header variant **PPC** (`theme=ppc`, a body class). The page-properties package 1.0.1 adds `theme=ppc` to the PPC page.
+
+## Pages not offered by Sync: cause and the page content package (2026-10-10)
+- **Cause (found by converting the pages with the platform converters, helix-importer html2md → helix-md2jcr):**
+  - md2jcr resolves a block by its component **title**. Five titles differed from the block names: Cards (from folder), Media and text, Comparison table, Table row, Accordion item. So every page using them failed to convert: the hub tree, /travel-insurance, the What's travel insurance fragment.
+  - Fixed: the titles now equal the block names (Cards Folder, Media Text, Comparison Table, Table Row, Accordion Item).
+  - md2jcr maps page metadata rows to page-model fields **by exact name**. The pages used labels (Template, Card Title, …), which is why the upload dropped every custom page property. The generators now write the field names (template, card-title, …).
+- **Package:** `tools/page-content-package/build.mjs` builds `dist/admiral-xwalk-travel-pages-1.0.0.zip`, 30 pages: homepage, /resources, /resources/travel-hub, the travel-planning hub + 4 category pages + 19 pages, /travel-insurance, /travel-insurance/generic and /fragments/travel/whats-travel-insurance.
+  - Same converters as the platform, then clean-ups: preview-site URLs back to site and DAM paths; `<p><h3>` unwrapped; folder / fragment / nav references as /content/admiral-xwalk paths; bare `&` escaped; icon shortcodes back to DAM SVGs.
+  - Filter roots are each page's jcr:content (replace): child pages and other pages are untouched.
+  - Validated: 32 XML files well-formed, block counts equal the source pages, every image ref /content/dam/…
