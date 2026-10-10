@@ -352,6 +352,18 @@ main .section:is(.article, .centered-title) h1 {
   line-height: 30px;
 }
 
+main .section.narrow ul {
+  margin-top: -12px;
+  padding: 0 0 30px 20px;
+  list-style: disc;
+}
+
+main .section.narrow li {
+  padding-bottom: 14px;
+  font-size: 14.4px;
+  line-height: 22px;
+}
+
 main .section.article ul {
   margin-top: -12px;
   padding-left: 20px;
@@ -475,6 +487,17 @@ main .section.hero-image :is(picture, img) {
   }
 
   main .section.article ul { margin-top: -8px; }
+
+  main .section.narrow ul {
+    margin-top: -8px;
+    padding-bottom: 28px;
+  }
+
+  main .section.narrow li {
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 28px;
+  }
 
   main .section.article li {
     padding-bottom: 16px;

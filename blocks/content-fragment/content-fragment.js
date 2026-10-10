@@ -60,7 +60,10 @@ async function runQuery(type, path, variation) {
   });
   if (!resp.ok) throw new Error(`${resp.status} ${query}`);
   const item = (await resp.json())?.data?.[field]?.item;
-  if (!item) throw new Error(`not a ${type} fragment`);
+  // AEM answers a by-path query for another model with a partial item (shared fields such as
+  // title only): accept it only when the model's own list field is there
+  const list = type === 'cover-levels' ? item?.levels : item?.features;
+  if (!item || !Array.isArray(list)) throw new Error(`not a ${type} fragment`);
   return { type, item };
 }
 

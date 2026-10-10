@@ -450,3 +450,12 @@ Brief: the client's demo email covers two templates, **Landing pages** and **Art
   - New package `tools/page-props-package/dist/admiral-xwalk-page-properties-1.0.0.zip` sets them on 35 pages from the staged metadata (`merge_properties`: only missing properties are added; page content untouched). Install it after the content upload.
   - The page model gains Navigation (`nav`) and Robots fields so they are visible and editable.
   - The article template now also switches on from the `article-body` section, so articles get the contents list even without the property.
+
+**Published PPC page check, continued (2026-10-10):**
+- **The content-fragment block raced the two persisted queries.** AEM answers a by-path query for another model with a partial item (shared fields such as title), so cover-features rendered as an empty table and cover-levels as an empty list.
+  - The block now accepts an answer only when the model's own list field (features / levels) is present.
+  - Verified with the real publish data: 3 pods, 5 covers (illustrations load), 9 table rows.
+- **The PPC "What isn't covered" box** sits outside the live `.wrapper` sections (`#basic-18095`), so the extractor had missed it and the accordion was empty.
+  - The extractor now records such stand-alone containers (`extras`, with their position). The PPC accordion is regenerated with the full list.
+  - The CSS badge markers it now records are ignored outside the product-page converter.
+- **Lists in `narrow` sections** got the article list styles (they rendered at the 9px body size).
