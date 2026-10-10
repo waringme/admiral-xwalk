@@ -459,3 +459,12 @@ Brief: the client's demo email covers two templates, **Landing pages** and **Art
   - The extractor now records such stand-alone containers (`extras`, with their position). The PPC accordion is regenerated with the full list.
   - The CSS badge markers it now records are ignored outside the product-page converter.
 - **Lists in `narrow` sections** got the article list styles (they rendered at the 9px body size).
+
+**Re-check after "all published" (2026-10-10 09:10 UTC):** nothing on the preview site changed since 2026-10-09 21:29.
+- The hub tree (24 pages) and `/fragments/travel/whats-travel-insurance` are still not found. `/travel-insurance` is still the empty 5 October version. No page properties anywhere.
+- On the AEM publish tier the hub pages do not exist, and the content fragments still lack the SVG icons, so CF 1.0.2 is not installed.
+- **Likely cause:** the parent pages `/resources` and `/resources/travel-hub` were missing, so the hub tree could not be created.
+- **Added:**
+  - `/resources/travel-hub` (live title and description, plus a folder block listing its hubs)
+  - `/resources` (minimal, `noindex`; live has no page there)
+- The page-properties package now covers 37 pages.
