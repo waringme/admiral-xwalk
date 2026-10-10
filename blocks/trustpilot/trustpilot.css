@@ -1,0 +1,49 @@
+/* Trustpilot — review strip (from waringme/admiral; source .trustpilot.long-banner at 1440px): a
+ * centred row, 44px above / 50px below (135px band): 168x41 logo, then the
+ * 250px x 24px TrustBox 17px down. Mobile stacks (18px / 25px padding). */
+
+main .section.trustpilot-container > .trustpilot-wrapper {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.trustpilot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 0 25px;
+}
+
+.trustpilot .trustpilot-logo {
+  display: block;
+  width: 168px;
+  height: 41px;
+  background: url("../../icons/trustpilot-logo.svg") center / contain no-repeat;
+}
+
+.trustpilot .trustpilot-widget-wrap {
+  width: 250px;
+  min-height: 24px;
+  margin-top: 17px;
+}
+
+.trustpilot .trustpilot-widget a:any-link {
+  display: block;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.trustpilot .trustpilot-widget a::after {
+  content: none;
+}
+
+@media (width >= 768px) {
+  .trustpilot {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 44px 0 50px;
+  }
+}

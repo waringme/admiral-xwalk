@@ -485,3 +485,12 @@ Brief: the client's demo email covers two templates, **Landing pages** and **Art
   - Same converters as the platform, then clean-ups: preview-site URLs back to site and DAM paths; `<p><h3>` unwrapped; folder / fragment / nav references as /content/admiral-xwalk paths; bare `&` escaped; icon shortcodes back to DAM SVGs.
   - Filter roots are each page's jcr:content (replace): child pages and other pages are untouched.
   - Validated: 32 XML files well-formed, block counts equal the source pages, every image ref /content/dam/…
+
+## Trustpilot block (2026-10-10)
+- **Block:** `blocks/trustpilot` comes from waringme/admiral (TrustBox Micro Star, Admiral business unit; model templateId / businessUnitId / sku). The wrapper rule is adapted to this site's sections. Also `icons/trustpilot-logo.svg`.
+- **Used on:**
+  - /travel-insurance: the strip under the hero, plus "Read more about our customers' experiences" (live shows a server-built rating card and a reviews iframe there)
+  - /travel-insurance/generic: the strip under the hero (live already uses this exact TrustBox)
+  - All use product SKU `Travel_`, as on live PPC.
+- **Verified:** the live TrustBox renders (logo + stars + review count) at 1440 and 360.
+- **Page content package 1.0.1** carries the updated landing pages (trustpilot fields mapped: templateId, businessUnitId, sku).

@@ -1198,5 +1198,34 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "trustpilot",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "templateId",
+        "value": "54d39695764ea907c0f34825",
+        "label": "TrustBox template ID",
+        "description": "Trustpilot widget template (default: Micro Star, 'Rated 4.7 / N reviews')."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "businessUnitId",
+        "value": "4be0843700006400050788f5",
+        "label": "Business unit ID",
+        "description": "Admiral's Trustpilot business unit."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "sku",
+        "value": "Home_",
+        "label": "Product SKU",
+        "description": "Trustpilot product reference(s) the rating is for — required by the Micro Star template (admiral.com uses 'Home_'). Leave blank for the default."
+      }
+    ]
   }
 ]

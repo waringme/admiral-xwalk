@@ -36,7 +36,7 @@ const { md2jcr } = await import(req.resolve('@adobe/helix-md2jcr'));
 const SITE = '/content/admiral-xwalk';
 const HOST = 'https://main--admiral-xwalk--waringme.aem.page';
 const NAME = 'admiral-xwalk-travel-pages';
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 const HUB = '/resources/travel-hub/travel-planning';
 const PAGES = [
   '/index', '/resources', '/resources/travel-hub', HUB,
