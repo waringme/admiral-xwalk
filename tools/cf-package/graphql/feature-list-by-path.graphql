@@ -3,6 +3,7 @@
 # Persisted as admiral-xwalk/feature-list-by-path; execute with
 #   GET /graphql/execute.json/admiral-xwalk/feature-list-by-path;path=/content/dam/admiral-xwalk/fragments/travel/cover-features
 # (path is passed unencoded; add ;variation=<name> for a variation other than master)
+# SVG assets resolve as DocumentRef, raster images as ImageRef: both are selected.
 
 query getFeatureListByPath($path: String!, $variation: String = "master") {
   featureListByPath(_path: $path, variation: $variation) {
@@ -25,9 +26,19 @@ query getFeatureListByPath($path: String!, $variation: String = "master") {
               _authorUrl
               _publishUrl
             }
+            ... on DocumentRef {
+              _path
+              _authorUrl
+              _publishUrl
+            }
           }
           illustration {
             ... on ImageRef {
+              _path
+              _authorUrl
+              _publishUrl
+            }
+            ... on DocumentRef {
               _path
               _authorUrl
               _publishUrl

@@ -431,3 +431,22 @@ Brief: the client's demo email covers two templates, **Landing pages** and **Art
   - `content/travel-insurance/destination/uk.plain.html`
   - `content/fragments/travel/whats-covered.plain.html`
   - `content/fragments/travel/levels-of-cover.plain.html`
+
+## Published-site check after upload (2026-10-10)
+- **Published with content (13):** homepage (older version, without the latest travel section), About Us + 6, nav, footer, ski hub, PPC (`/travel-insurance/generic`), travel promo fragment, nav-ppc.
+- **Not published (404):** the hub, its 4 category pages, all 19 sub-folder pages, `/fragments/travel/whats-travel-insurance`.
+- **`/travel-insurance`** is published but empty (still the 5 October version).
+- **`/fragments/travel/whats-covered`** is still published and indexed (retired; unpublish in AEM).
+
+**Found and fixed:**
+- **Logo missing site-wide.** AEM keeps the logo link but drops the linked image (`<a href="/"></a>`), and `/nav-ppc` also lost its empty first section on upload.
+  - The header now finds the brand section by its home link (not by position).
+  - It falls back to `/icons/admiral-logo.svg` when the link has no image.
+  - Verified on the published nav and nav-ppc with the local code.
+- **Content fragments.** The 1.0.1 package resolves on publish: all 3 fragments return their items. But the SVG icons came back empty: SVG assets are `DocumentRef`, not `ImageRef`.
+  - `feature-list-by-path` now selects both. Validated against the publish GraphQL endpoint: all 5 icons resolve.
+  - Package `admiral-xwalk-travel-cf-1.0.2.zip`.
+- **Page properties dropped by the upload on every page:** template, theme, nav, robots, card fields, category, article author and dates. None appear as head meta.
+  - New package `tools/page-props-package/dist/admiral-xwalk-page-properties-1.0.0.zip` sets them on 35 pages from the staged metadata (`merge_properties`: only missing properties are added; page content untouched). Install it after the content upload.
+  - The page model gains Navigation (`nav`) and Robots fields so they are visible and editable.
+  - The article template now also switches on from the `article-body` section, so articles get the contents list even without the property.

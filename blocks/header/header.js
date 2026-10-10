@@ -96,7 +96,13 @@ export default async function decorate(block) {
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
   if (!fragment) return;
-  const [utility, brand, main, extras, quick] = [...fragment.querySelectorAll(':scope > .section')];
+  const sections = [...fragment.querySelectorAll(':scope > .section')];
+  // the brand section is the one holding the home link without a list; AEM drops an empty
+  // leading section on upload (e.g. the logo-only /nav-ppc), so don't rely on its position
+  const found = sections.findIndex((s) => s.querySelector('a[href="/"], a[href$="/index"]')
+    && !s.querySelector('ul'));
+  const at = found >= 0 ? found : 1;
+  const [utility, brand, main, extras, quick] = [sections[at - 1], ...sections.slice(at, at + 4)];
 
   const nav = el('div', 'mega-nav alt2');
   nav.id = 'nav';
@@ -118,6 +124,15 @@ export default async function decorate(block) {
   const logo = brand ? brand.querySelector('a') : null;
   if (logo) {
     logo.className = 'logo';
+    // AEM keeps the link but not a linked image: fall back to the logo shipped with the code
+    if (!logo.querySelector('img, picture, svg')) {
+      const img = el('img');
+      img.src = `${window.hlx.codeBasePath}/icons/admiral-logo.svg`;
+      img.alt = 'Admiral Insurance logo';
+      img.width = 240;
+      img.height = 74;
+      logo.replaceChildren(img);
+    }
     const logoPara = logo.closest('p');
     topbar.append(logoPara || logo);
   }

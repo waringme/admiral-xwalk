@@ -81,6 +81,20 @@
         ]
       },
       {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "nav",
+        "label": "Navigation",
+        "description": "Optional: a different navigation page (e.g. /nav-ppc, logo only, for PPC landing pages)"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "robots",
+        "label": "Robots",
+        "description": "e.g. noindex for PPC landing pages"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "image",

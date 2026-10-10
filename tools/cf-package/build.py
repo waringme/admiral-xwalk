@@ -22,7 +22,7 @@ ROOT = HERE.parents[1]
 DIST = HERE / 'dist'
 DATA = HERE / 'fragments'
 GRAPHQL = HERE / 'graphql'
-NAME, GROUP, VERSION = 'admiral-xwalk-travel-cf', 'admiral-xwalk', '1.0.1'
+NAME, GROUP, VERSION = 'admiral-xwalk-travel-cf', 'admiral-xwalk', '1.0.2'
 
 CONF = '/conf/admiral-xwalk'
 MODELS = f'{CONF}/settings/dam/cfm/models'

@@ -158,7 +158,9 @@ const TEMPLATES = ['article'];
  * @param {Element} main The main element
  */
 async function decorateTemplate(main) {
-  const template = toClassName(getMetadata('template'));
+  // the Template page property — or, when a page arrives without it, its article layout
+  const template = toClassName(getMetadata('template'))
+    || (main.querySelector('.section.article-body') ? 'article' : '');
   if (!TEMPLATES.includes(template)) return;
   try {
     const base = `${window.hlx.codeBasePath}/templates/${template}/${template}`;
