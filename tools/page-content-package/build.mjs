@@ -7,7 +7,8 @@
  * Each staged page (content/<path>.plain.html: Edge Delivery markup with field hints) goes
  * through the same converters the platform uses — div blocks → importer tables → markdown
  * (helix-importer html2md) → JCR (helix-md2jcr with this project's component models,
- * definitions and filters) — then:
+ * definitions and filters). Section breaks are added in the importer's transformDOM (its
+ * pre-processing strips <hr>); section-metadata images become paths (reference fields). Then:
  *   - preview-site absolute URLs become site paths again (images /content/dam/…, links /…)
  *   - md2jcr's <p><h3>…</h3></p> rich text is unwrapped to <h3>…</h3>
  *   - folder / fragment-reference / navigation values become AEM page paths
@@ -36,7 +37,7 @@ const { md2jcr } = await import(req.resolve('@adobe/helix-md2jcr'));
 const SITE = '/content/admiral-xwalk';
 const HOST = 'https://main--admiral-xwalk--waringme.aem.page';
 const NAME = 'admiral-xwalk-travel-pages';
-const VERSION = '1.0.1';
+const VERSION = '1.0.2';
 const HUB = '/resources/travel-hub/travel-planning';
 const PAGES = [
   '/index', '/resources', '/resources/travel-hub', HUB,
@@ -56,11 +57,13 @@ const definition = JSON.parse(readFileSync(join(ROOT, 'component-definition.json
 const filters = JSON.parse(readFileSync(join(ROOT, 'component-filters.json'), 'utf8'));
 const title = (cls) => cls.split('-').map((w) => w[0].toUpperCase() + w.slice(1)).join(' ');
 
-async function toMarkdown(path) {
-  const html = readFileSync(join(ROOT, `content${path}.plain.html`), 'utf8');
-  const { document } = new JSDOM(`<!DOCTYPE html><html><head></head><body><main>${html}</main></body></html>`).window;
+function sectionsToTables(document) {
   const main = document.querySelector('main');
   const body = document.createElement('div');
+  // section metadata images (image-left / image-right) are reference fields: md2jcr takes a path
+  main.querySelectorAll('.section-metadata img').forEach((img) => {
+    (img.closest('picture') || img).replaceWith(img.getAttribute('src'));
+  });
   [...main.children].filter((s) => s.tagName === 'DIV').forEach((section, i) => {
     if (i) body.append(document.createElement('hr'));
     [...section.childNodes].forEach((n) => {
@@ -91,7 +94,15 @@ async function toMarkdown(path) {
     });
   });
   main.replaceChildren(...body.childNodes);
-  const { md } = await html2md(`${HOST}${path}`, document, null, { toDocx: false, toMd: true });
+  return main;
+}
+
+async function toMarkdown(path) {
+  const html = readFileSync(join(ROOT, `content${path}.plain.html`), 'utf8');
+  const { document } = new JSDOM(`<!DOCTYPE html><html><head></head><body><main>${html}</main></body></html>`).window;
+  // the importer strips <hr> while pre-processing: section breaks are added in transformDOM
+  const transformDOM = () => sectionsToTables(document);
+  const { md } = await html2md(`${HOST}${path}`, document, { transformDOM }, { toDocx: false, toMd: true });
   return md;
 }
 

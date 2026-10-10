@@ -389,15 +389,15 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image-left",
-        "label": "Image left (decorative, desktop)",
+        "name": "background",
+        "label": "Background image (desktop, covers the section)",
         "multi": false
       },
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image-right",
-        "label": "Image right (decorative, desktop)",
+        "name": "background-mobile",
+        "label": "Background image (mobile, shown below the content)",
         "multi": false
       }
     ]

@@ -112,26 +112,26 @@ export function decorateButtons(main) {
 }
 
 /**
- * Section character images: a section's "Image left" / "Image right" properties (section
- * metadata image-left / image-right) become decorative cut-outs at its bottom corners
- * (live: the travel landing hero's Alfie and Annie).
+ * Section background images: "Background image" (section metadata background) covers the section
+ * from tablet up; "Background image (mobile)" (background-mobile) shows below the content on
+ * mobile (live: the travel landing hero's Alfie and Annie composite, .image-bottom-mobile).
  * @param {Element} main The main element
  */
-function decorateSectionImages(main) {
-  main.querySelectorAll('.section[data-image-left], .section[data-image-right]').forEach((section) => {
-    const holder = document.createElement('div');
-    holder.className = 'section-images';
-    holder.setAttribute('aria-hidden', 'true');
-    [['left', section.dataset.imageLeft], ['right', section.dataset.imageRight]].forEach(([side, src]) => {
-      if (!src) return;
-      const img = document.createElement('img');
-      img.className = side;
-      img.src = src;
-      img.alt = '';
-      holder.append(img);
-    });
-    section.classList.add('has-images');
-    section.append(holder);
+function decorateSectionBackgrounds(main) {
+  main.querySelectorAll('.section[data-background]').forEach((section) => {
+    const { background, backgroundMobile } = section.dataset;
+    const picture = document.createElement('picture');
+    picture.className = 'section-background';
+    picture.setAttribute('aria-hidden', 'true');
+    const source = document.createElement('source');
+    source.media = '(width >= 768px)';
+    source.srcset = background;
+    const img = document.createElement('img');
+    img.src = backgroundMobile || background;
+    img.alt = '';
+    picture.append(source, img);
+    section.classList.add('has-background', ...(backgroundMobile ? ['has-background-mobile'] : []));
+    section.append(picture);
   });
 }
 
@@ -144,7 +144,7 @@ export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
-  decorateSectionImages(main);
+  decorateSectionBackgrounds(main);
   decorateBlocks(main);
   decorateButtons(main);
 }

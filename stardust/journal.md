@@ -141,3 +141,10 @@ content/*.plain.html, stardust/eds-conversion-log.md, stardust/runtime-contract.
 - Live already shares two of the three sections on the SEO page (Drupal reusable blocks) but not on PPC, which is the demo's point.
 - One hub card points at a removed URL.
 - All 12 pages are clean at 1440 and 360.
+
+## 2026-10-10 — /travel-insurance hero critique
+- Published page was ONE section: the page-content-package converter added `<hr>` before html2md, whose pre-processing strips `<hr>`; section breaks now go in via transformDOM, section-metadata images become paths. Package 1.0.2.
+- Hero vs live (.hero-banner--C): characters were separate cut-outs (different poses) → live composite `annie-alfie-travel.jpg` as section background (desktop, cover) + `annie-alfie-travel-mobile.jpg` under the content on mobile (section fields background / background-mobile replace image-left / image-right; xwalk max 4 cells).
+- Title/headline/caption sea blue #005485 (were ink / #2350a0); CTAs 244×40 16.2px side by side (mobile full width 34px stacked); live green gradient; Defaqto 40px on mobile; spacing measured to match at 1440 and 360 (hero 432 / 464 vs live 432 / 465).
+- PPC hero (.hero-banner--A): ink text, regular-weight headline; no characters (not on live).
+- DAM images 1.6.0 (adds the mobile composite).
