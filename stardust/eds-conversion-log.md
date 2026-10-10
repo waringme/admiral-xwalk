@@ -468,3 +468,10 @@ Brief: the client's demo email covers two templates, **Landing pages** and **Art
   - `/resources/travel-hub` (live title and description, plus a folder block listing its hubs)
   - `/resources` (minimal, `noindex`; live has no page there)
 - The page-properties package now covers 37 pages.
+
+**Re-check after packages + Publish to Preview (2026-10-10):**
+- Page properties now render: templates, the homepage theme, About Us card fields.
+- Still missing: the whole hub tree including the new parents, and `/fragments/travel/whats-travel-insurance` (not in AEM).
+- `/travel-insurance` is republished but empty in AEM. The PPC content is still the old upload (empty accordion, homepage description).
+- The SVG icons are still missing, so the CF 1.0.2 persisted query is not published.
+- `nav` does not render as metadata, so the header now also takes the PPC navigation from Header variant **PPC** (`theme=ppc`, a body class). The page-properties package 1.0.1 adds `theme=ppc` to the PPC page.

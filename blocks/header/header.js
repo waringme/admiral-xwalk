@@ -93,7 +93,9 @@ function buildDropdown(li, label, sub) {
  */
 export default async function decorate(block) {
   const navMeta = getMetadata('nav');
-  const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
+  // a Navigation page property, else the PPC header variant (logo only), else the site nav
+  const fallback = document.body.classList.contains('ppc') ? '/nav-ppc' : '/nav';
+  const navPath = navMeta ? new URL(navMeta, window.location).pathname.replace(/^\/content\/[^/]+/, '').replace(/\.html$/, '') : fallback;
   const fragment = await loadFragment(navPath);
   if (!fragment) return;
   const sections = [...fragment.querySelectorAll(':scope > .section')];

@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[2]
 CONTENT = ROOT / 'content'
 DIST = Path(__file__).resolve().parent / 'dist'
 SITE = '/content/admiral-xwalk'
-NAME, GROUP, VERSION = 'admiral-xwalk-page-properties', 'admiral-xwalk', '1.0.0'
+NAME, GROUP, VERSION = 'admiral-xwalk-page-properties', 'admiral-xwalk', '1.0.1'
 
 # metadata row label -> (page property, JCR type)
 PROPS = {

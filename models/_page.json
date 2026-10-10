@@ -69,7 +69,7 @@
           "label": "Header variant",
           "valueType": "string",
           "value": "",
-          "description": "Quick actions: show the Contact Us / Claims / MyAccount bar under the mobile header",
+          "description": "Quick actions: the Contact Us / Claims / MyAccount bar under the mobile header. PPC: logo-only navigation (/nav-ppc).",
           "options": [
             {
               "name": "Standard",
@@ -78,6 +78,10 @@
             {
               "name": "Quick actions",
               "value": "quick-actions"
+            },
+            {
+              "name": "PPC (logo-only navigation)",
+              "value": "ppc"
             }
           ]
         },
