@@ -13,6 +13,17 @@ main .content-fragment-container > .content-fragment-wrapper:has(.highlights) {
   padding-top: 0;
 }
 
+/* a Media Text fragment: the live white side-image panel (.side-image); on mobile the image is a
+   164px strip under the copy, on desktop it is cropped to the panel's height beside a 410px copy */
+main .content-fragment-container:has(.media-text) { background-color: #fff; }
+main .content-fragment-container > .content-fragment-wrapper:has(.media-text) { padding: 30px 30px 0; }
+
+.content-fragment .media-text .media-text-media {
+  height: 164px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
 .content-fragment .content-fragment-header { text-align: center; }
 .content-fragment .content-fragment-header > :last-child > :last-child { padding-bottom: 30px; }
 .content-fragment .callout { margin-bottom: 20px; }
@@ -21,6 +32,9 @@ main .content-fragment-container > .content-fragment-wrapper:has(.highlights) {
 .content-fragment .features { margin-bottom: 20px; }
 .content-fragment .highlight .highlight-icon + h3 { margin-top: 0; }
 .content-fragment .highlight > div > :last-child { padding-bottom: 0; }
+
+.content-fragment .media-text-copy > div > :last-child,
+.content-fragment .media-text-copy li:last-child { padding-bottom: 0; }
 
 .content-fragment .content-fragment-message {
   padding: 16px;
@@ -33,5 +47,33 @@ main .content-fragment-container > .content-fragment-wrapper:has(.highlights) {
 
   main .content-fragment-container > .content-fragment-wrapper:has(.highlights) {
     padding: 0 20px 40px;
+  }
+
+  main .content-fragment-container > .content-fragment-wrapper:has(.media-text) { padding: 50px 30px 60px; }
+
+  .content-fragment .media-text { gap: 30px; }
+  .content-fragment .media-text .media-text-copy { flex: 0 0 410px; }
+
+  .content-fragment .media-text .media-text-media {
+    position: relative;
+    flex: 0 0 298px;
+    align-self: stretch;
+    height: auto;
+    margin: -50px 0 -60px -30px;
+  }
+
+  .content-fragment .media-text.image-right .media-text-media { margin: -50px -30px -60px 0; }
+
+  .content-fragment .media-text .media-text-media :is(picture, img) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 298px;
+    max-width: none;
+  }
+
+  .content-fragment .media-text.image-right .media-text-media :is(picture, img) {
+    right: auto;
+    left: 0;
   }
 }

@@ -3,10 +3,11 @@
 fragments, the admiral-xwalk GraphQL endpoint and the persisted queries the content-fragment
 block uses (scope: stardust/travel-landing-cf-scope.md; pattern: waringme/vhi-ie press-release).
 
-  models:    /conf/admiral-xwalk/settings/dam/cfm/models/{feature,feature-list,cover-level,cover-levels}
+  models:    /conf/admiral-xwalk/settings/dam/cfm/models/{feature,feature-list,cover-level,cover-levels,media-text}
   fragments: /content/dam/admiral-xwalk/fragments/travel/…   (data: tools/cf-package/fragments/**.json)
   graphql:   /content/cq:graphql/admiral-xwalk/endpoint
-             /conf/admiral-xwalk/settings/graphql/persistentQueries/{feature-list-by-path,cover-levels-by-path}
+             /conf/admiral-xwalk/settings/graphql/persistentQueries/{feature-list-by-path,cover-levels-by-path,
+                                                                     media-text-by-path}
 
 Writes an installable FileVault package to tools/cf-package/dist/.
 """
@@ -22,7 +23,7 @@ ROOT = HERE.parents[1]
 DIST = HERE / 'dist'
 DATA = HERE / 'fragments'
 GRAPHQL = HERE / 'graphql'
-NAME, GROUP, VERSION = 'admiral-xwalk-travel-cf', 'admiral-xwalk', '1.0.2'
+NAME, GROUP, VERSION = 'admiral-xwalk-travel-cf', 'admiral-xwalk', '1.1.0'
 
 CONF = '/conf/admiral-xwalk'
 MODELS = f'{CONF}/settings/dam/cfm/models'
@@ -31,7 +32,7 @@ FRAGMENTS = f'{DAM_ROOT}/fragments'
 IMAGES_ROOT = f'{DAM_ROOT}/images'
 GRAPHQL_ENDPOINT = '/content/cq:graphql/admiral-xwalk'
 PERSISTED_QUERIES = f'{CONF}/settings/graphql/persistentQueries'
-QUERIES = ['feature-list-by-path', 'cover-levels-by-path']
+QUERIES = ['feature-list-by-path', 'cover-levels-by-path', 'media-text-by-path']
 BUILT = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
 AUTHOR = 'admin'
 
@@ -74,6 +75,12 @@ MODEL_DEFS = {
         ('column2', 'Tier 2 name', 'text-single', False, 'e.g. Admiral Gold'),
         ('column3', 'Tier 3 name', 'text-single', False, 'e.g. Admiral Platinum'),
         ('levels', 'Rows', 'fragment-reference', False, 'Table rows, in display order', 'cover-level'),
+    ]),
+    'media-text': ('Media Text', 'A heading and copy beside an image (e.g. What\'s travel insurance? with Annie)', [
+        ('title', 'Title', 'text-single', True, 'Panel heading'),
+        ('text', 'Text', 'text-multi', False, 'Paragraphs and lists beside the image'),
+        ('image', 'Image', 'reference', False, 'Character cut-out or illustration'),
+        ('imageAlt', 'Image Alt Text', 'text-single', False, 'Leave empty when the image is decorative'),
     ]),
 }
 
@@ -280,10 +287,11 @@ def main():
     properties_xml = ('<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
                       '<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">\n<properties>\n'
                       f'<entry key="name">{NAME}</entry>\n<entry key="group">{GROUP}</entry>\n<entry key="version">{VERSION}</entry>\n'
-                      '<entry key="description">Travel landing pages: Feature, Feature List, Cover Level and Cover Levels '
-                      f'content fragment models, {len(fragments)} fragments (key benefits, cover features, cover levels), '
-                      'the admiral-xwalk GraphQL endpoint and the feature-list-by-path / cover-levels-by-path persisted '
-                      'queries. Requires the admiral-xwalk images package (icons and illustrations).</entry>\n'
+                      '<entry key="description">Travel landing pages: Feature, Feature List, Cover Level, Cover Levels '
+                      f'and Media Text content fragment models, {len(fragments)} fragments (key benefits, cover features, '
+                      'cover levels, What\'s travel insurance?), the admiral-xwalk GraphQL endpoint and the '
+                      'feature-list-by-path / cover-levels-by-path / media-text-by-path persisted queries. Requires the '
+                      'admiral-xwalk images package (icons and illustrations).</entry>\n'
                       '<entry key="requiresRoot">false</entry>\n<entry key="packageType">content</entry>\n</properties>\n')
     files = {
         'META-INF/vault/filter.xml': filter_xml,

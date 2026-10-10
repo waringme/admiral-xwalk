@@ -1,14 +1,17 @@
 /**
  * content-fragment — shows a shared AEM Content Fragment in this page's own layout (travel
- * landing pages: the SEO and PPC pages share the key benefits, the cover features and the cover
- * levels; scope: stardust/travel-landing-cf-scope.md; pattern: waringme/vhi-ie press-release).
+ * landing pages: the SEO and PPC pages share the key benefits, the cover features, the cover
+ * levels and What's travel insurance?; scope: stardust/travel-landing-cf-scope.md; pattern:
+ * waringme/vhi-ie press-release).
  *
  * Model (xwalk block, _content-fragment.json): row 1 the fragment (picker), row 2 the picked
  * variation; Display (classes): default boxed list · `alternating` · `pods` · `pods-colours`
- * · `no-heading`. A Cover Levels fragment always renders as a table.
- * The fragment is read through the GraphQL persisted queries admiral-xwalk/feature-list-by-path
- * and admiral-xwalk/cover-levels-by-path — same origin on AEM author, else the publish tier.
- * Rendered with the features / highlights / comparison-table / callout designs (their CSS).
+ * · `no-heading` · `image-right`. A Cover Levels fragment always renders as a table, a Media Text
+ * fragment as the media-text panel (image beside the copy; `image-right` swaps the sides).
+ * The fragment is read through the GraphQL persisted queries admiral-xwalk/feature-list-by-path,
+ * admiral-xwalk/cover-levels-by-path and admiral-xwalk/media-text-by-path — same origin on AEM
+ * author, else the publish tier. Rendered with the features / highlights / comparison-table /
+ * callout / media-text designs (their CSS).
  * In the Universal Editor every fragment field is instrumented for in-context editing.
  * @ew-exempt all — content comes from a content fragment, not from page markup (EW5 c)
  */
@@ -19,6 +22,14 @@ const DEFAULT_PUBLISH_HOST = 'https://publish-p147324-e2050468.adobeaemcloud.com
 const QUERIES = {
   'feature-list': ['admiral-xwalk/feature-list-by-path', 'featureListByPath'],
   'cover-levels': ['admiral-xwalk/cover-levels-by-path', 'coverLevelsByPath'],
+  'media-text': ['admiral-xwalk/media-text-by-path', 'mediaTextByPath'],
+};
+// AEM answers a by-path query for another model with a partial item (shared fields such as
+// title only): accept it only when the model's own fields are there
+const MATCHES = {
+  'feature-list': (item) => Array.isArray(item.features),
+  'cover-levels': (item) => Array.isArray(item.levels),
+  'media-text': (item) => Boolean(item.text || item.image),
 };
 const DAM_ROOT = '/content/dam';
 const CACHE_WINDOW = 5 * 60 * 1000; // visitors may see a fragment up to 5 minutes old
@@ -60,10 +71,7 @@ async function runQuery(type, path, variation) {
   });
   if (!resp.ok) throw new Error(`${resp.status} ${query}`);
   const item = (await resp.json())?.data?.[field]?.item;
-  // AEM answers a by-path query for another model with a partial item (shared fields such as
-  // title only): accept it only when the model's own list field is there
-  const list = type === 'cover-levels' ? item?.levels : item?.features;
-  if (!item || !Array.isArray(list)) throw new Error(`not a ${type} fragment`);
+  if (!item || !MATCHES[type](item)) throw new Error(`not a ${type} fragment`);
   return { type, item };
 }
 
@@ -193,10 +201,22 @@ function coverLevels(item, block) {
   return [header(item, block), note, el('div', 'comparison-table', scroller)];
 }
 
+function mediaText(item, block) {
+  const title = block.classList.contains('no-heading') ? null
+    : prop(el('h2', null, item.title), 'title', 'text', 'Title');
+  const copy = el('div', 'media-text-copy', title, prop(richText(item.text?.html), 'text', 'richtext', 'Text'));
+  const pic = picture(item.image, item.imageAlt, 'image', 'Image');
+  const variant = `media-text${block.classList.contains('image-right') ? ' image-right' : ''}`;
+  return [el('div', variant, copy, pic && el('div', 'media-text-media', pic))];
+}
+
+const RENDER = { 'feature-list': featureList, 'cover-levels': coverLevels, 'media-text': mediaText };
+
 const STYLES = {
   'feature-list': (block) => [block.classList.contains('pods') || block.classList.contains('pods-colours')
     ? 'highlights' : 'features'],
   'cover-levels': () => ['comparison-table', 'callout'],
+  'media-text': () => ['media-text'],
 };
 
 export default async function decorate(block) {
@@ -210,7 +230,7 @@ export default async function decorate(block) {
     const { type, item } = await fetchFragment(path, variation);
     await Promise.all(STYLES[type](block)
       .map((name) => loadCSS(`${window.hlx.codeBasePath}/blocks/${name}/${name}.css`)));
-    const parts = type === 'cover-levels' ? coverLevels(item, block) : featureList(item, block);
+    const parts = RENDER[type](item, block);
     const root = resource(el('div', `content-fragment-body ${type}`), pathOf(item) || path, `Content fragment (${variation})`, variation);
     root.append(...parts.filter(Boolean));
     block.append(root);

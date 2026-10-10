@@ -37,7 +37,7 @@ const { md2jcr } = await import(req.resolve('@adobe/helix-md2jcr'));
 const SITE = '/content/admiral-xwalk';
 const HOST = 'https://main--admiral-xwalk--waringme.aem.page';
 const NAME = 'admiral-xwalk-travel-pages';
-const VERSION = '1.0.2';
+const VERSION = '1.0.3';
 const HUB = '/resources/travel-hub/travel-planning';
 const PAGES = [
   '/index', '/resources', '/resources/travel-hub', HUB,
@@ -48,7 +48,7 @@ const PAGES = [
     .split('\n')
     .map((f) => f.slice('content'.length, -'.plain.html'.length))
     .sort(),
-  '/travel-insurance', '/travel-insurance/generic', '/fragments/travel/whats-travel-insurance',
+  '/travel-insurance', '/travel-insurance/generic',
 ];
 const REFERENCE_FIELDS = ['folder', 'reference', 'nav'];
 
@@ -140,7 +140,7 @@ files['META-INF/vault/properties.xml'] = `<?xml version="1.0" encoding="UTF-8" s
 <entry key="name">${NAME}</entry>
 <entry key="group">admiral-xwalk</entry>
 <entry key="version">${VERSION}</entry>
-<entry key="description">Travel demo pages as Universal Editor pages (${PAGES.length}): homepage, /resources, the travel resource hub, the travel-planning hub with its 4 category pages and 19 pages, /travel-insurance, /travel-insurance/generic and the What's travel insurance fragment. Replaces each page's content (jcr:content); child pages are untouched; missing pages are created.</entry>
+<entry key="description">Travel demo pages as Universal Editor pages (${PAGES.length}): homepage, /resources, the travel resource hub, the travel-planning hub with its 4 category pages and 19 pages, /travel-insurance and /travel-insurance/generic (What's travel insurance? is a content fragment: CF package 1.1.0). Replaces each page's content (jcr:content); child pages are untouched; missing pages are created.</entry>
 <entry key="requiresRoot">false</entry>
 <entry key="packageType">content</entry>
 </properties>

@@ -148,3 +148,8 @@ content/*.plain.html, stardust/eds-conversion-log.md, stardust/runtime-contract.
 - Title/headline/caption sea blue #005485 (were ink / #2350a0); CTAs 244×40 16.2px side by side (mobile full width 34px stacked); live green gradient; Defaqto 40px on mobile; spacing measured to match at 1440 and 360 (hero 432 / 464 vs live 432 / 465).
 - PPC hero (.hero-banner--A): ink text, regular-weight headline; no characters (not on live).
 - DAM images 1.6.0 (adds the mobile composite).
+
+## 2026-10-10 — What's travel insurance? → content fragment
+- New CF model Media Text (title, text, image, imageAlt), fragment `/content/dam/admiral-xwalk/fragments/travel/whats-travel-insurance` (data from cf-data.py, SEO side panel), persisted query `admiral-xwalk/media-text-by-path`. CF package 1.1.0.
+- content-fragment block renders Media Text as the media-text panel (Display `image-right` swaps sides); geometry matched to live .side-image (494 / 514 tall at 1440 / 360; image cropped to the panel, 164px strip on mobile).
+- SEO + PPC pages use the content-fragment block instead of the fragment block; the page fragment `/fragments/travel/whats-travel-insurance` is no longer generated or packaged (page package 1.0.3, 29 pages). The old page stays in AEM until deleted there.

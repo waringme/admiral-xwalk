@@ -752,7 +752,7 @@
         "valueType": "string",
         "name": "fragment",
         "label": "Content fragment",
-        "description": "A Feature List or Cover Levels fragment, e.g. /content/dam/admiral-xwalk/fragments/travel/cover-features",
+        "description": "A Feature List, Cover Levels or Media Text fragment, e.g. /content/dam/admiral-xwalk/fragments/travel/cover-features",
         "rootPath": "/content/dam/admiral-xwalk/fragments",
         "required": true,
         "variationName": "fragmentVariation"
@@ -778,7 +778,7 @@
         "name": "classes",
         "label": "Display",
         "valueType": "string",
-        "description": "How this page shows the shared content. Cover Levels fragments always show as a table.",
+        "description": "How this page shows the shared content. Cover Levels fragments always show as a table, Media Text fragments as an image beside the copy.",
         "options": [
           {
             "name": "Alternating (large illustrations)",
@@ -795,6 +795,10 @@
           {
             "name": "Hide heading",
             "value": "no-heading"
+          },
+          {
+            "name": "Image on the right (Media Text)",
+            "value": "image-right"
           }
         ]
       }
