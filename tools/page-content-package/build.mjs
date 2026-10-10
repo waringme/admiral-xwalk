@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-console */
 /**
  * Build an AEM content package with the travel demo pages as Universal Editor (xwalk) pages,
  * for when the platform's content Sync does not offer them.
@@ -9,7 +10,8 @@
  * definitions and filters) — then:
  *   - preview-site absolute URLs become site paths again (images /content/dam/…, links /…)
  *   - md2jcr's <p><h3>…</h3></p> rich text is unwrapped to <h3>…</h3>
- *   - folder / fragment-reference / navigation values become AEM page paths (/content/admiral-xwalk/…)
+ *   - folder / fragment-reference / navigation values become AEM page paths
+ *     (/content/admiral-xwalk/…)
  * Filter roots are each page's jcr:content (mode replace): page content is replaced, child pages
  * and every other page are untouched; missing pages are created.
  *
@@ -38,8 +40,13 @@ const VERSION = '1.0.0';
 const HUB = '/resources/travel-hub/travel-planning';
 const PAGES = [
   '/index', '/resources', '/resources/travel-hub', HUB,
-  ...execFileSync('find', ['-L', `content${HUB}`, '-mindepth', '1', '-name', '*.plain.html'], { cwd: ROOT, encoding: 'utf8' })
-    .trim().split('\n').map((f) => f.slice('content'.length, -'.plain.html'.length)).sort(),
+  ...execFileSync('find', ['-L', `content${HUB}`, '-mindepth', '1', '-name', '*.plain.html'], {
+    cwd: ROOT, encoding: 'utf8',
+  })
+    .trim()
+    .split('\n')
+    .map((f) => f.slice('content'.length, -'.plain.html'.length))
+    .sort(),
   '/travel-insurance', '/travel-insurance/generic', '/fragments/travel/whats-travel-insurance',
 ];
 const REFERENCE_FIELDS = ['folder', 'reference', 'nav'];
@@ -107,12 +114,14 @@ function clean(xml) {
 
 const files = {};
 const filter = [];
-for (const path of PAGES) {
+// one page at a time (the converters share module state)
+await PAGES.reduce(async (prev, path) => {
+  await prev;
   const xml = clean(await md2jcr(await toMarkdown(path), { models, definition, filters }));
   files[`jcr_root${SITE}${path}/.content.xml`] = xml;
   filter.push(`    <filter root="${SITE}${path}/jcr:content"/>`);
   console.log('converted', path);
-}
+}, Promise.resolve());
 files['META-INF/vault/filter.xml'] = `<?xml version="1.0" encoding="UTF-8"?>\n<workspaceFilter version="1.0">\n${filter.join('\n')}\n</workspaceFilter>\n`;
 files['META-INF/vault/properties.xml'] = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
