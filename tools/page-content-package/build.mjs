@@ -19,6 +19,7 @@
  * Usage: node tools/page-content-package/build.mjs [set]  →  tools/page-content-package/dist/*.zip
  *   travel     (default) the travel demo pages
  *   templates  the authoring templates under /templates (the article template)
+ *   car        the car insurance pages (new pages only)
  */
 import {
   existsSync, mkdirSync, readFileSync, writeFileSync,
@@ -55,6 +56,20 @@ const SETS = {
       '/travel-insurance', '/travel-insurance/generic',
     ],
     description: (n) => `Travel demo pages as Universal Editor pages (${n}): homepage, /resources, the travel resource hub, the travel-planning hub with its 4 category pages and 19 pages, /travel-insurance and /travel-insurance/generic (What's travel insurance? is a content fragment: CF package 1.1.0). Replaces each page's content (jcr:content); child pages are untouched; missing pages are created.`,
+  },
+  car: {
+    name: 'admiral-xwalk-car-pages',
+    version: '1.0.0',
+    pages: () => [
+      '/car-insurance',
+      ...execFileSync('find', ['-L', 'content/car-insurance', '-name', '*.plain.html'], { cwd: ROOT, encoding: 'utf8' })
+        .trim()
+        .split('\n')
+        .map((f) => f.slice('content'.length, -'.plain.html'.length))
+        .sort(),
+      '/multi-car-insurance', '/black-box-insurance', '/templates/product-landing',
+    ],
+    description: (n) => `Car insurance pages as Universal Editor pages (${n}): /car-insurance, its optional extras folder (Breakdown cover moved in from /breakdown-cover, Personal Injury, Hire Vehicle and Motor Legal cover), the car insurance guides folder and its three guides, /car-insurance/electric, /multi-car-insurance, /black-box-insurance and the product landing template. New pages only: no page already migrated is in the filter. Requires the car content fragment and car images packages.`,
   },
   templates: {
     name: 'admiral-xwalk-templates',

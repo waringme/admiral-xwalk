@@ -1,0 +1,8 @@
+{
+  "model": "feature",
+  "title": "A bit about you",
+  "description": "<ul><li>Your name</li><li>Age</li><li>Where you live</li><li>Your occupation</li><li>Driver's licence and contact information for you and named drivers</li></ul>",
+  "icon": "",
+  "illustration": "",
+  "imageAlt": ""
+}

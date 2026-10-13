@@ -10,9 +10,18 @@ block uses (scope: stardust/travel-landing-cf-scope.md; pattern: waringme/vhi-ie
                                                                      media-text-by-path}
 
 Writes an installable FileVault package to tools/cf-package/dist/.
+
+  python3 tools/cf-package/build.py [set]
+    travel (default)  the travel models, fragments/travel, the endpoint and the travel queries
+    car               only what the car insurance pages add: the Product Pod / Cover Comparison
+                      models, fragments/car and fragments/shared (each folder with its own allowed
+                      models) and their queries — installing it changes nothing already migrated
+                      (it reuses the travel package's Feature, Feature List and Media Text models,
+                      endpoint and queries: install that package first)
 """
 import html
 import json
+import sys
 import uuid
 import zipfile
 from datetime import datetime, timezone
@@ -23,16 +32,15 @@ ROOT = HERE.parents[1]
 DIST = HERE / 'dist'
 DATA = HERE / 'fragments'
 GRAPHQL = HERE / 'graphql'
-NAME, GROUP, VERSION = 'admiral-xwalk-travel-cf', 'admiral-xwalk', '1.1.0'
 
 CONF = '/conf/admiral-xwalk'
 MODELS = f'{CONF}/settings/dam/cfm/models'
 DAM_ROOT = '/content/dam/admiral-xwalk'
 FRAGMENTS = f'{DAM_ROOT}/fragments'
 IMAGES_ROOT = f'{DAM_ROOT}/images'
+SITE_ROOT = '/content/admiral-xwalk'
 GRAPHQL_ENDPOINT = '/content/cq:graphql/admiral-xwalk'
 PERSISTED_QUERIES = f'{CONF}/settings/graphql/persistentQueries'
-QUERIES = ['feature-list-by-path', 'cover-levels-by-path', 'media-text-by-path']
 BUILT = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
 AUTHOR = 'admin'
 
@@ -82,7 +90,74 @@ MODEL_DEFS = {
         ('image', 'Image', 'reference', False, 'Character cut-out or illustration'),
         ('imageAlt', 'Image Alt Text', 'text-single', False, 'Leave empty when the image is decorative'),
     ]),
+    'product-pod': ('Product Pod', 'A product card: illustration, name, one-line pitch and a link to the product page', [
+        ('title', 'Title', 'text-single', True, 'Product name'),
+        ('description', 'Description', 'text-multi', False, 'One or two lines about the product'),
+        ('image', 'Image', 'reference', False, 'Product illustration'),
+        ('imageAlt', 'Image Alt Text', 'text-single', False, 'Leave empty when the image is decorative'),
+        ('link', 'Link', 'page', False, 'The product page'),
+        ('linkText', 'Link text', 'text-single', False, 'e.g. MultiCar Insurance'),
+    ]),
+    'product-pod-list': ('Product Pod List', 'Product cards with a heading and introduction (e.g. Looking for something else?)', [
+        ('title', 'Title', 'text-single', True, 'Section heading'),
+        ('introduction', 'Introduction', 'text-multi', False, 'Text under the heading'),
+        ('pods', 'Products', 'fragment-reference', False, 'Product pods, in display order', 'product-pod'),
+    ]),
+    'cover-tier': ('Cover Tier', 'A level of cover shown as a table column: its name and logo', [
+        ('name', 'Name', 'text-single', True, 'e.g. Admiral Platinum'),
+        ('logo', 'Logo', 'reference', False, 'Tier badge; the name shows when there is none'),
+    ]),
+    'cover-row': ('Cover Row', 'One benefit and its value per tier (yes = tick, x or empty = cross, or text)', [
+        ('benefit', 'Benefit', 'text-single', True, 'Row heading, e.g. Courtesy car'),
+        ('value1', 'Tier 1 value', 'text-single', False, 'yes, x, or text such as Up to £300 / Optional'),
+        ('value2', 'Tier 2 value', 'text-single', False, 'yes, x, or text'),
+        ('value3', 'Tier 3 value', 'text-single', False, 'yes, x, or text'),
+        ('value4', 'Tier 4 value', 'text-single', False, 'yes, x, or text'),
+    ]),
+    'cover-table': ('Cover Table', 'One tab of the cover comparison: its tiers (columns) and rows', [
+        ('title', 'Title', 'text-single', True, 'Tab label, e.g. Comprehensive cover'),
+        ('tiers', 'Tiers', 'fragment-reference', False, 'Columns, left to right (up to 4)', 'cover-tier'),
+        ('rows', 'Rows', 'fragment-reference', False, 'Benefits, in display order', 'cover-row'),
+    ]),
+    'cover-comparison': ('Cover Comparison', 'The tabbed cover comparison table with its heading and footnote', [
+        ('title', 'Title', 'text-single', True, 'Section heading'),
+        ('introduction', 'Introduction', 'text-multi', False, 'Text under the heading'),
+        ('tables', 'Tabs', 'fragment-reference', False, 'One cover table per tab', 'cover-table'),
+        ('footnote', 'Footnote', 'text-multi', False, 'Small print under the table'),
+    ]),
 }
+
+SETS = {
+    'travel': {
+        'name': 'admiral-xwalk-travel-cf', 'version': '1.1.0', 'label': 'travel landing pages (SEO + PPC)',
+        'models': ['feature', 'feature-list', 'cover-level', 'cover-levels', 'media-text'],
+        'folders': ['travel'],
+        'queries': ['feature-list-by-path', 'cover-levels-by-path', 'media-text-by-path'],
+        'description': ('Travel landing pages: Feature, Feature List, Cover Level, Cover Levels and Media Text content '
+                        'fragment models, {n} fragments (key benefits, cover features, cover levels, What\'s travel '
+                        'insurance?), the admiral-xwalk GraphQL endpoint and the feature-list-by-path / '
+                        'cover-levels-by-path / media-text-by-path persisted queries. Requires the admiral-xwalk images '
+                        'package (icons and illustrations).'),
+    },
+    'car': {
+        'name': 'admiral-xwalk-car-cf', 'version': '1.0.0', 'label': 'car insurance pages',
+        'models': ['product-pod', 'product-pod-list', 'cover-tier', 'cover-row', 'cover-table', 'cover-comparison'],
+        'folders': ['car', 'shared'],
+        # the reused travel models are allowed in the new folders too
+        'allowed': ['feature', 'feature-list', 'media-text'],
+        'queries': ['product-pod-list-by-path', 'cover-comparison-by-path'],
+        'description': ('Car insurance pages: Product Pod, Product Pod List, Cover Tier, Cover Row, Cover Table and '
+                        'Cover Comparison models, {n} fragments under fragments/car and fragments/shared, and the '
+                        'product-pod-list-by-path / cover-comparison-by-path persisted queries. Adds only new nodes: '
+                        'models, fragments and queries already installed are not changed. Requires the travel content '
+                        'fragment package (1.1.0: Feature, Feature List and Media Text models, endpoint) and the car '
+                        'images package.'),
+    },
+}
+SET_NAME = sys.argv[1] if len(sys.argv) > 1 else 'travel'
+SET = SETS[SET_NAME]
+NAME, GROUP, VERSION = SET['name'], 'admiral-xwalk', SET['version']
+QUERIES = SET['queries']
 
 
 def attr(value):
@@ -92,7 +167,8 @@ def attr(value):
 # ---------------------------------------------------------------- models
 def field_xml(index, name, label, meta, required, description, ref=None):
     common = (f'jcr:primaryType="nt:unstructured" fieldLabel="{attr(label)}" fieldDescription="{attr(description)}" '
-              f'listOrder="{index}" metaType="{meta}" name="{name}" renderReadOnly="false" showEmptyInReadOnly="true"')
+              f'listOrder="{index}" metaType="{"reference" if meta == "page" else meta}" name="{name}" '
+              'renderReadOnly="false" showEmptyInReadOnly="true"')
     if required:
         common += ' required="on"'
     data = True
@@ -108,6 +184,10 @@ def field_xml(index, name, label, meta, required, description, ref=None):
         specific = ('sling:resourceType="dam/cfm/models/editor/components/contentreference" '
                     f'filter="hierarchy" nameSuffix="contentReference" rootPath="{IMAGES_ROOT}" '
                     'showThumbnail="true" validation="cfm.validation.contenttype.image" valueType="string"')
+    elif meta == 'page':  # content reference picking a site page (GraphQL PageRef)
+        specific = ('sling:resourceType="dam/cfm/models/editor/components/contentreference" '
+                    f'filter="hierarchy" nameSuffix="contentReference" rootPath="{SITE_ROOT}" '
+                    'showThumbnail="false" valueType="string"')
     else:  # fragment-reference, multiple values: string/content-fragment[] makes GraphQL type it as the
         # referenced model ([FeatureModel]); plain string[] would make it a leaf [String]
         specific = ('sling:resourceType="dam/cfm/models/editor/components/fragmentreference" '
@@ -180,9 +260,11 @@ def fragment_xml(rel, data):
     props = ['jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"']
     for fname, _label, meta, _req, _desc2, *ref in fields:
         value = data.get(fname)
-        if meta == 'reference':
+        if meta in ('reference', 'page'):
             if not value:  # an empty string is not a valid reference
                 continue
+            if meta == 'page' and not value.startswith('/content/'):  # site path -> AEM page path
+                value = SITE_ROOT + value
             props.append(f'{fname}="{attr(value)}"')
         elif meta == 'fragment-reference':
             refs = [fragment_path(v) for v in (value or [])]
@@ -193,7 +275,7 @@ def fragment_xml(rel, data):
                 props.append(f'{fname}_x0040_ContentType="text/html"')
         props.append(f'{fname}_x0040_LastModified="{modified}"')
     master = '\n                '.join(props)
-    label = attr(data.get('title') or data.get('benefit') or name)
+    label = attr(data.get('title') or data.get('benefit') or data.get('name') or name)
     return f'''<?xml version="1.0" encoding="UTF-8"?>
 <jcr:root {NS}
     jcr:primaryType="dam:Asset"
@@ -208,7 +290,7 @@ def fragment_xml(rel, data):
         lastFragmentSave="{{Date}}{BUILT}"
         jcr:primaryType="dam:AssetContent"
         jcr:title="{label}"
-        jcr:description="{attr(title)} — travel landing pages (SEO + PPC)">
+        jcr:description="{attr(title)} — {SET["label"]}">
         <data
             cq:model="{MODELS}/{model}"
             jcr:primaryType="nt:unstructured">
@@ -269,8 +351,9 @@ def page_with_content_xml():
 
 
 def main():
+    tops = SET['folders']
     fragments = {str(p.relative_to(DATA))[:-5]: json.loads(p.read_text(encoding='utf-8'))
-                 for p in sorted(DATA.rglob('*.json'))}
+                 for p in sorted(DATA.rglob('*.json')) if str(p.relative_to(DATA)).split('/')[0] in tops}
     # every referenced fragment must exist in the package
     for rel, data in fragments.items():
         for fname, *_rest in MODEL_DEFS[data['model']][2]:
@@ -278,20 +361,20 @@ def main():
                 missing = [r for r in data[fname] if r not in fragments]
                 assert not missing, f'{rel}.{fname}: missing {missing}'
 
-    model_paths = [f'{MODELS}/{m}' for m in MODEL_DEFS]
-    folders = sorted({rel.rsplit('/', 1)[0] for rel in fragments if '/' in rel} | {'travel'})
-    filter_roots = model_paths + [f'{FRAGMENTS}/jcr:content', f'{FRAGMENTS}/travel', GRAPHQL_ENDPOINT] + [
-        f'{PERSISTED_QUERIES}/{q}' for q in QUERIES]
+    model_paths = [f'{MODELS}/{m}' for m in SET['models']]
+    allowed = model_paths + [f'{MODELS}/{m}' for m in SET.get('allowed', [])]
+    folders = sorted({rel.rsplit('/', 1)[0] for rel in fragments if '/' in rel} | set(tops))
+    if SET_NAME == 'travel':
+        roots = [f'{FRAGMENTS}/jcr:content', f'{FRAGMENTS}/travel', GRAPHQL_ENDPOINT]
+    else:  # new folders only: the fragments root, the endpoint and other folders are left alone
+        roots = [f'{FRAGMENTS}/{t}' for t in tops]
+    filter_roots = model_paths + roots + [f'{PERSISTED_QUERIES}/{q}' for q in QUERIES]
     filter_xml = ('<?xml version="1.0" encoding="UTF-8"?>\n<workspaceFilter version="1.0">\n'
                   + ''.join(f'    <filter root="{r}"/>\n' for r in filter_roots) + '</workspaceFilter>\n')
     properties_xml = ('<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
                       '<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">\n<properties>\n'
                       f'<entry key="name">{NAME}</entry>\n<entry key="group">{GROUP}</entry>\n<entry key="version">{VERSION}</entry>\n'
-                      '<entry key="description">Travel landing pages: Feature, Feature List, Cover Level, Cover Levels '
-                      f'and Media Text content fragment models, {len(fragments)} fragments (key benefits, cover features, '
-                      'cover levels, What\'s travel insurance?), the admiral-xwalk GraphQL endpoint and the '
-                      'feature-list-by-path / cover-levels-by-path / media-text-by-path persisted queries. Requires the '
-                      'admiral-xwalk images package (icons and illustrations).</entry>\n'
+                      f'<entry key="description">{html.escape(SET["description"].format(n=len(fragments)), quote=False)}</entry>\n'
                       '<entry key="requiresRoot">false</entry>\n<entry key="packageType">content</entry>\n</properties>\n')
     files = {
         'META-INF/vault/filter.xml': filter_xml,
@@ -302,16 +385,20 @@ def main():
         'jcr_root/conf/admiral-xwalk/settings/dam/.content.xml': page_xml('DAM'),
         'jcr_root/conf/admiral-xwalk/settings/dam/cfm/.content.xml': page_xml('Content Fragments'),
         'jcr_root/conf/admiral-xwalk/settings/dam/cfm/models/.content.xml': page_xml('Content Fragment Models'),
-        f'jcr_root{FRAGMENTS}/.content.xml': folder_xml('Fragments', CONF, model_paths),
-        'jcr_root/content/_cq_graphql/admiral-xwalk/.content.xml': plain_folder_xml(),
-        'jcr_root/content/_cq_graphql/admiral-xwalk/endpoint/.content.xml': endpoint_xml(),
+        f'jcr_root{FRAGMENTS}/.content.xml': folder_xml('Fragments', CONF, allowed),
         'jcr_root/conf/admiral-xwalk/settings/graphql/.content.xml': page_with_content_xml(),
         'jcr_root/conf/admiral-xwalk/settings/graphql/persistentQueries/.content.xml': page_with_content_xml(),
     }
-    for m in MODEL_DEFS:
+    if SET_NAME == 'travel':
+        files['jcr_root/content/_cq_graphql/admiral-xwalk/.content.xml'] = plain_folder_xml()
+        files['jcr_root/content/_cq_graphql/admiral-xwalk/endpoint/.content.xml'] = endpoint_xml()
+    for m in SET['models']:
         files[f'jcr_root{MODELS}/{m}/.content.xml'] = model_xml(m)
     for f in folders:
-        files[f'jcr_root{FRAGMENTS}/{f}/.content.xml'] = folder_xml(f.rsplit('/', 1)[-1].replace('-', ' ').title())
+        title = f.rsplit('/', 1)[-1].replace('-', ' ').title()
+        # a new top folder carries its own configuration and allowed models
+        own = SET_NAME != 'travel' and f in tops
+        files[f'jcr_root{FRAGMENTS}/{f}/.content.xml'] = folder_xml(title, CONF, allowed) if own else folder_xml(title)
     for rel, data in fragments.items():
         files[f'jcr_root{fragment_path(rel)}/.content.xml'] = fragment_xml(rel, data)
     for q in QUERIES:
@@ -322,7 +409,7 @@ def main():
     with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
         for name, body in files.items():
             z.writestr(name, body)
-    print(out.relative_to(ROOT), f'{len(MODEL_DEFS)} models, {len(fragments)} fragments, {len(QUERIES)} queries')
+    print(out.relative_to(ROOT), f'{len(SET["models"])} models, {len(fragments)} fragments, {len(QUERIES)} queries')
 
 
 if __name__ == '__main__':

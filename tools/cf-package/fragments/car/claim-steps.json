@@ -1,0 +1,11 @@
+{
+  "model": "feature-list",
+  "title": "How to make a claim on your car insurance",
+  "introduction": "",
+  "features": [
+    "car/claim-steps/step-1",
+    "car/claim-steps/step-2",
+    "car/claim-steps/step-3"
+  ],
+  "footnote": "<p>If you have any questions about the claims process, head to our <a href=\"https://www.admiral.com/motor-van-faqs\">claims FAQ page</a>.</p>"
+}

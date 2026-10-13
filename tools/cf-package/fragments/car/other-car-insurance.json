@@ -1,0 +1,10 @@
+{
+  "model": "product-pod-list",
+  "title": "Looking for something else?",
+  "introduction": "<p>Check out the other types of car insurance we offer.</p>",
+  "pods": [
+    "shared/product-pods/multicar-insurance",
+    "shared/product-pods/electric-and-hybrid-car-insurance",
+    "shared/product-pods/black-box-insurance"
+  ]
+}

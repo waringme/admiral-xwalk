@@ -162,8 +162,31 @@ main .features-container > .features-wrapper {
   font-weight: 600;
 }
 
+/* steps + arrows (live car insurance .grid--badges step tags): light-blue tags that point down on
+   mobile (the steps stack) and right from tablet up (the steps sit side by side) */
+.features.steps.arrows .feature::before {
+  padding: 14px 40px 26px;
+  border-radius: 0;
+  background-color: #7adcff;
+  color: #005485;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 14px), 50% 100%, 0 calc(100% - 14px));
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21.6px;
+  line-height: 24px;
+}
+
 @media (width >= 768px) {
   main .features-container > .features-wrapper { padding: 0 30px 20px; }
+
+  .features.steps.arrows .feature::before {
+    align-self: flex-start;
+    margin-bottom: 70px;
+    padding: 24px 66px 24px 46px;
+    border-radius: 4px 0 0 4px;
+    clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 50%, calc(100% - 24px) 100%, 0 100%);
+    font-size: 30px;
+    line-height: 24px;
+  }
 
   .features .feature-icon { width: 120px; }
 

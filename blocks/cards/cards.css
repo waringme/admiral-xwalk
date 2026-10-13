@@ -184,3 +184,71 @@ main .cards-container > .cards-wrapper:has(.cards.narrow) { padding: 0 10px 40px
 
   .cards .pod .tag { padding: 6.9px 10.4px; }
 }
+
+/* horizontal (live car insurance "What optional extras can I choose?"): one card per row, image
+   on the left, the whole card is the link (chevron on the right) */
+.cards.horizontal .grid-cell { width: 100%; }
+
+.cards.horizontal .pod .image {
+  position: relative;
+  display: block;
+  height: 40.5vw;
+  min-height: 132px;
+  margin: -16px -41px 17px -11px;
+}
+
+.cards.horizontal .pod { padding-right: 40px; }
+.cards.horizontal .pod p { padding-bottom: 14px; }
+
+.cards.horizontal .more-link {
+  position: static;
+  display: block;
+  margin: 0;
+}
+
+.cards.horizontal .more-link a:any-link {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  color: transparent;
+}
+
+.cards.horizontal .more-link a::after {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 12px;
+  height: 22px;
+  margin-top: -11px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 22'%3E%3Cpath d='M1 1l10 10L1 21' fill='none' stroke='%230078ff' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+
+@media (width >= 768px) {
+  .cards.horizontal .grid-cell { width: 100%; }
+
+  .cards.horizontal .pod {
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    align-items: start;
+    padding: 0 80px 0 0;
+    overflow: hidden;
+  }
+
+  .cards.horizontal .pod .image {
+    grid-row: 1 / span 9;
+    height: 100%;
+    min-height: 280px;
+    margin: 0;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .cards.horizontal .pod > :not(.image) {
+    grid-column: 2;
+    padding-left: 18px;
+  }
+
+  .cards.horizontal .pod h3 { margin-top: 26px; }
+}
+
+/* title-only (live car insurance "Useful guides"): image, title and link — no summary */
+.cards.title-only .pod > p { display: none; }

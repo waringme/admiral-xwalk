@@ -1,0 +1,15 @@
+{
+  "model": "feature-list",
+  "title": "Still got questions?",
+  "introduction": "<p>Still got questions about car insurance, and how it all works? Don't worry, we've answered some of them here for you.</p>",
+  "features": [
+    "car/faq/am-i-insured-to-drive-other-cars",
+    "car/faq/can-i-insure-more-than-one-car-at-the-same-time",
+    "car/faq/do-i-need-car-insurance-if-my-car-is-off-the-road",
+    "car/faq/does-mileage-affect-the-price-of-my-car-insurance",
+    "car/faq/what-does-no-claims-bonus-mean",
+    "car/faq/i-ve-just-had-an-operation-or-surgery-can-i-legally-drive",
+    "car/faq/i-ve-put-the-wrong-fuel-in-my-car-am-i-still-covered"
+  ],
+  "footnote": ""
+}

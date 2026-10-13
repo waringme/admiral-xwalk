@@ -1,0 +1,27 @@
+{
+  "model": "cover-table",
+  "title": "Comprehensive cover",
+  "tiers": [
+    "car/tiers/admiral-platinum",
+    "car/tiers/admiral-gold",
+    "car/tiers/admiral",
+    "car/tiers/admiral-essential"
+  ],
+  "rows": [
+    "car/cover/comprehensive/courtesy-car",
+    "car/cover/comprehensive/uninsured-driver-promise",
+    "car/cover/comprehensive/personal-injury-cover-up-to-5-000",
+    "car/cover/comprehensive/24-hour-emergency-helpline",
+    "car/cover/comprehensive/replacement-lock-up-to-500",
+    "car/cover/comprehensive/child-car-seat",
+    "car/cover/comprehensive/windscreen-cover",
+    "car/cover/comprehensive/new-car-replacement-if-you-re-eligible",
+    "car/cover/comprehensive/european-cover-up-to-90-days",
+    "car/cover/comprehensive/aftermarket-audio-gear",
+    "car/cover/comprehensive/personal-belongings",
+    "car/cover/comprehensive/personal-belongings-campervans",
+    "car/cover/comprehensive/onward-travel-up-to-150",
+    "car/cover/comprehensive/motor-legal-expenses",
+    "car/cover/comprehensive/roadside-breakdown"
+  ]
+}

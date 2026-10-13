@@ -5,13 +5,16 @@
  * waringme/vhi-ie press-release).
  *
  * Model (xwalk block, _content-fragment.json): row 1 the fragment (picker), row 2 the picked
- * variation; Display (classes): default boxed list · `alternating` · `pods` · `pods-colours`
- * · `no-heading` · `image-right`. A Cover Levels fragment always renders as a table, a Media Text
- * fragment as the media-text panel (image beside the copy; `image-right` swaps the sides).
- * The fragment is read through the GraphQL persisted queries admiral-xwalk/feature-list-by-path,
- * admiral-xwalk/cover-levels-by-path and admiral-xwalk/media-text-by-path — same origin on AEM
+ * variation; Display (classes) for a Feature List: default boxed list · `alternating` · `pods`
+ * · `pods-colours` · `accordion` (title = question, description = answer) · `steps` (numbered;
+ * `arrows` for the arrow tags that turn downwards on mobile); for any fragment `no-heading`;
+ * for a Media Text `image-right`. A Cover Levels fragment renders as a table, a Cover
+ * Comparison as tabs of tier tables (car insurance), a Media Text as the media-text panel (or a
+ * text panel without an image), a Product Pod List as product cards.
+ * The fragment is read through the admiral-xwalk GraphQL persisted queries (feature-list-,
+ * cover-levels-, media-text-, product-pod-list-, cover-comparison-by-path) — same origin on AEM
  * author, else the publish tier. Rendered with the features / highlights / comparison-table /
- * callout / media-text designs (their CSS).
+ * callout / media-text / accordion / cards designs (their CSS).
  * In the Universal Editor every fragment field is instrumented for in-context editing.
  * @ew-exempt all — content comes from a content fragment, not from page markup (EW5 c)
  */
@@ -23,6 +26,8 @@ const QUERIES = {
   'feature-list': ['admiral-xwalk/feature-list-by-path', 'featureListByPath'],
   'cover-levels': ['admiral-xwalk/cover-levels-by-path', 'coverLevelsByPath'],
   'media-text': ['admiral-xwalk/media-text-by-path', 'mediaTextByPath'],
+  'product-pod-list': ['admiral-xwalk/product-pod-list-by-path', 'productPodListByPath'],
+  'cover-comparison': ['admiral-xwalk/cover-comparison-by-path', 'coverComparisonByPath'],
 };
 // AEM answers a by-path query for another model with a partial item (shared fields such as
 // title only): accept it only when the model's own fields are there
@@ -30,10 +35,13 @@ const MATCHES = {
   'feature-list': (item) => Array.isArray(item.features),
   'cover-levels': (item) => Array.isArray(item.levels),
   'media-text': (item) => Boolean(item.text || item.image),
+  'product-pod-list': (item) => Array.isArray(item.pods),
+  'cover-comparison': (item) => Array.isArray(item.tables),
 };
 const DAM_ROOT = '/content/dam';
 const CACHE_WINDOW = 5 * 60 * 1000; // visitors may see a fragment up to 5 minutes old
-const CROSS = /^(x|✕|×|-|–)$/i;
+const CROSS = /^(x|✕|×|-|–|no)$/i;
+const TICK = /^(yes|y|✓|✔|tick|included)$/i;
 
 const isAuthor = () => window.location.hostname.endsWith('.adobeaemcloud.com');
 const aemHost = () => (isAuthor() ? ''
@@ -136,7 +144,30 @@ function header(item, block) {
   return title || intro ? el('div', 'content-fragment-header', title, intro) : null;
 }
 
+/** a page reference (GraphQL PageRef): the site path on Edge Delivery, the page on author */
+function pageHref(ref) {
+  const path = pathOf(ref) || '';
+  if (!path.startsWith('/content/')) return path;
+  if (isAuthor()) return `${path}.html`;
+  return path.replace(/^\/content\/[^/]+/, '') || '/';
+}
+
+/** Feature List as an accordion: the feature title is the question, its description the answer */
+function accordion(item, block) {
+  const list = el('div', 'accordion');
+  (item.features || []).forEach((f) => {
+    const details = resource(el('details', 'accordion-item'), pathOf(f), f.title || 'Question');
+    const summary = prop(el('summary', 'accordion-item-label', f.title), 'title', 'text', 'Question');
+    const body = el('div', 'accordion-item-body', prop(richText(f.description?.html), 'description', 'richtext', 'Answer'));
+    details.append(summary, body);
+    list.append(details);
+  });
+  const footnote = prop(richText(item.footnote?.html, 'content-fragment-footnote'), 'footnote', 'richtext', 'Footnote');
+  return [header(item, block), list, footnote];
+}
+
 function featureList(item, block) {
+  if (block.classList.contains('accordion')) return accordion(item, block);
   const pods = block.classList.contains('pods') || block.classList.contains('pods-colours');
   const alternating = block.classList.contains('alternating');
   const list = el('ul');
@@ -157,7 +188,9 @@ function featureList(item, block) {
     }
     list.append(li);
   });
+  const steps = block.classList.contains('steps');
   const variant = (pods && `highlights${block.classList.contains('pods-colours') ? ' colours' : ''}`)
+    || (steps && `features steps${block.classList.contains('arrows') ? ' arrows' : ''}`)
     || `features${alternating ? ' alternating' : ''}`;
   const footnote = prop(richText(item.footnote?.html, 'content-fragment-footnote'), 'footnote', 'richtext', 'Footnote');
   return [header(item, block), el('div', variant, list), footnote];
@@ -210,13 +243,133 @@ function mediaText(item, block) {
   return [el('div', variant, copy, pic && el('div', 'media-text-media', pic))];
 }
 
-const RENDER = { 'feature-list': featureList, 'cover-levels': coverLevels, 'media-text': mediaText };
+/** Product Pod List: product cards (the cards block's pods: image, title, text, arrow link) */
+function productPods(item, block) {
+  const grid = el('div', 'grid');
+  (item.pods || []).forEach((p) => {
+    const pod = resource(el('div', 'pod'), pathOf(p), p.title || 'Product');
+    const pic = picture(p.image, p.imageAlt, 'image', 'Image');
+    if (pic) pod.append(el('div', 'image', pic));
+    pod.append(prop(el('h3', null, p.title), 'title', 'text', 'Title'));
+    const text = prop(richText(p.description?.html), 'description', 'richtext', 'Description');
+    if (text) pod.append(...text.childNodes);
+    const href = pageHref(p.link);
+    if (href) {
+      const a = prop(el('a', null, p.linkText || p.title), 'linkText', 'text', 'Link text');
+      a.href = href;
+      pod.append(el('div', 'more-link', el('p', null, a)));
+    }
+    grid.append(el('div', 'grid-cell', pod));
+  });
+  return [header(item, block), el('div', 'cards mobile-image product-pods', grid)];
+}
+
+function coverValue(value, name) {
+  const v = (value || '').trim();
+  const td = prop(el('td'), name, 'text', name);
+  if (TICK.test(v)) {
+    const tick = el('span', 'tick');
+    tick.setAttribute('aria-label', 'Included');
+    td.append(tick);
+  } else if (CROSS.test(v) || !v) {
+    const cross = el('span', 'cross');
+    cross.setAttribute('aria-label', 'Not included');
+    td.append(cross);
+  } else td.textContent = v;
+  return td;
+}
+
+function coverTable(table) {
+  const tiers = table.tiers || [];
+  const t = el('table');
+  const head = el('tr', null, el('td'));
+  tiers.forEach((tier) => {
+    const logo = picture(tier.logo, tier.name, 'logo', 'Logo');
+    const th = resource(el('th', logo ? 'tier tier-logo' : 'tier'), pathOf(tier), tier.name || 'Tier');
+    th.scope = 'col';
+    th.append(logo || prop(el('span', null, tier.name), 'name', 'text', 'Name'));
+    head.append(th);
+  });
+  t.append(el('thead', null, head));
+  const body = el('tbody');
+  (table.rows || []).forEach((row) => {
+    const tr = resource(el('tr'), pathOf(row), row.benefit || 'Row');
+    const th = prop(el('th', null, row.benefit || ''), 'benefit', 'text', 'Benefit');
+    th.scope = 'row';
+    tr.append(th);
+    tiers.forEach((_tier, i) => tr.append(coverValue(row[`value${i + 1}`], `value${i + 1}`)));
+    body.append(tr);
+  });
+  t.append(body);
+  const scroller = el('div', 'comparison-table-scroll', t);
+  scroller.tabIndex = 0;
+  scroller.setAttribute('role', 'region');
+  scroller.setAttribute('aria-label', table.title || 'Cover');
+  return scroller;
+}
+
+let tabsId = 0;
+
+/** Cover Comparison: one tab per Cover Table (tab label = the table's title) */
+function coverComparison(item, block) {
+  tabsId += 1;
+  const tables = item.tables || [];
+  const nav = el('div', 'cover-tabs-nav');
+  nav.setAttribute('role', 'tablist');
+  const panels = el('div', 'cover-tabs-panels');
+  const tabs = tables.map((table, i) => {
+    const id = `cover-${tabsId}-${i}`;
+    const tab = prop(el('button', 'cover-tab', table.title), 'title', 'text', 'Tab');
+    resource(tab, pathOf(table), table.title || 'Cover table');
+    tab.type = 'button';
+    tab.id = `${id}-tab`;
+    tab.setAttribute('role', 'tab');
+    tab.setAttribute('aria-controls', id);
+    const panel = el('div', 'cover-tab-panel', coverTable(table));
+    panel.id = id;
+    panel.setAttribute('role', 'tabpanel');
+    panel.setAttribute('aria-labelledby', tab.id);
+    nav.append(tab);
+    panels.append(panel);
+    return [tab, panel];
+  });
+  const select = (n) => tabs.forEach(([tab, panel], i) => {
+    tab.setAttribute('aria-selected', String(i === n));
+    tab.tabIndex = i === n ? 0 : -1;
+    panel.hidden = i !== n;
+  });
+  tabs.forEach(([tab], i) => {
+    tab.addEventListener('click', () => select(i));
+    tab.addEventListener('keydown', (e) => {
+      const step = { ArrowRight: 1, ArrowLeft: -1 }[e.key];
+      if (!step) return;
+      const next = (i + step + tabs.length) % tabs.length;
+      select(next);
+      tabs[next][0].focus();
+    });
+  });
+  select(0);
+  const footnote = prop(richText(item.footnote?.html, 'content-fragment-footnote'), 'footnote', 'richtext', 'Footnote');
+  return [header(item, block), el('div', 'comparison-table cover-comparison', nav, panels), footnote];
+}
+
+const RENDER = {
+  'feature-list': featureList,
+  'cover-levels': coverLevels,
+  'media-text': mediaText,
+  'product-pod-list': productPods,
+  'cover-comparison': coverComparison,
+};
 
 const STYLES = {
-  'feature-list': (block) => [block.classList.contains('pods') || block.classList.contains('pods-colours')
-    ? 'highlights' : 'features'],
+  'feature-list': (block) => {
+    if (block.classList.contains('accordion')) return ['accordion'];
+    return [block.classList.contains('pods') || block.classList.contains('pods-colours') ? 'highlights' : 'features'];
+  },
   'cover-levels': () => ['comparison-table', 'callout'],
   'media-text': () => ['media-text'],
+  'product-pod-list': () => ['cards'],
+  'cover-comparison': () => ['comparison-table'],
 };
 
 export default async function decorate(block) {

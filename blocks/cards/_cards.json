@@ -110,6 +110,14 @@
             {
               "name": "Narrow column (768px)",
               "value": "narrow"
+            },
+            {
+              "name": "Horizontal (image left, one per row)",
+              "value": "horizontal"
+            },
+            {
+              "name": "Title and link only (no summary)",
+              "value": "title-only"
             }
           ]
         }

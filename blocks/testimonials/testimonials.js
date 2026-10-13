@@ -4,6 +4,7 @@
  *
  * Model (xwalk container, _testimonials.json): one row per testimonial item, one cell —
  *   <p>quote</p> <h3>name</h3> <p>location</p>
+ * Style `expert`: <h3>name, role</h3> <p>quote</p> in a white quote card (car insurance).
  * Behaviour observed live (stardust/replica/motion/index.json): prev/next arrows move one
  * slide with a 0.5s transform transition; infinite loop; no autoplay. Loop clones (one
  * before, one per slide after — slick's own layout) are presentational: aria-hidden,
@@ -46,9 +47,21 @@ function arrow(className, label) {
   return button;
 }
 
+/** `expert` style (live car insurance "What the experts say" .quote-box): a quote mark beside
+ * the name / role heading and the quote — authored as <h3>name, role</h3><p>quote</p> */
+function expertSlide(row) {
+  const cell = row.firstElementChild || row;
+  const testimonial = wrap('testimonial expert-quote', wrap('quote-mark'), wrap('quote-body', ...cell.childNodes));
+  const slide = wrap('slick-slide', testimonial);
+  moveInstrumentation(row, slide);
+  return slide;
+}
+
 export default function decorate(block) {
   const track = wrap('slick-track');
+  const expert = block.classList.contains('expert');
   const slides = [...block.children].map((row) => {
+    if (expert) return expertSlide(row);
     const cell = row.firstElementChild || row;
     const heading = cell.querySelector('h1, h2, h3, h4, h5, h6');
     const nodes = [...cell.children];

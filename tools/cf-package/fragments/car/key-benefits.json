@@ -1,0 +1,11 @@
+{
+  "model": "feature-list",
+  "title": "Why choose Admiral Car Insurance?",
+  "introduction": "",
+  "features": [
+    "car/features/benefit-we-accept-98-9-of-claims",
+    "car/features/benefit-over-5-million-vehicles-covered",
+    "car/features/benefit-the-best-motor-insurer"
+  ],
+  "footnote": "<p><a href=\"#our-data\">Learn more about this data</a></p>"
+}

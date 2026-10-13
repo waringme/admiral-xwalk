@@ -587,6 +587,14 @@
           {
             "name": "Narrow column (768px)",
             "value": "narrow"
+          },
+          {
+            "name": "Horizontal (image left, one per row)",
+            "value": "horizontal"
+          },
+          {
+            "name": "Title and link only (no summary)",
+            "value": "title-only"
           }
         ]
       }
@@ -669,6 +677,14 @@
           {
             "name": "Narrow column (768px)",
             "value": "narrow"
+          },
+          {
+            "name": "Horizontal (image left, one per row)",
+            "value": "horizontal"
+          },
+          {
+            "name": "Title and link only (no summary)",
+            "value": "title-only"
           }
         ]
       }
@@ -758,7 +774,7 @@
         "valueType": "string",
         "name": "fragment",
         "label": "Content fragment",
-        "description": "A Feature List, Cover Levels or Media Text fragment, e.g. /content/dam/admiral-xwalk/fragments/travel/cover-features",
+        "description": "A Feature List, Cover Levels, Cover Comparison, Media Text or Product Pod List fragment, e.g. /content/dam/admiral-xwalk/fragments/car/key-benefits",
         "rootPath": "/content/dam/admiral-xwalk/fragments",
         "required": true,
         "variationName": "fragmentVariation"
@@ -784,7 +800,7 @@
         "name": "classes",
         "label": "Display",
         "valueType": "string",
-        "description": "How this page shows the shared content. Cover Levels fragments always show as a table, Media Text fragments as an image beside the copy.",
+        "description": "How this page shows the shared content. Cover Levels and Cover Comparison fragments show as tables, Media Text as an image beside the copy, Product Pod Lists as product cards.",
         "options": [
           {
             "name": "Alternating (large illustrations)",
@@ -797,6 +813,18 @@
           {
             "name": "Pods (colours, with icons)",
             "value": "pods-colours"
+          },
+          {
+            "name": "Accordion (Feature List: questions and answers)",
+            "value": "accordion"
+          },
+          {
+            "name": "Numbered steps (Feature List)",
+            "value": "steps"
+          },
+          {
+            "name": "Step arrows (with Numbered steps)",
+            "value": "arrows"
           },
           {
             "name": "Hide heading",
@@ -1147,6 +1175,23 @@
           {
             "name": "App store badges",
             "value": "app"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "testimonials",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Expert quote (white card, name and role above the quote)",
+            "value": "expert"
           }
         ]
       }

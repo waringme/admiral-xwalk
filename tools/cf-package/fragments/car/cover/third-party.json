@@ -1,0 +1,25 @@
+{
+  "model": "cover-table",
+  "title": "Third party cover",
+  "tiers": [
+    "car/tiers/third-party-fire-theft",
+    "car/tiers/third-party-only"
+  ],
+  "rows": [
+    "car/cover/third-party/driving-other-cars-conditional",
+    "car/cover/third-party/24-hour-emergency-helpline",
+    "car/cover/third-party/courtesy-car",
+    "car/cover/third-party/replacement-lock-up-to-500",
+    "car/cover/third-party/european-cover-up-to-90-days",
+    "car/cover/third-party/aftermarket-audio-gear",
+    "car/cover/third-party/motor-legal-expenses",
+    "car/cover/third-party/roadside-breakdown-cover",
+    "car/cover/third-party/windscreen-cover",
+    "car/cover/third-party/uninsured-driver-promise",
+    "car/cover/third-party/personal-injury-cover-up-to-5-000",
+    "car/cover/third-party/child-car-seat",
+    "car/cover/third-party/personal-belongings-cover",
+    "car/cover/third-party/new-replacement-if-you-re-eligible",
+    "car/cover/third-party/onward-travel-up-to-150"
+  ]
+}

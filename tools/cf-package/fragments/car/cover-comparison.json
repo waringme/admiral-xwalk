@@ -1,0 +1,10 @@
+{
+  "model": "cover-comparison",
+  "title": "What level of cover do I need?",
+  "introduction": "<p>Compare our car insurance options below, so you can see what works best for you and your needs.</p>",
+  "tables": [
+    "car/cover/comprehensive",
+    "car/cover/third-party"
+  ],
+  "footnote": "<p>If you're not sure what some of our car insurance terms mean, check out our <a href=\"https://www.admiral.com/magazine/guides/motor/essential-car-insurance-jargon-buster\">car insurance jargon buster</a>.</p>"
+}

@@ -163,3 +163,13 @@ content/*.plain.html, stardust/eds-conversion-log.md, stardust/runtime-contract.
 - Page model: published / updated used `valueType: "date-time"` (not a UE value type) → `date` with valueFormat `YYYY-MM-DD[T]HH:mm:ss.000-00:00`; Template select gets a Default ("") option so its empty default is a valid choice.
 - Stored values: md2jcr wrote published / updated / read-time / card-order as strings; the page content package now writes {Date} / {Long} (travel pages 1.0.4, templates 1.0.1). Pages outside it (About Us children) get them from the new `admiral-xwalk-page-property-types-1.0.0.zip` (update_properties, only those 4 properties; `build.py --types`).
 - Article dates formatted in UTC (JCR dates render as ISO timestamps).
+
+## 2026-10-13 — Car insurance page (functional spec)
+- Captured /car-insurance + 11 child/linked pages (crawl → stardust/current/pages, extract-sections); 99 images (car-image-map.json; travel images reused only when in the installed 1.6.0 package; CSS-drawn optional-extras card images resolved through the live stylesheet; hero `-mobile` composites probed).
+- Spec mapping: hero = landing-hero + background/background-mobile; Trustpilot (Singlecar_); content fragments for Why choose (pods), What's car insurance / How we work out the cost (Media Text), Do I need (Media Text, no image), types of cover / quote checklist / FAQs / cost factors / our data (Feature List, new `accordion` display), cover comparison (new Cover Tier/Row/Table/Comparison models, tabs), Looking for something else (new Product Pod / Product Pod List, shared/), claim steps (Feature List `steps arrows`: down on mobile, right from 768px); cards-folder for optional extras (new `horizontal` style) and useful guides (`title-only`); experts quote = testimonials `expert` style.
+- Decisions (user): Product Pod a separate model; Breakdown cover moved to /car-insurance/optional-extras/breakdown-cover; guides under /car-insurance/guides; MultiCar, Electric, Black Box imported in full.
+- Section names become anchors (scripts.js decorateSectionAnchors) — quick links and "Learn more about this data" use them.
+- Extractor: span.badge--tick / --cross → ✓ / ✕ (comparison-table renders ✓ as a tick) — Breakdown cover table was all crosses.
+- /templates/product-landing: the car layout, every shared section a content-fragment block to re-point.
+- Packages (new nodes only): admiral-xwalk-car-images-1.0.0 (images/car), admiral-xwalk-car-cf-1.0.0, admiral-xwalk-car-pages-1.0.0 (14 pages).
+- Removed the committed local mock /query-index.json (from 7ea8e8a; it would shadow the real index) and gitignored it.

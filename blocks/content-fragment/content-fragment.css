@@ -15,7 +15,7 @@ main .content-fragment-container > .content-fragment-wrapper:has(.highlights) {
 
 /* a Media Text fragment: the live white side-image panel (.side-image); on mobile the image is a
    164px strip under the copy, on desktop it is cropped to the panel's height beside a 410px copy */
-main .content-fragment-container:has(.media-text) { background-color: #fff; }
+main .content-fragment-container:not(.ice-blue, .sky, .sea-blue):has(.media-text) { background-color: #fff; }
 main .content-fragment-container > .content-fragment-wrapper:has(.media-text) { padding: 30px 30px 0; }
 
 .content-fragment .media-text .media-text-media {
@@ -36,6 +36,137 @@ main .content-fragment-container > .content-fragment-wrapper:has(.media-text) { 
 .content-fragment .media-text-copy > div > :last-child,
 .content-fragment .media-text-copy li:last-child { padding-bottom: 0; }
 
+
+/* Feature List as an accordion (live .faqs: white question boxes) */
+.content-fragment .accordion {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.content-fragment .accordion-item-body > div > :last-child { padding-bottom: 0; }
+.content-fragment .content-fragment-footnote { text-align: center; }
+.content-fragment .highlights + .content-fragment-footnote { padding-top: 30px; }
+
+/* numbered steps with arrow tags (car insurance claims): the full container, three across */
+main .content-fragment-container > .content-fragment-wrapper:has(.arrows) { max-width: var(--container); }
+.content-fragment .features.steps.arrows .feature::before { white-space: nowrap; }
+
+/* Product Pod List: the cards block's pods (image strip, title, text, arrow link) */
+main .content-fragment-container > .content-fragment-wrapper:has(.product-pods) { max-width: var(--container); }
+.content-fragment .product-pods { margin-bottom: 20px; }
+
+/* Cover Comparison (live .tabs + table.bspec): grey tabs over a white card, tier badges, ticks */
+main .content-fragment-container > .content-fragment-wrapper:has(.cover-comparison) { max-width: var(--container); }
+
+/* a Media Text without an image (Do I need car insurance?): a plain text panel */
+main .content-fragment-container > .content-fragment-wrapper:has(.media-text:not(:has(.media-text-media))) {
+  padding-bottom: 10px;
+}
+
+.content-fragment .cover-tabs-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.content-fragment .cover-tab {
+  position: relative;
+  flex: 1 1 0;
+  margin: 0 0 -1px;
+  padding: 12px 8px;
+  border: 1px solid #ada9a4;
+  border-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  background-color: #d8d8d8;
+  color: var(--color-heading);
+  font: inherit;
+  font-size: 16.2px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.content-fragment .cover-tab[aria-selected='true'] {
+  z-index: 1;
+  background-color: #fff;
+}
+
+/* the red chevron under the open tab */
+.content-fragment .cover-tab[aria-selected='true']::after {
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  border-right: 2px solid #c8102e;
+  border-bottom: 2px solid #c8102e;
+  background-color: #fff;
+  content: '';
+  transform: rotate(45deg);
+}
+
+.content-fragment .cover-tabs-panels {
+  padding: 30px 10px 10px;
+  border: 1px solid #ada9a4;
+  border-radius: 0 0 10px 10px;
+  background-color: #fff;
+}
+
+.content-fragment .cover-comparison table {
+  min-width: 0;
+  table-layout: fixed;
+}
+
+.content-fragment .cover-comparison :is(th, td) {
+  padding: 12px 6px;
+  border: 0;
+  border-bottom: 1px solid #ada9a4;
+  background: none;
+  color: var(--color-heading);
+}
+
+.content-fragment .cover-comparison thead :is(th, td) { border-bottom-color: #8a8fa8; }
+
+.content-fragment .cover-comparison thead th {
+  font-size: 14.4px;
+  font-weight: 600;
+  vertical-align: bottom;
+}
+
+.content-fragment .cover-comparison :where(thead) td { width: 30%; }
+
+.content-fragment .cover-comparison tbody th {
+  font-weight: 600;
+  text-align: left;
+}
+
+/* the short blue dividers between tier columns */
+.content-fragment .cover-comparison :is(th, td) + :is(th, td):not(:nth-child(2)) {
+  background: linear-gradient(#5b8dd9, #5b8dd9) left center / 1px 40% no-repeat;
+}
+
+.content-fragment .cover-comparison .tier-logo :is(picture, img) {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.content-fragment .cover-comparison td {
+  padding-inline: 2px;
+  font-size: 11.7px;
+}
+
+.content-fragment .cover-comparison .tick {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #208c3a url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 62% no-repeat;
+}
+
+.content-fragment .cover-comparison + .content-fragment-footnote { padding-top: 20px; }
+
 .content-fragment .content-fragment-message {
   padding: 16px;
   border: 1px dashed var(--color-border-pod);
@@ -53,6 +184,39 @@ main .content-fragment-container > .content-fragment-wrapper:has(.media-text) { 
 
   .content-fragment .media-text { gap: 30px; }
   .content-fragment .media-text .media-text-copy { flex: 0 0 410px; }
+  .content-fragment .media-text:not(:has(.media-text-media)) .media-text-copy { flex: 1 1 auto; }
+
+  main .content-fragment-container > .content-fragment-wrapper:has(.media-text:not(:has(.media-text-media))) {
+    padding-bottom: 20px;
+  }
+
+  .content-fragment .cover-tabs-nav { padding: 0 50px; }
+
+  .content-fragment .cover-tab {
+    padding: 22px 16px;
+    font-size: 25.2px;
+    line-height: 30px;
+  }
+
+  .content-fragment .cover-tabs-panels { padding: 80px 60px 30px; }
+
+  .content-fragment .cover-comparison :is(th, td) { padding: 26px 16px; }
+  .content-fragment .cover-comparison :where(thead) td { width: 34%; }
+
+  .content-fragment .cover-comparison tbody th {
+    font-size: 25.2px;
+    line-height: 32px;
+  }
+
+  .content-fragment .cover-comparison td {
+    font-size: 19.8px;
+    line-height: 26px;
+  }
+
+  .content-fragment .cover-comparison .tick {
+    width: 64px;
+    height: 64px;
+  }
 
   .content-fragment .media-text .media-text-media {
     position: relative;

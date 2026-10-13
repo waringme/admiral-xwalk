@@ -1,0 +1,8 @@
+{
+  "model": "feature",
+  "title": "About your car",
+  "description": "<ul><li>Registration number</li><li>When you bought it</li><li>How much it's worth</li><li>Any modifications</li></ul>",
+  "icon": "",
+  "illustration": "",
+  "imageAlt": ""
+}

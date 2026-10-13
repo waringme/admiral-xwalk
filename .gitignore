@@ -16,3 +16,7 @@ helix-importer-ui
 .env
 .env.*
 # <<< stardust
+
+# local preview mock index (stardust/.work/replica/local-preview.py --index): never commit, it would
+# shadow the real /query-index.json on the site
+/query-index.json

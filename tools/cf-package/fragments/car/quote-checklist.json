@@ -1,0 +1,11 @@
+{
+  "model": "feature-list",
+  "title": "What you need to get a car insurance quote",
+  "introduction": "<p>We need to know a few things so we can give you the right quote.</p>",
+  "features": [
+    "car/quote-checklist-items/about-your-car",
+    "car/quote-checklist-items/a-bit-about-you",
+    "car/quote-checklist-items/what-cover-you-need"
+  ],
+  "footnote": ""
+}

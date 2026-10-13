@@ -1,0 +1,1024 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-13T15:24:40.541Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "car-insurance-electric",
+  "url": "https://www.admiral.com/car-insurance/electric",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-13T15:24:40.541Z",
+  "finalUrl": "https://www.admiral.com/car-insurance/electric",
+  "title": "Electric Car Insurance Quotes | Cover for EVs and Hybrids | Admiral",
+  "description": "Protect electric and hybrid cars with EV insurance from Admiral. Our comprehensive EV cover includes recovery if you run out of charge. Get a quote today!",
+  "og": {
+    "title": "Electric Car Insurance Quotes | Cover for EVs and Hybrids | Admiral",
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Electric Car Insurance"
+    },
+    {
+      "tag": "h2",
+      "text": "EV insurance that’s built around you"
+    },
+    {
+      "tag": "h3",
+      "text": "What are you looking for?"
+    },
+    {
+      "tag": "h2",
+      "text": "Why choose Admiral Electric Car Insurance?"
+    },
+    {
+      "tag": "h3",
+      "text": "We’re a Trailblazer"
+    },
+    {
+      "tag": "h3",
+      "text": "MultiCar discounts"
+    },
+    {
+      "tag": "h3",
+      "text": "Made for EV owners"
+    },
+    {
+      "tag": "h2",
+      "text": "What's electric car insurance?"
+    },
+    {
+      "tag": "h2",
+      "text": "What does electric car insurance cover?"
+    },
+    {
+      "tag": "h3",
+      "text": "Charging equipment cover"
+    },
+    {
+      "tag": "h3",
+      "text": "Out of charge recovery"
+    },
+    {
+      "tag": "h3",
+      "text": "Battery cover"
+    },
+    {
+      "tag": "h3",
+      "text": "Wallbox protection"
+    },
+    {
+      "tag": "h2",
+      "text": "Compare EV insurance cover levels"
+    },
+    {
+      "tag": "h3",
+      "text": "Battery cover"
+    },
+    {
+      "tag": "h3",
+      "text": "Charging cables"
+    },
+    {
+      "tag": "h3",
+      "text": "Out of charge recovery (doesn't include hybrids*)"
+    },
+    {
+      "tag": "h3",
+      "text": "Wallbox cover up to £1,000(doesn't include hybrids*)"
+    },
+    {
+      "tag": "h3",
+      "text": "Courtesy car"
+    },
+    {
+      "tag": "h3",
+      "text": "Uninsured driver promise"
+    },
+    {
+      "tag": "h3",
+      "text": "£5,000 Personal Injury cover"
+    },
+    {
+      "tag": "h3",
+      "text": "24-hour emergency helpline"
+    },
+    {
+      "tag": "h3",
+      "text": "Replacement lock cover, up to £500"
+    },
+    {
+      "tag": "h3",
+      "text": "Child car seat cover"
+    },
+    {
+      "tag": "h3",
+      "text": "Windscreen cover"
+    },
+    {
+      "tag": "h3",
+      "text": "New car replacement (if you're eligible)"
+    },
+    {
+      "tag": "h3",
+      "text": "Driving other cars (with conditions)"
+    },
+    {
+      "tag": "h3",
+      "text": "European cover for up to 90 days"
+    },
+    {
+      "tag": "h3",
+      "text": "Audio equipment cover (aftermarket)"
+    },
+    {
+      "tag": "h3",
+      "text": "Onward travel, up to £150"
+    },
+    {
+      "tag": "h3",
+      "text": "Personal belongings cover"
+    },
+    {
+      "tag": "h3",
+      "text": "Personal belongings (campervans)"
+    },
+    {
+      "tag": "h3",
+      "text": "Motor Legal Expenses"
+    },
+    {
+      "tag": "h3",
+      "text": "Roadside Breakdown cover"
+    },
+    {
+      "tag": "h2",
+      "text": "Why should I make the switch to electric?"
+    },
+    {
+      "tag": "h3",
+      "text": "Lower running costs"
+    },
+    {
+      "tag": "h3",
+      "text": "No need to worry about range"
+    },
+    {
+      "tag": "h3",
+      "text": "Speedy charging times"
+    },
+    {
+      "tag": "h2",
+      "text": "What the experts say"
+    },
+    {
+      "tag": "h3",
+      "text": "Craig Codell, EV Product Manager"
+    },
+    {
+      "tag": "h2",
+      "text": "EV benefits platform"
+    },
+    {
+      "tag": "h2",
+      "text": "Are the benefits the same for hybrids?"
+    },
+    {
+      "tag": "h3",
+      "text": "Pure Battery Electric Vehicles (BEVS):"
+    },
+    {
+      "tag": "h3",
+      "text": "Plug in Hybrids (PHEVs – charge via a cable):"
+    },
+    {
+      "tag": "h3",
+      "text": "Mild Hybrids (don’t charge via a cable):"
+    },
+    {
+      "tag": "h2",
+      "text": "Add-ons for EV insurance"
+    },
+    {
+      "tag": "h3",
+      "text": "Breakdown cover"
+    },
+    {
+      "tag": "h3",
+      "text": "Motor Legal Expenses"
+    },
+    {
+      "tag": "h3",
+      "text": "Hire Vehicle cover"
+    },
+    {
+      "tag": "h3",
+      "text": "Personal Injury cover"
+    },
+    {
+      "tag": "h2",
+      "text": "Looking for other motor insurance options?"
+    },
+    {
+      "tag": "h3",
+      "text": "Car Insurance"
+    },
+    {
+      "tag": "h3",
+      "text": "MultiCar Insurance"
+    },
+    {
+      "tag": "h3",
+      "text": "Van Insurance"
+    },
+    {
+      "tag": "h2",
+      "text": "What do I need to get a quote?"
+    },
+    {
+      "tag": "h3",
+      "text": "About you"
+    },
+    {
+      "tag": "h3",
+      "text": "About your car"
+    },
+    {
+      "tag": "h2",
+      "text": "Need to make a claim?"
+    },
+    {
+      "tag": "h3",
+      "text": "Check your cover"
+    },
+    {
+      "tag": "h3",
+      "text": "Get your info ready"
+    },
+    {
+      "tag": "h3",
+      "text": "Get in touch"
+    },
+    {
+      "tag": "h2",
+      "text": "Read more about our customer's experiences"
+    },
+    {
+      "tag": "h2",
+      "text": "EV resources and guides"
+    },
+    {
+      "tag": "h3",
+      "text": "Your guide to buying an EV"
+    },
+    {
+      "tag": "h3",
+      "text": "Road tax for EVs"
+    },
+    {
+      "tag": "h3",
+      "text": "Do electric cars need MOTs?"
+    },
+    {
+      "tag": "h2",
+      "text": "Your EV questions answered"
+    },
+    {
+      "tag": "h3",
+      "text": "Are hybrids and all-electric cars covered for the same thing?"
+    },
+    {
+      "tag": "h3",
+      "text": "Do I need specialist insurance for an electric car?"
+    },
+    {
+      "tag": "h3",
+      "text": "Is electric car insurance cheaper?"
+    },
+    {
+      "tag": "h2",
+      "text": "Explore our website"
+    }
+  ],
+  "body": [
+    "Contact us",
+    "Help and Support",
+    "My account",
+    "Claims",
+    "Multi Cover",
+    "Motor Motor Car Insurance Multi Car Insurance Van Insurance Black Box Insurance Electric Car Insurance Learner Driver Insurance Temporary Car Insurance Motoring Extras Car Finance Breakdown Cover Van insurance add-ons Car insurance add-ons Support Add a car to your policy Car Insurance FAQs Motor resource hub Admiral App The easy way to view and manage your insurance policy on the go. Find out more",
+    "Home Home Home Insurance Landlord Insurance Contents Insurance Buildings Insurance Multi Cover Insurance Renters Insurance Optional Extras Home Legal Expenses Home Emergency Cover Accidental Damage Personal Possessions Bicycle Cover High Risk Items Cover Landlord Emergency Cover Landlord Legal Expenses Support Home resource hub Landlord resource hub Add a home to your car insurance Home Insurance FAQs Extreme weather support Storm Hub Freeze Hub Admiral App Easily manage your cover, view your documents, and much more with the Admiral app. Find out more",
+    "Travel Travel Travel Insurance Single Trip Insurance Annual Travel Insurance Over 50s Travel Insurance Over 80s Travel Insurance Specialist Cover Winter Sports Insurance Cruise Insurance Gadget Travel Insurance Enhanced Trip Disruption Support Travel Insurance FAQs Travel resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Pet Pet Pet Insurance Multi Pet Insurance Dog Insurance Puppy Insurance Cat Insurance Kitten Insurance Lifetime Pet Insurance Time Limited Pet Insurance Pet breeds Cockapoo Pet Insurance Cocker Spaniel Pet Insurance Shih Tzu Pet Insurance Support Pet resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Money Money Personal Loans Car Loans Car Finance Hire Purchase Homeowner Loans More Finance Home Improvement Loans Debt Consolidation Loan Support Money FAQs Money worries How to improve your credit score A good credit score can help you get a better deal on a loan, mortgage and other types of finance. Find out more",
+    "Business",
+    "Homepage",
+    "Car insurance",
+    "Electric Car Insurance",
+    "We’ve been awarded Defaqto’s Trailblazer award for innovation in electric car insurance – so you know you’re in good hands.",
+    "We'll give you a MultiCar discount if you insure your other cars with us, whether they're electric vehicles or not!",
+    "From charging equipment to out of charge recovery, we cover what really matters to EV drivers.",
+    "Electric car insurance is just car insurance, which has some features designed to protect your electric or hybrid vehicle.",
+    "Our comprehensive cover includes some handy benefits, like protection for your charging equipment and out of charge recovery if your EV runs out of battery on the road.",
+    "Looking for just the basics? Our Third party only cover will pay out to the other driver if you’re in an accident, but doesn’t include these features.",
+    "It covers everything your standard car insurance would. But our comprehensive electric car cover also includes these useful benefits!",
+    "To help you choose the right level of cover, take a look at how they compare below.",
+    "Up to",
+    "£300",
+    "Up to",
+    "£300",
+    "Up to",
+    "£300",
+    "Up to",
+    "£500",
+    "Up to",
+    "£500",
+    "Up to",
+    "£500",
+    "If you're not sure what some of our car insurance terms mean, check out our car insurance jargon buster.",
+    "*Our out of charge recovery or wallbox cover benefits don’t cover plug in hybrids or mild hybrids. Head to our FAQ further down to learn more.",
+    "Once you’ve made the switch, the running and maintenance costs are lower – so you can save in the long run.",
+    "You might have heard about range anxiety, but the average EV has more than enough range for your daily journeys!",
+    "Whether you're charging at home or out on the road, you shouldn't have to wait too long to drive your ride.",
+    "Making the switch to an EV can feel like a big decision. But don't worry if you get a little overwhelmed deciding what car's right for you and what insurance you need. Our goal is to make sure you feel supported every step of the way!",
+    "As part of your policy, you have access to some supercharged benefits from our friends at Zoom EV:",
+    "Free credit on public charging stations",
+    "Discounts on home chargers",
+    "A free top-up on home energy plans",
+    "Deals on car park bookings",
+    "Some of our comprehensive cover benefits apply to hybrids too, but not all of them.",
+    "Here’s a quick breakdown of the EV-based benefits that different kinds of electric cars can get.",
+    "Battery cover",
+    "Charging cable cover",
+    "Out of charge recovery",
+    "Wallbox cover",
+    "Battery cover",
+    "Charging cable cover",
+    "Battery cover",
+    "Want to take your cover to the next level? We have plenty of add-ons so you can tailor your insurance to suit your budget, needs and lifestyle.",
+    "A helping hand when you and your car need it most. Get unlimited roadside callouts, misfuelling cover and 24-hour rescue.",
+    "Plus we'll give you a hire car for up to three days so you can finish your journey.",
+    "Been in an accident that wasn't your fault? We'll cover up to £100,000 in legal costs.",
+    "That means you've got a safety net if you need to claim compensation or go to court.",
+    "Drive away with a hire car is yours is written off or stolen. It's a safety net that keeps you on the road.",
+    "You'll get a similar-size cars to yours, so it works for your lifestyle and needs.",
+    "Our Personal Injury cover includes up to £50,000 for you to deal with any unexpected costs after you've been in an accident.",
+    "Whether it's a minor accident or life-threatening injuries, we've got your back.",
+    "Find out more about our standard car insurance and everything it includes.",
+    "Insure the whole family’s cars on one policy to save money and hassle.",
+    "Van insurance that works for you and your lifestyle.",
+    "Let's get your EV the cover it deserves. Here's what you need to get a quote.",
+    "Check what you’re covered for, and the excess you’ll need to pay",
+    "Have your policy number and details of what happened ready",
+    "Visit our make a claim page or log in to MyAccount to make a claim",
+    "Still not sure? Head to our claims FAQ page to find out more.",
+    "We care what our customers have to say - no matter what type of vehicle they insure with us!",
+    "Whether you’re new to the world of EVs or are a seasoned owner, we’ve got some handy guides for you.",
+    "Don't worry - we've got you covered!",
+    "Our comprehensive EV insurance covers different kinds of electric cars for different things.",
+    "All-electric cars that only use electricity (also known as battery-electric vehicles) are covered for:",
+    "battery theft or damage",
+    "charging cable theft or damage",
+    "out of charge recovery",
+    "wallbox replacement",
+    "Plug-in hybrids are covered for:",
+    "battery theft or damage",
+    "charging cable theft or damage",
+    "Hybrids that don’t need charging (also known as mild hybrids) are covered for:",
+    "battery theft or damage",
+    "No, not necessarily! While some insurers offer specialist EV insurance, often standard car insurance will cover EVs - like ours.",
+    "Our standard car insurance looks out for electric car owners, with features like out of charge recovery and battery cover.",
+    "Car Insurance",
+    "Multi-Car Insurance",
+    "Black Box Insurance",
+    "Temporary Car Insurance",
+    "Electric Car Insurance",
+    "Learner Driver Insurance",
+    "Home Insurance",
+    "Contents Insurance",
+    "Buildings Insurance",
+    "Landlord Insurance",
+    "Renters Insurance",
+    "Flood Insurance",
+    "Optional Cover",
+    "Contents Calculator",
+    "Other Products",
+    "MultiCover Products",
+    "Personal Loans",
+    "Van Insurance",
+    "Travel Insurance",
+    "Pet Insurance",
+    "Breakdown Cover",
+    "Homeowner Loans",
+    "Car Finance",
+    "Policy Details",
+    "Make a claim",
+    "View policy books",
+    "Complaint information",
+    "Legal information",
+    "Insurance glossary",
+    "Magazine",
+    "Magazine – meet the team",
+    "About Us",
+    "Community & Sponsorship",
+    "Customer offers",
+    "Refer a friend",
+    "Jobs",
+    "Admiral App",
+    "© 1993-2026 Admiral",
+    "Sitemap",
+    "Contact Us",
+    "Accessibility",
+    "Conditions of Use",
+    "Privacy & Security",
+    "Press Office",
+    "Cookie Preferences",
+    "Admiral is a trading name of EUI Limited. (Reg No: 02686904). EUI Limited is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 309378). These details can be confirmed by visiting the Financial Services Register. EUI Limited acts for, and on behalf of, other regulated insurance companies. Further details may be provided on request. Admiral Money, Admiral Loans, Admiral Car Finance, Admiral Homeowner Loans, Admiral Mortgages, Admiral One and Finble are all trading names of Admiral Financial Services Limited (AFSL). Admiral Financial Services Limited (Reg No: 10255225) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 771862). These details can be confirmed by visiting the Financial Services Register Veygo and Admiral Business are trading names of Able Insurance Services Limited. Able Insurance Services Limited (Reg No: 2890075) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 311649). These details can be confirmed by visiting the Financial Services Register Admiral Group plc is registered in England and Wales at Tŷ Admiral, David Street, Cardiff. CF10 2EH (Reg No:03849958)."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Contact us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Help and Support",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "My account",
+      "href": "https://myaccount.admiral.com/login?_its=eJwljkGOgzAQBP_SZ5BswIztH-xhL_sBNBkPiiXWSMa7lyi8PSI5dqtL1Q_854SI0VmZXdB-Fcf9JJZ7L2PqZzEqXoklBXQ4GjdFRN3aaSnYYJwhOjcu6RwWP40-LClXlbYYUTG3mQMNyTtywfiBZBYmYjdNhA7cWs23v5b3gvhA2n85F0SgQ9VVa9X6SXLnUnT7SohvR4ejyveerisfHd7Vj64X8Oxw5KbX3Fo_uOcLxx1EuA"
+    },
+    {
+      "label": "Claims",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "Multi Cover",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Motor",
+      "href": "#"
+    },
+    {
+      "label": "Home",
+      "href": "#"
+    },
+    {
+      "label": "Travel",
+      "href": "#"
+    },
+    {
+      "label": "Pet",
+      "href": "#"
+    },
+    {
+      "label": "Money",
+      "href": "#"
+    },
+    {
+      "label": "Business",
+      "href": "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav"
+    },
+    {
+      "label": "Homepage",
+      "href": "/"
+    },
+    {
+      "label": "Car insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "Electric Car Insurance",
+      "href": "#"
+    },
+    {
+      "label": "Start my quote",
+      "href": "/scQuoteStatus.php"
+    },
+    {
+      "label": "Retrieve my quote",
+      "href": "/scQuoteStatus.php?r=t"
+    },
+    {
+      "label": "car insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "car insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "Comprehensive cover",
+      "href": null
+    },
+    {
+      "label": "Third party cover",
+      "href": null
+    },
+    {
+      "label": "car insurance jargon buster",
+      "href": "https://www.admiral.com/magazine/guides/motor/essential-car-insurance-jargon-buster"
+    },
+    {
+      "label": "FAQ",
+      "href": "#"
+    },
+    {
+      "label": "zoom ev benefits",
+      "href": "https://zoom-ev.com/learnmore-admiral-ev-ecosystem"
+    },
+    {
+      "label": "Breakdown cover A helping hand when you and your car need it most. Get unlimited roadside callouts, misfuelling cover and 24-hour rescue. Plus we'll give you a hire car for up to three days so you can finish your journey.",
+      "href": "/breakdown-cover"
+    },
+    {
+      "label": "Motor Legal Expenses Been in an accident that wasn't your fault? We'll cover up to £100,000 in legal costs. That means you've got a safety net if you need to claim compensation or go to court.",
+      "href": "/car-insurance/policy-upgrades/motor-legal-protection.php"
+    },
+    {
+      "label": "Hire Vehicle cover Drive away with a hire car is yours is written off or stolen. It's a safety net that keeps you on the road. You'll get a similar-size cars to yours, so it works for your lifestyle and needs.",
+      "href": "/car-insurance/policy-upgrades/hire-vehicle-cover.php"
+    },
+    {
+      "label": "Personal Injury cover Our Personal Injury cover includes up to £50,000 for you to deal with any unexpected costs after you've been in an accident. Whether it's a minor accident or life-threatening injuries, we've got your back.",
+      "href": "/car-insurance/policy-upgrades/personal-injury-cover.php"
+    },
+    {
+      "label": "Insure your car",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "Cover all your cars",
+      "href": "/multi-car-insurance"
+    },
+    {
+      "label": "Insure your van",
+      "href": "/van-insurance"
+    },
+    {
+      "label": "make a claim",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "MyAccount",
+      "href": "https://login.admiral.com/myaccount/login/?_its=eJwljkGOgzAQBP_SZ5BswIztH-xhL_sBNBkPiiXWSMa7lyi8PSI5dqtL1Q_854SI0VmZXdB-Fcf9JJZ7L2PqZzEqXoklBXQ4GjdFRN3aaSnYYJwhOjcu6RwWP40-LClXlbYYUTG3mQMNyTtywfiBZBYmYjdNhA7cWs23v5b3gvhA2n85F0SgQ9VVa9X6SXLnUnT7SohvR4ejyveerisfHd7Vj64X8Oxw5KbX3Fo_uOcLxx1EuA"
+    },
+    {
+      "label": "claims FAQ page",
+      "href": "/motor-van-faqs"
+    },
+    {
+      "label": "What to know",
+      "href": "/magazine/guides/electric-car-buyers-guide"
+    },
+    {
+      "label": "Get clued up",
+      "href": "/magazine/guides/car-insurance/electric-car-road-tax"
+    },
+    {
+      "label": "Find out here",
+      "href": "/magazine/guides/car-insurance/do-electric-cars-need-mots"
+    },
+    {
+      "label": "EV resource hub",
+      "href": "/resources/motor-hub/ev"
+    },
+    {
+      "label": "show more",
+      "href": null
+    },
+    {
+      "label": "Car Insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "Multi-Car Insurance",
+      "href": "/multi-car-insurance"
+    },
+    {
+      "label": "Black Box Insurance",
+      "href": "/black-box-insurance"
+    },
+    {
+      "label": "Temporary Car Insurance",
+      "href": "/car-insurance/temporary-car-insurance"
+    },
+    {
+      "label": "Electric Car Insurance",
+      "href": "/car-insurance/electric"
+    },
+    {
+      "label": "Learner Driver Insurance",
+      "href": "/learner-driver-insurance"
+    },
+    {
+      "label": "Home Insurance",
+      "href": "/home-insurance"
+    },
+    {
+      "label": "Contents Insurance",
+      "href": "/home-insurance/contents-insurance.php"
+    },
+    {
+      "label": "Buildings Insurance",
+      "href": "/home-insurance/buildings-insurance.php"
+    },
+    {
+      "label": "Landlord Insurance",
+      "href": "/home-insurance/landlord"
+    },
+    {
+      "label": "Renters Insurance",
+      "href": "/home-insurance/renters-insurance.php"
+    },
+    {
+      "label": "Flood Insurance",
+      "href": "/home-insurance/flood"
+    },
+    {
+      "label": "Optional Cover",
+      "href": "/home-insurance/optional-cover"
+    },
+    {
+      "label": "Contents Calculator",
+      "href": "/home-insurance/contents-calculator"
+    },
+    {
+      "label": "MultiCover Products",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Personal Loans",
+      "href": "/loans/personal-loans"
+    },
+    {
+      "label": "Van Insurance",
+      "href": "/van-insurance"
+    },
+    {
+      "label": "Travel Insurance",
+      "href": "/travel-insurance"
+    },
+    {
+      "label": "Pet Insurance",
+      "href": "/pet-insurance"
+    },
+    {
+      "label": "Breakdown Cover",
+      "href": "/breakdown-cover"
+    },
+    {
+      "label": "Homeowner Loans",
+      "href": "/homeowner-loans"
+    },
+    {
+      "label": "Car Finance",
+      "href": "/loans/car-finance"
+    },
+    {
+      "label": "Policy Details",
+      "href": "/myaccount"
+    },
+    {
+      "label": "Make a claim",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "View policy books",
+      "href": "/existing-customers/policy-documents.php"
+    },
+    {
+      "label": "Complaint information",
+      "href": "/contact-us/complaint-information.php"
+    },
+    {
+      "label": "Legal information",
+      "href": "/existing-customers/legal-information.php"
+    },
+    {
+      "label": "Insurance glossary",
+      "href": "/insurance-glossary"
+    },
+    {
+      "label": "Magazine",
+      "href": "/magazine"
+    },
+    {
+      "label": "Magazine – meet the team",
+      "href": "/magazine/meet-the-team"
+    },
+    {
+      "label": "About Us",
+      "href": "/about-us"
+    },
+    {
+      "label": "Community & Sponsorship",
+      "href": "/community-and-sponsorship"
+    },
+    {
+      "label": "Customer offers",
+      "href": "/existing-customers/customer-discount.php"
+    },
+    {
+      "label": "Refer a friend",
+      "href": "https://www.admiral.com/refer-a-friend"
+    },
+    {
+      "label": "Jobs",
+      "href": "https://admiraljobs.co.uk/"
+    },
+    {
+      "label": "Admiral App",
+      "href": "/myaccount/admiral-app"
+    },
+    {
+      "label": "Sitemap",
+      "href": "/sitemap.php"
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Accessibility",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "Conditions of Use",
+      "href": "/insurance/your-policy/conditions-of-use.php"
+    },
+    {
+      "label": "Privacy & Security",
+      "href": "/your-privacy-and-security"
+    },
+    {
+      "label": "Press Office",
+      "href": "/press-office"
+    },
+    {
+      "label": "Cookie Preferences",
+      "href": "/cookie-policy"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    }
+  ],
+  "links": [
+    "https://www.admiral.com/contact-us",
+    "https://www.admiral.com/help-support-hub",
+    "https://myaccount.admiral.com/login?_its=eJwljkGOgzAQBP_SZ5BswIztH-xhL_sBNBkPiiXWSMa7lyi8PSI5dqtL1Q_854SI0VmZXdB-Fcf9JJZ7L2PqZzEqXoklBXQ4GjdFRN3aaSnYYJwhOjcu6RwWP40-LClXlbYYUTG3mQMNyTtywfiBZBYmYjdNhA7cWs23v5b3gvhA2n85F0SgQ9VVa9X6SXLnUnT7SohvR4ejyveerisfHd7Vj64X8Oxw5KbX3Fo_uOcLxx1EuA",
+    "https://www.admiral.com/existing-customers/make-a-claim.php",
+    "https://www.admiral.com/",
+    "https://www.admiral.com/car-insurance/electric#",
+    "https://www.admiral.com/multicover-insurance",
+    "https://www.admiral.com/car-insurance",
+    "https://www.admiral.com/multi-car-insurance",
+    "https://www.admiral.com/van-insurance",
+    "https://www.admiral.com/black-box-insurance",
+    "https://www.admiral.com/car-insurance/electric",
+    "https://www.admiral.com/learner-driver-insurance",
+    "https://www.admiral.com/car-insurance/temporary-car-insurance",
+    "https://www.admiral.com/loans/car-finance",
+    "https://www.admiral.com/breakdown-cover",
+    "https://www.admiral.com/van-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/add-a-car-guide",
+    "https://www.admiral.com/car-insurance/FAQs",
+    "https://www.admiral.com/resources/motor-hub",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/home-insurance",
+    "https://www.admiral.com/home-insurance/landlord",
+    "https://www.admiral.com/home-insurance/contents-insurance.php",
+    "https://www.admiral.com/home-insurance/buildings-insurance.php",
+    "https://www.admiral.com/home-insurance/renters-insurance.php",
+    "https://www.admiral.com/home-insurance/optional-cover/family-legal-protection.php",
+    "https://www.admiral.com/home-insurance/optional-cover/home-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/accidental-damage.php",
+    "https://www.admiral.com/home-insurance/optional-cover/personal-possessions.php",
+    "https://www.admiral.com/home-insurance/optional-cover/bicycle-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/high-risk-items",
+    "https://www.admiral.com/home-insurance/landlord/landlord-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/landlord/landlord-legal-protection",
+    "https://www.admiral.com/home-insurance/home-resource-hub",
+    "https://www.admiral.com/resources/landlord-hub",
+    "https://www.admiral.com/add-a-home-guide",
+    "https://www.admiral.com/home-insurance/FAQs",
+    "https://www.admiral.com/weather/storm",
+    "https://www.admiral.com/weather/freeze",
+    "https://www.admiral.com/travel-insurance",
+    "https://www.admiral.com/travel-insurance/single-trip-insurance.php",
+    "https://www.admiral.com/travel-insurance/annual-travel-insurance.php",
+    "https://www.admiral.com/travel-insurance/over-50s-travel-insurance",
+    "https://www.admiral.com/travel-insurance/travel-insurance-over-80s",
+    "https://www.admiral.com/travel-insurance/winter-sports-insurance.php",
+    "https://www.admiral.com/travel-insurance/cruise-insurance.php",
+    "https://www.admiral.com/travel-insurance/gadget-insurance.php",
+    "https://www.admiral.com/travel-insurance/travel-disruption-insurance",
+    "https://www.admiral.com/travel-insurance/FAQs",
+    "https://www.admiral.com/resources/travel-hub",
+    "https://www.admiral.com/refer-a-friend",
+    "https://www.admiral.com/pet-insurance",
+    "https://www.admiral.com/pet-insurance/multi-pet-insurance",
+    "https://www.admiral.com/pet-insurance/dog-insurance",
+    "https://www.admiral.com/pet-insurance/puppy-insurance",
+    "https://www.admiral.com/pet-insurance/cat-insurance",
+    "https://www.admiral.com/pet-insurance/kitten-insurance",
+    "https://www.admiral.com/pet-insurance/lifetime-pet-insurance",
+    "https://www.admiral.com/pet-insurance/time-limited-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cockapoo-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cocker-spaniel-pet-insurance",
+    "https://www.admiral.com/pet-insurance/shih-tzu-pet-insurance",
+    "https://www.admiral.com/resources/pet-hub",
+    "https://www.admiral.com/loans/personal-loans",
+    "https://www.admiral.com/loans/car-finance/car-loans",
+    "https://www.admiral.com/loans/car-finance/hire-purchase",
+    "https://www.admiral.com/homeowner-loans",
+    "https://www.admiral.com/loans/personal-loans/home-improvements",
+    "https://www.admiral.com/loans/debt-consolidation-loan",
+    "https://money.admiral.com/help?_its=eJwljkGOgzAQBP_SZ5BswIztH-xhL_sBNBkPiiXWSMa7lyi8PSI5dqtL1Q_854SI0VmZXdB-Fcf9JJZ7L2PqZzEqXoklBXQ4GjdFRN3aaSnYYJwhOjcu6RwWP40-LClXlbYYUTG3mQMNyTtywfiBZBYmYjdNhA7cWs23v5b3gvhA2n85F0SgQ9VVa9X6SXLnUnT7SohvR4ejyveerisfHd7Vj64X8Oxw5KbX3Fo_uOcLxx1EuA",
+    "https://money.admiral.com/help/financial-support?_its=eJwljkGOgzAQBP_SZ5BswIztH-xhL_sBNBkPiiXWSMa7lyi8PSI5dqtL1Q_854SI0VmZXdB-Fcf9JJZ7L2PqZzEqXoklBXQ4GjdFRN3aaSnYYJwhOjcu6RwWP40-LClXlbYYUTG3mQMNyTtywfiBZBYmYjdNhA7cWs23v5b3gvhA2n85F0SgQ9VVa9X6SXLnUnT7SohvR4ejyveerisfHd7Vj64X8Oxw5KbX3Fo_uOcLxx1EuA",
+    "https://www.admiral.com/loans/improve-your-credit-score",
+    "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav",
+    "https://www.admiral.com/car-insurance/policy-upgrades/breakdown-cover/breakdown-assist.php",
+    "https://www.admiral.com/scQuoteStatus.php",
+    "https://www.admiral.com/scQuoteStatus.php?r=t",
+    "https://www.admiral.com/magazine/guides/motor/essential-car-insurance-jargon-buster",
+    "https://zoom-ev.com/learnmore-admiral-ev-ecosystem",
+    "https://www.admiral.com/car-insurance/policy-upgrades/motor-legal-protection.php",
+    "https://www.admiral.com/car-insurance/policy-upgrades/hire-vehicle-cover.php",
+    "https://www.admiral.com/car-insurance/policy-upgrades/personal-injury-cover.php",
+    "https://login.admiral.com/myaccount/login/?_its=eJwljkGOgzAQBP_SZ5BswIztH-xhL_sBNBkPiiXWSMa7lyi8PSI5dqtL1Q_854SI0VmZXdB-Fcf9JJZ7L2PqZzEqXoklBXQ4GjdFRN3aaSnYYJwhOjcu6RwWP40-LClXlbYYUTG3mQMNyTtywfiBZBYmYjdNhA7cWs23v5b3gvhA2n85F0SgQ9VVa9X6SXLnUnT7SohvR4ejyveerisfHd7Vj64X8Oxw5KbX3Fo_uOcLxx1EuA",
+    "https://www.admiral.com/motor-van-faqs",
+    "https://www.admiral.com/magazine/guides/electric-car-buyers-guide",
+    "https://www.admiral.com/magazine/guides/car-insurance/electric-car-road-tax",
+    "https://www.admiral.com/magazine/guides/car-insurance/do-electric-cars-need-mots",
+    "https://www.admiral.com/resources/motor-hub/ev",
+    "https://www.admiral.com/magazine/guides/motor/everything-you-need-to-know-about-hybrid-cars",
+    "https://www.admiral.com/mcQuoteStatus.php",
+    "https://www.admiral.com/bbQuoteStatus.php",
+    "https://www.admiral.com/mcQuoteStatus.php?r=t",
+    "https://www.admiral.com/bbQuoteStatus.php?r=t",
+    "tel:+443300296279",
+    "https://www.admiral.com/home-insurance/flood",
+    "https://www.admiral.com/home-insurance/optional-cover",
+    "https://www.admiral.com/home-insurance/contents-calculator",
+    "https://www.admiral.com/myaccount",
+    "https://www.admiral.com/existing-customers/policy-documents.php",
+    "https://www.admiral.com/contact-us/complaint-information.php",
+    "https://www.admiral.com/existing-customers/legal-information.php",
+    "https://www.admiral.com/insurance-glossary",
+    "https://www.admiral.com/magazine",
+    "https://www.admiral.com/magazine/meet-the-team",
+    "https://www.admiral.com/about-us",
+    "https://www.admiral.com/community-and-sponsorship",
+    "https://www.admiral.com/existing-customers/customer-discount.php",
+    "https://admiraljobs.co.uk/",
+    "https://twitter.com/admiralUK",
+    "https://www.youtube.com/user/AdmiralInsurance",
+    "https://www.facebook.com/admiralUK",
+    "https://www.admiral.com/sitemap.php",
+    "https://www.admiral.com/insurance/your-policy/conditions-of-use.php",
+    "https://www.admiral.com/your-privacy-and-security",
+    "https://www.admiral.com/press-office",
+    "https://www.admiral.com/cookie-policy",
+    "https://www.fca.org.uk/register"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/logos/admiral-logo.svg",
+        "alt": "Admiral Insurance logo",
+        "w": 300,
+        "h": 93
+      },
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/banner/defaqto-trailblazer.svg",
+        "alt": "Defaqto Trailblazer",
+        "w": 300,
+        "h": 87
+      },
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badge-platinum-desktop.svg",
+        "alt": "Admiral Platinum",
+        "w": 137,
+        "h": 95
+      },
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badge-gold-desktop.svg",
+        "alt": "Admiral Gold",
+        "w": 137,
+        "h": 95
+      },
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badge-standard-desktop.svg",
+        "alt": "Admiral",
+        "w": 137,
+        "h": 95
+      },
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badge-essential-desktop.svg",
+        "alt": "Admiral Essential",
+        "w": 137,
+        "h": 95
+      },
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/product-pods/product-pods-illustration-car-insurance@2x.jpg",
+        "alt": "Car insurance",
+        "w": 640,
+        "h": 280
+      },
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/product-pods/product-pods-illustration-multicar-insurance@2x.png",
+        "alt": "MultiCover Insurance",
+        "w": 641,
+        "h": 281
+      },
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/product-pods/product-pods-illustration-van-insurance@2x.jpg",
+        "alt": "Van Insurance",
+        "w": 635,
+        "h": 278
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_1280/public/2024-11/buying%20an%20electric%20car.png",
+        "alt": "Your guide to buying an EV",
+        "w": 1280,
+        "h": 853
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_1280/public/2024-08/Article%20Photo%20%2846%29.jpg",
+        "alt": "Road tax for EVs",
+        "w": 1280,
+        "h": 853
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_1280/public/2023-03/AdobeStock_107952397.jpg",
+        "alt": "Do electric cars need MOTs?",
+        "w": 1280,
+        "h": 853
+      }
+    ],
+    "allImgCount": 13,
+    "cssBackgrounds": [
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/hero/background/car-insurance-electric.jpg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/side-images/green-car-charging.png",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/side-images/admiral-zoom-ev.png",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/sub-hero/sub-hero-red-roadsign.png",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/sub-hero/sub-hero-man-phone-drink.png",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/sub-hero/sub-hero-women-car-dog.png",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/sub-hero/sub-hero-women-drink.png",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badges/badge-step-lightblue-01-desktop.svg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badges/badge-step-lightblue-02-desktop.svg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/badges/badge-step-lightblue-03-desktop.svg"
+    ],
+    "modals": [
+      "close Start a quote. Choose the type of policy that suits your needs from the options below or retrieve a previous quote. single car multicar black box",
+      "close Retrieve a quote. Choose the type of policy that suits your needs from the options below or start a new quote. single car multicar black box",
+      "close Call for a quote 0330 029 6279 Mon to Fri: 08:00 – 19:00 Sat: 09:00 – 17:00 Sun: 10:00 – 17:00 Calls to 03 numbers will cost no more than calls to national geographic numbers (starting 01 or 02) from both mobiles and landlines.",
+      "close Choose the PDF relevant to your policy start date..."
+    ],
+    "videos": [],
+    "iframes": [
+      {
+        "src": "https://widget.trustpilot.com/trustboxes/54d39695764ea907c0f34825/index.html?templateId=54d39695764ea907c0f34825&businessunitId=4be0843700006400050788f5#locale=en-US&styleHeight=24px&styleWidth=100%25&theme=light&sku=Singlecar_&noReviews=hide&scrollToList=true&styleAlignment=center",
+        "title": "Customer reviews powered by Trustpilot"
+      },
+      {
+        "src": "https://widget.trustpilot.com/trustboxes/5717796816f630043868e2e8/index_allow_robots.html?templateId=5717796816f630043868e2e8&businessunitId=4be0843700006400050788f5#locale=en-US&styleHeight=700px&styleWidth=100%25&theme=light&sku=Singlecar_&name=Car%20Insurance&reviewLanguages=en&noReviews=hide&fullwidth=true",
+        "title": "Customer reviews powered by Trustpilot"
+      }
+    ]
+  },
+  "customProps": {
+    "--animate-duration": "1s",
+    "--animate-delay": "1s",
+    "--animate-repeat": "1"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 69,
+    "mainTextLen": 51571,
+    "realImageCount": 12,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/car-insurance-electric.png",
+  "renderedHtml": "pages/car-insurance-electric.html"
+}

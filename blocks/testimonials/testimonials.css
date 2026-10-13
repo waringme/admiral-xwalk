@@ -180,3 +180,58 @@ main .testimonials-container > .testimonials-wrapper {
   .testimonials .slick-prev { left: -4px; }
   .testimonials .slick-next { right: -4px; }
 }
+
+/* expert (live car insurance "What the experts say" .quote-box on sea blue): a white card with a
+   light-blue quote mark beside the name / role and the quote; no carousel quote marks */
+main .testimonials-container:has(.testimonials.expert) > .testimonials-wrapper {
+  max-width: var(--container);
+  padding: 30px 10px;
+}
+
+.testimonials.expert .testimonials-slider {
+  margin-top: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.testimonials.expert .testimonials-slider::before,
+.testimonials.expert .testimonials-slider::after { content: none; }
+
+.testimonials.expert .expert-quote {
+  display: flex;
+  gap: 15px;
+  padding: 20px 15px;
+  border: 1px solid #b7b7cb;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.testimonials.expert .quote-mark {
+  flex: 0 0 40px;
+  height: 34px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 64'%3E%3Cpath fill='%237adcff' d='M0 64V38C0 15 9 3 30 0l3 8C21 11 17 19 17 30h15v34zm46 0V38c0-23 9-35 30-38l3 8c-12 3-16 11-16 22h15v34z'/%3E%3C/svg%3E") top left / contain no-repeat;
+}
+
+.testimonials.expert .quote-body h3 {
+  margin: 0 0 8px;
+  color: var(--color-heading);
+}
+
+.testimonials.expert .quote-body p {
+  padding-bottom: 0;
+  color: var(--color-ink);
+}
+
+@media (width >= 768px) {
+  main .testimonials-container:has(.testimonials.expert) > .testimonials-wrapper { padding: 0 20px 40px; }
+
+  .testimonials.expert .expert-quote {
+    gap: 40px;
+    padding: 50px 40px;
+  }
+
+  .testimonials.expert .quote-mark {
+    flex-basis: 80px;
+    height: 64px;
+  }
+}

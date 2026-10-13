@@ -1,0 +1,721 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-13T15:24:21.856Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "car-insurance-policy-upgrades-personal-injury-cover-php",
+  "url": "https://www.admiral.com/car-insurance/policy-upgrades/personal-injury-cover.php",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-13T15:24:21.856Z",
+  "finalUrl": "https://www.admiral.com/car-insurance/policy-upgrades/personal-injury-cover.php",
+  "title": "Personal Injury Cover & Insurance - Admiral",
+  "description": "Find out about the personal injury cover included with Admiral car insurance policies. Admiral customers can extend their personal injury cover. Contact us.",
+  "og": {
+    "title": "Personal Injury Cover & Insurance - Admiral",
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Personal Injury Cover"
+    },
+    {
+      "tag": "h2",
+      "text": "Up to £50,000 for serious and minor injuries while in your car"
+    },
+    {
+      "tag": "h2",
+      "text": "Crammed with features and benefits"
+    },
+    {
+      "tag": "h3",
+      "text": "Who is covered?"
+    },
+    {
+      "tag": "h3",
+      "text": "Policyholder and named drivers"
+    },
+    {
+      "tag": "h3",
+      "text": "Covered for..."
+    },
+    {
+      "tag": "h3",
+      "text": "Accidental death"
+    },
+    {
+      "tag": "h3",
+      "text": "Serious injury"
+    },
+    {
+      "tag": "h3",
+      "text": "Minor injuries"
+    },
+    {
+      "tag": "h3",
+      "text": "Daily Hospital Payment Benefit"
+    },
+    {
+      "tag": "h3",
+      "text": "Extra cover for an accident"
+    },
+    {
+      "tag": "h3",
+      "text": "Buying Personal Injury Cover/Personal Injury Plus Cover"
+    },
+    {
+      "tag": "h3",
+      "text": "Policy documents"
+    },
+    {
+      "tag": "h3",
+      "text": "Personal Injury Cover"
+    },
+    {
+      "tag": "h3",
+      "text": "Insurance Product Information Document"
+    },
+    {
+      "tag": "h2",
+      "text": "Need to make a claim?"
+    },
+    {
+      "tag": "h2",
+      "text": "Other Car Insurance Products"
+    },
+    {
+      "tag": "h3",
+      "text": "Car Insurance"
+    },
+    {
+      "tag": "h3",
+      "text": "Simply the best"
+    },
+    {
+      "tag": "h3",
+      "text": "MultiCar Insurance"
+    },
+    {
+      "tag": "h3",
+      "text": "Bundle with the best - Get your MultiCar discounts at Admiral.com"
+    },
+    {
+      "tag": "h3",
+      "text": "Black Box bargains"
+    },
+    {
+      "tag": "h3",
+      "text": "Temporary Car Insurance"
+    },
+    {
+      "tag": "h2",
+      "text": "What sort of driver are you?"
+    },
+    {
+      "tag": "h3",
+      "text": "Young driver"
+    },
+    {
+      "tag": "h3",
+      "text": "New driver"
+    },
+    {
+      "tag": "h3",
+      "text": "Learner driver"
+    },
+    {
+      "tag": "h3",
+      "text": "Temporary driver"
+    },
+    {
+      "tag": "h3",
+      "text": "Delivery driver (car)"
+    },
+    {
+      "tag": "h2",
+      "text": "Explore our website"
+    }
+  ],
+  "body": [
+    "Contact us",
+    "Help and Support",
+    "My account",
+    "Claims",
+    "Multi Cover",
+    "Motor Motor Car Insurance Multi Car Insurance Van Insurance Black Box Insurance Electric Car Insurance Learner Driver Insurance Temporary Car Insurance Motoring Extras Car Finance Breakdown Cover Van insurance add-ons Car insurance add-ons Support Add a car to your policy Car Insurance FAQs Motor resource hub Admiral App The easy way to view and manage your insurance policy on the go. Find out more",
+    "Home Home Home Insurance Landlord Insurance Contents Insurance Buildings Insurance Multi Cover Insurance Renters Insurance Optional Extras Home Legal Expenses Home Emergency Cover Accidental Damage Personal Possessions Bicycle Cover High Risk Items Cover Landlord Emergency Cover Landlord Legal Expenses Support Home resource hub Landlord resource hub Add a home to your car insurance Home Insurance FAQs Extreme weather support Storm Hub Freeze Hub Admiral App Easily manage your cover, view your documents, and much more with the Admiral app. Find out more",
+    "Travel Travel Travel Insurance Single Trip Insurance Annual Travel Insurance Over 50s Travel Insurance Over 80s Travel Insurance Specialist Cover Winter Sports Insurance Cruise Insurance Gadget Travel Insurance Enhanced Trip Disruption Support Travel Insurance FAQs Travel resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Pet Pet Pet Insurance Multi Pet Insurance Dog Insurance Puppy Insurance Cat Insurance Kitten Insurance Lifetime Pet Insurance Time Limited Pet Insurance Pet breeds Cockapoo Pet Insurance Cocker Spaniel Pet Insurance Shih Tzu Pet Insurance Support Pet resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Money Money Personal Loans Car Loans Car Finance Hire Purchase Homeowner Loans More Finance Home Improvement Loans Debt Consolidation Loan Support Money FAQs Money worries How to improve your credit score A good credit score can help you get a better deal on a loan, mortgage and other types of finance. Find out more",
+    "Business",
+    "Homepage",
+    "Car insurance",
+    "Personal Injury Cover",
+    "Peace of mind and extra financial protection for you.",
+    "Admiral's comprehensive car insurance already includes £5,000 of cover for the policyholder and partner (other named drivers not included), but Personal Injury Cover provides more.",
+    "For example, Personal Injury payments could help you offset loss of earnings due to being out of work or help with other unexpected costs following a motor accident.",
+    "Up to £50,000 Personal Injury Cover for policyholders and named drivers whether they're driving or a passenger in the insured car.",
+    "Up to £50,000 of cover against accidental death while in the insured car.",
+    "Up to £50,000 of cover against serious injury while in the insured car.",
+    "Cover for minor injuries such as fractures and burns.",
+    "Daily amounts of £200 or £400 if the customer is admitted or treated within A&E at a hospital for bodily injury as a result of their accident.",
+    "Personal Injury Cover runs alongside your active Admiral Car Insurance policy, which normally lasts for 12 months.",
+    "Of course we hope it never happens, but if you suffer an injury in a car accident, your confidence and lifestyle can take a knock too. Your Admiral Car Insurance policy already includes £5,000 Personal Injury Cover (comprehensive polices only) but cover is limited to the policyholder and partner and doesn't include other named drivers.",
+    "Adding our Personal Injury Cover provides the extra comfort of up to £50,000, giving you peace of mind and extra financial protection for you and your family. The benefit limit for Personal Injury Plus Cover is up to £100,000.",
+    "Personal Injury Cover/Personal Injury Plus Cover is normally added when buying your car insurance. Either select the option when you buy online or tell us when you call for a quote.",
+    "Up to £50,000 or £100,000 extra cover for Personal Injury Cover against accidental death, serious injury and minor injuries which includes fractures and burns",
+    "Covers the policyholder and named drivers Named drivers are covered whether they're driving or just a passenger in the insured car",
+    "Protection while travelling in other cars Provides Personal Injury Cover for the policyholder only while in any other privately insured car in the UK",
+    "Covered whether fault or non-fault You're covered whether the accident is your fault or not",
+    "Uninsured driver protection Covers you if you're hit in your car by an uninsured driver",
+    "Runs alongside life insurance Pays out alongside any other life insurance you may have",
+    "Please ensure you choose the PDF associated with your product's start date. You will need Adobe Acrobat Reader to view these files. You can download it for free from the Adobe website.",
+    "Personal Injury Cover",
+    "Insurance Product Information Document",
+    "Call our claims line",
+    "(Voted Personal Finance Awards Best Car Insurance Provider 2013-21)",
+    "(Voted Personal Finance Awards Best Car Insurance Provider 2013-21)",
+    "The smart way for drivers to get a great deal on car insurance.",
+    "Borrow or share a car – cover for one hour up to 60 days.",
+    "Most UK motorists can get a great deal on their car insurance with Admiral Car Insurance or earn extra discounts with MultiCar or MultiCover. But we also have other options for classic car drivers, van drivers, and those with EVs or hybrids. Find out more about who and what we cover below.",
+    "Young driver",
+    "New driver",
+    "Learner driver",
+    "Temporary driver",
+    "Delivery driver (car)",
+    "Car Insurance",
+    "Multi-Car Insurance",
+    "Black Box Insurance",
+    "Temporary Car Insurance",
+    "Electric Car Insurance",
+    "Learner Driver Insurance",
+    "Home Insurance",
+    "Contents Insurance",
+    "Buildings Insurance",
+    "Landlord Insurance",
+    "Renters Insurance",
+    "Flood Insurance",
+    "Optional Cover",
+    "Contents Calculator",
+    "Other Products",
+    "MultiCover Products",
+    "Personal Loans",
+    "Van Insurance",
+    "Travel Insurance",
+    "Pet Insurance",
+    "Breakdown Cover",
+    "Homeowner Loans",
+    "Car Finance",
+    "Policy Details",
+    "Make a claim",
+    "View policy books",
+    "Complaint information",
+    "Legal information",
+    "Insurance glossary",
+    "Magazine",
+    "Magazine – meet the team",
+    "About Us",
+    "Community & Sponsorship",
+    "Customer offers",
+    "Refer a friend",
+    "Jobs",
+    "Admiral App",
+    "© 1993-2026 Admiral",
+    "Sitemap",
+    "Contact Us",
+    "Accessibility",
+    "Conditions of Use",
+    "Privacy & Security",
+    "Press Office",
+    "Cookie Preferences",
+    "Admiral is a trading name of EUI Limited. (Reg No: 02686904). EUI Limited is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 309378). These details can be confirmed by visiting the Financial Services Register. EUI Limited acts for, and on behalf of, other regulated insurance companies. Further details may be provided on request. Admiral Money, Admiral Loans, Admiral Car Finance, Admiral Homeowner Loans, Admiral Mortgages, Admiral One and Finble are all trading names of Admiral Financial Services Limited (AFSL). Admiral Financial Services Limited (Reg No: 10255225) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 771862). These details can be confirmed by visiting the Financial Services Register Veygo and Admiral Business are trading names of Able Insurance Services Limited. Able Insurance Services Limited (Reg No: 2890075) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 311649). These details can be confirmed by visiting the Financial Services Register Admiral Group plc is registered in England and Wales at Tŷ Admiral, David Street, Cardiff. CF10 2EH (Reg No:03849958)."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Contact us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Help and Support",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "My account",
+      "href": "https://myaccount.admiral.com/login?_its=eJwljkuOwyAQRO9SaywBNm7gBllkMxew-LQ1SA6WMJlNFJ995GRZpXp69cJfyfBQibRRoxncSnaYxlUP1sowZEszx2hSzA4CRw-d4dG2fipyykkjDZ1bqPnUi51G65ZcGqe-yMRJxjk40tkaMk5aTWlOgSiYaSIIhN5bic9e9gr_Qt4foVR4QKDxyq1x-6b0G2rl7ZbhPw6Bo6X7nq8rXx0-1Q-vF_AWOErna66U1eb9DwxMQ9M"
+    },
+    {
+      "label": "Claims",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "Multi Cover",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Motor",
+      "href": "#"
+    },
+    {
+      "label": "Home",
+      "href": "#"
+    },
+    {
+      "label": "Travel",
+      "href": "#"
+    },
+    {
+      "label": "Pet",
+      "href": "#"
+    },
+    {
+      "label": "Money",
+      "href": "#"
+    },
+    {
+      "label": "Business",
+      "href": "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav"
+    },
+    {
+      "label": "Homepage",
+      "href": "/"
+    },
+    {
+      "label": "Car insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "Personal Injury Cover",
+      "href": "#"
+    },
+    {
+      "label": "Add Personal Injury",
+      "href": null
+    },
+    {
+      "label": "Get a Car Insurance Quote",
+      "href": null
+    },
+    {
+      "label": "Admiral's comprehensive car insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "Adobe website",
+      "href": "http://get.adobe.com/uk/reader/"
+    },
+    {
+      "label": "Personal Injury Cover",
+      "href": "#"
+    },
+    {
+      "label": "Insurance Product Information Document",
+      "href": "#"
+    },
+    {
+      "label": "Car Insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "MultiCar Insurance",
+      "href": "/multi-car-insurance"
+    },
+    {
+      "label": "LittleBox Insurance",
+      "href": "/black-box-insurance"
+    },
+    {
+      "label": "Temporary Car Insurance",
+      "href": "/car-insurance/temporary-car-insurance"
+    },
+    {
+      "label": "Car Insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "MultiCar",
+      "href": "/multi-car-insurance"
+    },
+    {
+      "label": "MultiCover",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Type of driver",
+      "href": "#"
+    },
+    {
+      "label": "Type of car",
+      "href": "#"
+    },
+    {
+      "label": "Policy upgrades",
+      "href": "#"
+    },
+    {
+      "label": "Young driver",
+      "href": "/car-insurance/young-driver"
+    },
+    {
+      "label": "New driver",
+      "href": "/car-insurance/new-driver-insurance"
+    },
+    {
+      "label": "Learner driver",
+      "href": "/learner-driver-insurance"
+    },
+    {
+      "label": "Temporary driver",
+      "href": "/car-insurance/temporary-car-insurance"
+    },
+    {
+      "label": "Delivery driver (car)",
+      "href": "/car-insurance/delivery-insurance"
+    },
+    {
+      "label": "Car Insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "Multi-Car Insurance",
+      "href": "/multi-car-insurance"
+    },
+    {
+      "label": "Black Box Insurance",
+      "href": "/black-box-insurance"
+    },
+    {
+      "label": "Temporary Car Insurance",
+      "href": "/car-insurance/temporary-car-insurance"
+    },
+    {
+      "label": "Electric Car Insurance",
+      "href": "/car-insurance/electric"
+    },
+    {
+      "label": "Learner Driver Insurance",
+      "href": "/learner-driver-insurance"
+    },
+    {
+      "label": "Home Insurance",
+      "href": "/home-insurance"
+    },
+    {
+      "label": "Contents Insurance",
+      "href": "/home-insurance/contents-insurance.php"
+    },
+    {
+      "label": "Buildings Insurance",
+      "href": "/home-insurance/buildings-insurance.php"
+    },
+    {
+      "label": "Landlord Insurance",
+      "href": "/home-insurance/landlord"
+    },
+    {
+      "label": "Renters Insurance",
+      "href": "/home-insurance/renters-insurance.php"
+    },
+    {
+      "label": "Flood Insurance",
+      "href": "/home-insurance/flood"
+    },
+    {
+      "label": "Optional Cover",
+      "href": "/home-insurance/optional-cover"
+    },
+    {
+      "label": "Contents Calculator",
+      "href": "/home-insurance/contents-calculator"
+    },
+    {
+      "label": "MultiCover Products",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Personal Loans",
+      "href": "/loans/personal-loans"
+    },
+    {
+      "label": "Van Insurance",
+      "href": "/van-insurance"
+    },
+    {
+      "label": "Travel Insurance",
+      "href": "/travel-insurance"
+    },
+    {
+      "label": "Pet Insurance",
+      "href": "/pet-insurance"
+    },
+    {
+      "label": "Breakdown Cover",
+      "href": "/breakdown-cover"
+    },
+    {
+      "label": "Homeowner Loans",
+      "href": "/homeowner-loans"
+    },
+    {
+      "label": "Car Finance",
+      "href": "/loans/car-finance"
+    },
+    {
+      "label": "Policy Details",
+      "href": "/myaccount"
+    },
+    {
+      "label": "Make a claim",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "View policy books",
+      "href": "/existing-customers/policy-documents.php"
+    },
+    {
+      "label": "Complaint information",
+      "href": "/contact-us/complaint-information.php"
+    },
+    {
+      "label": "Legal information",
+      "href": "/existing-customers/legal-information.php"
+    },
+    {
+      "label": "Insurance glossary",
+      "href": "/insurance-glossary"
+    },
+    {
+      "label": "Magazine",
+      "href": "/magazine"
+    },
+    {
+      "label": "Magazine – meet the team",
+      "href": "/magazine/meet-the-team"
+    },
+    {
+      "label": "About Us",
+      "href": "/about-us"
+    },
+    {
+      "label": "Community & Sponsorship",
+      "href": "/community-and-sponsorship"
+    },
+    {
+      "label": "Customer offers",
+      "href": "/existing-customers/customer-discount.php"
+    },
+    {
+      "label": "Refer a friend",
+      "href": "https://www.admiral.com/refer-a-friend"
+    },
+    {
+      "label": "Jobs",
+      "href": "https://admiraljobs.co.uk/"
+    },
+    {
+      "label": "Admiral App",
+      "href": "/myaccount/admiral-app"
+    },
+    {
+      "label": "Sitemap",
+      "href": "/sitemap.php"
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Accessibility",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "Conditions of Use",
+      "href": "/insurance/your-policy/conditions-of-use.php"
+    },
+    {
+      "label": "Privacy & Security",
+      "href": "/your-privacy-and-security"
+    },
+    {
+      "label": "Press Office",
+      "href": "/press-office"
+    },
+    {
+      "label": "Cookie Preferences",
+      "href": "/cookie-policy"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    }
+  ],
+  "links": [
+    "https://www.admiral.com/contact-us",
+    "https://www.admiral.com/help-support-hub",
+    "https://myaccount.admiral.com/login?_its=eJwljkuOwyAQRO9SaywBNm7gBllkMxew-LQ1SA6WMJlNFJ995GRZpXp69cJfyfBQibRRoxncSnaYxlUP1sowZEszx2hSzA4CRw-d4dG2fipyykkjDZ1bqPnUi51G65ZcGqe-yMRJxjk40tkaMk5aTWlOgSiYaSIIhN5bic9e9gr_Qt4foVR4QKDxyq1x-6b0G2rl7ZbhPw6Bo6X7nq8rXx0-1Q-vF_AWOErna66U1eb9DwxMQ9M",
+    "https://www.admiral.com/existing-customers/make-a-claim.php",
+    "https://www.admiral.com/",
+    "https://www.admiral.com/car-insurance/policy-upgrades/personal-injury-cover.php#",
+    "https://www.admiral.com/multicover-insurance",
+    "https://www.admiral.com/car-insurance",
+    "https://www.admiral.com/multi-car-insurance",
+    "https://www.admiral.com/van-insurance",
+    "https://www.admiral.com/black-box-insurance",
+    "https://www.admiral.com/car-insurance/electric",
+    "https://www.admiral.com/learner-driver-insurance",
+    "https://www.admiral.com/car-insurance/temporary-car-insurance",
+    "https://www.admiral.com/loans/car-finance",
+    "https://www.admiral.com/breakdown-cover",
+    "https://www.admiral.com/van-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/add-a-car-guide",
+    "https://www.admiral.com/car-insurance/FAQs",
+    "https://www.admiral.com/resources/motor-hub",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/home-insurance",
+    "https://www.admiral.com/home-insurance/landlord",
+    "https://www.admiral.com/home-insurance/contents-insurance.php",
+    "https://www.admiral.com/home-insurance/buildings-insurance.php",
+    "https://www.admiral.com/home-insurance/renters-insurance.php",
+    "https://www.admiral.com/home-insurance/optional-cover/family-legal-protection.php",
+    "https://www.admiral.com/home-insurance/optional-cover/home-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/accidental-damage.php",
+    "https://www.admiral.com/home-insurance/optional-cover/personal-possessions.php",
+    "https://www.admiral.com/home-insurance/optional-cover/bicycle-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/high-risk-items",
+    "https://www.admiral.com/home-insurance/landlord/landlord-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/landlord/landlord-legal-protection",
+    "https://www.admiral.com/home-insurance/home-resource-hub",
+    "https://www.admiral.com/resources/landlord-hub",
+    "https://www.admiral.com/add-a-home-guide",
+    "https://www.admiral.com/home-insurance/FAQs",
+    "https://www.admiral.com/weather/storm",
+    "https://www.admiral.com/weather/freeze",
+    "https://www.admiral.com/travel-insurance",
+    "https://www.admiral.com/travel-insurance/single-trip-insurance.php",
+    "https://www.admiral.com/travel-insurance/annual-travel-insurance.php",
+    "https://www.admiral.com/travel-insurance/over-50s-travel-insurance",
+    "https://www.admiral.com/travel-insurance/travel-insurance-over-80s",
+    "https://www.admiral.com/travel-insurance/winter-sports-insurance.php",
+    "https://www.admiral.com/travel-insurance/cruise-insurance.php",
+    "https://www.admiral.com/travel-insurance/gadget-insurance.php",
+    "https://www.admiral.com/travel-insurance/travel-disruption-insurance",
+    "https://www.admiral.com/travel-insurance/FAQs",
+    "https://www.admiral.com/resources/travel-hub",
+    "https://www.admiral.com/refer-a-friend",
+    "https://www.admiral.com/pet-insurance",
+    "https://www.admiral.com/pet-insurance/multi-pet-insurance",
+    "https://www.admiral.com/pet-insurance/dog-insurance",
+    "https://www.admiral.com/pet-insurance/puppy-insurance",
+    "https://www.admiral.com/pet-insurance/cat-insurance",
+    "https://www.admiral.com/pet-insurance/kitten-insurance",
+    "https://www.admiral.com/pet-insurance/lifetime-pet-insurance",
+    "https://www.admiral.com/pet-insurance/time-limited-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cockapoo-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cocker-spaniel-pet-insurance",
+    "https://www.admiral.com/pet-insurance/shih-tzu-pet-insurance",
+    "https://www.admiral.com/resources/pet-hub",
+    "https://www.admiral.com/loans/personal-loans",
+    "https://www.admiral.com/loans/car-finance/car-loans",
+    "https://www.admiral.com/loans/car-finance/hire-purchase",
+    "https://www.admiral.com/homeowner-loans",
+    "https://www.admiral.com/loans/personal-loans/home-improvements",
+    "https://www.admiral.com/loans/debt-consolidation-loan",
+    "https://money.admiral.com/help?_its=eJwljkuOwyAQRO9SaywBNm7gBllkMxew-LQ1SA6WMJlNFJ995GRZpXp69cJfyfBQibRRoxncSnaYxlUP1sowZEszx2hSzA4CRw-d4dG2fipyykkjDZ1bqPnUi51G65ZcGqe-yMRJxjk40tkaMk5aTWlOgSiYaSIIhN5bic9e9gr_Qt4foVR4QKDxyq1x-6b0G2rl7ZbhPw6Bo6X7nq8rXx0-1Q-vF_AWOErna66U1eb9DwxMQ9M",
+    "https://money.admiral.com/help/financial-support?_its=eJwljkuOwyAQRO9SaywBNm7gBllkMxew-LQ1SA6WMJlNFJ995GRZpXp69cJfyfBQibRRoxncSnaYxlUP1sowZEszx2hSzA4CRw-d4dG2fipyykkjDZ1bqPnUi51G65ZcGqe-yMRJxjk40tkaMk5aTWlOgSiYaSIIhN5bic9e9gr_Qt4foVR4QKDxyq1x-6b0G2rl7ZbhPw6Bo6X7nq8rXx0-1Q-vF_AWOErna66U1eb9DwxMQ9M",
+    "https://www.admiral.com/loans/improve-your-credit-score",
+    "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav",
+    "https://www.admiral.com/car-insurance/policy-upgrades/breakdown-cover/breakdown-assist.php",
+    "https://www.admiral.com/car-insurance/policy-upgrades/personal-injury-cover.php",
+    "tel:+443300294469",
+    "https://www.admiral.com/scQuoteStatus.php",
+    "https://www.admiral.com/mcQuoteStatus.php",
+    "https://www.admiral.com/bbQuoteStatus.php",
+    "http://get.adobe.com/uk/reader/",
+    "https://www.admiral.com/car-insurance/young-driver",
+    "https://www.admiral.com/car-insurance/new-driver-insurance",
+    "https://www.admiral.com/car-insurance/delivery-insurance",
+    "https://www.admiral.com/car-insurance/policy-upgrades/hire-vehicle-cover.php",
+    "https://www.admiral.com/car-insurance/policy-upgrades/motor-legal-protection.php",
+    "https://www.admiral.com/scQuoteStatus.php?r=t",
+    "https://www.admiral.com/mcQuoteStatus.php?r=t",
+    "https://www.admiral.com/bbQuoteStatus.php?r=t",
+    "tel:03332202057",
+    "https://www.admiral.com/home-insurance/flood",
+    "https://www.admiral.com/home-insurance/optional-cover",
+    "https://www.admiral.com/home-insurance/contents-calculator",
+    "https://www.admiral.com/myaccount",
+    "https://www.admiral.com/existing-customers/policy-documents.php",
+    "https://www.admiral.com/contact-us/complaint-information.php",
+    "https://www.admiral.com/existing-customers/legal-information.php",
+    "https://www.admiral.com/insurance-glossary",
+    "https://www.admiral.com/magazine",
+    "https://www.admiral.com/magazine/meet-the-team",
+    "https://www.admiral.com/about-us",
+    "https://www.admiral.com/community-and-sponsorship",
+    "https://www.admiral.com/existing-customers/customer-discount.php",
+    "https://admiraljobs.co.uk/",
+    "https://twitter.com/admiralUK",
+    "https://www.youtube.com/user/AdmiralInsurance",
+    "https://www.facebook.com/admiralUK",
+    "https://www.admiral.com/sitemap.php",
+    "https://www.admiral.com/insurance/your-policy/conditions-of-use.php",
+    "https://www.admiral.com/your-privacy-and-security",
+    "https://www.admiral.com/press-office",
+    "https://www.admiral.com/cookie-policy",
+    "https://www.fca.org.uk/register"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/logos/admiral-logo.svg",
+        "alt": "Admiral Insurance logo",
+        "w": 300,
+        "h": 93
+      }
+    ],
+    "allImgCount": 1,
+    "cssBackgrounds": [
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/product-pods/product-pods-single-car.jpg",
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/product-pods/product-pods-multicar.jpg"
+    ],
+    "modals": [
+      "close Call for a quote 0330 029 4469 Mon to Fri: 08:00 – 18:00 Sat: 09:00 – 17:00 Sun: 09:30 – 16:00 Calls to 03 numbers will cost no more than calls to national geographic numbers (starting 01 or 02) from both mobiles and landlines.",
+      "close Start a quote. Choose the type of policy that suits your needs from the options below or retrieve a previous quote. single car multicar black box",
+      "close Retrieve a quote. Choose the type of policy that suits your needs from the options below or start a new quote. single car multicar black box",
+      "close Need to make a claim? 0333 220 2057 Calls to 03 numbers will cost no more than calls to national geographic numbers (starting 01 or 02) from both mobiles and landlines.",
+      "close Choose the PDF relevant to your policy start date..."
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--animate-duration": "1s",
+    "--animate-delay": "1s",
+    "--animate-repeat": "1"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 29,
+    "mainTextLen": 36151,
+    "realImageCount": 1,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/car-insurance-policy-upgrades-personal-injury-cover-php.png",
+  "renderedHtml": "pages/car-insurance-policy-upgrades-personal-injury-cover-php.html"
+}

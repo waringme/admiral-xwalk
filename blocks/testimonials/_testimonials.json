@@ -9,7 +9,8 @@
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
               "name": "Testimonials",
-              "filter": "testimonials"
+              "filter": "testimonials",
+              "model": "testimonials"
             }
           }
         }
@@ -32,6 +33,23 @@
     }
   ],
   "models": [
+    {
+      "id": "testimonials",
+      "fields": [
+        {
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Style",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Expert quote (white card, name and role above the quote)",
+              "value": "expert"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "testimonial",
       "fields": [

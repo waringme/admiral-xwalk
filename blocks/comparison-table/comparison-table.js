@@ -5,8 +5,8 @@
  *
  * Model (xwalk container, _comparison-table.json): one row per table-row item —
  *   cell 1   label   row heading; empty on the first row → that row is the column headings
- *   cell 2-4 value1-3  cell values; `x` / `✕` / `-` → "not included" cross. A "/" in a
- *                    heading breaks the line (live: "Admiral / Gold").
+ *   cell 2-4 value1-3  cell values; `x` / `✕` / `-` → "not included" cross, `✓` / `yes` → tick.
+ *                    A "/" in a heading breaks the line (live: "Admiral / Gold").
  * Columns that are empty in every row are dropped. The table scrolls sideways on small screens.
  * Authored rows → table rows; row instrumentation moves to the <tr> (EW1 moved, not rebuilt text).
  */
@@ -21,9 +21,17 @@ function moveInstrumentation(from, to) {
 }
 
 const CROSS = /^(x|✕|×|-|–)$/i;
+const TICK = /^(✓|✔|yes)$/i;
 
 function fill(cell, source, heading) {
   const text = source.textContent.trim();
+  if (TICK.test(text)) {
+    const tick = document.createElement('span');
+    tick.className = 'tick';
+    tick.setAttribute('aria-label', 'Included');
+    cell.append(tick);
+    return;
+  }
   if (CROSS.test(text)) {
     const cross = document.createElement('span');
     cross.className = 'cross';

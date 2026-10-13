@@ -112,6 +112,19 @@ export function decorateButtons(main) {
 }
 
 /**
+ * Section anchors: a section's Name (section metadata name) becomes its id, so in-page links
+ * (#whats-covered quick links, #our-data) keep working when headings are reworded or the
+ * heading comes from a content fragment. An id already on the page is never duplicated.
+ * @param {Element} main The main element
+ */
+function decorateSectionAnchors(main) {
+  main.querySelectorAll('.section[data-name]').forEach((section) => {
+    const id = section.dataset.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    if (id && !section.id && !document.getElementById(id)) section.id = id;
+  });
+}
+
+/**
  * Section background images: "Background image" (section metadata background) covers the section
  * from tablet up; "Background image (mobile)" (background-mobile) shows below the content on
  * mobile (live: the travel landing hero's Alfie and Annie composite, .image-bottom-mobile).
@@ -145,6 +158,7 @@ export function decorateMain(main) {
   buildAutoBlocks(main);
   decorateSections(main);
   decorateSectionBackgrounds(main);
+  decorateSectionAnchors(main);
   decorateBlocks(main);
   decorateButtons(main);
 }

@@ -1,0 +1,11 @@
+{
+  "model": "feature-list",
+  "title": "What type of cover do I need?",
+  "introduction": "<p>We offer a few different types of car insurance. Check out what works best for you below.</p>",
+  "features": [
+    "car/cover-types/third-party-only",
+    "car/cover-types/third-party-fire-and-theft",
+    "car/cover-types/comprehensive-car-insurance"
+  ],
+  "footnote": ""
+}
