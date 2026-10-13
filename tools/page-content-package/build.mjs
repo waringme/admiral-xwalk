@@ -42,7 +42,7 @@ const HUB = '/resources/travel-hub/travel-planning';
 const SETS = {
   travel: {
     name: 'admiral-xwalk-travel-pages',
-    version: '1.0.3',
+    version: '1.0.4',
     pages: () => [
       '/index', '/resources', '/resources/travel-hub', HUB,
       ...execFileSync('find', ['-L', `content${HUB}`, '-mindepth', '1', '-name', '*.plain.html'], {
@@ -58,7 +58,7 @@ const SETS = {
   },
   templates: {
     name: 'admiral-xwalk-templates',
-    version: '1.0.0',
+    version: '1.0.1',
     pages: () => ['/templates', '/templates/article'],
     description: () => 'Authoring templates under the site root: /templates and /templates/article (the travel hub article layout with boilerplate copy and [placeholders]; copy it into the folder where the new article belongs). Replaces each page\'s content (jcr:content); missing pages are created.',
   },
@@ -68,6 +68,8 @@ if (!SET) throw new Error(`unknown set ${process.argv[2]}: ${Object.keys(SETS).j
 const { name: NAME, version: VERSION } = SET;
 const PAGES = SET.pages();
 const REFERENCE_FIELDS = ['folder', 'reference', 'nav'];
+const DATE_FIELDS = ['published', 'updated'];
+const NUMBER_FIELDS = ['read-time', 'card-order'];
 
 const models = JSON.parse(readFileSync(join(ROOT, 'component-models.json'), 'utf8'));
 const definition = JSON.parse(readFileSync(join(ROOT, 'component-definition.json'), 'utf8'));
@@ -133,6 +135,14 @@ function clean(xml) {
   out = out.replace(/ (image|mobileImage|fileReference)=":([a-z0-9-]+):"/g, (m, f, name) => {
     const rel = `travel/${name}.svg`;
     return existsSync(join(ROOT, 'stardust/prototypes/assets/img', rel)) ? ` ${f}="/content/dam/admiral-xwalk/images/${rel}"` : m;
+  });
+  // md2jcr writes every page property as a string: the date-time and number fields of the page
+  // model need JCR Date / Long values, else the Sites console properties dialog rejects the page
+  DATE_FIELDS.forEach((f) => {
+    out = out.replace(new RegExp(` ${f}="(\\d{4}-\\d{2}-\\d{2})"`, 'g'), ` ${f}="{Date}$1T00:00:00.000Z"`);
+  });
+  NUMBER_FIELDS.forEach((f) => {
+    out = out.replace(new RegExp(` ${f}="(\\d+)"`, 'g'), ` ${f}="{Long}$1"`);
   });
   REFERENCE_FIELDS.forEach((f) => {
     out = out.replace(new RegExp(` ${f}="(/(?!content/)[^"]*)"`, 'g'), (m, p) => ` ${f}="${SITE}${p === '/' ? '' : p}"`);

@@ -7,9 +7,15 @@ Every filter root is a page's jcr:content with mode="merge_properties": missing 
 added, existing properties and all page content (components, children) are left untouched.
 
   pages: /content/admiral-xwalk/…   →   dist/admiral-xwalk-page-properties-<version>.zip
+
+With --types it builds admiral-xwalk-page-property-types instead: only the date and number
+properties (published, updated, read-time, card-order) as JCR Date / Long, mode="update_properties"
+(those properties are overwritten, every other property and the page content are untouched). Pages
+whose upload stored them as strings fail to save in the Sites console page properties dialog.
 """
 import html
 import re
+import sys
 import zipfile
 from pathlib import Path
 
@@ -17,7 +23,9 @@ ROOT = Path(__file__).resolve().parents[2]
 CONTENT = ROOT / 'content'
 DIST = Path(__file__).resolve().parent / 'dist'
 SITE = '/content/admiral-xwalk'
-NAME, GROUP, VERSION = 'admiral-xwalk-page-properties', 'admiral-xwalk', '1.0.1'
+TYPES = '--types' in sys.argv
+NAME, GROUP, VERSION = (('admiral-xwalk-page-property-types', 'admiral-xwalk', '1.0.0') if TYPES
+                        else ('admiral-xwalk-page-properties', 'admiral-xwalk', '1.0.1'))
 
 # metadata row label -> (page property, JCR type)
 PROPS = {
@@ -59,20 +67,26 @@ def main():
             if label in PROPS:
                 name, kind = PROPS[label]
                 v = value(kind, raw)
-                if v:
+                if v and (not TYPES or kind in ('date', 'long')):
                     props[name] = v
         if props:
             pages[f'{SITE}{rel}'] = props
-    filters = ''.join(f'    <filter root="{p}/jcr:content" mode="merge_properties"/>\n' for p in pages)
+    mode = 'update_properties' if TYPES else 'merge_properties'
+    filters = ''.join(f'    <filter root="{p}/jcr:content" mode="{mode}"/>\n' for p in pages)
     files = {
         'META-INF/vault/filter.xml': f'<?xml version="1.0" encoding="UTF-8"?>\n<workspaceFilter version="1.0">\n{filters}</workspaceFilter>\n',
         'META-INF/vault/properties.xml': (
             '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
             '<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">\n<properties>\n'
             f'<entry key="name">{NAME}</entry>\n<entry key="group">{GROUP}</entry>\n<entry key="version">{VERSION}</entry>\n'
-            f'<entry key="description">Adds the custom page properties (template, header variant, navigation, robots, '
-            f'card fields, category, article author and dates) to {len(pages)} admiral-xwalk pages. merge_properties: '
-            'existing properties and page content are not changed.</entry>\n'
+            + (f'<entry key="description">Stores the date and number page properties (published, updated, read time, '
+               f'card order) as JCR Date / Long on {len(pages)} admiral-xwalk pages, so the Sites console page '
+               'properties dialog accepts them. update_properties: only these properties are overwritten.</entry>\n'
+               if TYPES else
+               f'<entry key="description">Adds the custom page properties (template, header variant, navigation, robots, '
+               f'card fields, category, article author and dates) to {len(pages)} admiral-xwalk pages. merge_properties: '
+               'existing properties and page content are not changed.</entry>\n')
+            +
             '<entry key="requiresRoot">false</entry>\n<entry key="packageType">content</entry>\n</properties>\n'),
     }
     for path, props in pages.items():

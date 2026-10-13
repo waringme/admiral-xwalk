@@ -158,3 +158,8 @@ content/*.plain.html, stardust/eds-conversion-log.md, stardust/runtime-contract.
 - `/content/admiral-xwalk/templates` (folder page, noindex) and `/templates/article`: the best-time-to-book-holiday-flight layout (breadcrumbs, article title, article body with h2/h3/lists, related articles cards-folder, travel insurance promo fragment) with boilerplate copy and [placeholders]; generator `stardust/.work/replica/content_templates.py`.
 - Text page properties carry placeholders; published / updated / read-time / card-order (date and number fields) and category are left empty. No robots on the article template, so copies are indexable; `/templates/**` is excluded from the query index instead (never listed in cards).
 - Package: `node tools/page-content-package/build.mjs templates` → `admiral-xwalk-templates-1.0.0.zip` (the builder now takes a set: travel | templates).
+
+## 2026-10-13 — Sites console page properties: "invalid payload" on every page
+- Page model: published / updated used `valueType: "date-time"` (not a UE value type) → `date` with valueFormat `YYYY-MM-DD[T]HH:mm:ss.000-00:00`; Template select gets a Default ("") option so its empty default is a valid choice.
+- Stored values: md2jcr wrote published / updated / read-time / card-order as strings; the page content package now writes {Date} / {Long} (travel pages 1.0.4, templates 1.0.1). Pages outside it (About Us children) get them from the new `admiral-xwalk-page-property-types-1.0.0.zip` (update_properties, only those 4 properties; `build.py --types`).
+- Article dates formatted in UTC (JCR dates render as ISO timestamps).
