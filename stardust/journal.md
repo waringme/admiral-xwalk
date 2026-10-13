@@ -153,3 +153,8 @@ content/*.plain.html, stardust/eds-conversion-log.md, stardust/runtime-contract.
 - New CF model Media Text (title, text, image, imageAlt), fragment `/content/dam/admiral-xwalk/fragments/travel/whats-travel-insurance` (data from cf-data.py, SEO side panel), persisted query `admiral-xwalk/media-text-by-path`. CF package 1.1.0.
 - content-fragment block renders Media Text as the media-text panel (Display `image-right` swaps sides); geometry matched to live .side-image (494 / 514 tall at 1440 / 360; image cropped to the panel, 164px strip on mobile).
 - SEO + PPC pages use the content-fragment block instead of the fragment block; the page fragment `/fragments/travel/whats-travel-insurance` is no longer generated or packaged (page package 1.0.3, 29 pages). The old page stays in AEM until deleted there.
+
+## 2026-10-13 — Article template under /templates
+- `/content/admiral-xwalk/templates` (folder page, noindex) and `/templates/article`: the best-time-to-book-holiday-flight layout (breadcrumbs, article title, article body with h2/h3/lists, related articles cards-folder, travel insurance promo fragment) with boilerplate copy and [placeholders]; generator `stardust/.work/replica/content_templates.py`.
+- Text page properties carry placeholders; published / updated / read-time / card-order (date and number fields) and category are left empty. No robots on the article template, so copies are indexable; `/templates/**` is excluded from the query index instead (never listed in cards).
+- Package: `node tools/page-content-package/build.mjs templates` → `admiral-xwalk-templates-1.0.0.zip` (the builder now takes a set: travel | templates).

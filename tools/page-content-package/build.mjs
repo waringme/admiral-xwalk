@@ -16,7 +16,9 @@
  * Filter roots are each page's jcr:content (mode replace): page content is replaced, child pages
  * and every other page are untouched; missing pages are created.
  *
- * Usage: node tools/page-content-package/build.mjs   →   tools/page-content-package/dist/*.zip
+ * Usage: node tools/page-content-package/build.mjs [set]  →  tools/page-content-package/dist/*.zip
+ *   travel     (default) the travel demo pages
+ *   templates  the authoring templates under /templates (the article template)
  */
 import {
   existsSync, mkdirSync, readFileSync, writeFileSync,
@@ -36,20 +38,35 @@ const { md2jcr } = await import(req.resolve('@adobe/helix-md2jcr'));
 
 const SITE = '/content/admiral-xwalk';
 const HOST = 'https://main--admiral-xwalk--waringme.aem.page';
-const NAME = 'admiral-xwalk-travel-pages';
-const VERSION = '1.0.3';
 const HUB = '/resources/travel-hub/travel-planning';
-const PAGES = [
-  '/index', '/resources', '/resources/travel-hub', HUB,
-  ...execFileSync('find', ['-L', `content${HUB}`, '-mindepth', '1', '-name', '*.plain.html'], {
-    cwd: ROOT, encoding: 'utf8',
-  })
-    .trim()
-    .split('\n')
-    .map((f) => f.slice('content'.length, -'.plain.html'.length))
-    .sort(),
-  '/travel-insurance', '/travel-insurance/generic',
-];
+const SETS = {
+  travel: {
+    name: 'admiral-xwalk-travel-pages',
+    version: '1.0.3',
+    pages: () => [
+      '/index', '/resources', '/resources/travel-hub', HUB,
+      ...execFileSync('find', ['-L', `content${HUB}`, '-mindepth', '1', '-name', '*.plain.html'], {
+        cwd: ROOT, encoding: 'utf8',
+      })
+        .trim()
+        .split('\n')
+        .map((f) => f.slice('content'.length, -'.plain.html'.length))
+        .sort(),
+      '/travel-insurance', '/travel-insurance/generic',
+    ],
+    description: (n) => `Travel demo pages as Universal Editor pages (${n}): homepage, /resources, the travel resource hub, the travel-planning hub with its 4 category pages and 19 pages, /travel-insurance and /travel-insurance/generic (What's travel insurance? is a content fragment: CF package 1.1.0). Replaces each page's content (jcr:content); child pages are untouched; missing pages are created.`,
+  },
+  templates: {
+    name: 'admiral-xwalk-templates',
+    version: '1.0.0',
+    pages: () => ['/templates', '/templates/article'],
+    description: () => 'Authoring templates under the site root: /templates and /templates/article (the travel hub article layout with boilerplate copy and [placeholders]; copy it into the folder where the new article belongs). Replaces each page\'s content (jcr:content); missing pages are created.',
+  },
+};
+const SET = SETS[process.argv[2] || 'travel'];
+if (!SET) throw new Error(`unknown set ${process.argv[2]}: ${Object.keys(SETS).join(', ')}`);
+const { name: NAME, version: VERSION } = SET;
+const PAGES = SET.pages();
 const REFERENCE_FIELDS = ['folder', 'reference', 'nav'];
 
 const models = JSON.parse(readFileSync(join(ROOT, 'component-models.json'), 'utf8'));
@@ -140,7 +157,7 @@ files['META-INF/vault/properties.xml'] = `<?xml version="1.0" encoding="UTF-8" s
 <entry key="name">${NAME}</entry>
 <entry key="group">admiral-xwalk</entry>
 <entry key="version">${VERSION}</entry>
-<entry key="description">Travel demo pages as Universal Editor pages (${PAGES.length}): homepage, /resources, the travel resource hub, the travel-planning hub with its 4 category pages and 19 pages, /travel-insurance and /travel-insurance/generic (What's travel insurance? is a content fragment: CF package 1.1.0). Replaces each page's content (jcr:content); child pages are untouched; missing pages are created.</entry>
+<entry key="description">${SET.description(PAGES.length)}</entry>
 <entry key="requiresRoot">false</entry>
 <entry key="packageType">content</entry>
 </properties>

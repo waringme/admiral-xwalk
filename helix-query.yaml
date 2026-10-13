@@ -6,6 +6,8 @@ indices:
       - '/**'
     exclude:
       - '/**.json'
+      - '/templates'
+      - '/templates/**'
     target: /query-index.json
     properties:
       lastModified:
