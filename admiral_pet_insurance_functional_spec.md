@@ -1,6 +1,6 @@
-# Admiral Car Insurance Functional Spec
+# Admiral Pet Insurance Functional Spec
 
-Source page: <https://www.admiral.com/car-insurance>
+Source page: <https://www.admiral.com/pet-insurance>
 
 ## Instructions
 
@@ -17,11 +17,9 @@ Source page: <https://www.admiral.com/car-insurance>
 | 3 | ![Section 3](images/image3.png) | Content Fragment block |
 | 4 | ![Section 4](images/image4.png) | Content Fragment block |
 | 5 | ![Section 5](images/image5.png) | Content Fragment block |
-| 6 | ![Section 6](images/image6.png) | Content Fragment block |
-| 7 | ![Section 7](images/image7.png) | Content Fragment block The table needs to be driven by content fragments but also easy to manage and author |
-| 8 | ![Section 8](images/image8.png) | Card folder block |
-| 9 | ![Section 9](images/image9.png) | Content Fragment block |
-| 10 | ![Section 10](images/image10.png) | Carousel block |
-| 11 | ![Section 11](images/image11.png) | Content fragment block |
-| 12 | ![Section 12](images/image12.png) | Content fragment block the arrows change to face downwards when the screen size is reduced |
-| 13 | ![Section 13](images/image13.png) | Card folder block |
+| 6 | ![Section 6](images/image6.png) | Content Fragment block The table needs to be driven by content fragments but also easy to manage and author |
+| 7 | ![Section 7](images/image7.png) | Card folder block |
+| 8 | ![Section 8](images/image8.png) | Content Fragment block |
+| 9 | ![Section 9](images/image9.png) | Carousel block |
+| 10 | ![Section 10](images/image10.png) | Content fragment block the arrows change to face downwards when the screen size is reduced |
+| 11 | ![Section 11](images/image11.png) | Card folder block |
