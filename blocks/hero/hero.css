@@ -226,3 +226,10 @@ main .hero-container > .hero-wrapper {
     line-height: 28px;
   }
 }
+
+/* landing (live hero-banner--C): the section carries the landing-hero design (styles.css); the
+   block only drops its own photo-hero ground */
+.hero.landing {
+  overflow: visible;
+  background: none;
+}

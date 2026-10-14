@@ -572,12 +572,14 @@ main .section.landing-hero > div {
 }
 
 /* live .hero-banner--C .colour-sea-blue: title, headline and caption in sea blue (#005485) */
-main .section.landing-hero > .default-content-wrapper {
+main .section.landing-hero > :is(.default-content-wrapper, .hero-wrapper) {
   max-width: 500px;
+  margin: 0 auto;
   padding: 20px 10px 22px;
 }
 
-main .section.landing-hero > .default-content-wrapper > :last-child { padding-bottom: 0; }
+main .section.landing-hero > .default-content-wrapper > :last-child,
+main .section.landing-hero .hero.landing > :last-child { padding-bottom: 0; }
 
 main .section.landing-hero h1 {
   margin: 0 auto 15px;
@@ -687,7 +689,17 @@ main .section.sea-blue a.button:any-link {
     line-height: 48px;
   }
 
-  main .section.landing-hero > .default-content-wrapper {
+  /* live .hero-banner--C: at least 420px, growing with the width (432px at 1440, 510px at 1920);
+     the copy is centred vertically */
+  main .section.landing-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: max(420px, calc(198px + 16.25vw));
+  }
+
+  main .section.landing-hero > :is(.default-content-wrapper, .hero-wrapper) {
+    width: 100%;
     max-width: 708px;
     padding: 32px 24px 50px;
   }

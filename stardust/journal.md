@@ -173,3 +173,9 @@ content/*.plain.html, stardust/eds-conversion-log.md, stardust/runtime-contract.
 - /templates/product-landing: the car layout, every shared section a content-fragment block to re-point.
 - Packages (new nodes only): admiral-xwalk-car-images-1.0.0 (images/car), admiral-xwalk-car-cf-1.0.0, admiral-xwalk-car-pages-1.0.0 (14 pages).
 - Removed the committed local mock /query-index.json (from 7ea8e8a; it would shadow the real index) and gitignored it.
+
+## 2026-10-14 — Car hero as the Hero block (spec #1)
+- Published /car-insurance checked on preview with real publish GraphQL: 25 sections, all 12 fragments load, cards 4 + 3, product pod page links resolve, no errors. The mobile hero image failed at publish time only (asset is installed and served).
+- Spec #1 says "Hero block": hero block gains a `landing` style (image = desktop composite, mobileImage under the copy; styles its section as the landing-hero). Used on /car-insurance, the composite heroes of the child pages and /templates/product-landing.
+- landing-hero desktop: min-height max(420px, 198px + 16.25vw), copy centred vertically (live: 432 at 1440, 510 at 1920); car hero now within 3px of live, travel hero unchanged.
+- Car pages package 1.0.1.

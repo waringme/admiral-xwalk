@@ -64,6 +64,10 @@
             {
               "name": "Panel left",
               "value": "left"
+            },
+            {
+              "name": "Landing (centred copy over a composite image, ice blue)",
+              "value": "landing"
             }
           ]
         }

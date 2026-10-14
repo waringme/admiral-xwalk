@@ -8,6 +8,9 @@
  *   3. text         heading (h1 on inner pages; the homepage keeps the live h2 — R-01) +
  *                   paragraph(s) + optional CTA (<strong><a> → a.button.primary)
  * Variant class `left`: panel left-aligned, bespoke 62.5vw mobile image (homepage).
+ * Variant class `landing` (live hero-banner--C, e.g. car insurance): centred copy on ice blue
+ * over the desktop composite; the mobile image sits under the copy. It styles its section as
+ * the landing-hero (the same design as the travel landing pages' section style).
  * Authored nodes are moved into slots, never rebuilt (EW1).
  */
 
@@ -16,6 +19,38 @@ function wrap(className, ...nodes) {
   div.className = className;
   div.append(...nodes);
   return div;
+}
+
+const srcOf = (pic) => {
+  const img = pic && (pic.tagName === 'IMG' ? pic : pic.querySelector('img'));
+  return img ? img.getAttribute('src') : '';
+};
+
+/** `landing`: the copy stays in the block, the images become the section's background */
+function landing(block, desktopPic, mobilePic, copyCell) {
+  const section = block.closest('.section');
+  const desktop = srcOf(desktopPic);
+  const mobile = srcOf(mobilePic);
+  block.replaceChildren(...(copyCell ? copyCell.children : []));
+  if (!section) return;
+  section.classList.add('landing-hero');
+  if (!desktop && !mobile) return;
+  const picture = document.createElement('picture');
+  picture.className = 'section-background';
+  picture.setAttribute('aria-hidden', 'true');
+  if (desktop) {
+    const source = document.createElement('source');
+    source.media = '(width >= 768px)';
+    source.srcset = desktop;
+    picture.append(source);
+  }
+  const img = document.createElement('img');
+  img.src = mobile || desktop;
+  img.alt = '';
+  img.fetchPriority = 'high';
+  picture.append(img);
+  section.classList.add('has-background', ...(mobile ? ['has-background-mobile'] : []));
+  section.append(picture);
 }
 
 export default function decorate(block) {
@@ -33,6 +68,10 @@ export default function decorate(block) {
   });
 
   const [desktopPic, mobilePic] = pictures;
+  if (block.classList.contains('landing')) {
+    landing(block, desktopPic, mobilePic, copyCell);
+    return;
+  }
   const media = wrap('hero-media');
   if (desktopPic) {
     media.append(desktopPic);

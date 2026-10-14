@@ -59,7 +59,7 @@ const SETS = {
   },
   car: {
     name: 'admiral-xwalk-car-pages',
-    version: '1.0.0',
+    version: '1.0.1',
     pages: () => [
       '/car-insurance',
       ...execFileSync('find', ['-L', 'content/car-insurance', '-name', '*.plain.html'], { cwd: ROOT, encoding: 'utf8' })
