@@ -1,0 +1,9 @@
+{
+  "model": "feature-list",
+  "title": "How we calculate your pet insurance cost",
+  "introduction": "",
+  "features": [
+    "pet/cost-factors/what-affects-the-cost"
+  ],
+  "footnote": ""
+}

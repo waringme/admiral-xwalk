@@ -578,6 +578,10 @@ main .section.landing-hero > :is(.default-content-wrapper, .hero-wrapper) {
   padding: 20px 10px 22px;
 }
 
+/* a hero block followed by default content (the pet hero's Defaqto badge) reads as one panel */
+main .section.landing-hero > .hero-wrapper:has(+ .default-content-wrapper) { padding-bottom: 0; }
+main .section.landing-hero > .hero-wrapper + .default-content-wrapper { padding-top: 0; }
+
 main .section.landing-hero > .default-content-wrapper > :last-child,
 main .section.landing-hero .hero.landing > :last-child { padding-bottom: 0; }
 
@@ -677,6 +681,19 @@ main .section.sea-blue .button-wrapper {
 main .section.sea-blue a.button:any-link {
   border-color: #fff;
   background: none;
+}
+
+/* quick links on a light ground (style quick-links, e.g. pet insurance on ice blue): inline sea-blue
+   outline buttons */
+main .section.quick-links .button-wrapper {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+main .section.quick-links:not(.sea-blue) a.button:any-link {
+  border-color: #005485;
+  background: none;
+  color: #005485;
 }
 
 @media (width >= 768px) {

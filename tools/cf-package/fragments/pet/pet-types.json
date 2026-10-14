@@ -1,0 +1,9 @@
+{
+  "model": "product-pod-list",
+  "title": "What type of pet do you want to insure?",
+  "introduction": "",
+  "pods": [
+    "pet/product-pods/cat-insurance",
+    "pet/product-pods/dog-insurance"
+  ]
+}

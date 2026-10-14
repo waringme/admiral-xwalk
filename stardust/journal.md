@@ -179,3 +179,11 @@ content/*.plain.html, stardust/eds-conversion-log.md, stardust/runtime-contract.
 - Spec #1 says "Hero block": hero block gains a `landing` style (image = desktop composite, mobileImage under the copy; styles its section as the landing-hero). Used on /car-insurance, the composite heroes of the child pages and /templates/product-landing.
 - landing-hero desktop: min-height max(420px, 198px + 16.25vw), copy centred vertically (live: 432 at 1440, 510 at 1920); car hero now within 3px of live, travel hero unchanged.
 - Car pages package 1.0.1.
+
+## 2026-10-14 — Pet insurance page (admiral_pet_insurance_functional_spec.md)
+- The spec in the repo root (commit 6317648) is for /pet-insurance; the car build came from the earlier car .docx. Both stand.
+- Spec gaps, decided with the user: row 5's screenshot was the car "Do I need car insurance?" → the pet page's "What does pet insurance cover?" text panel; row 7 says Card folder but shows the "What doesn't pet insurance cover?" accordion → accordion content fragment.
+- Captured /pet-insurance + Lifetime, Time Limited, Cat, Dog, MultiPet, PawSquad + 3 pet-hub guides (→ /pet-insurance/guides). Images: fetch-product-images.py (PRODUCT=pet; reuses installed travel + car images; @2x stripped for -mobile composites).
+- Content fragments (fragments/pet, existing models only): key benefits (pods), why do I need / vet helpline / 12 months for 10 / cost (Media Text), what does it cover (text), cover types (Feature List, new `tabs` display), what isn't covered / quote checklist / cost factors / FAQs / questions answered (accordion), claim steps (steps arrows), reasons, Cat / Dog product pods.
+- Hero block Landing on the dark ground (cornflower); the Defaqto badge + caption sit under the block as default content (rich text cannot hold images). New section style `quick-links` (inline sea-blue outline buttons on light grounds).
+- Packages (new nodes only): admiral-xwalk-pet-images-1.0.0 (images/pet), admiral-xwalk-pet-cf-1.0.0 (fragments/pet), admiral-xwalk-pet-pages-1.0.0 (11 pages).

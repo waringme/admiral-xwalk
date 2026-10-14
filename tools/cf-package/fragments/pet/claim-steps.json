@@ -1,0 +1,11 @@
+{
+  "model": "feature-list",
+  "title": "Need to make a claim?",
+  "introduction": "",
+  "features": [
+    "pet/claim-steps/step-1",
+    "pet/claim-steps/step-2",
+    "pet/claim-steps/step-3"
+  ],
+  "footnote": "<p>Once you have completed these steps, one of our Pet Experts will review your claim and keep you updated.</p>"
+}

@@ -70,6 +70,10 @@
               "value": "accordion"
             },
             {
+              "name": "Tabs (Feature List: one tab per feature)",
+              "value": "tabs"
+            },
+            {
               "name": "Numbered steps (Feature List)",
               "value": "steps"
             },

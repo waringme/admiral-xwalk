@@ -1,0 +1,10 @@
+{
+  "model": "feature-list",
+  "title": "What do I need to get a pet insurance quote?",
+  "introduction": "<p>Tell us a bit about you and your pet, so we can get you a quote that works for you.</p>",
+  "features": [
+    "pet/quote-checklist-items/your-pet-s-details",
+    "pet/quote-checklist-items/your-details"
+  ],
+  "footnote": ""
+}

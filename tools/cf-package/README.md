@@ -40,3 +40,6 @@ The cover comparison is three layers, so a tier or row is edited once:
 - **Cover Tier**: name + logo, one per tier (Platinum, Gold, Admiral, Essential, Third party fire & theft, Third party only).
 - **Cover Row**: one benefit with a value per tier: `yes` (tick), `x` or empty (cross), or text (`Up to £300`, `Optional`).
 - **Cover Table**: one tab, listing its tiers (columns) and rows. **Cover Comparison** lists the tabs, with a heading, introduction and footnote.
+
+## Pet insurance set (`python3 tools/cf-package/build.py pet`)
+`dist/admiral-xwalk-pet-cf-1.0.0.zip` holds only `fragments/pet/` (55 fragments; data from `stardust/.work/replica/pet-cf-data.py`). It adds no models or queries: the pet page reuses Feature, Feature List and Media Text (travel package) and Product Pod / Product Pod List (car package), so install those two packages first. The Lifetime / Time Limited tabs are a Feature List shown with the content-fragment block's **Tabs** display: one feature per tab, its description is the panel.

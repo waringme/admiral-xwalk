@@ -1,0 +1,762 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-14T18:27:25.760Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "resources-pet-hub-pet-insurance-advice-jargon-buster",
+  "url": "https://www.admiral.com/resources/pet-hub/pet-insurance-advice/jargon-buster",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-14T18:27:25.760Z",
+  "finalUrl": "https://www.admiral.com/resources/pet-hub/pet-insurance-advice/jargon-buster",
+  "title": "Pet insurance explained - Admiral",
+  "description": "At Admiral we know how confusing jargon can be, so we’ve created this handy guide to help you understand exactly what everything means.",
+  "og": {
+    "title": "Pet insurance explained - Admiral",
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Pet insurance explained"
+    },
+    {
+      "tag": "h3",
+      "text": "Article contents"
+    },
+    {
+      "tag": "h2",
+      "text": "Advertising costs"
+    },
+    {
+      "tag": "h2",
+      "text": "Amendment"
+    },
+    {
+      "tag": "h2",
+      "text": "Authorised insurer"
+    },
+    {
+      "tag": "h2",
+      "text": "Behavioural illness"
+    },
+    {
+      "tag": "h2",
+      "text": "Behavioural modification"
+    },
+    {
+      "tag": "h2",
+      "text": "Cancellation"
+    },
+    {
+      "tag": "h2",
+      "text": "Complementary medicine"
+    },
+    {
+      "tag": "h2",
+      "text": "Cranial cruciate ligament"
+    },
+    {
+      "tag": "h2",
+      "text": "Elective treatments"
+    },
+    {
+      "tag": "h2",
+      "text": "Euthanasia"
+    },
+    {
+      "tag": "h2",
+      "text": "Financial Conduct Authority (FCA)"
+    },
+    {
+      "tag": "h2",
+      "text": "Fixed excess"
+    },
+    {
+      "tag": "h2",
+      "text": "Homeopathic treatments"
+    },
+    {
+      "tag": "h2",
+      "text": "Insurance Premium Tax (IPT)"
+    },
+    {
+      "tag": "h2",
+      "text": "Lifetime policy"
+    },
+    {
+      "tag": "h2",
+      "text": "Period of insurance"
+    },
+    {
+      "tag": "h2",
+      "text": "Policy schedule"
+    },
+    {
+      "tag": "h2",
+      "text": "Policy term"
+    },
+    {
+      "tag": "h2",
+      "text": "Pre-existing conditions"
+    },
+    {
+      "tag": "h2",
+      "text": "Premium"
+    },
+    {
+      "tag": "h2",
+      "text": "Quote"
+    },
+    {
+      "tag": "h2",
+      "text": "Reward costs"
+    },
+    {
+      "tag": "h2",
+      "text": "Settlement"
+    },
+    {
+      "tag": "h2",
+      "text": "Territorial limits"
+    },
+    {
+      "tag": "h2",
+      "text": "Third Party Legal Liability"
+    },
+    {
+      "tag": "h2",
+      "text": "Ready for the next step?"
+    },
+    {
+      "tag": "h3",
+      "text": "Share with your friends..."
+    },
+    {
+      "tag": "h2",
+      "text": "Check out our related articles"
+    },
+    {
+      "tag": "h3",
+      "text": "Microchipping your pet: why is it important?"
+    },
+    {
+      "tag": "h3",
+      "text": "What vet bills does my pet insurance cover?"
+    },
+    {
+      "tag": "h3",
+      "text": "10 treats to spoil your pet"
+    },
+    {
+      "tag": "h2",
+      "text": "Give your cat or dog the cover they deserve"
+    },
+    {
+      "tag": "h2",
+      "text": "Explore our website"
+    }
+  ],
+  "body": [
+    "Contact us",
+    "Help and Support",
+    "My account",
+    "Claims",
+    "Multi Cover",
+    "Motor Motor Car Insurance Multi Car Insurance Van Insurance Black Box Insurance Electric Car Insurance Learner Driver Insurance Temporary Car Insurance Motoring Extras Car Finance Breakdown Cover Van insurance add-ons Car insurance add-ons Support Add a car to your policy Car Insurance FAQs Motor resource hub Admiral App The easy way to view and manage your insurance policy on the go. Find out more",
+    "Home Home Home Insurance Landlord Insurance Contents Insurance Buildings Insurance Multi Cover Insurance Renters Insurance Optional Extras Home Legal Expenses Home Emergency Cover Accidental Damage Personal Possessions Bicycle Cover High Risk Items Cover Landlord Emergency Cover Landlord Legal Expenses Support Home resource hub Landlord resource hub Add a home to your car insurance Home Insurance FAQs Extreme weather support Storm Hub Freeze Hub Admiral App Easily manage your cover, view your documents, and much more with the Admiral app. Find out more",
+    "Travel Travel Travel Insurance Single Trip Insurance Annual Travel Insurance Over 50s Travel Insurance Over 80s Travel Insurance Specialist Cover Winter Sports Insurance Cruise Insurance Gadget Travel Insurance Enhanced Trip Disruption Support Travel Insurance FAQs Travel resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Pet Pet Pet Insurance Multi Pet Insurance Dog Insurance Puppy Insurance Cat Insurance Kitten Insurance Lifetime Pet Insurance Time Limited Pet Insurance Pet breeds Cockapoo Pet Insurance Cocker Spaniel Pet Insurance Shih Tzu Pet Insurance Support Pet resource hub Refer a friend Earn up to £75 by introducing your friends and family to Admiral. The more you get on board, the more you’re rewarded! Find out more",
+    "Money Money Personal Loans Car Loans Car Finance Hire Purchase Homeowner Loans More Finance Home Improvement Loans Debt Consolidation Loan Support Money FAQs Money worries How to improve your credit score A good credit score can help you get a better deal on a loan, mortgage and other types of finance. Find out more",
+    "Business",
+    "Homepage",
+    "Pet resource hub",
+    "Pet insurance guides",
+    "Pet insurance explained",
+    "Advertising costs",
+    "Amendment",
+    "Authorised insurer",
+    "Behavioural illness",
+    "Behavioural modification",
+    "Cancellation",
+    "Complementary medicine",
+    "Cranial cruciate ligament",
+    "Elective treatments",
+    "Euthanasia",
+    "Financial Conduct Authority (FCA)",
+    "Fixed excess",
+    "Homeopathic treatments",
+    "Insurance Premium Tax (IPT)",
+    "Lifetime policy",
+    "Period of insurance",
+    "Policy schedule",
+    "Policy term",
+    "Pre-existing conditions",
+    "Premium",
+    "Quote",
+    "Reward costs",
+    "Settlement",
+    "Territorial limits",
+    "Third Party Legal Liability",
+    "Ready for the next step?",
+    "Katie Rees",
+    "6 November 2020 | Updated 15 October 2025 | 5 minute read",
+    "Premium? Amendment? Quote? Pet insurance wording can be confusing, but you deserve to understand what you're paying for.",
+    "We’ve made this handy list to help you bust the jargon.",
+    "The cost of advertising in your local newspaper or other types of media to find your missing pet.",
+    "Any change made to your policy – by you or us.",
+    "An insurance company selling insurance in the UK and is authorised and regulated by the Financial Conduct Authority (FCA).",
+    "A change to your pet’s behaviour because of a medical issue that couldn’t have been avoided with training or medicine.",
+    "Training by a vet or certified behaviourist to change your pet’s behaviour.",
+    "When you end your insurance policy before the pre-set policy end date.",
+    "Additional medicine that your vet recommends to help your pet’s recovery, such as hydrotherapy or acupuncture.",
+    "This usually comes alongside more traditional methods like surgery and medication.",
+    "An important joint in a dog’s knees that helps stabilise their legs. These joints can be very prone to injury in certain breeds.",
+    "Routine treatments like worming, flea treatments and declawing that aren’t related to any medical condition or injury.",
+    "Having a vet humanely end the life of your pet for medical or moral reasons. You can learn more about this in our pet farewell cover guide.",
+    "The FCA is the UK's financial watchdog. It makes the rules and checks in on financial services companies, including insurance companies.",
+    "The amount you pay towards the cost of a claim. This amount can change depending on what you’re claiming for. These costs are broken down in your policy schedule.",
+    "Non-vet recommended treatments and vaccinations. These aren’t covered by Admiral policies.",
+    "A government tax included in the price of your insurance. Find out more about IPT.",
+    "Cover that includes a fixed amount of money available to cover your vet bills. These policies are ‘lifetime’ because they can be renewed every year.",
+    "The amount you can claim resets each year.",
+    "The length of time your pet is insured for.",
+    "This document names the policyholder and sets out your cover details. It also includes the fixed excess you might pay during the policy (you may have a separate excess for third party liability claims).",
+    "The length of time your insurance is valid.",
+    "Something that may have been identified by a vet, be under investigation by a vet, or is otherwise known to you before your policy starts. This could be diagnosed or undiagnosed.",
+    "The cost of your cover - whether that's monthly or yearly.",
+    "The price you’re given for insuring your pet when you contact an insurer, including any specific terms and conditions.",
+    "Cover for a suitable reward that’s offered to help find your pet when it's lost or stolen (and isn’t found within 45 days).",
+    "The amount your insurer pays out to you for a claim.",
+    "The geographical boundaries we cover.",
+    "For our pet insurance, that's everywhere in the UK, with 30 days of cover in European countries. These 30 days can be split into two separate trips a year.",
+    "The 30 days reset every year when your policy renews.",
+    "This covers you for legal damages sought by a third party over a dispute or injury because of your dog.",
+    "Now that you've got a better understanding of the language, why not find out more about what we can do for you with our Admiral Pet Insurance?",
+    "Don’t forget that policy limits and exclusions always apply with our cover!",
+    "23 Jun 2022",
+    "13 Jul 2022",
+    "07 Aug 2018",
+    "Car Insurance",
+    "Multi-Car Insurance",
+    "Black Box Insurance",
+    "Temporary Car Insurance",
+    "Electric Car Insurance",
+    "Learner Driver Insurance",
+    "Home Insurance",
+    "Contents Insurance",
+    "Buildings Insurance",
+    "Landlord Insurance",
+    "Renters Insurance",
+    "Flood Insurance",
+    "Optional Cover",
+    "Contents Calculator",
+    "Other Products",
+    "MultiCover Products",
+    "Personal Loans",
+    "Van Insurance",
+    "Travel Insurance",
+    "Pet Insurance",
+    "Breakdown Cover",
+    "Homeowner Loans",
+    "Car Finance",
+    "Policy Details",
+    "Make a claim",
+    "View policy books",
+    "Complaint information",
+    "Legal information",
+    "Insurance glossary",
+    "Magazine",
+    "Magazine – meet the team",
+    "About Us",
+    "Community & Sponsorship",
+    "Customer offers",
+    "Refer a friend",
+    "Jobs",
+    "Admiral App",
+    "© 1993-2026 Admiral",
+    "Sitemap",
+    "Contact Us",
+    "Accessibility",
+    "Conditions of Use",
+    "Privacy & Security",
+    "Press Office",
+    "Cookie Preferences",
+    "Admiral is a trading name of EUI Limited. (Reg No: 02686904). EUI Limited is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 309378). These details can be confirmed by visiting the Financial Services Register. EUI Limited acts for, and on behalf of, other regulated insurance companies. Further details may be provided on request. Admiral Money, Admiral Loans, Admiral Car Finance, Admiral Homeowner Loans, Admiral Mortgages, Admiral One and Finble are all trading names of Admiral Financial Services Limited (AFSL). Admiral Financial Services Limited (Reg No: 10255225) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 771862). These details can be confirmed by visiting the Financial Services Register Veygo and Admiral Business are trading names of Able Insurance Services Limited. Able Insurance Services Limited (Reg No: 2890075) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 311649). These details can be confirmed by visiting the Financial Services Register Admiral Group plc is registered in England and Wales at Tŷ Admiral, David Street, Cardiff. CF10 2EH (Reg No:03849958)."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Contact us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Help and Support",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "My account",
+      "href": "https://myaccount.admiral.com/login?_its=eJwljk1uwyAUhO8yaywBAfNzgy666QWsBw8rSC6WMO0mis8eOVnOaD5988B_ZUTYxJSs9pO07CbDLkzppv2klLfr7Ge7KoLAMWgURPRtnMoFLaU2Rp8bNT714s3Nh4VrL3ksMpcs00zBafbW2SC9dnnO5BxZYxwEaIxe09-oe0N8gPdfqg0REOhlLb2X_kn5Tq2V7YsR3w6Bo-fvna8rHx3e1U9ZL-ApcNRRrrlSXtvnC-fQQ44"
+    },
+    {
+      "label": "Claims",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "Multi Cover",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Motor",
+      "href": "#"
+    },
+    {
+      "label": "Home",
+      "href": "#"
+    },
+    {
+      "label": "Travel",
+      "href": "#"
+    },
+    {
+      "label": "Pet",
+      "href": "#"
+    },
+    {
+      "label": "Money",
+      "href": "#"
+    },
+    {
+      "label": "Business",
+      "href": "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav"
+    },
+    {
+      "label": "Homepage",
+      "href": "/"
+    },
+    {
+      "label": "Pet resource hub",
+      "href": "/resources/pet-hub"
+    },
+    {
+      "label": "Pet insurance guides",
+      "href": "/resources/pet-hub/pet-insurance-advice"
+    },
+    {
+      "label": "Pet insurance explained",
+      "href": "#"
+    },
+    {
+      "label": "Financial Conduct Authority (FCA)",
+      "href": "https://www.fca.org.uk/"
+    },
+    {
+      "label": "acupuncture",
+      "href": "https://www.vetacupuncturelincs.co.uk/veterinary-acupuncture"
+    },
+    {
+      "label": "pet farewell cover guide",
+      "href": "https://www.admiral.com/resources/pet-hub/pet-insurance-advice/pet-farewell-cover"
+    },
+    {
+      "label": "The FCA",
+      "href": "https://www.fca.org.uk/"
+    },
+    {
+      "label": "Find out more about IPT",
+      "href": "https://www.admiral.com/magazine/guides/car-insurance/what-is-insurance-premium-tax"
+    },
+    {
+      "label": "vet bills",
+      "href": "https://www.admiral.com/resources/pet-hub/pet-health-advice/vet-bills-explained"
+    },
+    {
+      "label": "insuring your pet",
+      "href": "https://www.admiral.com/pet-insurance"
+    },
+    {
+      "label": "Admiral Pet Insurance",
+      "href": "https://www.admiral.com/pet-insurance?_gl=1*1a82o57*_up*MQ..*_ga*NzIxMjkxMTk5LjE3NjAwOTE5MzA.*_ga_WRG2DPT4WN*czE3NjAwOTE5MzAkbzEkZzAkdDE3NjAwOTE5MzAkajYwJGwwJGgw"
+    },
+    {
+      "label": "23 Jun 2022 Microchipping your pet: why is it important?",
+      "href": "/resources/pet-hub/first-time-pet-owners/microchipping-your-dog-and-other-pets"
+    },
+    {
+      "label": "13 Jul 2022 What vet bills does my pet insurance cover?",
+      "href": "/resources/pet-hub/pet-health-advice/vet-bills-explained"
+    },
+    {
+      "label": "07 Aug 2018 10 treats to spoil your pet",
+      "href": "/magazine/guide/pet/10-treats-to-spoil-your-pet"
+    },
+    {
+      "label": "Pet insurance",
+      "href": "/pet-insurance"
+    },
+    {
+      "label": "Car Insurance",
+      "href": "/car-insurance"
+    },
+    {
+      "label": "Multi-Car Insurance",
+      "href": "/multi-car-insurance"
+    },
+    {
+      "label": "Black Box Insurance",
+      "href": "/black-box-insurance"
+    },
+    {
+      "label": "Temporary Car Insurance",
+      "href": "/car-insurance/temporary-car-insurance"
+    },
+    {
+      "label": "Electric Car Insurance",
+      "href": "/car-insurance/electric"
+    },
+    {
+      "label": "Learner Driver Insurance",
+      "href": "/learner-driver-insurance"
+    },
+    {
+      "label": "Home Insurance",
+      "href": "/home-insurance"
+    },
+    {
+      "label": "Contents Insurance",
+      "href": "/home-insurance/contents-insurance.php"
+    },
+    {
+      "label": "Buildings Insurance",
+      "href": "/home-insurance/buildings-insurance.php"
+    },
+    {
+      "label": "Landlord Insurance",
+      "href": "/home-insurance/landlord"
+    },
+    {
+      "label": "Renters Insurance",
+      "href": "/home-insurance/renters-insurance.php"
+    },
+    {
+      "label": "Flood Insurance",
+      "href": "/home-insurance/flood"
+    },
+    {
+      "label": "Optional Cover",
+      "href": "/home-insurance/optional-cover"
+    },
+    {
+      "label": "Contents Calculator",
+      "href": "/home-insurance/contents-calculator"
+    },
+    {
+      "label": "MultiCover Products",
+      "href": "/multicover-insurance"
+    },
+    {
+      "label": "Personal Loans",
+      "href": "/loans/personal-loans"
+    },
+    {
+      "label": "Van Insurance",
+      "href": "/van-insurance"
+    },
+    {
+      "label": "Travel Insurance",
+      "href": "/travel-insurance"
+    },
+    {
+      "label": "Pet Insurance",
+      "href": "/pet-insurance"
+    },
+    {
+      "label": "Breakdown Cover",
+      "href": "/breakdown-cover"
+    },
+    {
+      "label": "Homeowner Loans",
+      "href": "/homeowner-loans"
+    },
+    {
+      "label": "Car Finance",
+      "href": "/loans/car-finance"
+    },
+    {
+      "label": "Policy Details",
+      "href": "/myaccount"
+    },
+    {
+      "label": "Make a claim",
+      "href": "/existing-customers/make-a-claim.php"
+    },
+    {
+      "label": "View policy books",
+      "href": "/existing-customers/policy-documents.php"
+    },
+    {
+      "label": "Complaint information",
+      "href": "/contact-us/complaint-information.php"
+    },
+    {
+      "label": "Legal information",
+      "href": "/existing-customers/legal-information.php"
+    },
+    {
+      "label": "Insurance glossary",
+      "href": "/insurance-glossary"
+    },
+    {
+      "label": "Magazine",
+      "href": "/magazine"
+    },
+    {
+      "label": "Magazine – meet the team",
+      "href": "/magazine/meet-the-team"
+    },
+    {
+      "label": "About Us",
+      "href": "/about-us"
+    },
+    {
+      "label": "Community & Sponsorship",
+      "href": "/community-and-sponsorship"
+    },
+    {
+      "label": "Customer offers",
+      "href": "/existing-customers/customer-discount.php"
+    },
+    {
+      "label": "Refer a friend",
+      "href": "https://www.admiral.com/refer-a-friend"
+    },
+    {
+      "label": "Jobs",
+      "href": "https://admiraljobs.co.uk/"
+    },
+    {
+      "label": "Admiral App",
+      "href": "/myaccount/admiral-app"
+    },
+    {
+      "label": "Sitemap",
+      "href": "/sitemap.php"
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact-us"
+    },
+    {
+      "label": "Accessibility",
+      "href": "/help-support-hub"
+    },
+    {
+      "label": "Conditions of Use",
+      "href": "/insurance/your-policy/conditions-of-use.php"
+    },
+    {
+      "label": "Privacy & Security",
+      "href": "/your-privacy-and-security"
+    },
+    {
+      "label": "Press Office",
+      "href": "/press-office"
+    },
+    {
+      "label": "Cookie Preferences",
+      "href": "/cookie-policy"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    },
+    {
+      "label": "Financial Services Register",
+      "href": "https://www.fca.org.uk/register"
+    }
+  ],
+  "links": [
+    "https://www.admiral.com/contact-us",
+    "https://www.admiral.com/help-support-hub",
+    "https://myaccount.admiral.com/login?_its=eJwljk1uwyAUhO8yaywBAfNzgy666QWsBw8rSC6WMO0mis8eOVnOaD5988B_ZUTYxJSs9pO07CbDLkzppv2klLfr7Ge7KoLAMWgURPRtnMoFLaU2Rp8bNT714s3Nh4VrL3ksMpcs00zBafbW2SC9dnnO5BxZYxwEaIxe09-oe0N8gPdfqg0REOhlLb2X_kn5Tq2V7YsR3w6Bo-fvna8rHx3e1U9ZL-ApcNRRrrlSXtvnC-fQQ44",
+    "https://www.admiral.com/existing-customers/make-a-claim.php",
+    "https://www.admiral.com/",
+    "https://www.admiral.com/resources/pet-hub/pet-insurance-advice/jargon-buster#",
+    "https://www.admiral.com/multicover-insurance",
+    "https://www.admiral.com/car-insurance",
+    "https://www.admiral.com/multi-car-insurance",
+    "https://www.admiral.com/van-insurance",
+    "https://www.admiral.com/black-box-insurance",
+    "https://www.admiral.com/car-insurance/electric",
+    "https://www.admiral.com/learner-driver-insurance",
+    "https://www.admiral.com/car-insurance/temporary-car-insurance",
+    "https://www.admiral.com/loans/car-finance",
+    "https://www.admiral.com/breakdown-cover",
+    "https://www.admiral.com/van-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/optional-extras",
+    "https://www.admiral.com/car-insurance/add-a-car-guide",
+    "https://www.admiral.com/car-insurance/FAQs",
+    "https://www.admiral.com/resources/motor-hub",
+    "https://www.admiral.com/myaccount/admiral-app",
+    "https://www.admiral.com/home-insurance",
+    "https://www.admiral.com/home-insurance/landlord",
+    "https://www.admiral.com/home-insurance/contents-insurance.php",
+    "https://www.admiral.com/home-insurance/buildings-insurance.php",
+    "https://www.admiral.com/home-insurance/renters-insurance.php",
+    "https://www.admiral.com/home-insurance/optional-cover/family-legal-protection.php",
+    "https://www.admiral.com/home-insurance/optional-cover/home-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/accidental-damage.php",
+    "https://www.admiral.com/home-insurance/optional-cover/personal-possessions.php",
+    "https://www.admiral.com/home-insurance/optional-cover/bicycle-cover.php",
+    "https://www.admiral.com/home-insurance/optional-cover/high-risk-items",
+    "https://www.admiral.com/home-insurance/landlord/landlord-emergency-cover.php",
+    "https://www.admiral.com/home-insurance/landlord/landlord-legal-protection",
+    "https://www.admiral.com/home-insurance/home-resource-hub",
+    "https://www.admiral.com/resources/landlord-hub",
+    "https://www.admiral.com/add-a-home-guide",
+    "https://www.admiral.com/home-insurance/FAQs",
+    "https://www.admiral.com/weather/storm",
+    "https://www.admiral.com/weather/freeze",
+    "https://www.admiral.com/travel-insurance",
+    "https://www.admiral.com/travel-insurance/single-trip-insurance.php",
+    "https://www.admiral.com/travel-insurance/annual-travel-insurance.php",
+    "https://www.admiral.com/travel-insurance/over-50s-travel-insurance",
+    "https://www.admiral.com/travel-insurance/travel-insurance-over-80s",
+    "https://www.admiral.com/travel-insurance/winter-sports-insurance.php",
+    "https://www.admiral.com/travel-insurance/cruise-insurance.php",
+    "https://www.admiral.com/travel-insurance/gadget-insurance.php",
+    "https://www.admiral.com/travel-insurance/travel-disruption-insurance",
+    "https://www.admiral.com/travel-insurance/FAQs",
+    "https://www.admiral.com/resources/travel-hub",
+    "https://www.admiral.com/refer-a-friend",
+    "https://www.admiral.com/pet-insurance",
+    "https://www.admiral.com/pet-insurance/multi-pet-insurance",
+    "https://www.admiral.com/pet-insurance/dog-insurance",
+    "https://www.admiral.com/pet-insurance/puppy-insurance",
+    "https://www.admiral.com/pet-insurance/cat-insurance",
+    "https://www.admiral.com/pet-insurance/kitten-insurance",
+    "https://www.admiral.com/pet-insurance/lifetime-pet-insurance",
+    "https://www.admiral.com/pet-insurance/time-limited-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cockapoo-pet-insurance",
+    "https://www.admiral.com/pet-insurance/cocker-spaniel-pet-insurance",
+    "https://www.admiral.com/pet-insurance/shih-tzu-pet-insurance",
+    "https://www.admiral.com/resources/pet-hub",
+    "https://www.admiral.com/loans/personal-loans",
+    "https://www.admiral.com/loans/car-finance/car-loans",
+    "https://www.admiral.com/loans/car-finance/hire-purchase",
+    "https://www.admiral.com/homeowner-loans",
+    "https://www.admiral.com/loans/personal-loans/home-improvements",
+    "https://www.admiral.com/loans/debt-consolidation-loan",
+    "https://money.admiral.com/help?_its=eJwljk1uwyAUhO8yaywBAfNzgy666QWsBw8rSC6WMO0mis8eOVnOaD5988B_ZUTYxJSs9pO07CbDLkzppv2klLfr7Ge7KoLAMWgURPRtnMoFLaU2Rp8bNT714s3Nh4VrL3ksMpcs00zBafbW2SC9dnnO5BxZYxwEaIxe09-oe0N8gPdfqg0REOhlLb2X_kn5Tq2V7YsR3w6Bo-fvna8rHx3e1U9ZL-ApcNRRrrlSXtvnC-fQQ44",
+    "https://money.admiral.com/help/financial-support?_its=eJwljk1uwyAUhO8yaywBAfNzgy666QWsBw8rSC6WMO0mis8eOVnOaD5988B_ZUTYxJSs9pO07CbDLkzppv2klLfr7Ge7KoLAMWgURPRtnMoFLaU2Rp8bNT714s3Nh4VrL3ksMpcs00zBafbW2SC9dnnO5BxZYxwEaIxe09-oe0N8gPdfqg0REOhlLb2X_kn5Tq2V7YsR3w6Bo-fvna8rHx3e1U9ZL-ApcNRRrrlSXtvnC-fQQ44",
+    "https://www.admiral.com/loans/improve-your-credit-score",
+    "https://www.admiralbusiness.com/?utm_source=admiral&utm_medium=referral&utm_campaign=admiral_nav",
+    "https://www.admiral.com/car-insurance/policy-upgrades/breakdown-cover/breakdown-assist.php",
+    "https://www.admiral.com/resources/pet-hub/pet-insurance-advice",
+    "mailto:?subject=Check%20out%20this%20article%20on%20admiral.com&body=Pet%20insurance%20explained%20-%20https://admiral.com/resources/pet-hub/pet-insurance-advice/jargon-buster",
+    "https://www.fca.org.uk/",
+    "https://www.vetacupuncturelincs.co.uk/veterinary-acupuncture",
+    "https://www.admiral.com/resources/pet-hub/pet-insurance-advice/pet-farewell-cover",
+    "https://www.admiral.com/magazine/guides/car-insurance/what-is-insurance-premium-tax",
+    "https://www.admiral.com/resources/pet-hub/pet-health-advice/vet-bills-explained",
+    "https://www.admiral.com/pet-insurance?_gl=1*1a82o57*_up*MQ..*_ga*NzIxMjkxMTk5LjE3NjAwOTE5MzA.*_ga_WRG2DPT4WN*czE3NjAwOTE5MzAkbzEkZzAkdDE3NjAwOTE5MzAkajYwJGwwJGgw",
+    "https://www.admiral.com/resources/pet-hub/first-time-pet-owners/microchipping-your-dog-and-other-pets",
+    "https://www.admiral.com/magazine/guide/pet/10-treats-to-spoil-your-pet",
+    "https://www.admiral.com/home-insurance/flood",
+    "https://www.admiral.com/home-insurance/optional-cover",
+    "https://www.admiral.com/home-insurance/contents-calculator",
+    "https://www.admiral.com/myaccount",
+    "https://www.admiral.com/existing-customers/policy-documents.php",
+    "https://www.admiral.com/contact-us/complaint-information.php",
+    "https://www.admiral.com/existing-customers/legal-information.php",
+    "https://www.admiral.com/insurance-glossary",
+    "https://www.admiral.com/magazine",
+    "https://www.admiral.com/magazine/meet-the-team",
+    "https://www.admiral.com/about-us",
+    "https://www.admiral.com/community-and-sponsorship",
+    "https://www.admiral.com/existing-customers/customer-discount.php",
+    "https://admiraljobs.co.uk/",
+    "https://twitter.com/admiralUK",
+    "https://www.youtube.com/user/AdmiralInsurance",
+    "https://www.facebook.com/admiralUK",
+    "https://www.admiral.com/sitemap.php",
+    "https://www.admiral.com/insurance/your-policy/conditions-of-use.php",
+    "https://www.admiral.com/your-privacy-and-security",
+    "https://www.admiral.com/press-office",
+    "https://www.admiral.com/cookie-policy",
+    "https://www.fca.org.uk/register"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/logos/admiral-logo.svg",
+        "alt": "Admiral Insurance logo",
+        "w": 300,
+        "h": 93
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/thumbnail/public/pictures/2024-03/Katie-Rees.jpg?itok=x9lVMFmP",
+        "alt": "Profile picture for user Katie.Rees13",
+        "w": 40,
+        "h": 40
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_article_800/public/2022-06/GettyImages-1324099927%20%281%29.jpg?itok=y9e27Hd4",
+        "alt": "Image of a dog and a cat",
+        "w": 708,
+        "h": 508
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_list_485/public/2021-11/why-is-microchipping-your-dog-so-important%5B1%5D.jpg?itok=I4TeItEl",
+        "alt": "husky-getting-its-micro-chip-scanned",
+        "w": 485,
+        "h": 216
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_list_485/public/2022-07/GettyImages-1303362255%20%281%29.jpg?itok=Cw_Rs_bG",
+        "alt": "Image of a vet with a dog.",
+        "w": 485,
+        "h": 216
+      },
+      {
+        "src": "https://www.admiral.com/sites/default/files/public/styles/magazine_list_485/public/2018-08/dog-and-cat.jpg?itok=v_w0RIyU",
+        "alt": "dog-and-cat-under-a-blanket",
+        "w": 485,
+        "h": 216
+      }
+    ],
+    "allImgCount": 7,
+    "cssBackgrounds": [
+      "https://mktgblobpubaccess1.blob.core.windows.net/eui-frontend-assets/admiral/images/mini-hero/background/mini-pet-insurance-desktop.jpg"
+    ],
+    "modals": [
+      "close Copy link https://admiral.com/resources/pet-hub/pet-insurance-advice/jargon-buster"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--animate-duration": "1s",
+    "--animate-delay": "1s",
+    "--animate-repeat": "1"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 35,
+    "mainTextLen": 38618,
+    "realImageCount": 6,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/resources-pet-hub-pet-insurance-advice-jargon-buster.png",
+  "renderedHtml": "pages/resources-pet-hub-pet-insurance-advice-jargon-buster.html"
+}

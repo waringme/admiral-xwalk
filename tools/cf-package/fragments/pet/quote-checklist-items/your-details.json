@@ -1,0 +1,8 @@
+{
+  "model": "feature",
+  "title": "Your details",
+  "description": "<ul><li>Name</li><li>Date of birth</li><li>Address</li><li>Email address</li><li>Phone number</li><li>When you want your policy to start</li></ul>",
+  "icon": "",
+  "illustration": "",
+  "imageAlt": ""
+}

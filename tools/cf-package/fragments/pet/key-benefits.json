@@ -1,0 +1,11 @@
+{
+  "model": "feature-list",
+  "title": "Why choose Admiral Pet Insurance?",
+  "introduction": "",
+  "features": [
+    "pet/features/benefit-24hr-online-vet-support",
+    "pet/features/benefit-5-star-rated-cover",
+    "pet/features/benefit-15-multipet-discount"
+  ],
+  "footnote": ""
+}

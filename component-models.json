@@ -389,6 +389,10 @@
           {
             "name": "Article body",
             "value": "article-body"
+          },
+          {
+            "name": "Quick links (inline outline buttons)",
+            "value": "quick-links"
           }
         ]
       },
@@ -817,6 +821,10 @@
           {
             "name": "Accordion (Feature List: questions and answers)",
             "value": "accordion"
+          },
+          {
+            "name": "Tabs (Feature List: one tab per feature)",
+            "value": "tabs"
           },
           {
             "name": "Numbered steps (Feature List)",

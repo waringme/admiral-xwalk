@@ -1,0 +1,12 @@
+{
+  "model": "feature-list",
+  "title": "What doesn't pet insurance cover?",
+  "introduction": "<p>Pet insurance doesn't cover everything. Here's some things we don't cover:</p>",
+  "features": [
+    "pet/not-covered/pre-existing-conditions",
+    "pet/not-covered/claims-within-the-waiting-period",
+    "pet/not-covered/routine-health-treatment",
+    "pet/not-covered/breeding-or-pregnancy"
+  ],
+  "footnote": "<p>Read more about pet insurance in your <a href=\"https://www.admiral.com/existing-customers/policy-documents.php?product=pet\">policy book</a> for the full list of exclusions.</p>"
+}

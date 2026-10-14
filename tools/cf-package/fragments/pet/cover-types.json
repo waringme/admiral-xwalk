@@ -1,0 +1,10 @@
+{
+  "model": "feature-list",
+  "title": "What type of pet insurance do I need?",
+  "introduction": "<p>Compare our two cover options.</p>",
+  "features": [
+    "pet/cover-types/lifetime",
+    "pet/cover-types/time-limited"
+  ],
+  "footnote": ""
+}

@@ -1,0 +1,16 @@
+{
+  "model": "feature-list",
+  "title": "Pet insurance FAQs",
+  "introduction": "<p>Got more questions? Find out more about pet insurance and how it works.</p>",
+  "features": [
+    "pet/faq/does-my-pet-s-age-affect-pet-insurance",
+    "pet/faq/do-vaccinations-affect-pet-insurance",
+    "pet/faq/does-pet-insurance-cover-the-costs-of-a-kennel-or-cattery",
+    "pet/faq/will-pet-insurance-cover-life-threatening-injuries-or-illnes",
+    "pet/faq/which-animals-can-t-be-covered-by-pet-insurance",
+    "pet/faq/what-happens-if-i-can-t-afford-vet-bills",
+    "pet/faq/can-i-get-cover-that-starts-immediately",
+    "pet/faq/why-are-pedigree-animals-more-expensive-to-insure"
+  ],
+  "footnote": ""
+}

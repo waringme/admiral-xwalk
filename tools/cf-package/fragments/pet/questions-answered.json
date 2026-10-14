@@ -1,0 +1,19 @@
+{
+  "model": "feature-list",
+  "title": "Your questions answered",
+  "introduction": "",
+  "features": [
+    "pet/question/what-is-excess",
+    "pet/question/what-is-a-pre-existing-condition",
+    "pet/question/will-my-price-change-at-renewal",
+    "pet/question/do-i-get-discount-for-adding-more-pets",
+    "pet/question/can-i-access-my-account",
+    "pet/question/can-i-get-help-from-a-vet-out-of-hours",
+    "pet/question/how-do-i-renew-my-pet-insurance",
+    "pet/question/how-do-i-make-a-claim-on-my-pet-insurance",
+    "pet/question/will-you-pay-the-vet-directly",
+    "pet/question/what-vet-can-i-use",
+    "pet/question/how-do-i-make-a-complaint"
+  ],
+  "footnote": ""
+}

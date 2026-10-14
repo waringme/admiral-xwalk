@@ -6,7 +6,8 @@
  *
  * Model (xwalk block, _content-fragment.json): row 1 the fragment (picker), row 2 the picked
  * variation; Display (classes) for a Feature List: default boxed list · `alternating` · `pods`
- * · `pods-colours` · `accordion` (title = question, description = answer) · `steps` (numbered;
+ * · `pods-colours` · `accordion` (title = question, description = answer) · `tabs` (title = tab
+ * label, description = panel; pet insurance cover types) · `steps` (numbered;
  * `arrows` for the arrow tags that turn downwards on mobile); for any fragment `no-heading`;
  * for a Media Text `image-right`. A Cover Levels fragment renders as a table, a Cover
  * Comparison as tabs of tier tables (car insurance), a Media Text as the media-text panel (or a
@@ -168,6 +169,8 @@ function accordion(item, block) {
 
 function featureList(item, block) {
   if (block.classList.contains('accordion')) return accordion(item, block);
+  // eslint-disable-next-line no-use-before-define
+  if (block.classList.contains('tabs')) return featureTabs(item, block);
   const pods = block.classList.contains('pods') || block.classList.contains('pods-colours');
   const alternating = block.classList.contains('alternating');
   const list = el('ul');
@@ -310,22 +313,24 @@ function coverTable(table) {
 
 let tabsId = 0;
 
-/** Cover Comparison: one tab per Cover Table (tab label = the table's title) */
-function coverComparison(item, block) {
+/**
+ * a tab bar over panels — entries: { label, path, kind, content } (the fragment behind each tab is
+ * instrumented on its button); arrow keys move between tabs
+ */
+function tabbed(entries) {
   tabsId += 1;
-  const tables = item.tables || [];
   const nav = el('div', 'cover-tabs-nav');
   nav.setAttribute('role', 'tablist');
   const panels = el('div', 'cover-tabs-panels');
-  const tabs = tables.map((table, i) => {
+  const tabs = entries.map((entry, i) => {
     const id = `cover-${tabsId}-${i}`;
-    const tab = prop(el('button', 'cover-tab', table.title), 'title', 'text', 'Tab');
-    resource(tab, pathOf(table), table.title || 'Cover table');
+    const tab = prop(el('button', 'cover-tab', entry.label), 'title', 'text', 'Tab');
+    resource(tab, entry.path, entry.label || entry.kind);
     tab.type = 'button';
     tab.id = `${id}-tab`;
     tab.setAttribute('role', 'tab');
     tab.setAttribute('aria-controls', id);
-    const panel = el('div', 'cover-tab-panel', coverTable(table));
+    const panel = el('div', 'cover-tab-panel', entry.content);
     panel.id = id;
     panel.setAttribute('role', 'tabpanel');
     panel.setAttribute('aria-labelledby', tab.id);
@@ -349,8 +354,28 @@ function coverComparison(item, block) {
     });
   });
   select(0);
+  return [nav, panels];
+}
+
+/** Cover Comparison: one tab per Cover Table (tab label = the table's title) */
+function coverComparison(item, block) {
+  const parts = tabbed((item.tables || []).map((table) => ({
+    label: table.title, path: pathOf(table), kind: 'Cover table', content: coverTable(table),
+  })));
   const footnote = prop(richText(item.footnote?.html, 'content-fragment-footnote'), 'footnote', 'richtext', 'Footnote');
-  return [header(item, block), el('div', 'comparison-table cover-comparison', nav, panels), footnote];
+  return [header(item, block), el('div', 'comparison-table cover-comparison', ...parts), footnote];
+}
+
+/** Feature List as tabs (pet cover types): feature title = tab, description = panel */
+function featureTabs(item, block) {
+  const parts = tabbed((item.features || []).map((f) => ({
+    label: f.title,
+    path: pathOf(f),
+    kind: 'Tab',
+    content: prop(richText(f.description?.html, 'content-tab-body'), 'description', 'richtext', 'Panel'),
+  })));
+  const footnote = prop(richText(item.footnote?.html, 'content-fragment-footnote'), 'footnote', 'richtext', 'Footnote');
+  return [header(item, block), el('div', 'content-tabs', ...parts), footnote];
 }
 
 const RENDER = {
@@ -364,6 +389,7 @@ const RENDER = {
 const STYLES = {
   'feature-list': (block) => {
     if (block.classList.contains('accordion')) return ['accordion'];
+    if (block.classList.contains('tabs')) return [];
     return [block.classList.contains('pods') || block.classList.contains('pods-colours') ? 'highlights' : 'features'];
   },
   'cover-levels': () => ['comparison-table', 'callout'],

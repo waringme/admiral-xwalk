@@ -1,0 +1,9 @@
+{
+  "model": "product-pod",
+  "title": "Dog Insurance",
+  "description": "",
+  "image": "/content/dam/admiral-xwalk/images/pet/badge-dog.jpg",
+  "imageAlt": "",
+  "link": "/pet-insurance/dog-insurance",
+  "linkText": "Get Dog Insurance"
+}

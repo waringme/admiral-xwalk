@@ -1,0 +1,8 @@
+{
+  "model": "feature",
+  "title": "Your pet’s details",
+  "description": "<ul><li>Name</li><li>Gender</li><li>Breed</li><li>Age</li><li>How much you bought or adopted your pet for</li><li>Whether they’ve been spayed or neutered</li></ul>",
+  "icon": "",
+  "illustration": "",
+  "imageAlt": ""
+}

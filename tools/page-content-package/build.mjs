@@ -20,6 +20,7 @@
  *   travel     (default) the travel demo pages
  *   templates  the authoring templates under /templates (the article template)
  *   car        the car insurance pages (new pages only)
+ *   pet        the pet insurance pages (new pages only)
  */
 import {
   existsSync, mkdirSync, readFileSync, writeFileSync,
@@ -70,6 +71,19 @@ const SETS = {
       '/multi-car-insurance', '/black-box-insurance', '/templates/product-landing',
     ],
     description: (n) => `Car insurance pages as Universal Editor pages (${n}): /car-insurance, its optional extras folder (Breakdown cover moved in from /breakdown-cover, Personal Injury, Hire Vehicle and Motor Legal cover), the car insurance guides folder and its three guides, /car-insurance/electric, /multi-car-insurance, /black-box-insurance and the product landing template. New pages only: no page already migrated is in the filter. Requires the car content fragment and car images packages.`,
+  },
+  pet: {
+    name: 'admiral-xwalk-pet-pages',
+    version: '1.0.0',
+    pages: () => [
+      '/pet-insurance',
+      ...execFileSync('find', ['-L', 'content/pet-insurance', '-name', '*.plain.html'], { cwd: ROOT, encoding: 'utf8' })
+        .trim()
+        .split('\n')
+        .map((f) => f.slice('content'.length, -'.plain.html'.length))
+        .sort(),
+    ],
+    description: (n) => `Pet insurance pages as Universal Editor pages (${n}): /pet-insurance (admiral_pet_insurance_functional_spec.md), its Lifetime, Time Limited, Cat, Dog, MultiPet and PawSquad pages, and the pet insurance guides folder with its three guides. New pages only: no page already migrated is in the filter. Requires the pet content fragment and pet images packages.`,
   },
   templates: {
     name: 'admiral-xwalk-templates',

@@ -33,8 +33,14 @@ main .content-fragment-container > .content-fragment-wrapper:has(.media-text) { 
 .content-fragment .highlight .highlight-icon + h3 { margin-top: 0; }
 .content-fragment .highlight > div > :last-child { padding-bottom: 0; }
 
+.content-fragment .content-tab-body li {
+  padding-bottom: 14px;
+  font-size: 14.4px;
+  line-height: 22px;
+}
+
 .content-fragment .media-text-copy > div > :last-child,
-.content-fragment .media-text-copy li:last-child { padding-bottom: 0; }
+.content-fragment .media-text-copy > div > ul:last-child > li:last-child { padding-bottom: 0; }
 
 
 /* Feature List as an accordion (live .faqs: white question boxes) */
@@ -53,6 +59,8 @@ main .content-fragment-container > .content-fragment-wrapper:has(.arrows) { max-
 /* Product Pod List: the cards block's pods (image strip, title, text, arrow link) */
 main .content-fragment-container > .content-fragment-wrapper:has(.product-pods) { max-width: var(--container); }
 .content-fragment .product-pods { margin-bottom: 20px; }
+.content-fragment .product-pods .grid { justify-content: center; }
+.content-fragment .product-pods .pod .image img { object-fit: contain; }
 
 /* Cover Comparison (live .tabs + table.bspec): grey tabs over a white card, tier badges, ticks */
 main .content-fragment-container > .content-fragment-wrapper:has(.cover-comparison) { max-width: var(--container); }
@@ -239,5 +247,34 @@ main .content-fragment-container > .content-fragment-wrapper:has(.media-text:not
   .content-fragment .media-text.image-right .media-text-media :is(picture, img) {
     right: auto;
     left: 0;
+  }
+}
+
+/* Feature List as tabs (live pet insurance .tabs--titles): the cover tabs' bar over a white card
+   holding the feature's rich text; heading and introduction left-aligned as live */
+.content-fragment.tabs .content-fragment-header { text-align: left; }
+.content-fragment .content-tabs .cover-tabs-panels { padding: 30px 15px 20px; }
+.content-fragment .content-tab-body > :last-child { padding-bottom: 0; }
+
+.content-fragment .content-tab-body ul {
+  margin-top: -12px;
+  padding: 0 0 0 20px;
+  list-style: disc;
+}
+
+@media (width >= 768px) {
+  .content-fragment .content-tabs .cover-tabs-nav { padding: 0 40px; }
+  .content-fragment .content-tabs .cover-tabs-panels { padding: 40px 48px 30px; }
+
+  .content-fragment .content-tab-body li {
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .content-fragment .content-tabs .cover-tab {
+    padding: 16px;
+    font-size: 19.8px;
+    line-height: 24px;
   }
 }

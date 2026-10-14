@@ -13,6 +13,7 @@ Writes an installable FileVault package to tools/cf-package/dist/.
 
   python3 tools/cf-package/build.py [set]
     travel (default)  the travel models, fragments/travel, the endpoint and the travel queries
+    pet               only fragments/pet (the pet insurance page reuses the travel and car models)
     car               only what the car insurance pages add: the Product Pod / Cover Comparison
                       models, fragments/car and fragments/shared (each folder with its own allowed
                       models) and their queries — installing it changes nothing already migrated
@@ -152,6 +153,18 @@ SETS = {
                         'models, fragments and queries already installed are not changed. Requires the travel content '
                         'fragment package (1.1.0: Feature, Feature List and Media Text models, endpoint) and the car '
                         'images package.'),
+    },
+    'pet': {
+        'name': 'admiral-xwalk-pet-cf', 'version': '1.0.0', 'label': 'pet insurance pages',
+        'models': [],  # only models already installed (travel + car packages)
+        'folders': ['pet'],
+        'allowed': ['feature', 'feature-list', 'media-text', 'product-pod', 'product-pod-list'],
+        'queries': [],
+        'description': ('Pet insurance pages: {n} fragments under fragments/pet (Feature List, Media Text and Product '
+                        'Pod fragments: key benefits, cover types tabs, what is and is not covered, quote checklist, '
+                        'claim steps, reasons, FAQs, cat and dog pods). Adds only the new folder: models, fragments and '
+                        'queries already installed are not changed. Requires the travel (1.1.0) and car (1.0.0) content '
+                        'fragment packages (models, endpoint, queries) and the pet images package.'),
     },
 }
 SET_NAME = sys.argv[1] if len(sys.argv) > 1 else 'travel'

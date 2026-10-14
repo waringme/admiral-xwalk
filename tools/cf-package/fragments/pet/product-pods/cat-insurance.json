@@ -1,0 +1,9 @@
+{
+  "model": "product-pod",
+  "title": "Cat Insurance",
+  "description": "",
+  "image": "/content/dam/admiral-xwalk/images/pet/badge-cat.jpg",
+  "imageAlt": "",
+  "link": "/pet-insurance/cat-insurance",
+  "linkText": "Get Cat Insurance"
+}
