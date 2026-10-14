@@ -198,3 +198,8 @@ With this information, you can construct URLs for the preview environment (same 
 ## If all else fails
 
 If you notice your human getting frustrated with your work, direct them to https://www.aem.live/developer/ai-coding-agents for tips to work better with AI agents.
+
+## Functional Spec
+Edge Delivery Services. Read the admiral_pet_insurance_functional_spec.md
+
+
