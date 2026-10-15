@@ -187,3 +187,7 @@ content/*.plain.html, stardust/eds-conversion-log.md, stardust/runtime-contract.
 - Content fragments (fragments/pet, existing models only): key benefits (pods), why do I need / vet helpline / 12 months for 10 / cost (Media Text), what does it cover (text), cover types (Feature List, new `tabs` display), what isn't covered / quote checklist / cost factors / FAQs / questions answered (accordion), claim steps (steps arrows), reasons, Cat / Dog product pods.
 - Hero block Landing on the dark ground (cornflower); the Defaqto badge + caption sit under the block as default content (rich text cannot hold images). New section style `quick-links` (inline sea-blue outline buttons on light grounds).
 - Packages (new nodes only): admiral-xwalk-pet-images-1.0.0 (images/pet), admiral-xwalk-pet-cf-1.0.0 (fragments/pet), admiral-xwalk-pet-pages-1.0.0 (11 pages).
+
+## 2026-10-15 — Pet pages published; article author photos
+- Published /pet-insurance checked on preview with real publish data: 24 sections, all 15 fragments load, Cat / Dog pods link to their pages, guides cards 3, no errors. All 10 child pages load cleanly.
+- Every article (travel, car, pet) showed a broken author photo: the author-image page property reaches the page as a raw DAM path, which only AEM serves. article.js now loads DAM paths from the publish tier (aem-publish-host metadata or the default host), same origin on author.

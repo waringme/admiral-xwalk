@@ -51,6 +51,16 @@ function shareLinks() {
   return share;
 }
 
+// AEM publish tier: serves DAM assets that page properties reference by path (author image);
+// Edge Delivery only rewrites the page Image, so such paths are not on the site itself
+const DEFAULT_PUBLISH_HOST = 'https://publish-p147324-e2050468.adobeaemcloud.com';
+
+/** a DAM path from a page property -> a URL that loads (same origin on AEM author) */
+function assetUrl(path) {
+  if (!path.startsWith('/content/dam/') || window.location.hostname.endsWith('.adobeaemcloud.com')) return path;
+  return `${(getMetadata('aem-publish-host') || DEFAULT_PUBLISH_HOST).replace(/\/$/, '')}${path}`;
+}
+
 function authorBar() {
   const author = getMetadata('author');
   const avatar = getMetadata('author-image');
@@ -61,7 +71,7 @@ function authorBar() {
   const bar = el('div', 'article-meta');
   if (avatar) {
     const img = el('img', 'article-meta-avatar');
-    img.src = avatar;
+    img.src = assetUrl(avatar);
     img.alt = '';
     img.loading = 'lazy';
     bar.append(img);
