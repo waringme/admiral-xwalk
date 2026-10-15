@@ -363,6 +363,10 @@
             "value": "landing-hero"
           },
           {
+            "name": "Dark blue hero ground (sea blue, white text)",
+            "value": "dark-blue"
+          },
+          {
             "name": "Ice blue",
             "value": "ice-blue"
           },
@@ -966,6 +970,10 @@
           {
             "name": "Landing (centred copy over a composite image, ice blue)",
             "value": "landing"
+          },
+          {
+            "name": "Large buttons (live pet insurance hero)",
+            "value": "large-buttons"
           }
         ]
       }

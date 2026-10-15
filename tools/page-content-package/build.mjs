@@ -74,7 +74,7 @@ const SETS = {
   },
   pet: {
     name: 'admiral-xwalk-pet-pages',
-    version: '1.0.0',
+    version: '1.0.1',
     pages: () => [
       '/pet-insurance',
       ...execFileSync('find', ['-L', 'content/pet-insurance', '-name', '*.plain.html'], { cwd: ROOT, encoding: 'utf8' })

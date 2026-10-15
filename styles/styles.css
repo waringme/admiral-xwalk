@@ -666,11 +666,13 @@ main .section.has-background .section-background img {
   object-fit: cover;
 }
 
-/* cornflower: the dark winter-sports hero (live .bg-cornflower-blue #115577) */
+/* dark grounds with white text: cornflower (the winter-sports hero, live .bg-cornflower-blue
+   #115577) and dark-blue (the pet insurance hero, live .bg-sea-blue #005485) */
 main .section.landing-hero.cornflower { background-color: #157; }
-main .section.landing-hero.cornflower :is(h1, h2, h3, p) { color: #fff; }
-main .section.landing-hero.cornflower h1 { border-bottom-color: #fff; }
-:where(main .section.landing-hero.cornflower) a:any-link:not(.button) { color: #fff; }
+main .section.landing-hero.dark-blue { background-color: #005485; }
+main .section.landing-hero:is(.cornflower, .dark-blue) :is(h1, h2, h3, p) { color: #fff; }
+main .section.landing-hero:is(.cornflower, .dark-blue) h1 { border-bottom-color: #fff; }
+:where(main .section.landing-hero:is(.cornflower, .dark-blue)) a:any-link:not(.button) { color: #fff; }
 
 /* quick links bar ("What are you looking for?") */
 main .section.sea-blue .button-wrapper {
@@ -694,6 +696,16 @@ main .section.quick-links:not(.sea-blue) a.button:any-link {
   border-color: #005485;
   background: none;
   color: #005485;
+}
+
+/* hero block style large-buttons (live pet insurance .button--large): 44px CTAs on mobile,
+   52px from tablet up, no border */
+main .section.landing-hero .hero.large-buttons a.button:any-link {
+  height: 44px;
+  padding: 9px 10px;
+  border: 0;
+  font-size: 16.2px;
+  line-height: 24px;
 }
 
 @media (width >= 768px) {
@@ -751,6 +763,22 @@ main .section.quick-links:not(.sea-blue) a.button:any-link {
     font-size: 16.2px;
     line-height: 32px;
   }
+
+  main .section.landing-hero .hero.large-buttons a.button:any-link {
+    height: 52px;
+    padding: 10px 15px;
+    font-size: 21.6px;
+    line-height: 30px;
+  }
+
+  /* the large-button hero (live pet insurance): 26px above the title, 44px under the caption */
+  main .section.landing-hero > .hero-wrapper:has(.hero.large-buttons) { padding-top: 26px; }
+
+  main .section.landing-hero .hero.large-buttons h2 {
+    max-width: 600px;
+    margin-inline: auto;
+  }
+  main .section.landing-hero > .hero-wrapper:has(.hero.large-buttons) + .default-content-wrapper { padding-bottom: 44px; }
 
   /* the background covers the section; mobile-only images step aside */
   main .section.has-background-mobile .section-background,

@@ -191,3 +191,8 @@ content/*.plain.html, stardust/eds-conversion-log.md, stardust/runtime-contract.
 ## 2026-10-15 — Pet pages published; article author photos
 - Published /pet-insurance checked on preview with real publish data: 24 sections, all 15 fragments load, Cat / Dog pods link to their pages, guides cards 3, no errors. All 10 child pages load cleanly.
 - Every article (travel, car, pet) showed a broken author photo: the author-image page property reaches the page as a raw DAM path, which only AEM serves. article.js now loads DAM paths from the publish tier (aem-publish-host metadata or the default host), same origin on author.
+
+## 2026-10-15 — Pet hero critique vs live
+- Diffs: ground #115577 (cornflower) vs live #005485; live CTAs 52px / 21.6px, no border (44px / 16.2px mobile) vs 40 / 34; headline 600px wide (wraps after "pets"); spacing followed from the buttons.
+- Fixes: section style `dark-blue` (#005485, white text; shares the cornflower rules), hero block style `large-buttons` (live sizes; 26px above / 44px under the copy), headline max-width 600px in that hero. Every measured position now equals live at 1440 and 360 (432 / 484 vs 432 / 485); travel hero unchanged.
+- Pet pages package 1.0.1.

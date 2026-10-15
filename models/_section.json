@@ -83,6 +83,10 @@
               "value": "landing-hero"
             },
             {
+              "name": "Dark blue hero ground (sea blue, white text)",
+              "value": "dark-blue"
+            },
+            {
               "name": "Ice blue",
               "value": "ice-blue"
             },
