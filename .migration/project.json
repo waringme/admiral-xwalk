@@ -10,5 +10,8 @@
       "aemSiteTitle": "admiral-xwalk",
       "baseUrl": "http://www.admiral.com"
     }
-  }
+  },
+  "features": [
+    "site-planning"
+  ]
 }
