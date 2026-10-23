@@ -1,0 +1,36 @@
+main .section.weather-container > .weather-wrapper {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  padding: 0 10px 20px;
+}
+
+main .weather {
+  padding: 20px;
+  border: 1px solid var(--color-border-pod);
+  border-radius: 8px;
+  background-color: #e9f7fc;
+  color: var(--color-ink);
+}
+
+main .weather .weather-heading {
+  margin: 0 0 12px;
+  color: inherit;
+}
+
+main .weather .weather-result {
+  margin: 0;
+}
+
+main .weather .weather-result-error {
+  color: #a52834;
+}
+
+@media (width >= 768px) {
+  main .section.weather-container > .weather-wrapper {
+    padding: 0 30px 20px;
+  }
+
+  main .weather {
+    padding: 24px;
+  }
+}

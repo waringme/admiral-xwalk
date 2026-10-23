@@ -1362,5 +1362,18 @@
         "description": "Trustpilot product reference(s) the rating is for — required by the Micro Star template (admiral.com uses 'Home_'). Leave blank for the default."
       }
     ]
+  },
+  {
+    "id": "weather",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "value": "Current local weather",
+        "label": "Heading",
+        "description": "Heading displayed above the live weather from the Weather Edge Function."
+      }
+    ]
   }
 ]
