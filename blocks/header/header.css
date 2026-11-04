@@ -150,7 +150,7 @@ header .mega-nav-list > .mega-nav-item-black { background-color: #292929; }
 header .mega-nav-list > .mega-nav-item-red { background-color: #a10052; }
 
 header .mega-nav-list > .mega-nav-item-black,
-header .mega-nav-list > .mega-nav-item-red { border-top-color: #54504d !important; }
+header .mega-nav-list > .mega-nav-item-red { border-top-color: #ff6f00 !important; }
 
 header .mega-nav-list > .mega-nav-item-black > a:any-link,
 header .mega-nav-list > .mega-nav-item-red > a:any-link {
