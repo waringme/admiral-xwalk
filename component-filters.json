@@ -32,7 +32,8 @@
       "highlights",
       "content-fragment",
       "trustpilot",
-      "weather"
+      "weather",
+      "quote-test"
     ]
   },
   {
@@ -84,12 +85,6 @@
     "id": "product-tiles",
     "components": [
       "product-tile"
-    ]
-  },
-  {
-    "id": "section",
-    "components": [
-      "quote-test"
     ]
   },
   {

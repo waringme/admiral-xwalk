@@ -30,12 +30,5 @@
       ]
     }
   ],
-  "filters": [
-    {
-      "id": "section",
-      "components": [
-        "quote-test"
-      ]
-    }
-  ]
+  "filters": []
 }

@@ -165,7 +165,8 @@
         "highlights",
         "content-fragment",
         "trustpilot",
-        "weather"
+        "weather",
+        "quote-test"
       ]
     }
   ]
