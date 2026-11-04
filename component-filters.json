@@ -87,6 +87,12 @@
     ]
   },
   {
+    "id": "section",
+    "components": [
+      "quote-test"
+    ]
+  },
+  {
     "id": "testimonials",
     "components": [
       "testimonial"
